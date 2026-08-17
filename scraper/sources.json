@@ -1,0 +1,18 @@
+{
+  "sources": [
+    { "name": "Social Media Today", "url": "https://www.socialmediatoday.com" },
+    { "name": "Social Samosa", "url": "https://www.socialsamosa.com" },
+    { "name": "exchange4media – Digital News", "url": "https://www.exchange4media.com/digital-news.html" },
+    { "name": "exchange4media – Latest News", "url": "https://www.exchange4media.com/latest-news.html" },
+    { "name": "Campaign India", "url": "https://www.campaignindia.in" },
+    { "name": "afaqs!", "url": "https://www.afaqs.com" },
+    { "name": "BestMediaInfo", "url": "https://www.bestmediainfo.com" },
+    { "name": "Financial Times – India", "url": "https://www.ft.com/india" },
+    { "name": "Economic Times", "url": "https://economictimes.indiatimes.com" },
+    { "name": "Storyboard18", "url": "https://www.storyboard18.com" },
+    { "name": "Digiday", "url": "https://digiday.com" }
+  ],
+  "lookback_days": 28,
+  "general_web_search": true,
+  "notes": "This list is editable. run.py fetches each source, then runs a general web search pass to catch relevant items missed by the fixed sources above. Items older than lookback_days are deprioritized."
+}
