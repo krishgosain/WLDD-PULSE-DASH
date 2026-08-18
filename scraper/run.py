@@ -184,12 +184,28 @@ def find_or_create_week(data: dict, week_start: str, week_end: str) -> dict:
     return wk
 
 
+def find_items_week(data: dict, source_url: str, headline: str):
+    """Locate which week a bucket1-4 item lives in, matching by source_url (or
+    headline as a fallback). Returns the week dict, or None if not found."""
+    for wk in data["weeks"]:
+        for bucket in ("bucket1", "bucket2", "bucket3"):
+            for it in wk[bucket]:
+                if (source_url and it.get("source_url") == source_url) or it.get("headline") == headline:
+                    return wk
+        for it in wk["bucket4"]:
+            if source_url and it.get("source_url") == source_url:
+                return wk
+    return None
+
+
 def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> dict:
     """incoming_items has the same per-bucket shape as before (flat lists of new
     items to add), NOT a weeks-shaped object. Each item is routed into its own
     Monday-start week by its `date` field (bucket1-4) using the strict boundary
-    rule; bucket5 (this run's strategic pass) goes into the week containing
-    run_date (defaults to today)."""
+    rule. bucket5 items are filed into the SAME week as the bucket1-4 item they
+    reference (via ref_item/source_url) — NOT the run date — so a week's
+    strategic insights always live alongside the news that inspired them. Only
+    falls back to the run-date week if no matching referenced item is found."""
     merged = json.loads(json.dumps(existing))
     merged.setdefault("weeks", [])
     run_date = run_date or datetime.now(timezone.utc).date()
@@ -205,10 +221,12 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
                 wk[bucket].sort(key=lambda i: i.get("date") or "", reverse=True)
 
     if incoming_items.get("bucket5"):
-        ws, we = week_bounds_for(run_date)
-        wk = find_or_create_week(merged, ws, we)
-        existing_refs = {i.get("ref_item") for i in wk["bucket5"]}
         for item in incoming_items["bucket5"]:
+            wk = find_items_week(merged, item.get("source_url"), item.get("ref_item"))
+            if wk is None:
+                ws, we = week_bounds_for(run_date)
+                wk = find_or_create_week(merged, ws, we)
+            existing_refs = {i.get("ref_item") for i in wk["bucket5"]}
             if item.get("ref_item") not in existing_refs:
                 wk["bucket5"].append(item)
 

@@ -290,6 +290,9 @@ fetch("/data.json")
   .then((data) => {
     WEEKS = data.weeks || [];
     updatedAt = data.updated_at;
+    const hasContent = (w) => ["bucket1", "bucket2", "bucket3", "bucket4", "bucket5"].some((b) => (w[b] || []).length);
+    const firstNonEmpty = WEEKS.findIndex(hasContent);
+    if (firstNonEmpty > 0) activeWeekIndex = firstNonEmpty;
     if (updatedAt) {
       document.getElementById("lastUpdated").textContent = "Updated " + new Date(updatedAt).toDateString();
     }
