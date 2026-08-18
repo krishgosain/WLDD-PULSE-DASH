@@ -14,23 +14,42 @@ wldd-pulse-dash/
 │   ├── sources.json   editable list of tracked sources
 │   ├── run.py         weekly job: fetch → extract → categorize → link → save
 │   └── prompt.md       WLDD product context used for the Bucket 5 strategic pass
-├── data.json          all collected items, newest first (source of truth for the site)
+├── data.json          weekly-bucketed items, newest week first (source of truth for the site)
 └── README.md
 ```
 
 ## How it works
 
-1. **Site** (`site/`) is a static page with 5 tabs — one per bucket — that fetches
-   `data.json` and renders it. No build step; deploys as-is on Vercel.
+1. **Site** (`site/`) is a static page with a week picker, a 5-tab bucket view for
+   the selected week, and a search box that queries every archived week at once.
+   It fetches `data.json` and renders it client-side. No build step; deploys as-is
+   on Vercel.
 2. **Scraper** (`scraper/run.py`) is designed to be run by an agentic coding
    assistant (Claude Code) rather than as a traditional headless scraper: it fetches
    each source in `sources.json`, extracts and categorizes items into the 5 buckets,
    dedupes against the existing `data.json`, resolves company websites (web search)
    and person LinkedIn profiles (Apollo people-match), runs the Bucket 5 strategic
-   pass using `prompt.md`, and writes the merged result back to `data.json`.
-3. A weekly Claude Code cloud Routine runs `scraper/run.py`'s job every Monday
-   10:00 AM IST, commits the updated `data.json`, and pushes — Vercel then
+   pass using `prompt.md`, and merges the result into the correct week of `data.json`.
+3. A weekly Claude Code cloud Routine runs this job every Monday 10:00 AM IST,
+   commits the updated `data.json` to `main`, and pushes — Vercel then
    auto-redeploys from the new commit.
+
+## Weekly structure
+
+`data.json` is `{"weeks": [...], "updated_at": ...}`, weeks sorted newest first.
+Each week is a strict, non-overlapping Monday-to-Monday span:
+
+```
+week_start (Monday, inclusive)  →  week_end (the following Monday, exclusive)
+```
+
+**Boundary rule**: an article dated exactly on a Monday belongs to the week
+*starting* that Monday, never the week ending on it. Every item is routed into
+its own week by its `date` field (not by when the scraper happened to run), so
+weeks never overlap and nothing repeats across them. The site defaults to the
+most recent week and lets you browse every earlier week via the week picker, or
+search across all of them at once — searched matches are not deleted or rotated
+out, they just move into the archive as new weeks are added.
 
 ## The 5 buckets
 
@@ -52,7 +71,8 @@ Every company name links to its official site (resolved via web search, cached i
 `data.json` so it isn't re-resolved every week). Every named person links to their
 LinkedIn profile (resolved via Apollo's people-match API, matched on name +
 organization). Anything that can't be confidently resolved is left unlinked and
-listed in a "flagged" section at the end of its bucket instead of guessing.
+listed in a "flagged" section at the end of its bucket, for that week, instead of
+guessing.
 
 ## Editing sources
 
