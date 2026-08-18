@@ -50,6 +50,98 @@ html, body {
 
 .meta { color: var(--text-dim); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
 
+.controlbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 32px 0;
+}
+
+.week-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.week-picker label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+}
+
+.week-picker select {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.week-picker select:focus {
+  outline: 1px solid var(--accent);
+}
+
+.search-box {
+  position: relative;
+  flex: 1 1 320px;
+  max-width: 420px;
+  min-width: 220px;
+}
+
+.search-box input {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 13px;
+  padding: 9px 34px 9px 12px;
+}
+
+.search-box input::placeholder { color: var(--text-dim); }
+
+.search-box input:focus {
+  outline: 1px solid var(--accent);
+  border-color: var(--accent);
+}
+
+.search-clear {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.search-clear:hover { color: var(--accent); }
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.search-meta {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-dim);
+}
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -57,6 +149,8 @@ html, body {
   padding: 16px 32px 0;
   border-bottom: 1px solid var(--border);
 }
+
+.tabs.hidden { display: none; }
 
 .tab {
   background: transparent;

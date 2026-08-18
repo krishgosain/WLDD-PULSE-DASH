@@ -17,6 +17,17 @@
   </div>
 </header>
 
+<div class="controlbar">
+  <div class="week-picker">
+    <label for="weekSelect">Week</label>
+    <select id="weekSelect"></select>
+  </div>
+  <div class="search-box">
+    <input id="searchInput" type="text" placeholder="Search all weeks — company, person, headline…" autocomplete="off" />
+    <button id="searchClear" class="search-clear" hidden>&times;</button>
+  </div>
+</div>
+
 <nav class="tabs" id="tabs">
   <button class="tab active" data-bucket="bucket1">Mandates &amp; Campaigns</button>
   <button class="tab" data-bucket="bucket2">M&amp;A</button>
@@ -28,7 +39,7 @@
 <main id="content"></main>
 
 <footer class="footer">
-  <span>Internal tool — WLDD BD team. Auto-updated weekly.</span>
+  <span>Internal tool — WLDD BD team. Auto-updated weekly, Monday 10:00 AM IST.</span>
 </footer>
 
 <script src="app.js"></script>

@@ -14,14 +14,23 @@ for git commit/push (the assistant does that directly).
 Usage:
     python run.py fetch                      # fetch all sources, print raw links as JSON
     python run.py fetch --out raw.json        # ...and save to a file
-    python run.py merge new_items.json        # merge a buckets-shaped JSON file into data.json
+    python run.py merge new_items.json        # merge a flat buckets-shaped JSON file into data.json
     python run.py merge new_items.json --dry-run
 
-new_items.json must have the same shape as data.json:
+new_items.json is a FLAT (not week-nested) buckets object — the item shape data.json
+uses inside each week entry:
     {"bucket1": [...], "bucket2": [...], "bucket3": [...], "bucket4": [...],
      "bucket5": [...], "flagged": {...}}
 
-Dedup key: source_url (bucket1-3), or (person, new_company, date) for bucket4.
+`merge` routes each bucket1-4 item into its own Monday-start week bucket by the
+item's `date` field (strict, non-overlapping weeks — a date that IS a Monday
+belongs to the week starting on it, not the one ending on it). bucket5 and
+flagged entries are filed under the week containing today (the run date).
+data.json itself is week-nested: {"weeks": [{"week_start", "week_end",
+"bucket1".."bucket5", "flagged"}, ...], "updated_at"}, newest week first.
+
+Dedup key: source_url (bucket1-3), or (person, new_company, date) for bucket4,
+scoped within each item's own week.
 """
 
 import argparse
@@ -29,7 +38,7 @@ import json
 import sys
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import datetime, date, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -42,15 +51,47 @@ USER_AGENT = (
     "+https://github.com/krishgosain/wldd-pulse-dash)"
 )
 
-EMPTY_DATA = {
+EMPTY_DATA = {"weeks": [], "updated_at": None}
+
+EMPTY_WEEK = {
     "bucket1": [],
     "bucket2": [],
     "bucket3": [],
     "bucket4": [],
     "bucket5": [],
     "flagged": {"bucket1": [], "bucket2": [], "bucket3": [], "bucket4": []},
-    "updated_at": None,
 }
+
+
+def monday_of(d: date) -> date:
+    """Monday-start week boundary. A date that IS a Monday belongs to the week
+    starting on it (not the prior week ending on it) — the strict, non-overlapping
+    boundary rule: each week runs [week_start, week_end) with week_start inclusive
+    and week_end (the following Monday) exclusive."""
+    return d - timedelta(days=d.weekday())
+
+
+def parse_item_date(s):
+    """Best-effort parse of an item's date field (YYYY-MM-DD, YYYY-MM, or YYYY)."""
+    if not s:
+        return None
+    parts = s.split("-")
+    try:
+        if len(parts) == 3:
+            return date(int(parts[0]), int(parts[1]), int(parts[2]))
+        if len(parts) == 2:
+            return date(int(parts[0]), int(parts[1]), 15)
+        if len(parts) == 1:
+            return date(int(parts[0]), 1, 1)
+    except (ValueError, IndexError):
+        return None
+    return None
+
+
+def week_bounds_for(d: date):
+    ws = monday_of(d)
+    we = ws + timedelta(days=7)
+    return ws.isoformat(), we.isoformat()
 
 
 class LinkExtractor(HTMLParser):
@@ -131,27 +172,56 @@ def item_key(bucket: str, item: dict):
     return item.get("source_url")
 
 
-def merge_data(existing: dict, incoming: dict) -> dict:
+def find_or_create_week(data: dict, week_start: str, week_end: str) -> dict:
+    for wk in data["weeks"]:
+        if wk["week_start"] == week_start:
+            return wk
+    wk = json.loads(json.dumps(EMPTY_WEEK))
+    wk["week_start"] = week_start
+    wk["week_end"] = week_end
+    data["weeks"].append(wk)
+    data["weeks"].sort(key=lambda w: w["week_start"], reverse=True)
+    return wk
+
+
+def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> dict:
+    """incoming_items has the same per-bucket shape as before (flat lists of new
+    items to add), NOT a weeks-shaped object. Each item is routed into its own
+    Monday-start week by its `date` field (bucket1-4) using the strict boundary
+    rule; bucket5 (this run's strategic pass) goes into the week containing
+    run_date (defaults to today)."""
     merged = json.loads(json.dumps(existing))
-    for bucket in ("bucket1", "bucket2", "bucket3", "bucket4"):
-        existing_keys = {item_key(bucket, i) for i in merged.get(bucket, [])}
-        new_items = [
-            i for i in incoming.get(bucket, []) if item_key(bucket, i) not in existing_keys
-        ]
-        merged[bucket] = new_items + merged.get(bucket, [])
-        merged[bucket].sort(key=lambda i: i.get("date") or "", reverse=True)
-
-    # bucket5 (strategic insights) is a fresh weekly take — replace rather than accumulate forever,
-    # keep most recent 20 across runs
-    merged["bucket5"] = (incoming.get("bucket5", []) + merged.get("bucket5", []))[:20]
+    merged.setdefault("weeks", [])
+    run_date = run_date or datetime.now(timezone.utc).date()
 
     for bucket in ("bucket1", "bucket2", "bucket3", "bucket4"):
-        merged.setdefault("flagged", {}).setdefault(bucket, [])
-        new_flags = incoming.get("flagged", {}).get(bucket, [])
-        for f in new_flags:
-            if f not in merged["flagged"][bucket]:
-                merged["flagged"][bucket].append(f)
+        for item in incoming_items.get(bucket, []):
+            d = parse_item_date(item.get("date")) or run_date
+            ws, we = week_bounds_for(d)
+            wk = find_or_create_week(merged, ws, we)
+            existing_keys = {item_key(bucket, i) for i in wk[bucket]}
+            if item_key(bucket, item) not in existing_keys:
+                wk[bucket].append(item)
+                wk[bucket].sort(key=lambda i: i.get("date") or "", reverse=True)
 
+    if incoming_items.get("bucket5"):
+        ws, we = week_bounds_for(run_date)
+        wk = find_or_create_week(merged, ws, we)
+        existing_refs = {i.get("ref_item") for i in wk["bucket5"]}
+        for item in incoming_items["bucket5"]:
+            if item.get("ref_item") not in existing_refs:
+                wk["bucket5"].append(item)
+
+    if incoming_items.get("flagged"):
+        ws, we = week_bounds_for(run_date)
+        wk = find_or_create_week(merged, ws, we)
+        for bucket, flags in incoming_items["flagged"].items():
+            wk.setdefault("flagged", {}).setdefault(bucket, [])
+            for f in flags:
+                if f not in wk["flagged"][bucket]:
+                    wk["flagged"][bucket].append(f)
+
+    merged["weeks"].sort(key=lambda w: w["week_start"], reverse=True)
     merged["updated_at"] = datetime.now(timezone.utc).isoformat()
     return merged
 
@@ -186,10 +256,10 @@ def main():
             print(json.dumps(merged, indent=2, ensure_ascii=False))
         else:
             DATA_FILE.write_text(json.dumps(merged, indent=2, ensure_ascii=False) + "\n")
-            print(f"Merged. data.json now has "
-                  f"{len(merged['bucket1'])}/{len(merged['bucket2'])}/{len(merged['bucket3'])}/"
-                  f"{len(merged['bucket4'])}/{len(merged['bucket5'])} items "
-                  f"(buckets 1-5).", file=sys.stderr)
+            print(f"Merged. data.json now has {len(merged['weeks'])} week(s):", file=sys.stderr)
+            for wk in merged["weeks"]:
+                counts = "/".join(str(len(wk[b])) for b in ("bucket1", "bucket2", "bucket3", "bucket4", "bucket5"))
+                print(f"  {wk['week_start']} .. {wk['week_end']}: {counts} (buckets 1-5)", file=sys.stderr)
 
 
 if __name__ == "__main__":

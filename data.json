@@ -1,1232 +1,1363 @@
 {
-  "bucket1": [
+  "weeks": [
     {
-      "headline": "SharkNinja APAC appoints WPP Media as integrated media partner",
-      "description": "SharkNinja APAC appointed WPP Media as its integrated media partner following the appliance brand's entry into the Indian market in April 2026.",
-      "why_important": "A global appliance brand's India market-entry media mandate going to a holding-company network shows how new entrants are choosing scale partners for launch.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/latest/account-moves",
-      "date": "2026-08-14",
-      "companies": [
+      "week_start": "2026-08-17",
+      "week_end": "2026-08-24",
+      "bucket1": [],
+      "bucket2": [],
+      "bucket3": [],
+      "bucket4": [],
+      "bucket5": [
         {
-          "name": "SharkNinja",
-          "url": "https://www.sharkninja.com"
+          "headline": "Zepto's live 10-minute delivery stunt needs short-form distribution muscle",
+          "product_fit": "Memed",
+          "insight": "Zepto is already sitting on raw, unedited countdown footage from its Bangalore/Mumbai activations — the exact long-form proof content Memed is built to cut into short-form clips and distribute across Reels, Shorts and TikTok to extend the stunt's shelf life past the initial news cycle.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Zepto stages live 10-minute delivery guerrilla activation",
+          "source_url": "https://www.cupshup.co.in/blog/guerrilla-marketing-ads-india"
         },
         {
-          "name": "WPP Media",
-          "url": "https://www.wppmedia.com"
+          "headline": "Godrej x Swiggy Instamart's Cannes-winning stunt is a case study Imagined should pitch to build",
+          "product_fit": "Imagined",
+          "insight": "A near-zero-media-cost idea just won a Cannes Gold Lion for Godrej — that's a marquee credibility asset. Imagined could pitch a polished case-study microsite/interactive recap to both brands, turning an award win into a recruiting and new-business asset for their own next pitches.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Godrej x Swiggy Instamart 'house keys' campaign wins Cannes Gold Lion",
+          "source_url": "https://www.cupshup.co.in/blog/guerrilla-marketing-ads-india"
+        },
+        {
+          "headline": "One Impression's Krafton-backed raise signals the creator-marketplace category is heating up — Solo should move fast",
+          "product_fit": "Solo",
+          "insight": "A gaming major just backed a direct competitor to Solo's creator-brand marketplace model with $10M, validating the category. Worth using as urgency in Solo's own fundraising/BD narrative and as a prompt to accelerate brand-side GTM in India before the market consolidates around fewer platforms.",
+          "ref_bucket_label": "Bucket 2 — M&A (India)",
+          "ref_item": "One Impression raises $10 million led by Krafton",
+          "source_url": "https://tracxn.com/d/companies/exchange4media/__VfMYBz2vnMtc7Hgn33Mw_JLnMLqT7oRw7o-xoLPNycQ"
+        },
+        {
+          "headline": "Alpino's celebrity-led oats campaign is a performance-creator upsell waiting to happen",
+          "product_fit": "Solo",
+          "insight": "Alpino is spending on top-of-funnel celebrity talent (The Great Khali, Mukesh Gahlot) for a D2C nutrition launch — a natural pitch for Solo to layer in a performance-based mid/micro-creator campaign underneath the celebrity push, giving Alpino measurable, always-on distribution alongside the one-off stunt.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns"
+        },
+        {
+          "headline": "SharkNinja's India market entry needs owned-media reach fast",
+          "product_fit": "Scoopwhoop",
+          "insight": "SharkNinja just entered India and appointed WPP Media for its integrated media mandate — a new-market launch is exactly when a brand needs awareness reach beyond paid media. Scoopwhoop's owned distribution is a strong complement pitch to run alongside the WPP buy for launch-phase reach.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "SharkNinja APAC appoints WPP Media as integrated media partner",
+          "source_url": "https://www.campaignindia.in/latest/account-moves"
+        },
+        {
+          "headline": "Honasa's new CMO is a fresh-vendor-roster window for creator-ops talent",
+          "product_fit": "The Lit School",
+          "insight": "Nilesh Kotalwar's appointment as Honasa's CMO is the kind of leadership change that typically triggers a review of marketing team structure and vendor relationships at a beauty D2C major built on influencer marketing — a timely moment to pitch The Lit School for building or upskilling an in-house creator-ops pipeline.",
+          "ref_bucket_label": "Bucket 4 — People Moves",
+          "ref_item": "Nilesh Kotalwar named Chief Marketing Officer, Honasa Consumer",
+          "source_url": "https://www.storyboard18.com/brand-makers/honasa-consumer-names-nilesh-kotalwar-as-new-cmo-honasa-cmo-ws-l-106889.htm"
+        },
+        {
+          "headline": "McDonald's India's World Cup tie-in is built for clip repurposing during peak match moments",
+          "product_fit": "Memed",
+          "insight": "A FIFA World Cup campaign generates a steady stream of match-day content moments — Memed could repurpose McDonald's longer brand films and in-store activation footage into rapid short-form clips timed to match highlights, capturing attention while World Cup search volume is at its seasonal peak.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "McDonald's India North & East runs FIFA World Cup 2026 campaign",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns"
+        },
+        {
+          "headline": "Flipkart's viral 'buffalo Don' character is a short-form distribution opportunity mid-sale",
+          "product_fit": "Memed",
+          "insight": "A meme-able mascot performing well organically is exactly the kind of asset Memed exists to multiply — slicing the GOAT Sale films into short-form variants and pushing them across platforms during the live sale window would extend reach while the character has momentum.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Flipkart's GOAT Sale campaign features viral 'buffalo Don'",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns"
+        },
+        {
+          "headline": "SOCIAL's multi-city cricket-and-dining activation needs amplification beyond the nine cities it ran in",
+          "product_fit": "Scoopwhoop",
+          "insight": "#DoosraStadium's in-restaurant experience only reaches walk-in footfall directly — Scoopwhoop's owned-media distribution could extend the campaign's story nationally to audiences outside SOCIAL's nine activation cities, turning a local experiential play into a national brand moment.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "SOCIAL's #DoosraStadium 2026 campaign combines live cricket and dining",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns"
+        },
+        {
+          "headline": "Dentsu's possible international breakup could shake loose independent-agency talent and mandates",
+          "product_fit": "The Lit School",
+          "insight": "If Dentsu's international unit changes hands, expect displaced creative/media talent and mandate churn across the industry — worth watching for The Lit School to position as a landing pipeline for talent shaken loose by the restructuring, and for WLDD generally to track which mandates come up for repitch.",
+          "ref_bucket_label": "Bucket 2 — M&A (Global)",
+          "ref_item": "Dentsu reviewing sale of its international business",
+          "source_url": "https://www.storyboard18.com/advertising/havas-signals-interest-in-buying-dentsus-international-unit-after-strong-q3-performance-82655.htm"
         }
       ],
-      "people": []
+      "flagged": {
+        "bucket1": [],
+        "bucket2": [],
+        "bucket3": [],
+        "bucket4": []
+      }
     },
     {
-      "headline": "Liqvd Asia picks up social media mandate for Narayana Health",
-      "description": "Liqvd Asia won the social media management mandate for hospital chain Narayana Health.",
-      "why_important": "Healthcare providers ramping up social-first marketing spend is a growing vertical for digital agencies beyond traditional FMCG/e-commerce clients.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/latest/account-moves",
-      "date": "2026-08-14",
-      "companies": [
+      "week_start": "2026-08-10",
+      "week_end": "2026-08-17",
+      "bucket1": [
         {
-          "name": "Liqvd Asia",
-          "url": "https://www.liqvd.asia"
+          "headline": "SharkNinja APAC appoints WPP Media as integrated media partner",
+          "description": "SharkNinja APAC appointed WPP Media as its integrated media partner following the appliance brand's entry into the Indian market in April 2026.",
+          "why_important": "A global appliance brand's India market-entry media mandate going to a holding-company network shows how new entrants are choosing scale partners for launch.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/latest/account-moves",
+          "date": "2026-08-14",
+          "companies": [
+            {
+              "name": "SharkNinja",
+              "url": "https://www.sharkninja.com"
+            },
+            {
+              "name": "WPP Media",
+              "url": "https://www.wppmedia.com"
+            }
+          ],
+          "people": []
         },
         {
-          "name": "Narayana Health",
-          "url": "https://www.narayanahealth.org"
+          "headline": "Liqvd Asia picks up social media mandate for Narayana Health",
+          "description": "Liqvd Asia won the social media management mandate for hospital chain Narayana Health.",
+          "why_important": "Healthcare providers ramping up social-first marketing spend is a growing vertical for digital agencies beyond traditional FMCG/e-commerce clients.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/latest/account-moves",
+          "date": "2026-08-14",
+          "companies": [
+            {
+              "name": "Liqvd Asia",
+              "url": "https://www.liqvd.asia"
+            },
+            {
+              "name": "Narayana Health",
+              "url": "https://www.narayanahealth.org"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "AdLift bags Casagrand mandate for AI search visibility platform Tesseract",
+          "description": "Digital marketing agency AdLift secured a mandate from real estate developer Casagrand to deploy its AI search visibility platform, Tesseract, across the company's digital search strategy.",
+          "why_important": "Shows real estate marketers investing in AI/GEO search-visibility tooling ahead of traditional SEO, a growing budget line agencies are chasing.",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-digital/adlift-bags-casagrand-mandate-for-ai-search-visibility-platform-tesseract-12256247",
+          "date": "2026-08-13",
+          "companies": [
+            {
+              "name": "AdLift",
+              "url": "https://www.adlift.com"
+            },
+            {
+              "name": "Casagrand",
+              "url": "https://www.casagrand.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Maars Communicates wins strategic communications mandate for Studio Blo",
+          "description": "Maars Communicates was appointed strategic communications partner for Studio Blo, handling strategic communications, media relations, thought leadership and digital storytelling.",
+          "why_important": "Illustrates the ongoing appetite among design/creative-tech startups for dedicated PR partners as they scale visibility.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/newbizwins/maars-communicates-wins-strategic-communications-mandate-for-studio-blo-12256823",
+          "date": "2026-08-13",
+          "companies": [
+            {
+              "name": "Maars Communicates",
+              "url": null
+            },
+            {
+              "name": "Studio Blo",
+              "url": "https://www.studioblo.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "McCann India wins integrated creative mandate for 3M Consumer Business",
+          "description": "McCann India was appointed as the integrated creative partner for 3M's Consumer Business in India following a multi-agency pitch, covering brands including Scotch-Brite, Command and Meguiar's.",
+          "why_important": "A multi-brand FMCG-adjacent mandate from a major MNC won through a competitive pitch signals continued agency consolidation activity in India's creative market.",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/advertising/mccann-india-wins-integrated-creative-mandate-for-3m-consumer-business-12250051",
+          "date": "2026-08-11",
+          "companies": [
+            {
+              "name": "McCann India",
+              "url": "https://www.mccann.com"
+            },
+            {
+              "name": "3M",
+              "url": "https://www.3m.com"
+            },
+            {
+              "name": "Scotch-Brite",
+              "url": "https://www.scotch-brite.com"
+            },
+            {
+              "name": "Command",
+              "url": "https://www.command.com"
+            },
+            {
+              "name": "Meguiar's",
+              "url": "https://www.meguiars.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "The Minimalist wins integrated digital mandate for TyresNmore",
+          "description": "The Minimalist was appointed integrated digital agency for TyresNmore, covering brand strategy, creative and content development, social media management and performance marketing.",
+          "why_important": "A full-funnel digital mandate for an e-commerce/auto-parts challenger brand reflects continued D2C ad spend growth in India's mid-market segment.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/newbizwins/the-minimalist-wins-integrated-digital-mandate-for-tyresnmore-12249540",
+          "date": "2026-08-11",
+          "companies": [
+            {
+              "name": "The Minimalist",
+              "url": "https://beminimalist.co"
+            },
+            {
+              "name": "TyresNmore",
+              "url": "https://www.tyresnmore.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot",
+          "description": "Alpino introduced an upgraded High Protein Oats range alongside a celebrity-led campaign featuring wrestler The Great Khali and Mukesh Gahlot to highlight product innovation and protein-focused nutrition.",
+          "why_important": "Reflects the continuing D2C health-food boom in India and celebrity-led creative as a go-to-market lever for challenger nutrition brands.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns",
+          "date": "2026-08",
+          "companies": [
+            {
+              "name": "Alpino",
+              "url": "https://alpino.store"
+            }
+          ],
+          "people": [
+            {
+              "name": "The Great Khali",
+              "linkedin_url": null
+            },
+            {
+              "name": "Mukesh Gahlot",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "McDonald's India North & East runs FIFA World Cup 2026 campaign",
+          "description": "McDonald's India (North & East operations) launched a FIFA World Cup 2026 tie-in campaign featuring themed meals and limited-edition football collectibles.",
+          "why_important": "Shows QSR brands continuing to lean on global sporting tentpoles for footfall and social engagement during India's high-attention cricket-and-football season.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns",
+          "date": "2026-08",
+          "companies": [
+            {
+              "name": "McDonald's India",
+              "url": "https://www.mcdonaldsindia.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Flipkart's GOAT Sale campaign features viral 'buffalo Don'",
+          "description": "Flipkart's latest GOAT Sale campaign uses humour and a viral buffalo character named Don to spotlight daily offers during the promotional sale event.",
+          "why_important": "Illustrates e-commerce majors continuing to invest in meme-able, humour-led creative to cut through clutter during high-stakes sale-season campaigns.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns",
+          "date": "2026-08",
+          "companies": [
+            {
+              "name": "Flipkart",
+              "url": "https://www.flipkart.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "SOCIAL's #DoosraStadium 2026 campaign combines live cricket and dining",
+          "description": "Restaurant chain SOCIAL ran its #DoosraStadium 2026 campaign combining live cricket screenings, themed food and digital storytelling across nine cities to boost consumer engagement.",
+          "why_important": "Shows F&B/hospitality brands using live-sport screenings as an experiential marketing hook to drive footfall across multi-city outlets.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns",
+          "date": "2026-08",
+          "companies": [
+            {
+              "name": "SOCIAL",
+              "url": "https://socialoffline.in"
+            }
+          ],
+          "people": []
         }
       ],
-      "people": []
+      "bucket2": [
+        {
+          "headline": "Meta, Google and others face thousands of social-media addiction lawsuits in the US",
+          "description": "Meta, Google and other social platforms are set to face thousands of alleged social-media-addiction lawsuits in US courts.",
+          "why_important": "Mass litigation risk against the largest ad platforms could shape future platform policy, youth-safety features, and advertiser trust considerations.",
+          "region": "Global",
+          "deal_value": "",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/digital-news/meta-google-others-to-face-thousands-of-alleged-social-media-addiction-lawsuits-in-us-157180.html",
+          "date": "2026-08-11",
+          "companies": [
+            {
+              "name": "Meta",
+              "url": "https://www.meta.com"
+            },
+            {
+              "name": "Google",
+              "url": "https://www.google.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Dentsu reviewing sale of its international business",
+          "description": "Dentsu confirmed it is reviewing strategic options to enhance corporate value, including a possible sale of its international (non-Japan) business, with bankers hired to evaluate options.",
+          "why_important": "A potential breakup of one of the 'big five' global holding companies would be one of the largest agency-industry restructurings in years, reshaping the competitive landscape for media and creative mandates worldwide.",
+          "region": "Global",
+          "deal_value": "",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/advertising/havas-signals-interest-in-buying-dentsus-international-unit-after-strong-q3-performance-82655.htm",
+          "date": "2026-08",
+          "companies": [
+            {
+              "name": "Dentsu",
+              "url": "https://www.dentsu.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Havas signals interest in buying parts of Dentsu's international unit",
+          "description": "Havas CFO/COO François Laroze said the French holding company 'certainly would consider' acquiring or partnering on parts of Dentsu's international network, though not the entire business.",
+          "why_important": "Signals a new wave of consolidation among the remaining independent-ish holding companies as scale becomes decisive in AI-era media buying.",
+          "region": "Global",
+          "deal_value": "",
+          "source_name": "MM+M",
+          "source_url": "https://www.mmm-online.com/news/havas-could-be-interested-to-buy-or-partner-with-some-of-dentsus-international-assets/",
+          "date": "2026-08",
+          "companies": [
+            {
+              "name": "Havas",
+              "url": "https://www.havas.com"
+            },
+            {
+              "name": "Dentsu",
+              "url": "https://www.dentsu.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "François Laroze",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Viant Technology to acquire TVision Insights for $40 million",
+          "description": "Viant Technology, a CTV and AI-powered programmatic advertising company, entered a definitive agreement to acquire attention-measurement provider TVision Insights for $40.0 million total consideration.",
+          "why_important": "Adds second-by-second attention measurement to Viant's programmatic stack, part of a broader push by ad-tech platforms to prove ROI as advertisers demand attention-based (not just impression-based) metrics.",
+          "region": "Global",
+          "deal_value": "$40 million",
+          "source_name": "MarTech Series",
+          "source_url": "https://martechseries.com/sales-marketing/programmatic-buying/martech-acquisition-viant-to-acquire-tvision/",
+          "date": "2026-08",
+          "companies": [
+            {
+              "name": "Viant Technology",
+              "url": "https://www.viantinc.com"
+            },
+            {
+              "name": "TVision Insights",
+              "url": "https://www.tvisioninsights.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Stagwell acquires experiential marketing agency JetFuel",
+          "description": "Stagwell acquired JetFuel, an experiential marketing services agency, which will become a subsidiary of Stagwell's integrated experiential agency TEAM.",
+          "why_important": "Reflects continued roll-up of experiential/event marketing specialists by holding companies as brands increase in-person activation budgets post-pandemic.",
+          "region": "Global",
+          "deal_value": "",
+          "source_name": "TipRanks / The Fly",
+          "source_url": "https://www.tipranks.com/news/the-fly/stagwell-acquires-jetfuel",
+          "date": "2026-08",
+          "companies": [
+            {
+              "name": "Stagwell",
+              "url": "https://www.stagwellglobal.com"
+            },
+            {
+              "name": "JetFuel",
+              "url": "https://www.jetfuelstudio.com"
+            },
+            {
+              "name": "TEAM",
+              "url": null
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket3": [
+        {
+          "headline": "OpenAI expands ChatGPT Ads to UK, Mexico, Brazil, Japan and South Korea",
+          "description": "OpenAI expanded its ChatGPT Ads product to the UK, Mexico, Brazil, Japan and South Korea, alongside a new multi-product carousel ad format for product-feed campaigns.",
+          "why_important": "OpenAI's international ad-platform rollout signals a genuinely new advertising channel opening up beyond Google/Meta, which brands and agencies will need to build strategies around.",
+          "source_name": "OpenAI / GPT Ads AI",
+          "source_url": "https://www.gptadsai.com/guides/chatgpt-ads-news",
+          "date": "2026-08-11",
+          "companies": [
+            {
+              "name": "OpenAI",
+              "url": "https://openai.com"
+            },
+            {
+              "name": "ChatGPT",
+              "url": "https://chatgpt.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket4": [
+        {
+          "person": "Pirojsha Godrej",
+          "org": "Godrej Industries",
+          "previous_role": "Prior leadership role, Godrej Industries",
+          "new_role_title": "Executive Chairperson",
+          "new_company": "Godrej Industries",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/pirojsha-godrej-to-take-charge-as-executive-chairperson-of-godrej-industries-from-august-14-ws-l-107657.htm",
+          "date": "2026-08-14",
+          "linkedin_url": "http://www.linkedin.com/in/pirojsha-godrej",
+          "company_url": "https://www.godrejindustries.com"
+        },
+        {
+          "person": "Kenneth Benaim Campbell",
+          "org": "Prior role",
+          "previous_role": "Prior leadership role",
+          "new_role_title": "Chief Executive Officer",
+          "new_company": "Oriflame",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/oriflame-appoints-kenneth-benaim-campbell-as-chief-executive-officer-12259772",
+          "date": "2026-08-14",
+          "linkedin_url": null,
+          "company_url": "https://www.oriflame.com"
+        },
+        {
+          "person": "Aasif Malbari",
+          "org": "GCPL",
+          "previous_role": "Chief Financial Officer, GCPL",
+          "new_role_title": "Managing Director & CEO",
+          "new_company": "GCPL (Godrej Consumer Products Limited)",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/advertising/top-advertising-marketing-and-media-news-headlines-of-today-august-11-2026-12249300",
+          "date": "2026-08-12",
+          "linkedin_url": "http://www.linkedin.com/in/aasif-malbari-59446516",
+          "company_url": "https://www.godrejcp.com"
+        },
+        {
+          "person": "Vishal Kedia",
+          "org": "GCPL",
+          "previous_role": "Head of Strategy, FP&A and Investor Relations, GCPL",
+          "new_role_title": "Interim Chief Financial Officer",
+          "new_company": "GCPL (Godrej Consumer Products Limited)",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/people-movement-news/gcpl-appoints-vishal-kedia-as-interim-chief-financial-officer-157207.html",
+          "date": "2026-08-12",
+          "linkedin_url": "http://www.linkedin.com/in/vkedia",
+          "company_url": "https://www.godrejcp.com"
+        },
+        {
+          "person": "Prashant Sukhwani",
+          "org": "Burger King",
+          "previous_role": "Executive, Burger King",
+          "new_role_title": "Managing Partner / Head of Social Practice",
+          "new_company": "PDX India",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/-107504.htm",
+          "date": "2026-08-12",
+          "linkedin_url": null,
+          "company_url": null
+        },
+        {
+          "person": "Lagan Shastri",
+          "org": "SLMG Beverages",
+          "previous_role": "Prior leadership role",
+          "new_role_title": "Chief Executive Officer",
+          "new_company": "SLMG Beverages",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/amp/brand-makers/slmg-beverages-appoints-lagan-shastri-as-ceo-to-lead-next-phase-of-growth-107367.htm",
+          "date": "2026-08-10",
+          "linkedin_url": null,
+          "company_url": "https://slmgbeverages.com"
+        },
+        {
+          "person": "Rubbal Datta",
+          "org": "JioStar",
+          "previous_role": "Executive, JioStar",
+          "new_role_title": "CEO-Designate",
+          "new_company": "Mandrake Tech Labs",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
+          "date": "2026-08",
+          "linkedin_url": null,
+          "company_url": "https://mandraketechlabs.com"
+        },
+        {
+          "person": "Runa Akhtar",
+          "org": "Cipla",
+          "previous_role": "Group Brand Manager, Cipla",
+          "new_role_title": "Marketing Head, Urology",
+          "new_company": "Cipla",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
+          "date": "2026-08",
+          "linkedin_url": null,
+          "company_url": "https://www.cipla.com"
+        },
+        {
+          "person": "Ashwini Ramakrishnan",
+          "org": "Cleartrip",
+          "previous_role": "Head of Brand Marketing, Cleartrip",
+          "new_role_title": "Brand Lead, India",
+          "new_company": "Levi Strauss & Co",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
+          "date": "2026-08",
+          "linkedin_url": null,
+          "company_url": "https://www.levistrauss.com"
+        },
+        {
+          "person": "Meraj Hasan",
+          "org": "Prior role",
+          "previous_role": "Prior role",
+          "new_role_title": "Head, JV Brand",
+          "new_company": "JioBlackRock Investment Advisers",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
+          "date": "2026-08",
+          "linkedin_url": "http://www.linkedin.com/in/meraj-hasan",
+          "company_url": "https://www.jioblackrock.com"
+        },
+        {
+          "person": "Navin Kathuria",
+          "org": "R K SWAMY",
+          "previous_role": "Prior leadership role",
+          "new_role_title": "President, R K SWAMY Media Group",
+          "new_company": "R K SWAMY",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
+          "date": "2026-08",
+          "linkedin_url": null,
+          "company_url": "https://www.rkswamy.com"
+        },
+        {
+          "person": "Vandana Ramkrishna Acharya",
+          "org": "R K SWAMY",
+          "previous_role": "Prior role, R K SWAMY",
+          "new_role_title": "Executive Vice President",
+          "new_company": "R K SWAMY",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
+          "date": "2026-08",
+          "linkedin_url": null,
+          "company_url": "https://www.rkswamy.com"
+        }
+      ],
+      "bucket5": [],
+      "flagged": {
+        "bucket1": [
+          "Company (unresolved): Maars Communicates — in \"Maars Communicates wins strategic communications mandate for Studio Blo\"",
+          "Person (unresolved): The Great Khali — in \"Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot\"",
+          "Person (unresolved): Mukesh Gahlot — in \"Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot\""
+        ],
+        "bucket2": [
+          "Person (unresolved): François Laroze — in \"Havas signals interest in buying parts of Dentsu's international unit\"",
+          "Company (unresolved): TEAM — in \"Stagwell acquires experiential marketing agency JetFuel\""
+        ],
+        "bucket3": [],
+        "bucket4": [
+          "Person (unresolved): Kenneth Benaim Campbell — Chief Executive Officer at Oriflame",
+          "Person (unresolved): Prashant Sukhwani — Managing Partner / Head of Social Practice at PDX India",
+          "Company (unresolved): PDX India — re: Prashant Sukhwani",
+          "Person (unresolved): Lagan Shastri — Chief Executive Officer at SLMG Beverages",
+          "Person (unresolved): Rubbal Datta — CEO-Designate at Mandrake Tech Labs",
+          "Person (unresolved): Runa Akhtar — Marketing Head, Urology at Cipla",
+          "Person (unresolved): Ashwini Ramakrishnan — Brand Lead, India at Levi Strauss & Co",
+          "Person (unresolved): Navin Kathuria — President, R K SWAMY Media Group at R K SWAMY",
+          "Person (unresolved): Vandana Ramkrishna Acharya — Executive Vice President at R K SWAMY"
+        ]
+      }
     },
     {
-      "headline": "AdLift bags Casagrand mandate for AI search visibility platform Tesseract",
-      "description": "Digital marketing agency AdLift secured a mandate from real estate developer Casagrand to deploy its AI search visibility platform, Tesseract, across the company's digital search strategy.",
-      "why_important": "Shows real estate marketers investing in AI/GEO search-visibility tooling ahead of traditional SEO, a growing budget line agencies are chasing.",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-digital/adlift-bags-casagrand-mandate-for-ai-search-visibility-platform-tesseract-12256247",
-      "date": "2026-08-13",
-      "companies": [
+      "week_start": "2026-08-03",
+      "week_end": "2026-08-10",
+      "bucket1": [
         {
-          "name": "AdLift",
-          "url": "https://www.adlift.com"
+          "headline": "The Hype Studio wins PR and communications mandate for TalentGum",
+          "description": "The Hype Studio secured the public relations and communications mandate for edtech platform TalentGum.",
+          "why_important": "Edtech remains an active PR-spend category in India even after 2023-24's funding slowdown, a signal for agency BD teams targeting the sector.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/newbizwins/the-hype-studio-wins-pr-and-communications-mandate-for-talentgum-12238508",
+          "date": "2026-08-07",
+          "companies": [
+            {
+              "name": "The Hype Studio",
+              "url": "https://www.thehypestudio.com"
+            },
+            {
+              "name": "TalentGum",
+              "url": "https://talentgum.com"
+            }
+          ],
+          "people": []
         },
         {
-          "name": "Casagrand",
-          "url": "https://www.casagrand.co.in"
+          "headline": "Snap launches 'human-first' AI-powered MCP server for advertisers",
+          "description": "Snap launched an AI-powered MCP (model context protocol) server for advertisers, following similar moves from Pinterest, TikTok and Meta, as part of its push into agentic, conversational ad formats.",
+          "why_important": "Major platforms standardising on MCP servers for ad buying signals the next infrastructure shift in programmatic and agentic advertising that BD teams need to track for future platform partnerships.",
+          "source_name": "MediaPost",
+          "source_url": "https://www.mediapost.com/publications/article/417048/snap-launches-human-first-ai-powered-mcp-for-adv.html",
+          "date": "2026-08-06",
+          "companies": [
+            {
+              "name": "Snap",
+              "url": "https://www.snap.com"
+            },
+            {
+              "name": "Pinterest",
+              "url": "https://www.pinterest.com"
+            },
+            {
+              "name": "TikTok",
+              "url": "https://www.tiktok.com"
+            },
+            {
+              "name": "Meta",
+              "url": "https://www.meta.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Apostrophe Ventures bags Tilaknagar Industries' corporate PR mandate",
+          "description": "Tilaknagar Industries appointed Apostrophe Ventures as its corporate and brand communications partner following a multi-agency pitch, covering corporate communications and public relations.",
+          "why_important": "A listed liquor major's corporate comms mandate underscores continued PR budget consolidation among regulated-category advertisers.",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/pr/apostrophe-ventures-bags-tilaknagar-industries-corporate-pr-mandate-12226022",
+          "date": "2026-08-04",
+          "companies": [
+            {
+              "name": "Apostrophe Ventures",
+              "url": null
+            },
+            {
+              "name": "Tilaknagar Industries",
+              "url": "https://www.tilind.com"
+            }
+          ],
+          "people": []
         }
       ],
-      "people": []
+      "bucket2": [
+        {
+          "headline": "Nielsen to acquire DoubleVerify in $2.15 billion deal",
+          "description": "Nielsen entered a definitive all-cash agreement to acquire ad-verification and measurement firm DoubleVerify at $13.60/share, an enterprise value of approximately $2.15 billion; the deal is expected to close by Q1 2027.",
+          "why_important": "Combines the two companies into a media-intelligence platform generating over $4 billion in annual revenue, consolidating measurement and verification as advertisers push for AI-era accountability.",
+          "region": "Global",
+          "deal_value": "$2.15 billion",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/announcements-news/nielsen-to-acquire-doubleverify-in-215-billion-deal-157084.html",
+          "date": "2026-08-06",
+          "companies": [
+            {
+              "name": "Nielsen",
+              "url": "https://www.nielsen.com"
+            },
+            {
+              "name": "DoubleVerify",
+              "url": "https://www.doubleverify.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Teads sues Google over alleged anti-competitive adtech practices",
+          "description": "Adtech company Teads filed a lawsuit against Google, alleging ongoing anti-competitive practices in the ad-tech stack.",
+          "why_important": "An active adtech litigation adds to the mounting antitrust pressure on Google's ad-stack dominance, with implications for how programmatic buying/selling tools are regulated globally.",
+          "region": "Global",
+          "deal_value": "",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/advertising-news/teads-sues-google-over-alleged-ongoing-anti-competitive-adtech-practices-157004.html",
+          "date": "2026-08-05",
+          "companies": [
+            {
+              "name": "Teads",
+              "url": "https://www.teads.com"
+            },
+            {
+              "name": "Google",
+              "url": "https://www.google.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Hitek Global to acquire Ju Fu Limited for up to $20 million",
+          "description": "Hitek Global Inc. entered a Share Purchase Agreement to acquire Ju Fu Limited, marking the company's first major move into advertising and digital marketing; the deal values Ju Fu at up to $20 million.",
+          "why_important": "Signals a non-endemic company's entry into digital advertising via acquisition, part of a broader trend of adjacent-industry players buying into ad tech for diversification.",
+          "region": "Global",
+          "deal_value": "up to $20 million",
+          "source_name": "MarTechEdge",
+          "source_url": "https://martechedge.com/news/hitek-moves-into-digital-advertising-with-20m-ju-fu-acquisition-deal",
+          "date": "2026-08-03",
+          "companies": [
+            {
+              "name": "Hitek Global",
+              "url": null
+            },
+            {
+              "name": "Ju Fu Limited",
+              "url": null
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket3": [
+        {
+          "headline": "Snap launches AI-powered MCP server for advertisers",
+          "description": "Snap launched an AI-powered, 'human-first' MCP (model context protocol) server for advertisers, part of a broader agentic-advertising push alongside a revamped Dynamic Product Ads feature using new recommendation models.",
+          "why_important": "A new agentic ad-buying infrastructure standard emerging across major platforms is a genuinely new capability class that will reshape media-buying workflows.",
+          "source_name": "MediaPost",
+          "source_url": "https://www.mediapost.com/publications/article/417048/snap-launches-human-first-ai-powered-mcp-for-adv.html",
+          "date": "2026-08-06",
+          "companies": [
+            {
+              "name": "Snap",
+              "url": "https://www.snap.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket4": [
+        {
+          "person": "Nilesh Kotalwar",
+          "org": "Honasa Consumer",
+          "previous_role": "Marketing leadership role",
+          "new_role_title": "Chief Marketing Officer",
+          "new_company": "Honasa Consumer",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/honasa-consumer-names-nilesh-kotalwar-as-new-cmo-honasa-cmo-ws-l-106889.htm",
+          "date": "2026-08-06",
+          "linkedin_url": "http://www.linkedin.com/in/nileshkotalwar",
+          "company_url": "https://honasa.in"
+        },
+        {
+          "person": "Nandita Sinha",
+          "org": "Swiggy",
+          "previous_role": "Senior leadership role, Swiggy",
+          "new_role_title": "CEO, Swiggy Instamart",
+          "new_company": "Swiggy Instamart",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/swiggy-instamart-ceo-amitesh-kumar-jha-resigns-nandita-sinha-to-take-charge-from-august-3-105778.htm",
+          "date": "2026-08-03",
+          "linkedin_url": null,
+          "company_url": "https://www.swiggy.com/instamart"
+        },
+        {
+          "person": "Siddharth Parakh",
+          "org": "Britannia Industries",
+          "previous_role": "Prior role",
+          "new_role_title": "Head of Strategy & Business Development",
+          "new_company": "Britannia Industries",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/britannia-appoints-siddharth-parakh-as-head-of-strategy-business-development-106428.htm",
+          "date": "2026-08-03",
+          "linkedin_url": null,
+          "company_url": "https://www.britannia.co.in"
+        }
+      ],
+      "bucket5": [],
+      "flagged": {
+        "bucket1": [
+          "Company (unresolved): Apostrophe Ventures — in \"Apostrophe Ventures bags Tilaknagar Industries' corporate PR mandate\""
+        ],
+        "bucket2": [
+          "Company (unresolved): Hitek Global — in \"Hitek Global to acquire Ju Fu Limited for up to $20 million\"",
+          "Company (unresolved): Ju Fu Limited — in \"Hitek Global to acquire Ju Fu Limited for up to $20 million\""
+        ],
+        "bucket3": [],
+        "bucket4": [
+          "Person (unresolved): Nandita Sinha — CEO, Swiggy Instamart at Swiggy Instamart",
+          "Person (unresolved): Siddharth Parakh — Head of Strategy & Business Development at Britannia Industries"
+        ]
+      }
     },
     {
-      "headline": "Maars Communicates wins strategic communications mandate for Studio Blo",
-      "description": "Maars Communicates was appointed strategic communications partner for Studio Blo, handling strategic communications, media relations, thought leadership and digital storytelling.",
-      "why_important": "Illustrates the ongoing appetite among design/creative-tech startups for dedicated PR partners as they scale visibility.",
-      "source_name": "afaqs!",
-      "source_url": "https://www.afaqs.com/news/newbizwins/maars-communicates-wins-strategic-communications-mandate-for-studio-blo-12256823",
-      "date": "2026-08-13",
-      "companies": [
+      "week_start": "2026-07-27",
+      "week_end": "2026-08-03",
+      "bucket1": [
         {
-          "name": "Maars Communicates",
-          "url": null
-        },
-        {
-          "name": "Studio Blo",
-          "url": "https://www.studioblo.com"
+          "headline": "Havas Media India's Arena Media bags Keo Karpin's media mandate",
+          "description": "Arena Media India, part of Havas Media Network India, won the integrated media mandate for hair-care brand Keo Karpin.",
+          "why_important": "A holding-company media network winning a legacy FMCG hair-care brand's business shows continued share shifts among India's media-buying networks.",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/advertising/havas-media-indias-arena-media-bags-keo-karpins-media-mandate-12203606",
+          "date": "2026-07-28",
+          "companies": [
+            {
+              "name": "Havas Media India",
+              "url": "https://in.havas.com/havas-media/"
+            },
+            {
+              "name": "Arena Media",
+              "url": "https://in.havas.com/arena-media/"
+            },
+            {
+              "name": "Keo Karpin",
+              "url": "https://keokarpin.com"
+            }
+          ],
+          "people": []
         }
       ],
-      "people": []
+      "bucket2": [
+        {
+          "headline": "Stagwell to acquire QStrauss Consulting",
+          "description": "Stagwell announced an agreement to acquire QStrauss Consulting, expanding its Adobe-services and consulting capabilities.",
+          "why_important": "Continues Stagwell's active M&A pace of bolt-on acquisitions to build out its digital-transformation and martech consulting arm against larger holding companies.",
+          "region": "Global",
+          "deal_value": "",
+          "source_name": "Kalkine",
+          "source_url": "https://kalkine.com/corporate-actions/merger-acquisitionma/stagwell-nasdaq-stgw-moves-higher-on-qstrauss-acquisition-expanding-adobe-services",
+          "date": "2026-07-27",
+          "companies": [
+            {
+              "name": "Stagwell",
+              "url": "https://www.stagwellglobal.com"
+            },
+            {
+              "name": "QStrauss Consulting",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Hakuhodo acquires majority stake in Mumbai-based Auburn Digital Solutions",
+          "description": "Japanese ad giant Hakuhodo, through its subsidiary AdGlobal360 India, acquired a majority stake in independent Mumbai digital agency Auburn Digital Solutions.",
+          "why_important": "A Japanese holding company deepening its India digital-agency footprint via acquisition shows continued foreign strategic interest in India's fast-growing digital ad market.",
+          "region": "India",
+          "deal_value": "",
+          "source_name": "Web search aggregation (advertisingreporter.com sourcing)",
+          "source_url": "https://www.advertisingreporter.com/category/agency/",
+          "date": "2026",
+          "companies": [
+            {
+              "name": "Hakuhodo",
+              "url": "https://www.hakuhodo.co.jp"
+            },
+            {
+              "name": "AdGlobal360 India",
+              "url": "https://www.adglobal360.com"
+            },
+            {
+              "name": "Auburn Digital Solutions",
+              "url": "https://auburnsolutions.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "One Impression raises $10 million led by Krafton",
+          "description": "Indian influencer-marketing platform One Impression raised $10 million in a funding round led by South Korean gaming company Krafton, to build an Amazon-like marketplace connecting brands with over 7 million creators.",
+          "why_important": "A gaming-company-led investment into India's influencer-marketing infrastructure signals cross-industry confidence in creator-economy tooling as ad budgets shift to influencer spend.",
+          "region": "India",
+          "deal_value": "$10 million",
+          "source_name": "Web search aggregation",
+          "source_url": "https://tracxn.com/d/companies/exchange4media/__VfMYBz2vnMtc7Hgn33Mw_JLnMLqT7oRw7o-xoLPNycQ",
+          "date": "2026",
+          "companies": [
+            {
+              "name": "One Impression",
+              "url": "https://oneimpression.io"
+            },
+            {
+              "name": "Krafton",
+              "url": "https://www.krafton.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket3": [
+        {
+          "headline": "Instagram launches standalone app 'Instants'",
+          "description": "Meta launched Instants, a new Snapchat-like standalone app from Instagram emphasizing raw, unedited content shared as disappearing photos, opening directly to the camera.",
+          "why_important": "A genuinely new consumer app from Meta targeting ephemeral/authentic content signals a fresh platform surface for advertisers and creators to plan for.",
+          "source_name": "Social Media Today",
+          "source_url": "https://www.socialmediatoday.com/news/meta-launches-instagram-spinoff-instants-as-a-standalone-app/818389/",
+          "date": "2026",
+          "companies": [
+            {
+              "name": "Meta",
+              "url": "https://www.meta.com"
+            },
+            {
+              "name": "Instagram",
+              "url": "https://www.instagram.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Meta launches complete AI creative ad ecosystem",
+          "description": "Meta introduced an end-to-end AI creative solution for ad creation and testing, alongside unified creator-partnership tools, unveiled around Cannes Lions 2026.",
+          "why_important": "A full-stack generative-AI creative pipeline from the largest ad platform materially changes how brands and agencies will produce and test ad creative at scale.",
+          "source_name": "MM+M",
+          "source_url": "https://www.mmm-online.com/news/meta-launches-complete-ai-creative-ad-ecosystem/",
+          "date": "2026",
+          "companies": [
+            {
+              "name": "Meta",
+              "url": "https://www.meta.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Shunya Labs launches multilingual Voice AI platform for India",
+          "description": "Shunya Labs introduced a multilingual Voice AI platform designed to help enterprises and government organisations deliver voice-led digital services across India's diverse linguistic landscape.",
+          "why_important": "A new India-specific multilingual voice-AI platform opens a fresh vernacular-engagement channel for brands and government marketing communications.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns",
+          "date": "2026",
+          "companies": [
+            {
+              "name": "Shunya Labs",
+              "url": "https://www.shunyalabs.ai"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Marsia Labs launches AI-powered PR communications platform",
+          "description": "Marsia Labs introduced a new communications platform combining AI tools, human expertise and a shared workspace for public-relations teams working across global markets.",
+          "why_important": "A new category of AI-native PR-workflow tooling could reshape how communications teams manage global campaigns and media outreach.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/latest/new-campaigns",
+          "date": "2026",
+          "companies": [
+            {
+              "name": "Marsia Labs",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Meta launches advanced AI ad features including enhanced text generation",
+          "description": "Meta rolled out enhanced AI text-generation tools for advertisers that produce headline and caption options, improved multi-language translation, and a streamlined creative-approval workflow.",
+          "why_important": "Broadens Meta's generative-AI ad-creation suite, directly impacting how performance marketers produce localized ad copy at scale.",
+          "source_name": "Social Media Today",
+          "source_url": "https://www.socialmediatoday.com/news/meta-launches-advanced-ai-ad-features/823591/",
+          "date": "2026",
+          "companies": [
+            {
+              "name": "Meta",
+              "url": "https://www.meta.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Meta expands live shopping tools to Facebook and Instagram globally",
+          "description": "Meta is expanding live video ads to Instagram and rolling out new live-shopping tools on Facebook globally, letting marketers display promoted products during a broadcast for in-stream purchase.",
+          "why_important": "A significant new commerce-and-advertising capability tying live content directly to purchase, relevant for D2C and retail brands building shoppable-video strategies.",
+          "source_name": "Social Media Today",
+          "source_url": "https://www.socialmediatoday.com/news/meta-updates-its-livestream-shopping-tools/823223/",
+          "date": "2026",
+          "companies": [
+            {
+              "name": "Meta",
+              "url": "https://www.meta.com"
+            },
+            {
+              "name": "Facebook",
+              "url": "https://www.facebook.com"
+            },
+            {
+              "name": "Instagram",
+              "url": "https://www.instagram.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket4": [
+        {
+          "person": "Aswin K",
+          "org": "Singapore Airlines",
+          "previous_role": "General Manager, Italy, Singapore Airlines",
+          "new_role_title": "General Manager, India",
+          "new_company": "Singapore Airlines",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/people-movement-news/singapore-airlines-names-aswin-k-as-general-manager-india-157153.html",
+          "date": "2026-08-01",
+          "linkedin_url": "http://www.linkedin.com/in/aswin-k-b3812ba4",
+          "company_url": "https://www.singaporeair.com"
+        },
+        {
+          "person": "Bikram Basu",
+          "org": "Allied Blenders and Distillers",
+          "previous_role": "Marketing leadership role",
+          "new_role_title": "Group Chief Marketing and Innovation Officer",
+          "new_company": "Allied Blenders and Distillers",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/allied-blenders-elevates-bikram-basu-as-group-chief-marketing-and-innovation-officer-in-leadership-reshuffle-105331.htm",
+          "date": "2026-08-01",
+          "linkedin_url": "http://www.linkedin.com/in/bikram-basu-07662528",
+          "company_url": "https://www.abdindia.com"
+        },
+        {
+          "person": "Ratnesh Pandey",
+          "org": "Schneider Electric",
+          "previous_role": "Marketing role, Schneider Electric",
+          "new_role_title": "Vice President, Marketing, India",
+          "new_company": "Schneider Electric",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
+          "date": "2026-08-01",
+          "linkedin_url": "http://www.linkedin.com/in/ratnesh-pandey-151625113",
+          "company_url": "https://www.se.com"
+        },
+        {
+          "person": "Kelly Beaver",
+          "org": "Ipsos UK and Ireland",
+          "previous_role": "CEO, Ipsos UK and Ireland",
+          "new_role_title": "Chief Executive Officer",
+          "new_company": "Ipsos",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/ipsos-appoints-kelly-beaver-as-chief-executive-officer-12215918",
+          "date": "2026-07-31",
+          "linkedin_url": "http://www.linkedin.com/in/kellybeavermbe",
+          "company_url": "https://www.ipsos.com"
+        }
+      ],
+      "bucket5": [],
+      "flagged": {
+        "bucket1": [],
+        "bucket2": [
+          "Company (unresolved): QStrauss Consulting — in \"Stagwell to acquire QStrauss Consulting\""
+        ],
+        "bucket3": [
+          "Company (unresolved): Marsia Labs — in \"Marsia Labs launches AI-powered PR communications platform\""
+        ],
+        "bucket4": []
+      }
     },
     {
-      "headline": "McCann India wins integrated creative mandate for 3M Consumer Business",
-      "description": "McCann India was appointed as the integrated creative partner for 3M's Consumer Business in India following a multi-agency pitch, covering brands including Scotch-Brite, Command and Meguiar's.",
-      "why_important": "A multi-brand FMCG-adjacent mandate from a major MNC won through a competitive pitch signals continued agency consolidation activity in India's creative market.",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/advertising/mccann-india-wins-integrated-creative-mandate-for-3m-consumer-business-12250051",
-      "date": "2026-08-11",
-      "companies": [
+      "week_start": "2026-07-13",
+      "week_end": "2026-07-20",
+      "bucket1": [
         {
-          "name": "McCann India",
-          "url": "https://www.mccann.com"
+          "headline": "AnyMind Group launches AI-powered AnyAI DSP advertising platform",
+          "description": "AnyMind Group launched AnyAI DSP, an AI-driven demand-side platform to help app and performance marketers improve transparency, optimisation and campaign performance across mobile and digital media buying.",
+          "why_important": "A regional adtech player launching a proprietary AI DSP signals continued fragmentation/innovation in programmatic buying tools outside the Google/Meta duopoly.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/anymind-group-launches-ai-powered-anyai-dsp-platform/4evc5wp03wv3f2532ehd6mhjd8",
+          "date": "2026-07-17",
+          "companies": [
+            {
+              "name": "AnyMind Group",
+              "url": "https://anymindgroup.com"
+            }
+          ],
+          "people": []
         },
         {
-          "name": "3M",
-          "url": "https://www.3m.com"
+          "headline": "HiveMinds wins Dr. Reddy's digital mandate",
+          "description": "Digital agency HiveMinds won the digital mandate for pharma major Dr. Reddy's.",
+          "why_important": "Pharma/healthcare brands increasing digital-first spend is a category BD teams should track as regulatory-heavy advertisers modernize.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/hiveminds-wins-dr-reddy-s-digital-mandate/42e47s320taecr6z4scdah4sx0",
+          "date": "2026-07",
+          "companies": [
+            {
+              "name": "HiveMinds",
+              "url": "https://www.hiveminds.in"
+            },
+            {
+              "name": "Dr. Reddy's",
+              "url": "https://www.drreddys.com"
+            }
+          ],
+          "people": []
         },
         {
-          "name": "Scotch-Brite",
-          "url": "https://www.scotch-brite.com"
+          "headline": "Air India launches 'Change is in the Air' brand campaign",
+          "description": "Air India launched a new brand campaign built around the creative line 'That's Air India Now,' with five films showcasing refurbished cabins, elevated inflight dining and improved digital experience as part of its ongoing transformation drive.",
+          "why_important": "A large-scale national carrier brand relaunch is a marquee creative mandate showcasing sustained investment behind India's aviation turnaround story.",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/industry-briefing-news/air-india-launches-new-brand-campaign-as-part-of-its-2026-transformation-drive-150190.html",
+          "date": "2026-07",
+          "companies": [
+            {
+              "name": "Air India",
+              "url": "https://www.airindia.com"
+            }
+          ],
+          "people": []
         },
         {
-          "name": "Command",
-          "url": "https://www.command.com"
+          "headline": "Zepto stages live 10-minute delivery guerrilla activation",
+          "description": "Zepto set up activation booths in Bangalore and Mumbai where orders had to be delivered within 10 minutes or were free, capturing unedited countdown footage for Instagram Reels to prove its delivery promise live.",
+          "why_important": "A quick-commerce brand turning its core product claim into a public, filmable stunt shows how category leaders are using proof-based guerrilla marketing to build trust versus pure discounting.",
+          "source_name": "CupShup",
+          "source_url": "https://www.cupshup.co.in/blog/guerrilla-marketing-ads-india",
+          "date": "2026-07",
+          "companies": [
+            {
+              "name": "Zepto",
+              "url": "https://www.zeptonow.com"
+            }
+          ],
+          "people": []
         },
         {
-          "name": "Meguiar's",
-          "url": "https://www.meguiars.com"
+          "headline": "Godrej x Swiggy Instamart 'house keys' campaign wins Cannes Gold Lion",
+          "description": "Godrej partnered with Swiggy Instamart in Bengaluru to slip miniature house keys into grocery delivery bags, with a QR code linking to more information — a near-zero-media-cost stunt that generated massive organic participation and won a Cannes Gold Lion.",
+          "why_important": "A low-cost activation earning global creative-award recognition demonstrates how India-born guerrilla ideas are now winning on the world stage, raising the bar for stunt-led BD pitches.",
+          "source_name": "CupShup",
+          "source_url": "https://www.cupshup.co.in/blog/guerrilla-marketing-ads-india",
+          "date": "2026-07",
+          "companies": [
+            {
+              "name": "Godrej",
+              "url": "https://www.godrej.com"
+            },
+            {
+              "name": "Swiggy Instamart",
+              "url": "https://www.swiggy.com/instamart"
+            }
+          ],
+          "people": []
         }
       ],
-      "people": []
+      "bucket2": [
+        {
+          "headline": "Omnicom merges Mediahub and Hearts & Science into single global media network",
+          "description": "Omnicom announced it is merging its Mediahub and Hearts & Science media agencies into a single global network spanning 40 markets with roughly $9.1 billion in annual billings, led by Hearts & Science CEO Garrett O'Reilly.",
+          "why_important": "Part of the post-IPG-merger restructuring at the world's largest ad holding company, consolidating billings and headcount as Omnicom integrates its enlarged media-buying footprint.",
+          "region": "Global",
+          "deal_value": "$9.1 billion in combined billings",
+          "source_name": "Adweek",
+          "source_url": "https://www.adweek.com/agencies/ipg-omnicom-merger-mediabrands-orion-omnet-analysis/",
+          "date": "2026-07",
+          "companies": [
+            {
+              "name": "Omnicom",
+              "url": "https://www.omnicomgroup.com"
+            },
+            {
+              "name": "Mediahub",
+              "url": "https://www.mediahubww.com"
+            },
+            {
+              "name": "Hearts & Science",
+              "url": "https://www.heartsandscience.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Garrett O'Reilly",
+              "linkedin_url": "http://www.linkedin.com/in/garrett-oreilly"
+            }
+          ]
+        }
+      ],
+      "bucket3": [
+        {
+          "headline": "AnyMind Group launches AI-powered AnyAI DSP",
+          "description": "AnyMind Group launched AnyAI DSP, a new AI-driven demand-side platform combining predictive analytics, campaign optimisation and performance measurement for programmatic advertising.",
+          "why_important": "A genuinely new programmatic buying platform entering the market gives agencies an additional AI-native DSP option outside the dominant walled gardens.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/anymind-group-launches-ai-powered-anyai-dsp-platform/4evc5wp03wv3f2532ehd6mhjd8",
+          "date": "2026-07-17",
+          "companies": [
+            {
+              "name": "AnyMind Group",
+              "url": "https://anymindgroup.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Google launches Gemini-powered ad and commerce tools for Indian businesses",
+          "description": "At Google Marketing Live 2026, Google launched a suite of Gemini-powered advertising and commerce tools for Indian businesses, including Business Agent for Leads (beta in India), YouTube BrandStack (an India-developed unified planning/buying/measurement workflow), and AI Max for Shopping.",
+          "why_important": "A dedicated India-first AI ad-tooling launch from Google is a significant new capability set that will directly affect how agencies plan and buy search/YouTube/shopping campaigns locally.",
+          "source_name": "NewsBytes",
+          "source_url": "https://www.newsbytesapp.com/news/science/google-brings-gemini-ai-marketing-tools-to-indian-businesses/story",
+          "date": "2026-07",
+          "companies": [
+            {
+              "name": "Google",
+              "url": "https://www.google.com"
+            },
+            {
+              "name": "YouTube",
+              "url": "https://www.youtube.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket4": [
+        {
+          "person": "Jesse Julka",
+          "org": "Prior role",
+          "previous_role": "Prior leadership role",
+          "new_role_title": "Chief Executive Officer",
+          "new_company": "Prakul Bakshi Events",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/people-movement-news/jesse-julka-appointed-ceo-of-prakul-bakshi-events-156247.html",
+          "date": "2026-07",
+          "linkedin_url": "http://www.linkedin.com/in/thisisjessej",
+          "company_url": null
+        }
+      ],
+      "bucket5": [],
+      "flagged": {
+        "bucket1": [],
+        "bucket2": [],
+        "bucket3": [],
+        "bucket4": [
+          "Company (unresolved): Prakul Bakshi Events — re: Jesse Julka"
+        ]
+      }
     },
     {
-      "headline": "The Minimalist wins integrated digital mandate for TyresNmore",
-      "description": "The Minimalist was appointed integrated digital agency for TyresNmore, covering brand strategy, creative and content development, social media management and performance marketing.",
-      "why_important": "A full-funnel digital mandate for an e-commerce/auto-parts challenger brand reflects continued D2C ad spend growth in India's mid-market segment.",
-      "source_name": "afaqs!",
-      "source_url": "https://www.afaqs.com/news/newbizwins/the-minimalist-wins-integrated-digital-mandate-for-tyresnmore-12249540",
-      "date": "2026-08-11",
-      "companies": [
+      "week_start": "2026-06-29",
+      "week_end": "2026-07-06",
+      "bucket1": [
         {
-          "name": "The Minimalist",
-          "url": "https://beminimalist.co"
-        },
-        {
-          "name": "TyresNmore",
-          "url": "https://www.tyresnmore.com"
+          "headline": "BigTrunk Communications wins Wonder Cement media mandate",
+          "description": "BigTrunk Communications won Wonder Cement's integrated media mandate, covering strategy, planning, buying and performance across digital and traditional platforms.",
+          "why_important": "Infrastructure/building-materials category media budgets moving to specialist agencies signal expanding ad spend outside the usual FMCG/tech categories.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/bigtrunk-communications-wins-wonder-cement-media-mandate/4f2ks8478nc5eze42ecz2mk5da",
+          "date": "2026-07-05",
+          "companies": [
+            {
+              "name": "BigTrunk Communications",
+              "url": "https://bigtrunk.co.in"
+            },
+            {
+              "name": "Wonder Cement",
+              "url": "https://www.wondercement.com"
+            }
+          ],
+          "people": []
         }
       ],
-      "people": []
+      "bucket2": [],
+      "bucket3": [],
+      "bucket4": [],
+      "bucket5": [],
+      "flagged": {
+        "bucket1": [],
+        "bucket2": [],
+        "bucket3": [],
+        "bucket4": []
+      }
     },
     {
-      "headline": "The Hype Studio wins PR and communications mandate for TalentGum",
-      "description": "The Hype Studio secured the public relations and communications mandate for edtech platform TalentGum.",
-      "why_important": "Edtech remains an active PR-spend category in India even after 2023-24's funding slowdown, a signal for agency BD teams targeting the sector.",
-      "source_name": "afaqs!",
-      "source_url": "https://www.afaqs.com/news/newbizwins/the-hype-studio-wins-pr-and-communications-mandate-for-talentgum-12238508",
-      "date": "2026-08-07",
-      "companies": [
+      "week_start": "2026-05-18",
+      "week_end": "2026-05-25",
+      "bucket1": [],
+      "bucket2": [
         {
-          "name": "The Hype Studio",
-          "url": "https://www.thehypestudio.com"
-        },
-        {
-          "name": "TalentGum",
-          "url": "https://talentgum.com"
+          "headline": "Publicis Groupe to acquire LiveRamp for $2.167 billion",
+          "description": "Publicis Groupe announced an all-cash deal to acquire data-connectivity platform LiveRamp for a total enterprise value of $2.167 billion, at $38.50 per share.",
+          "why_important": "Deepens Publicis's first-party data and identity-resolution capabilities amid the cookieless advertising shift, extending its lead as the world's second-largest agency holding company.",
+          "region": "Global",
+          "deal_value": "$2.167 billion",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/announcements-news/publicis-groupe-to-acquire-liveramp-154717.html",
+          "date": "2026-05-18",
+          "companies": [
+            {
+              "name": "Publicis Groupe",
+              "url": "https://www.publicisgroupe.com"
+            },
+            {
+              "name": "LiveRamp",
+              "url": "https://liveramp.com"
+            }
+          ],
+          "people": []
         }
       ],
-      "people": []
+      "bucket3": [],
+      "bucket4": [],
+      "bucket5": [],
+      "flagged": {
+        "bucket1": [],
+        "bucket2": [],
+        "bucket3": [],
+        "bucket4": []
+      }
     },
     {
-      "headline": "Snap launches 'human-first' AI-powered MCP server for advertisers",
-      "description": "Snap launched an AI-powered MCP (model context protocol) server for advertisers, following similar moves from Pinterest, TikTok and Meta, as part of its push into agentic, conversational ad formats.",
-      "why_important": "Major platforms standardising on MCP servers for ad buying signals the next infrastructure shift in programmatic and agentic advertising that BD teams need to track for future platform partnerships.",
-      "source_name": "MediaPost",
-      "source_url": "https://www.mediapost.com/publications/article/417048/snap-launches-human-first-ai-powered-mcp-for-adv.html",
-      "date": "2026-08-06",
-      "companies": [
+      "week_start": "2026-03-09",
+      "week_end": "2026-03-16",
+      "bucket1": [],
+      "bucket2": [
         {
-          "name": "Snap",
-          "url": "https://www.snap.com"
-        },
-        {
-          "name": "Pinterest",
-          "url": "https://www.pinterest.com"
-        },
-        {
-          "name": "TikTok",
-          "url": "https://www.tiktok.com"
-        },
-        {
-          "name": "Meta",
-          "url": "https://www.meta.com"
+          "headline": "AdCounty Media India acquires 99.95% of Adaxx Adtech & Media for $1.09 million",
+          "description": "AdCounty Media India acquired 99.95% of Delhi-based Adaxx Adtech & Media LLP in a cash deal totaling approximately $1.09 million.",
+          "why_important": "A small but notable adtech consolidation deal in India's fragmented digital-advertising services market.",
+          "region": "India",
+          "deal_value": "$1.09 million",
+          "source_name": "Contentgrip",
+          "source_url": "https://www.contentgrip.com/adcounty-adaxx-acquisition/",
+          "date": "2026-03",
+          "companies": [
+            {
+              "name": "AdCounty Media India",
+              "url": "https://www.adcountymedia.com"
+            },
+            {
+              "name": "Adaxx Adtech & Media",
+              "url": "https://adaxx.com"
+            }
+          ],
+          "people": []
         }
       ],
-      "people": []
-    },
-    {
-      "headline": "Apostrophe Ventures bags Tilaknagar Industries' corporate PR mandate",
-      "description": "Tilaknagar Industries appointed Apostrophe Ventures as its corporate and brand communications partner following a multi-agency pitch, covering corporate communications and public relations.",
-      "why_important": "A listed liquor major's corporate comms mandate underscores continued PR budget consolidation among regulated-category advertisers.",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/pr/apostrophe-ventures-bags-tilaknagar-industries-corporate-pr-mandate-12226022",
-      "date": "2026-08-04",
-      "companies": [
-        {
-          "name": "Apostrophe Ventures",
-          "url": null
-        },
-        {
-          "name": "Tilaknagar Industries",
-          "url": "https://www.tilind.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot",
-      "description": "Alpino introduced an upgraded High Protein Oats range alongside a celebrity-led campaign featuring wrestler The Great Khali and Mukesh Gahlot to highlight product innovation and protein-focused nutrition.",
-      "why_important": "Reflects the continuing D2C health-food boom in India and celebrity-led creative as a go-to-market lever for challenger nutrition brands.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns",
-      "date": "2026-08",
-      "companies": [
-        {
-          "name": "Alpino",
-          "url": "https://alpino.store"
-        }
-      ],
-      "people": [
-        {
-          "name": "The Great Khali",
-          "linkedin_url": null
-        },
-        {
-          "name": "Mukesh Gahlot",
-          "linkedin_url": null
-        }
-      ]
-    },
-    {
-      "headline": "McDonald's India North & East runs FIFA World Cup 2026 campaign",
-      "description": "McDonald's India (North & East operations) launched a FIFA World Cup 2026 tie-in campaign featuring themed meals and limited-edition football collectibles.",
-      "why_important": "Shows QSR brands continuing to lean on global sporting tentpoles for footfall and social engagement during India's high-attention cricket-and-football season.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns",
-      "date": "2026-08",
-      "companies": [
-        {
-          "name": "McDonald's India",
-          "url": "https://www.mcdonaldsindia.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Flipkart's GOAT Sale campaign features viral 'buffalo Don'",
-      "description": "Flipkart's latest GOAT Sale campaign uses humour and a viral buffalo character named Don to spotlight daily offers during the promotional sale event.",
-      "why_important": "Illustrates e-commerce majors continuing to invest in meme-able, humour-led creative to cut through clutter during high-stakes sale-season campaigns.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns",
-      "date": "2026-08",
-      "companies": [
-        {
-          "name": "Flipkart",
-          "url": "https://www.flipkart.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "SOCIAL's #DoosraStadium 2026 campaign combines live cricket and dining",
-      "description": "Restaurant chain SOCIAL ran its #DoosraStadium 2026 campaign combining live cricket screenings, themed food and digital storytelling across nine cities to boost consumer engagement.",
-      "why_important": "Shows F&B/hospitality brands using live-sport screenings as an experiential marketing hook to drive footfall across multi-city outlets.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns",
-      "date": "2026-08",
-      "companies": [
-        {
-          "name": "SOCIAL",
-          "url": "https://socialoffline.in"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Havas Media India's Arena Media bags Keo Karpin's media mandate",
-      "description": "Arena Media India, part of Havas Media Network India, won the integrated media mandate for hair-care brand Keo Karpin.",
-      "why_important": "A holding-company media network winning a legacy FMCG hair-care brand's business shows continued share shifts among India's media-buying networks.",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/advertising/havas-media-indias-arena-media-bags-keo-karpins-media-mandate-12203606",
-      "date": "2026-07-28",
-      "companies": [
-        {
-          "name": "Havas Media India",
-          "url": "https://in.havas.com/havas-media/"
-        },
-        {
-          "name": "Arena Media",
-          "url": "https://in.havas.com/arena-media/"
-        },
-        {
-          "name": "Keo Karpin",
-          "url": "https://keokarpin.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "AnyMind Group launches AI-powered AnyAI DSP advertising platform",
-      "description": "AnyMind Group launched AnyAI DSP, an AI-driven demand-side platform to help app and performance marketers improve transparency, optimisation and campaign performance across mobile and digital media buying.",
-      "why_important": "A regional adtech player launching a proprietary AI DSP signals continued fragmentation/innovation in programmatic buying tools outside the Google/Meta duopoly.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/article/anymind-group-launches-ai-powered-anyai-dsp-platform/4evc5wp03wv3f2532ehd6mhjd8",
-      "date": "2026-07-17",
-      "companies": [
-        {
-          "name": "AnyMind Group",
-          "url": "https://anymindgroup.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "BigTrunk Communications wins Wonder Cement media mandate",
-      "description": "BigTrunk Communications won Wonder Cement's integrated media mandate, covering strategy, planning, buying and performance across digital and traditional platforms.",
-      "why_important": "Infrastructure/building-materials category media budgets moving to specialist agencies signal expanding ad spend outside the usual FMCG/tech categories.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/article/bigtrunk-communications-wins-wonder-cement-media-mandate/4f2ks8478nc5eze42ecz2mk5da",
-      "date": "2026-07-05",
-      "companies": [
-        {
-          "name": "BigTrunk Communications",
-          "url": "https://bigtrunk.co.in"
-        },
-        {
-          "name": "Wonder Cement",
-          "url": "https://www.wondercement.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "HiveMinds wins Dr. Reddy's digital mandate",
-      "description": "Digital agency HiveMinds won the digital mandate for pharma major Dr. Reddy's.",
-      "why_important": "Pharma/healthcare brands increasing digital-first spend is a category BD teams should track as regulatory-heavy advertisers modernize.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/article/hiveminds-wins-dr-reddy-s-digital-mandate/42e47s320taecr6z4scdah4sx0",
-      "date": "2026-07",
-      "companies": [
-        {
-          "name": "HiveMinds",
-          "url": "https://www.hiveminds.in"
-        },
-        {
-          "name": "Dr. Reddy's",
-          "url": "https://www.drreddys.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Air India launches 'Change is in the Air' brand campaign",
-      "description": "Air India launched a new brand campaign built around the creative line 'That's Air India Now,' with five films showcasing refurbished cabins, elevated inflight dining and improved digital experience as part of its ongoing transformation drive.",
-      "why_important": "A large-scale national carrier brand relaunch is a marquee creative mandate showcasing sustained investment behind India's aviation turnaround story.",
-      "source_name": "Exchange4media",
-      "source_url": "https://www.exchange4media.com/industry-briefing-news/air-india-launches-new-brand-campaign-as-part-of-its-2026-transformation-drive-150190.html",
-      "date": "2026-07",
-      "companies": [
-        {
-          "name": "Air India",
-          "url": "https://www.airindia.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Zepto stages live 10-minute delivery guerrilla activation",
-      "description": "Zepto set up activation booths in Bangalore and Mumbai where orders had to be delivered within 10 minutes or were free, capturing unedited countdown footage for Instagram Reels to prove its delivery promise live.",
-      "why_important": "A quick-commerce brand turning its core product claim into a public, filmable stunt shows how category leaders are using proof-based guerrilla marketing to build trust versus pure discounting.",
-      "source_name": "CupShup",
-      "source_url": "https://www.cupshup.co.in/blog/guerrilla-marketing-ads-india",
-      "date": "2026-07",
-      "companies": [
-        {
-          "name": "Zepto",
-          "url": "https://www.zeptonow.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Godrej x Swiggy Instamart 'house keys' campaign wins Cannes Gold Lion",
-      "description": "Godrej partnered with Swiggy Instamart in Bengaluru to slip miniature house keys into grocery delivery bags, with a QR code linking to more information — a near-zero-media-cost stunt that generated massive organic participation and won a Cannes Gold Lion.",
-      "why_important": "A low-cost activation earning global creative-award recognition demonstrates how India-born guerrilla ideas are now winning on the world stage, raising the bar for stunt-led BD pitches.",
-      "source_name": "CupShup",
-      "source_url": "https://www.cupshup.co.in/blog/guerrilla-marketing-ads-india",
-      "date": "2026-07",
-      "companies": [
-        {
-          "name": "Godrej",
-          "url": "https://www.godrej.com"
-        },
-        {
-          "name": "Swiggy Instamart",
-          "url": "https://www.swiggy.com/instamart"
-        }
-      ],
-      "people": []
+      "bucket3": [],
+      "bucket4": [],
+      "bucket5": [],
+      "flagged": {
+        "bucket1": [],
+        "bucket2": [],
+        "bucket3": [],
+        "bucket4": []
+      }
     }
   ],
-  "bucket2": [
-    {
-      "headline": "Meta, Google and others face thousands of social-media addiction lawsuits in the US",
-      "description": "Meta, Google and other social platforms are set to face thousands of alleged social-media-addiction lawsuits in US courts.",
-      "why_important": "Mass litigation risk against the largest ad platforms could shape future platform policy, youth-safety features, and advertiser trust considerations.",
-      "region": "Global",
-      "deal_value": "",
-      "source_name": "Exchange4media",
-      "source_url": "https://www.exchange4media.com/digital-news/meta-google-others-to-face-thousands-of-alleged-social-media-addiction-lawsuits-in-us-157180.html",
-      "date": "2026-08-11",
-      "companies": [
-        {
-          "name": "Meta",
-          "url": "https://www.meta.com"
-        },
-        {
-          "name": "Google",
-          "url": "https://www.google.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Nielsen to acquire DoubleVerify in $2.15 billion deal",
-      "description": "Nielsen entered a definitive all-cash agreement to acquire ad-verification and measurement firm DoubleVerify at $13.60/share, an enterprise value of approximately $2.15 billion; the deal is expected to close by Q1 2027.",
-      "why_important": "Combines the two companies into a media-intelligence platform generating over $4 billion in annual revenue, consolidating measurement and verification as advertisers push for AI-era accountability.",
-      "region": "Global",
-      "deal_value": "$2.15 billion",
-      "source_name": "Exchange4media",
-      "source_url": "https://www.exchange4media.com/announcements-news/nielsen-to-acquire-doubleverify-in-215-billion-deal-157084.html",
-      "date": "2026-08-06",
-      "companies": [
-        {
-          "name": "Nielsen",
-          "url": "https://www.nielsen.com"
-        },
-        {
-          "name": "DoubleVerify",
-          "url": "https://www.doubleverify.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Teads sues Google over alleged anti-competitive adtech practices",
-      "description": "Adtech company Teads filed a lawsuit against Google, alleging ongoing anti-competitive practices in the ad-tech stack.",
-      "why_important": "An active adtech litigation adds to the mounting antitrust pressure on Google's ad-stack dominance, with implications for how programmatic buying/selling tools are regulated globally.",
-      "region": "Global",
-      "deal_value": "",
-      "source_name": "Exchange4media",
-      "source_url": "https://www.exchange4media.com/advertising-news/teads-sues-google-over-alleged-ongoing-anti-competitive-adtech-practices-157004.html",
-      "date": "2026-08-05",
-      "companies": [
-        {
-          "name": "Teads",
-          "url": "https://www.teads.com"
-        },
-        {
-          "name": "Google",
-          "url": "https://www.google.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Hitek Global to acquire Ju Fu Limited for up to $20 million",
-      "description": "Hitek Global Inc. entered a Share Purchase Agreement to acquire Ju Fu Limited, marking the company's first major move into advertising and digital marketing; the deal values Ju Fu at up to $20 million.",
-      "why_important": "Signals a non-endemic company's entry into digital advertising via acquisition, part of a broader trend of adjacent-industry players buying into ad tech for diversification.",
-      "region": "Global",
-      "deal_value": "up to $20 million",
-      "source_name": "MarTechEdge",
-      "source_url": "https://martechedge.com/news/hitek-moves-into-digital-advertising-with-20m-ju-fu-acquisition-deal",
-      "date": "2026-08-03",
-      "companies": [
-        {
-          "name": "Hitek Global",
-          "url": null
-        },
-        {
-          "name": "Ju Fu Limited",
-          "url": null
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Dentsu reviewing sale of its international business",
-      "description": "Dentsu confirmed it is reviewing strategic options to enhance corporate value, including a possible sale of its international (non-Japan) business, with bankers hired to evaluate options.",
-      "why_important": "A potential breakup of one of the 'big five' global holding companies would be one of the largest agency-industry restructurings in years, reshaping the competitive landscape for media and creative mandates worldwide.",
-      "region": "Global",
-      "deal_value": "",
-      "source_name": "Storyboard18",
-      "source_url": "https://www.storyboard18.com/advertising/havas-signals-interest-in-buying-dentsus-international-unit-after-strong-q3-performance-82655.htm",
-      "date": "2026-08",
-      "companies": [
-        {
-          "name": "Dentsu",
-          "url": "https://www.dentsu.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Havas signals interest in buying parts of Dentsu's international unit",
-      "description": "Havas CFO/COO François Laroze said the French holding company 'certainly would consider' acquiring or partnering on parts of Dentsu's international network, though not the entire business.",
-      "why_important": "Signals a new wave of consolidation among the remaining independent-ish holding companies as scale becomes decisive in AI-era media buying.",
-      "region": "Global",
-      "deal_value": "",
-      "source_name": "MM+M",
-      "source_url": "https://www.mmm-online.com/news/havas-could-be-interested-to-buy-or-partner-with-some-of-dentsus-international-assets/",
-      "date": "2026-08",
-      "companies": [
-        {
-          "name": "Havas",
-          "url": "https://www.havas.com"
-        },
-        {
-          "name": "Dentsu",
-          "url": "https://www.dentsu.com"
-        }
-      ],
-      "people": [
-        {
-          "name": "François Laroze",
-          "linkedin_url": null
-        }
-      ]
-    },
-    {
-      "headline": "Viant Technology to acquire TVision Insights for $40 million",
-      "description": "Viant Technology, a CTV and AI-powered programmatic advertising company, entered a definitive agreement to acquire attention-measurement provider TVision Insights for $40.0 million total consideration.",
-      "why_important": "Adds second-by-second attention measurement to Viant's programmatic stack, part of a broader push by ad-tech platforms to prove ROI as advertisers demand attention-based (not just impression-based) metrics.",
-      "region": "Global",
-      "deal_value": "$40 million",
-      "source_name": "MarTech Series",
-      "source_url": "https://martechseries.com/sales-marketing/programmatic-buying/martech-acquisition-viant-to-acquire-tvision/",
-      "date": "2026-08",
-      "companies": [
-        {
-          "name": "Viant Technology",
-          "url": "https://www.viantinc.com"
-        },
-        {
-          "name": "TVision Insights",
-          "url": "https://www.tvisioninsights.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Stagwell acquires experiential marketing agency JetFuel",
-      "description": "Stagwell acquired JetFuel, an experiential marketing services agency, which will become a subsidiary of Stagwell's integrated experiential agency TEAM.",
-      "why_important": "Reflects continued roll-up of experiential/event marketing specialists by holding companies as brands increase in-person activation budgets post-pandemic.",
-      "region": "Global",
-      "deal_value": "",
-      "source_name": "TipRanks / The Fly",
-      "source_url": "https://www.tipranks.com/news/the-fly/stagwell-acquires-jetfuel",
-      "date": "2026-08",
-      "companies": [
-        {
-          "name": "Stagwell",
-          "url": "https://www.stagwellglobal.com"
-        },
-        {
-          "name": "JetFuel",
-          "url": "https://www.jetfuelstudio.com"
-        },
-        {
-          "name": "TEAM",
-          "url": null
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Stagwell to acquire QStrauss Consulting",
-      "description": "Stagwell announced an agreement to acquire QStrauss Consulting, expanding its Adobe-services and consulting capabilities.",
-      "why_important": "Continues Stagwell's active M&A pace of bolt-on acquisitions to build out its digital-transformation and martech consulting arm against larger holding companies.",
-      "region": "Global",
-      "deal_value": "",
-      "source_name": "Kalkine",
-      "source_url": "https://kalkine.com/corporate-actions/merger-acquisitionma/stagwell-nasdaq-stgw-moves-higher-on-qstrauss-acquisition-expanding-adobe-services",
-      "date": "2026-07-27",
-      "companies": [
-        {
-          "name": "Stagwell",
-          "url": "https://www.stagwellglobal.com"
-        },
-        {
-          "name": "QStrauss Consulting",
-          "url": null
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Omnicom merges Mediahub and Hearts & Science into single global media network",
-      "description": "Omnicom announced it is merging its Mediahub and Hearts & Science media agencies into a single global network spanning 40 markets with roughly $9.1 billion in annual billings, led by Hearts & Science CEO Garrett O'Reilly.",
-      "why_important": "Part of the post-IPG-merger restructuring at the world's largest ad holding company, consolidating billings and headcount as Omnicom integrates its enlarged media-buying footprint.",
-      "region": "Global",
-      "deal_value": "$9.1 billion in combined billings",
-      "source_name": "Adweek",
-      "source_url": "https://www.adweek.com/agencies/ipg-omnicom-merger-mediabrands-orion-omnet-analysis/",
-      "date": "2026-07",
-      "companies": [
-        {
-          "name": "Omnicom",
-          "url": "https://www.omnicomgroup.com"
-        },
-        {
-          "name": "Mediahub",
-          "url": "https://www.mediahubww.com"
-        },
-        {
-          "name": "Hearts & Science",
-          "url": "https://www.heartsandscience.com"
-        }
-      ],
-      "people": [
-        {
-          "name": "Garrett O'Reilly",
-          "linkedin_url": "http://www.linkedin.com/in/garrett-oreilly"
-        }
-      ]
-    },
-    {
-      "headline": "Publicis Groupe to acquire LiveRamp for $2.167 billion",
-      "description": "Publicis Groupe announced an all-cash deal to acquire data-connectivity platform LiveRamp for a total enterprise value of $2.167 billion, at $38.50 per share.",
-      "why_important": "Deepens Publicis's first-party data and identity-resolution capabilities amid the cookieless advertising shift, extending its lead as the world's second-largest agency holding company.",
-      "region": "Global",
-      "deal_value": "$2.167 billion",
-      "source_name": "Exchange4media",
-      "source_url": "https://www.exchange4media.com/announcements-news/publicis-groupe-to-acquire-liveramp-154717.html",
-      "date": "2026-05-18",
-      "companies": [
-        {
-          "name": "Publicis Groupe",
-          "url": "https://www.publicisgroupe.com"
-        },
-        {
-          "name": "LiveRamp",
-          "url": "https://liveramp.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "AdCounty Media India acquires 99.95% of Adaxx Adtech & Media for $1.09 million",
-      "description": "AdCounty Media India acquired 99.95% of Delhi-based Adaxx Adtech & Media LLP in a cash deal totaling approximately $1.09 million.",
-      "why_important": "A small but notable adtech consolidation deal in India's fragmented digital-advertising services market.",
-      "region": "India",
-      "deal_value": "$1.09 million",
-      "source_name": "Contentgrip",
-      "source_url": "https://www.contentgrip.com/adcounty-adaxx-acquisition/",
-      "date": "2026-03",
-      "companies": [
-        {
-          "name": "AdCounty Media India",
-          "url": "https://www.adcountymedia.com"
-        },
-        {
-          "name": "Adaxx Adtech & Media",
-          "url": "https://adaxx.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Hakuhodo acquires majority stake in Mumbai-based Auburn Digital Solutions",
-      "description": "Japanese ad giant Hakuhodo, through its subsidiary AdGlobal360 India, acquired a majority stake in independent Mumbai digital agency Auburn Digital Solutions.",
-      "why_important": "A Japanese holding company deepening its India digital-agency footprint via acquisition shows continued foreign strategic interest in India's fast-growing digital ad market.",
-      "region": "India",
-      "deal_value": "",
-      "source_name": "Web search aggregation (advertisingreporter.com sourcing)",
-      "source_url": "https://www.advertisingreporter.com/category/agency/",
-      "date": "2026",
-      "companies": [
-        {
-          "name": "Hakuhodo",
-          "url": "https://www.hakuhodo.co.jp"
-        },
-        {
-          "name": "AdGlobal360 India",
-          "url": "https://www.adglobal360.com"
-        },
-        {
-          "name": "Auburn Digital Solutions",
-          "url": "https://auburnsolutions.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "One Impression raises $10 million led by Krafton",
-      "description": "Indian influencer-marketing platform One Impression raised $10 million in a funding round led by South Korean gaming company Krafton, to build an Amazon-like marketplace connecting brands with over 7 million creators.",
-      "why_important": "A gaming-company-led investment into India's influencer-marketing infrastructure signals cross-industry confidence in creator-economy tooling as ad budgets shift to influencer spend.",
-      "region": "India",
-      "deal_value": "$10 million",
-      "source_name": "Web search aggregation",
-      "source_url": "https://tracxn.com/d/companies/exchange4media/__VfMYBz2vnMtc7Hgn33Mw_JLnMLqT7oRw7o-xoLPNycQ",
-      "date": "2026",
-      "companies": [
-        {
-          "name": "One Impression",
-          "url": "https://oneimpression.io"
-        },
-        {
-          "name": "Krafton",
-          "url": "https://www.krafton.com"
-        }
-      ],
-      "people": []
-    }
-  ],
-  "bucket3": [
-    {
-      "headline": "OpenAI expands ChatGPT Ads to UK, Mexico, Brazil, Japan and South Korea",
-      "description": "OpenAI expanded its ChatGPT Ads product to the UK, Mexico, Brazil, Japan and South Korea, alongside a new multi-product carousel ad format for product-feed campaigns.",
-      "why_important": "OpenAI's international ad-platform rollout signals a genuinely new advertising channel opening up beyond Google/Meta, which brands and agencies will need to build strategies around.",
-      "source_name": "OpenAI / GPT Ads AI",
-      "source_url": "https://www.gptadsai.com/guides/chatgpt-ads-news",
-      "date": "2026-08-11",
-      "companies": [
-        {
-          "name": "OpenAI",
-          "url": "https://openai.com"
-        },
-        {
-          "name": "ChatGPT",
-          "url": "https://chatgpt.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Snap launches AI-powered MCP server for advertisers",
-      "description": "Snap launched an AI-powered, 'human-first' MCP (model context protocol) server for advertisers, part of a broader agentic-advertising push alongside a revamped Dynamic Product Ads feature using new recommendation models.",
-      "why_important": "A new agentic ad-buying infrastructure standard emerging across major platforms is a genuinely new capability class that will reshape media-buying workflows.",
-      "source_name": "MediaPost",
-      "source_url": "https://www.mediapost.com/publications/article/417048/snap-launches-human-first-ai-powered-mcp-for-adv.html",
-      "date": "2026-08-06",
-      "companies": [
-        {
-          "name": "Snap",
-          "url": "https://www.snap.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "AnyMind Group launches AI-powered AnyAI DSP",
-      "description": "AnyMind Group launched AnyAI DSP, a new AI-driven demand-side platform combining predictive analytics, campaign optimisation and performance measurement for programmatic advertising.",
-      "why_important": "A genuinely new programmatic buying platform entering the market gives agencies an additional AI-native DSP option outside the dominant walled gardens.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/article/anymind-group-launches-ai-powered-anyai-dsp-platform/4evc5wp03wv3f2532ehd6mhjd8",
-      "date": "2026-07-17",
-      "companies": [
-        {
-          "name": "AnyMind Group",
-          "url": "https://anymindgroup.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Google launches Gemini-powered ad and commerce tools for Indian businesses",
-      "description": "At Google Marketing Live 2026, Google launched a suite of Gemini-powered advertising and commerce tools for Indian businesses, including Business Agent for Leads (beta in India), YouTube BrandStack (an India-developed unified planning/buying/measurement workflow), and AI Max for Shopping.",
-      "why_important": "A dedicated India-first AI ad-tooling launch from Google is a significant new capability set that will directly affect how agencies plan and buy search/YouTube/shopping campaigns locally.",
-      "source_name": "NewsBytes",
-      "source_url": "https://www.newsbytesapp.com/news/science/google-brings-gemini-ai-marketing-tools-to-indian-businesses/story",
-      "date": "2026-07",
-      "companies": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Instagram launches standalone app 'Instants'",
-      "description": "Meta launched Instants, a new Snapchat-like standalone app from Instagram emphasizing raw, unedited content shared as disappearing photos, opening directly to the camera.",
-      "why_important": "A genuinely new consumer app from Meta targeting ephemeral/authentic content signals a fresh platform surface for advertisers and creators to plan for.",
-      "source_name": "Social Media Today",
-      "source_url": "https://www.socialmediatoday.com/news/meta-launches-instagram-spinoff-instants-as-a-standalone-app/818389/",
-      "date": "2026",
-      "companies": [
-        {
-          "name": "Meta",
-          "url": "https://www.meta.com"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Meta launches complete AI creative ad ecosystem",
-      "description": "Meta introduced an end-to-end AI creative solution for ad creation and testing, alongside unified creator-partnership tools, unveiled around Cannes Lions 2026.",
-      "why_important": "A full-stack generative-AI creative pipeline from the largest ad platform materially changes how brands and agencies will produce and test ad creative at scale.",
-      "source_name": "MM+M",
-      "source_url": "https://www.mmm-online.com/news/meta-launches-complete-ai-creative-ad-ecosystem/",
-      "date": "2026",
-      "companies": [
-        {
-          "name": "Meta",
-          "url": "https://www.meta.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Shunya Labs launches multilingual Voice AI platform for India",
-      "description": "Shunya Labs introduced a multilingual Voice AI platform designed to help enterprises and government organisations deliver voice-led digital services across India's diverse linguistic landscape.",
-      "why_important": "A new India-specific multilingual voice-AI platform opens a fresh vernacular-engagement channel for brands and government marketing communications.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns",
-      "date": "2026",
-      "companies": [
-        {
-          "name": "Shunya Labs",
-          "url": "https://www.shunyalabs.ai"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Marsia Labs launches AI-powered PR communications platform",
-      "description": "Marsia Labs introduced a new communications platform combining AI tools, human expertise and a shared workspace for public-relations teams working across global markets.",
-      "why_important": "A new category of AI-native PR-workflow tooling could reshape how communications teams manage global campaigns and media outreach.",
-      "source_name": "Campaign India",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns",
-      "date": "2026",
-      "companies": [
-        {
-          "name": "Marsia Labs",
-          "url": null
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Meta launches advanced AI ad features including enhanced text generation",
-      "description": "Meta rolled out enhanced AI text-generation tools for advertisers that produce headline and caption options, improved multi-language translation, and a streamlined creative-approval workflow.",
-      "why_important": "Broadens Meta's generative-AI ad-creation suite, directly impacting how performance marketers produce localized ad copy at scale.",
-      "source_name": "Social Media Today",
-      "source_url": "https://www.socialmediatoday.com/news/meta-launches-advanced-ai-ad-features/823591/",
-      "date": "2026",
-      "companies": [
-        {
-          "name": "Meta",
-          "url": "https://www.meta.com"
-        }
-      ],
-      "people": []
-    },
-    {
-      "headline": "Meta expands live shopping tools to Facebook and Instagram globally",
-      "description": "Meta is expanding live video ads to Instagram and rolling out new live-shopping tools on Facebook globally, letting marketers display promoted products during a broadcast for in-stream purchase.",
-      "why_important": "A significant new commerce-and-advertising capability tying live content directly to purchase, relevant for D2C and retail brands building shoppable-video strategies.",
-      "source_name": "Social Media Today",
-      "source_url": "https://www.socialmediatoday.com/news/meta-updates-its-livestream-shopping-tools/823223/",
-      "date": "2026",
-      "companies": [
-        {
-          "name": "Meta",
-          "url": "https://www.meta.com"
-        },
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com"
-        }
-      ],
-      "people": []
-    }
-  ],
-  "bucket4": [
-    {
-      "person": "Pirojsha Godrej",
-      "org": "Godrej Industries",
-      "previous_role": "Prior leadership role, Godrej Industries",
-      "new_role_title": "Executive Chairperson",
-      "new_company": "Godrej Industries",
-      "source_name": "Storyboard18",
-      "source_url": "https://www.storyboard18.com/brand-makers/pirojsha-godrej-to-take-charge-as-executive-chairperson-of-godrej-industries-from-august-14-ws-l-107657.htm",
-      "date": "2026-08-14",
-      "linkedin_url": "http://www.linkedin.com/in/pirojsha-godrej",
-      "company_url": "https://www.godrejindustries.com"
-    },
-    {
-      "person": "Kenneth Benaim Campbell",
-      "org": "Prior role",
-      "previous_role": "Prior leadership role",
-      "new_role_title": "Chief Executive Officer",
-      "new_company": "Oriflame",
-      "source_name": "afaqs!",
-      "source_url": "https://www.afaqs.com/people-spotting/oriflame-appoints-kenneth-benaim-campbell-as-chief-executive-officer-12259772",
-      "date": "2026-08-14",
-      "linkedin_url": null,
-      "company_url": "https://www.oriflame.com"
-    },
-    {
-      "person": "Aasif Malbari",
-      "org": "GCPL",
-      "previous_role": "Chief Financial Officer, GCPL",
-      "new_role_title": "Managing Director & CEO",
-      "new_company": "GCPL (Godrej Consumer Products Limited)",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/advertising/top-advertising-marketing-and-media-news-headlines-of-today-august-11-2026-12249300",
-      "date": "2026-08-12",
-      "linkedin_url": "http://www.linkedin.com/in/aasif-malbari-59446516",
-      "company_url": "https://www.godrejcp.com"
-    },
-    {
-      "person": "Vishal Kedia",
-      "org": "GCPL",
-      "previous_role": "Head of Strategy, FP&A and Investor Relations, GCPL",
-      "new_role_title": "Interim Chief Financial Officer",
-      "new_company": "GCPL (Godrej Consumer Products Limited)",
-      "source_name": "Exchange4media",
-      "source_url": "https://www.exchange4media.com/people-movement-news/gcpl-appoints-vishal-kedia-as-interim-chief-financial-officer-157207.html",
-      "date": "2026-08-12",
-      "linkedin_url": "http://www.linkedin.com/in/vkedia",
-      "company_url": "https://www.godrejcp.com"
-    },
-    {
-      "person": "Prashant Sukhwani",
-      "org": "Burger King",
-      "previous_role": "Executive, Burger King",
-      "new_role_title": "Managing Partner / Head of Social Practice",
-      "new_company": "PDX India",
-      "source_name": "Storyboard18",
-      "source_url": "https://www.storyboard18.com/brand-makers/-107504.htm",
-      "date": "2026-08-12",
-      "linkedin_url": null,
-      "company_url": null
-    },
-    {
-      "person": "Lagan Shastri",
-      "org": "SLMG Beverages",
-      "previous_role": "Prior leadership role",
-      "new_role_title": "Chief Executive Officer",
-      "new_company": "SLMG Beverages",
-      "source_name": "Storyboard18",
-      "source_url": "https://www.storyboard18.com/amp/brand-makers/slmg-beverages-appoints-lagan-shastri-as-ceo-to-lead-next-phase-of-growth-107367.htm",
-      "date": "2026-08-10",
-      "linkedin_url": null,
-      "company_url": "https://slmgbeverages.com"
-    },
-    {
-      "person": "Nilesh Kotalwar",
-      "org": "Honasa Consumer",
-      "previous_role": "Marketing leadership role",
-      "new_role_title": "Chief Marketing Officer",
-      "new_company": "Honasa Consumer",
-      "source_name": "Storyboard18",
-      "source_url": "https://www.storyboard18.com/brand-makers/honasa-consumer-names-nilesh-kotalwar-as-new-cmo-honasa-cmo-ws-l-106889.htm",
-      "date": "2026-08-06",
-      "linkedin_url": "http://www.linkedin.com/in/nileshkotalwar",
-      "company_url": "https://honasa.in"
-    },
-    {
-      "person": "Nandita Sinha",
-      "org": "Swiggy",
-      "previous_role": "Senior leadership role, Swiggy",
-      "new_role_title": "CEO, Swiggy Instamart",
-      "new_company": "Swiggy Instamart",
-      "source_name": "Storyboard18",
-      "source_url": "https://www.storyboard18.com/brand-makers/swiggy-instamart-ceo-amitesh-kumar-jha-resigns-nandita-sinha-to-take-charge-from-august-3-105778.htm",
-      "date": "2026-08-03",
-      "linkedin_url": null,
-      "company_url": "https://www.swiggy.com/instamart"
-    },
-    {
-      "person": "Siddharth Parakh",
-      "org": "Britannia Industries",
-      "previous_role": "Prior role",
-      "new_role_title": "Head of Strategy & Business Development",
-      "new_company": "Britannia Industries",
-      "source_name": "Storyboard18",
-      "source_url": "https://www.storyboard18.com/brand-makers/britannia-appoints-siddharth-parakh-as-head-of-strategy-business-development-106428.htm",
-      "date": "2026-08-03",
-      "linkedin_url": null,
-      "company_url": "https://www.britannia.co.in"
-    },
-    {
-      "person": "Aswin K",
-      "org": "Singapore Airlines",
-      "previous_role": "General Manager, Italy, Singapore Airlines",
-      "new_role_title": "General Manager, India",
-      "new_company": "Singapore Airlines",
-      "source_name": "Exchange4media",
-      "source_url": "https://www.exchange4media.com/people-movement-news/singapore-airlines-names-aswin-k-as-general-manager-india-157153.html",
-      "date": "2026-08-01",
-      "linkedin_url": "http://www.linkedin.com/in/aswin-k-b3812ba4",
-      "company_url": "https://www.singaporeair.com"
-    },
-    {
-      "person": "Bikram Basu",
-      "org": "Allied Blenders and Distillers",
-      "previous_role": "Marketing leadership role",
-      "new_role_title": "Group Chief Marketing and Innovation Officer",
-      "new_company": "Allied Blenders and Distillers",
-      "source_name": "Storyboard18",
-      "source_url": "https://www.storyboard18.com/brand-makers/allied-blenders-elevates-bikram-basu-as-group-chief-marketing-and-innovation-officer-in-leadership-reshuffle-105331.htm",
-      "date": "2026-08-01",
-      "linkedin_url": "http://www.linkedin.com/in/bikram-basu-07662528",
-      "company_url": "https://www.abdindia.com"
-    },
-    {
-      "person": "Ratnesh Pandey",
-      "org": "Schneider Electric",
-      "previous_role": "Marketing role, Schneider Electric",
-      "new_role_title": "Vice President, Marketing, India",
-      "new_company": "Schneider Electric",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
-      "date": "2026-08-01",
-      "linkedin_url": "http://www.linkedin.com/in/ratnesh-pandey-151625113",
-      "company_url": "https://www.se.com"
-    },
-    {
-      "person": "Rubbal Datta",
-      "org": "JioStar",
-      "previous_role": "Executive, JioStar",
-      "new_role_title": "CEO-Designate",
-      "new_company": "Mandrake Tech Labs",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
-      "date": "2026-08",
-      "linkedin_url": null,
-      "company_url": "https://mandraketechlabs.com"
-    },
-    {
-      "person": "Runa Akhtar",
-      "org": "Cipla",
-      "previous_role": "Group Brand Manager, Cipla",
-      "new_role_title": "Marketing Head, Urology",
-      "new_company": "Cipla",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
-      "date": "2026-08",
-      "linkedin_url": null,
-      "company_url": "https://www.cipla.com"
-    },
-    {
-      "person": "Ashwini Ramakrishnan",
-      "org": "Cleartrip",
-      "previous_role": "Head of Brand Marketing, Cleartrip",
-      "new_role_title": "Brand Lead, India",
-      "new_company": "Levi Strauss & Co",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
-      "date": "2026-08",
-      "linkedin_url": null,
-      "company_url": "https://www.levistrauss.com"
-    },
-    {
-      "person": "Meraj Hasan",
-      "org": "Prior role",
-      "previous_role": "Prior role",
-      "new_role_title": "Head, JV Brand",
-      "new_company": "JioBlackRock Investment Advisers",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
-      "date": "2026-08",
-      "linkedin_url": "http://www.linkedin.com/in/meraj-hasan",
-      "company_url": "https://www.jioblackrock.com"
-    },
-    {
-      "person": "Navin Kathuria",
-      "org": "R K SWAMY",
-      "previous_role": "Prior leadership role",
-      "new_role_title": "President, R K SWAMY Media Group",
-      "new_company": "R K SWAMY",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
-      "date": "2026-08",
-      "linkedin_url": null,
-      "company_url": "https://www.rkswamy.com"
-    },
-    {
-      "person": "Vandana Ramkrishna Acharya",
-      "org": "R K SWAMY",
-      "previous_role": "Prior role, R K SWAMY",
-      "new_role_title": "Executive Vice President",
-      "new_company": "R K SWAMY",
-      "source_name": "BestMediaInfo",
-      "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/talent-tracker-of-the-week-leadership-movements-across-media-marketing-and-corporate-india-12260919",
-      "date": "2026-08",
-      "linkedin_url": null,
-      "company_url": "https://www.rkswamy.com"
-    },
-    {
-      "person": "Kelly Beaver",
-      "org": "Ipsos UK and Ireland",
-      "previous_role": "CEO, Ipsos UK and Ireland",
-      "new_role_title": "Chief Executive Officer",
-      "new_company": "Ipsos",
-      "source_name": "afaqs!",
-      "source_url": "https://www.afaqs.com/people-spotting/ipsos-appoints-kelly-beaver-as-chief-executive-officer-12215918",
-      "date": "2026-07-31",
-      "linkedin_url": "http://www.linkedin.com/in/kellybeavermbe",
-      "company_url": "https://www.ipsos.com"
-    },
-    {
-      "person": "Jesse Julka",
-      "org": "Prior role",
-      "previous_role": "Prior leadership role",
-      "new_role_title": "Chief Executive Officer",
-      "new_company": "Prakul Bakshi Events",
-      "source_name": "Exchange4media",
-      "source_url": "https://www.exchange4media.com/people-movement-news/jesse-julka-appointed-ceo-of-prakul-bakshi-events-156247.html",
-      "date": "2026-07",
-      "linkedin_url": "http://www.linkedin.com/in/thisisjessej",
-      "company_url": null
-    }
-  ],
-  "bucket5": [
-    {
-      "headline": "Zepto's live 10-minute delivery stunt needs short-form distribution muscle",
-      "product_fit": "Memed",
-      "insight": "Zepto is already sitting on raw, unedited countdown footage from its Bangalore/Mumbai activations — the exact long-form proof content Memed is built to cut into short-form clips and distribute across Reels, Shorts and TikTok to extend the stunt's shelf life past the initial news cycle.",
-      "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
-      "ref_item": "Zepto stages live 10-minute delivery guerrilla activation",
-      "source_url": "https://www.cupshup.co.in/blog/guerrilla-marketing-ads-india"
-    },
-    {
-      "headline": "Godrej x Swiggy Instamart's Cannes-winning stunt is a case study Imagined should pitch to build",
-      "product_fit": "Imagined",
-      "insight": "A near-zero-media-cost idea just won a Cannes Gold Lion for Godrej — that's a marquee credibility asset. Imagined could pitch a polished case-study microsite/interactive recap to both brands, turning an award win into a recruiting and new-business asset for their own next pitches.",
-      "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
-      "ref_item": "Godrej x Swiggy Instamart 'house keys' campaign wins Cannes Gold Lion",
-      "source_url": "https://www.cupshup.co.in/blog/guerrilla-marketing-ads-india"
-    },
-    {
-      "headline": "One Impression's Krafton-backed raise signals the creator-marketplace category is heating up — Solo should move fast",
-      "product_fit": "Solo",
-      "insight": "A gaming major just backed a direct competitor to Solo's creator-brand marketplace model with $10M, validating the category. Worth using as urgency in Solo's own fundraising/BD narrative and as a prompt to accelerate brand-side GTM in India before the market consolidates around fewer platforms.",
-      "ref_bucket_label": "Bucket 2 — M&A (India)",
-      "ref_item": "One Impression raises $10 million led by Krafton",
-      "source_url": "https://tracxn.com/d/companies/exchange4media/__VfMYBz2vnMtc7Hgn33Mw_JLnMLqT7oRw7o-xoLPNycQ"
-    },
-    {
-      "headline": "Alpino's celebrity-led oats campaign is a performance-creator upsell waiting to happen",
-      "product_fit": "Solo",
-      "insight": "Alpino is spending on top-of-funnel celebrity talent (The Great Khali, Mukesh Gahlot) for a D2C nutrition launch — a natural pitch for Solo to layer in a performance-based mid/micro-creator campaign underneath the celebrity push, giving Alpino measurable, always-on distribution alongside the one-off stunt.",
-      "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
-      "ref_item": "Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns"
-    },
-    {
-      "headline": "SharkNinja's India market entry needs owned-media reach fast",
-      "product_fit": "Scoopwhoop",
-      "insight": "SharkNinja just entered India and appointed WPP Media for its integrated media mandate — a new-market launch is exactly when a brand needs awareness reach beyond paid media. Scoopwhoop's owned distribution is a strong complement pitch to run alongside the WPP buy for launch-phase reach.",
-      "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
-      "ref_item": "SharkNinja APAC appoints WPP Media as integrated media partner",
-      "source_url": "https://www.campaignindia.in/latest/account-moves"
-    },
-    {
-      "headline": "Honasa's new CMO is a fresh-vendor-roster window for creator-ops talent",
-      "product_fit": "The Lit School",
-      "insight": "Nilesh Kotalwar's appointment as Honasa's CMO is the kind of leadership change that typically triggers a review of marketing team structure and vendor relationships at a beauty D2C major built on influencer marketing — a timely moment to pitch The Lit School for building or upskilling an in-house creator-ops pipeline.",
-      "ref_bucket_label": "Bucket 4 — People Moves",
-      "ref_item": "Nilesh Kotalwar named Chief Marketing Officer, Honasa Consumer",
-      "source_url": "https://www.storyboard18.com/brand-makers/honasa-consumer-names-nilesh-kotalwar-as-new-cmo-honasa-cmo-ws-l-106889.htm"
-    },
-    {
-      "headline": "McDonald's India's World Cup tie-in is built for clip repurposing during peak match moments",
-      "product_fit": "Memed",
-      "insight": "A FIFA World Cup campaign generates a steady stream of match-day content moments — Memed could repurpose McDonald's longer brand films and in-store activation footage into rapid short-form clips timed to match highlights, capturing attention while World Cup search volume is at its seasonal peak.",
-      "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
-      "ref_item": "McDonald's India North & East runs FIFA World Cup 2026 campaign",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns"
-    },
-    {
-      "headline": "Flipkart's viral 'buffalo Don' character is a short-form distribution opportunity mid-sale",
-      "product_fit": "Memed",
-      "insight": "A meme-able mascot performing well organically is exactly the kind of asset Memed exists to multiply — slicing the GOAT Sale films into short-form variants and pushing them across platforms during the live sale window would extend reach while the character has momentum.",
-      "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
-      "ref_item": "Flipkart's GOAT Sale campaign features viral 'buffalo Don'",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns"
-    },
-    {
-      "headline": "SOCIAL's multi-city cricket-and-dining activation needs amplification beyond the nine cities it ran in",
-      "product_fit": "Scoopwhoop",
-      "insight": "#DoosraStadium's in-restaurant experience only reaches walk-in footfall directly — Scoopwhoop's owned-media distribution could extend the campaign's story nationally to audiences outside SOCIAL's nine activation cities, turning a local experiential play into a national brand moment.",
-      "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
-      "ref_item": "SOCIAL's #DoosraStadium 2026 campaign combines live cricket and dining",
-      "source_url": "https://www.campaignindia.in/latest/new-campaigns"
-    },
-    {
-      "headline": "Dentsu's possible international breakup could shake loose independent-agency talent and mandates",
-      "product_fit": "The Lit School",
-      "insight": "If Dentsu's international unit changes hands, expect displaced creative/media talent and mandate churn across the industry — worth watching for The Lit School to position as a landing pipeline for talent shaken loose by the restructuring, and for WLDD generally to track which mandates come up for repitch.",
-      "ref_bucket_label": "Bucket 2 — M&A (Global)",
-      "ref_item": "Dentsu reviewing sale of its international business",
-      "source_url": "https://www.storyboard18.com/advertising/havas-signals-interest-in-buying-dentsus-international-unit-after-strong-q3-performance-82655.htm"
-    }
-  ],
-  "flagged": {
-    "bucket1": [
-      "Company (unresolved): Maars Communicates — in \"Maars Communicates wins strategic communications mandate for Studio Blo\"",
-      "Company (unresolved): Apostrophe Ventures — in \"Apostrophe Ventures bags Tilaknagar Industries' corporate PR mandate\"",
-      "Person (unresolved): The Great Khali — in \"Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot\"",
-      "Person (unresolved): Mukesh Gahlot — in \"Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot\""
-    ],
-    "bucket2": [
-      "Person (unresolved): François Laroze — in \"Havas signals interest in buying parts of Dentsu's international unit\"",
-      "Company (unresolved): Hitek Global — in \"Hitek Global to acquire Ju Fu Limited for up to $20 million\"",
-      "Company (unresolved): Ju Fu Limited — in \"Hitek Global to acquire Ju Fu Limited for up to $20 million\"",
-      "Company (unresolved): QStrauss Consulting — in \"Stagwell to acquire QStrauss Consulting\"",
-      "Company (unresolved): TEAM — in \"Stagwell acquires experiential marketing agency JetFuel\""
-    ],
-    "bucket3": [
-      "Company (unresolved): Marsia Labs — in \"Marsia Labs launches AI-powered PR communications platform\""
-    ],
-    "bucket4": [
-      "Person (unresolved): Rubbal Datta — CEO-Designate at Mandrake Tech Labs",
-      "Person (unresolved): Nandita Sinha — CEO, Swiggy Instamart at Swiggy Instamart",
-      "Person (unresolved): Prashant Sukhwani — Managing Partner / Head of Social Practice at PDX India",
-      "Company (unresolved): PDX India — re: Prashant Sukhwani",
-      "Person (unresolved): Lagan Shastri — Chief Executive Officer at SLMG Beverages",
-      "Person (unresolved): Siddharth Parakh — Head of Strategy & Business Development at Britannia Industries",
-      "Person (unresolved): Runa Akhtar — Marketing Head, Urology at Cipla",
-      "Person (unresolved): Ashwini Ramakrishnan — Brand Lead, India at Levi Strauss & Co",
-      "Person (unresolved): Navin Kathuria — President, R K SWAMY Media Group at R K SWAMY",
-      "Person (unresolved): Vandana Ramkrishna Acharya — Executive Vice President at R K SWAMY",
-      "Person (unresolved): Kenneth Benaim Campbell — Chief Executive Officer at Oriflame",
-      "Company (unresolved): Prakul Bakshi Events — re: Jesse Julka"
-    ]
-  },
   "updated_at": "2026-08-18T06:17:46.936028+00:00"
 }
