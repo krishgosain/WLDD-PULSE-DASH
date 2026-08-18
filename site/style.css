@@ -212,6 +212,14 @@ main {
   margin-top: 8px;
 }
 
+.strategic-card .ref a {
+  color: var(--accent-dim);
+}
+
+.strategic-card .ref a:hover {
+  color: var(--accent);
+}
+
 .flagged {
   margin-top: 26px;
   padding-top: 14px;
