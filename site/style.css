@@ -271,8 +271,11 @@ main {
   margin-top: 10px;
 }
 
-.card-foot a { color: var(--text-dim); text-decoration: none; }
-.card-foot a:hover { color: var(--accent); }
+.card-foot a { color: var(--accent-dim); text-decoration: underline; text-decoration-color: transparent; transition: text-decoration-color 0.15s, color 0.15s; }
+.card-foot a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+.card-desc a, .card-why a { color: var(--accent-dim); text-decoration: underline; text-decoration-color: transparent; transition: text-decoration-color 0.15s, color 0.15s; }
+.card-desc a:hover, .card-why a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
 .people-card {
   display: flex;
