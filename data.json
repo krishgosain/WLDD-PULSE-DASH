@@ -1,13 +1,679 @@
 {
   "weeks": [
     {
-      "week_start": "2026-08-17",
-      "week_end": "2026-08-24",
       "bucket1": [],
       "bucket2": [],
       "bucket3": [],
-      "bucket4": [],
+      "bucket4": [
+        {
+          "person": "Prasenjit Basu",
+          "org": "Voltas",
+          "previous_role": "Head of Marketing, Product & E-commerce, Voltas Beko",
+          "new_role_title": "Head – Marketing & Corporate Communications",
+          "new_company": "Voltas",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/voltas-appoints-prasenjit-basu-as-head-of-marketing-corporate-communications-12426020",
+          "date": "2026-08-24",
+          "linkedin_url": null,
+          "company_url": "https://www.voltas.com"
+        }
+      ],
       "bucket5": [],
+      "flagged": {
+        "bucket1": [
+          "Person (unresolved): Yash — in \"Philips India names Yash brand ambassador for men's grooming, launches 'Trimmers Ka Baap'\"",
+          "Person (unresolved): Paal Dabba — in \"Zomato launches Chennai anthem 'Veppam is our Weapon' with rapper Paal Dabba\"",
+          "Company (unresolved domain): European T20 Premier League — in \"TCS joins European T20 Premier League as digital transformation partner\"",
+          "Person (unresolved): Tiger Shroff — in \"JioStar bets big on Premier League, launches 'Humara Long Distance Love' campaign featuring Tiger Shroff, Riyan Parag and Sanju Samson\"",
+          "Person (unresolved): Riyan Parag — in same item",
+          "Person (unresolved): Sanju Samson — in same item",
+          "Person (unresolved): Harmanpreet Kaur — in \"Harmanpreet Kaur and SPNI challenge cricket's 'gentleman's game' tag\"",
+          "Person (unresolved): Central Cee — in \"Coca-Cola gives its Premier League partnership a Central Cee remix\""
+        ],
+        "bucket2": [],
+        "bucket3": [
+          "Person (unresolved): Sivakarthikeyan — in \"Kalyan Jewellers launches regional jewellery brand 'Akshaya Thanga Maligai' in Tamil Nadu\""
+        ],
+        "bucket4": [
+          "Person (unresolved): Ravpreet Ganesh — Group Chief Strategy Officer at ZIEL Network",
+          "Person (unresolved): Hrishikesh Parandekar — Chief Executive Officer at Kolte-Patil Developers",
+          "Person (unresolved): Manish Anandani — Managing Director & CEO at Colgate-Palmolive India",
+          "Person (unresolved): Himavant Kurnala — Chief Growth and Product Officer, Instamart at Swiggy",
+          "Person (unresolved): Prasenjit Basu — Head Marketing & Corporate Communications at Voltas"
+        ]
+      },
+      "week_start": "2026-08-24",
+      "week_end": "2026-08-31"
+    },
+    {
+      "week_start": "2026-08-17",
+      "week_end": "2026-08-24",
+      "bucket1": [
+        {
+          "headline": "Can Lahori Zeera own 'thanda'? New print ad tests challenger strategy",
+          "description": "Homegrown jaljeera brand Lahori Zeera took over The Times of India, rebranding it 'The Thanda of India' for a day with lines like 'Apna Desi Thanda,' after being priced out of an Independence Day takeover slot.",
+          "why_important": "A challenger brand using front-page print real estate to directly contest cola dominance shows how legacy media takeovers are being repurposed as internet-native stunts.",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/advertising/can-lahori-zeera-own-thanda-new-print-ad-tests-challenger-strategy-12425357",
+          "date": "2026-08-23",
+          "companies": [
+            {
+              "name": "Lahori Zeera",
+              "url": "https://lahorizeera.com"
+            },
+            {
+              "name": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Zomato launches Chennai anthem 'Veppam is our Weapon' with rapper Paal Dabba",
+          "description": "Zomato launched a Chennai-specific city anthem, 'Veppam is our Weapon,' with local rapper Paal Dabba, leaning into hyper-local spice-tolerance humour.",
+          "why_important": "A hyper-local, rapper-fronted anthem is exactly the kind of native, meme-able city content that performs disproportionately well on Reels/Shorts relative to its production cost.",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-marketing/zomato-launches-chennai-anthem-veppam-is-our-weapon-with-rapper-paal-dabba-108448.htm",
+          "date": "2026-08-21",
+          "companies": [
+            {
+              "name": "Zomato",
+              "url": "https://www.zomato.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Paal Dabba",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "JK Super Cement explores micro-drama format with 'Tera Ghar Mera Ghar'",
+          "description": "JK Super Cement launched a 53-episode vertical micro-drama, 'Tera Ghar Mera Ghar,' on the ZEE5 Bullet Micro Drama App, also distributed on ShareChat, Moj and its own social channels.",
+          "why_important": "A cement brand experimenting with the vertical micro-drama format shows how far serialised short-form content has spread beyond D2C and beauty into traditionally low-engagement categories.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/design-digest/jk-super-cement-explores-micro-drama-format-with-tera-ghar-mera-ghar-12405188",
+          "date": "2026-08-21",
+          "companies": [
+            {
+              "name": "JK Cement",
+              "url": "https://www.jkcement.com"
+            },
+            {
+              "name": "ZEE5",
+              "url": "https://www.zee5.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Bigg Boss Bangla Arrives in Bengal: Sourav Ganguly takes charge as the battle for the crown begins",
+          "description": "Bigg Boss Bangla's new season, hosted by Sourav Ganguly, was announced for an August 30 premiere on Star Jalsha and JioHotstar, with Asian Paints as co-title sponsor and Hero Xoom, Britannia and Everyuth as co-presenting sponsors.",
+          "why_important": "A marquee regional reality-show launch with a four-brand sponsor stack shows how much appetite remains for premium, appointment-viewing sponsorships even as attention fragments to short-form.",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/marketing-initiative-news/bigg-boss-bangla-arrives-in-bengal-sourav-ganguly-takes-charge-as-battle-for-crown-begins-157542.html",
+          "date": "2026-08-21",
+          "companies": [
+            {
+              "name": "JioStar",
+              "url": "https://www.jiostar.com"
+            },
+            {
+              "name": "Asian Paints",
+              "url": "https://www.asianpaints.com"
+            },
+            {
+              "name": "Hero MotoCorp",
+              "url": "https://www.heromotocorp.com"
+            },
+            {
+              "name": "Britannia Industries",
+              "url": "https://www.britannia.co.in"
+            },
+            {
+              "name": "CavinKare",
+              "url": "https://www.cavinkare.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Sourav Ganguly",
+              "linkedin_url": "http://www.linkedin.com/in/sourav-ganguly"
+            }
+          ]
+        },
+        {
+          "headline": "TCS joins European T20 Premier League as digital transformation partner",
+          "description": "Tata Consultancy Services was named Digital Transformation Partner of the inaugural European T20 Premier League in a multi-year deal covering fan engagement, ticketing and live-match digital experiences.",
+          "why_important": "TCS extending its sports-tech playbook (IPL, US Open, Wimbledon) to a brand-new league shows IT majors treating live sport as a proving ground for AI-powered fan-engagement products.",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/tcs-named-digital-transformation-partner-of-european-t20-premier-league/",
+          "date": "2026-08-21",
+          "companies": [
+            {
+              "name": "TCS",
+              "url": "https://www.tcs.com"
+            },
+            {
+              "name": "European T20 Premier League",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "JioStar bets big on Premier League, launches 'Humara Long Distance Love' campaign featuring Tiger Shroff, Riyan Parag and Sanju Samson",
+          "description": "JioStar launched 'Humara Long Distance Love,' a campaign fronted by Tiger Shroff, Riyan Parag and Sanju Samson, to promote its 2026/27 Premier League coverage ahead of the August 22 kickoff.",
+          "why_important": "Reframing English football fandom through Bollywood and cricket stars is a distinctly Indian localisation play for a foreign sports property.",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/jiostar-bets-big-on-premier-league-launches-humara-long-distance-love-campaign-featuring-tiger-shroff-riyan-parag-and-sanju-samson/",
+          "date": "2026-08-20",
+          "companies": [
+            {
+              "name": "JioStar",
+              "url": "https://www.jiostar.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Tiger Shroff",
+              "linkedin_url": null
+            },
+            {
+              "name": "Riyan Parag",
+              "linkedin_url": null
+            },
+            {
+              "name": "Sanju Samson",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Harmanpreet Kaur and SPNI challenge cricket's 'gentleman's game' tag",
+          "description": "Sony Sports Network fronted its Women's T20 Asia Cup 2026 coverage with a Harmanpreet Kaur-led campaign, 'Not a Gentleman's Game,' challenging cricket's traditionally male framing.",
+          "why_important": "A direct, message-led positioning push for women's cricket ahead of a major tournament — part of a broader shift in marketing the women's game as appointment viewing, not a lesser add-on.",
+          "source_name": "SportsMint Media",
+          "source_url": "https://sportsmintmedia.com/sony-sports-network-taps-harmanpreet-kaur-for-not-a-gentlemans-game-campaign-ahead-of-womens-t20-asia-cup/",
+          "date": "2026-08-20",
+          "companies": [
+            {
+              "name": "Sony Sports Network",
+              "url": "https://www.sonypicturesnetworks.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Harmanpreet Kaur",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Coca-Cola gives its Premier League partnership a Central Cee remix",
+          "description": "Coca-Cola launched 'Taste Every Second,' a Premier League 2026/27 campaign anchored by a Central Cee-fronted cinematic film and an original track, 'The Team,' created with VML and Riff Raff.",
+          "why_important": "A globally-scaled, music-led sports campaign built around a single cinematic film is a textbook case for short-form redistribution once the primary flight ends.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/coca-cola-gives-its-premier-league-partnership-a-central-cee-remix-12397217",
+          "date": "2026-08-20",
+          "companies": [
+            {
+              "name": "Coca-Cola",
+              "url": "https://www.coca-cola.com"
+            },
+            {
+              "name": "VML",
+              "url": "https://www.vml.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Central Cee",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "CaratLane puts 30% of August media behind Rakhi as gifting gets more personal",
+          "description": "CaratLane structured a 40-day Raksha Bandhan campaign, putting roughly 30% of its August media spend behind Rakhi storytelling featuring the on-screen siblings from 'The Family Man.'",
+          "why_important": "Treating a single festival as a 40-day, multi-phase media plan rather than a one-day push reflects a broader shift toward sustained always-on festive marketing.",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/marketing-shorts/caratlane-puts-30-percent-august-media-rakhi-12428348",
+          "date": "2026-08-20",
+          "companies": [
+            {
+              "name": "CaratLane",
+              "url": "https://www.caratlane.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Sprite to brand India's first private train for six months",
+          "description": "IRCTC awarded Sprite branding rights on the Lucknow-Delhi Tejas Express for six months (August 19-November 11), making it the first train in India named after a brand, with vinyl wraps and interior branding throughout.",
+          "why_important": "A genuine media-format first for Indian rail advertising — brands are willing to pay a premium for owned physical spaces that read as culture rather than ads.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/sprite-to-brand-indias-first-private-train-for-six-months-12257211",
+          "date": "2026-08-19",
+          "companies": [
+            {
+              "name": "Sprite",
+              "url": "https://www.sprite.com"
+            },
+            {
+              "name": "IRCTC",
+              "url": "https://www.irctc.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Havas wins Policybazaar's media mandate, account pegged at over Rs 300 crore",
+          "description": "Havas Media Network India won Policybazaar's media mandate, estimated in the Rs 200-300 crore range, moving the account from incumbent WPP Media.",
+          "why_important": "One of the larger BFSI media accounts to change hands this year — a signal of how aggressively challenger networks are chasing India's insurance-aggregator ad spend.",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/announcements-news/havas-wins-policybazaars-media-mandate-account-pegged-at-over-rs300-crore-157447.html",
+          "date": "2026-08-19",
+          "companies": [
+            {
+              "name": "Policybazaar",
+              "url": "https://www.policybazaar.com"
+            },
+            {
+              "name": "Havas Media Network India",
+              "url": "https://www.havas.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "HUL vs BECO: FMCG's billboard tussle boils over",
+          "description": "HUL took D2C challenger brand Beco to the Delhi High Court over Beco's '#WarOnWhatsHidden' comparative-advertising campaign, which named Surf Excel and Vim directly in hoardings alleging harmful ingredients.",
+          "why_important": "A rare case of a D2C challenger naming an FMCG giant's products directly in outdoor ads — a live playbook, and cautionary tale, for disparagement-adjacent guerrilla marketing.",
+          "source_name": "Exchange4media",
+          "source_url": "https://www.exchange4media.com/out-of-home-news/hul-vs-beco-fmcgs-billboard-tussle-boils-over-157532.html",
+          "date": "2026-08-19",
+          "companies": [
+            {
+              "name": "Hindustan Unilever",
+              "url": "https://www.hul.co.in"
+            },
+            {
+              "name": "Beco",
+              "url": "https://www.letsbeco.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Philips India names Yash brand ambassador for men's grooming, launches 'Trimmers Ka Baap'",
+          "description": "Philips India named Kannada superstar Yash brand ambassador for its men's grooming portfolio and launched the 'Trimmers Ka Baap' campaign, building on an organic viral moment after fans spotted him using a Philips trimmer in a BTS clip.",
+          "why_important": "A rare case of an unpaid, fan-spotted moment being fast-tracked into a full ambassador deal — organic virality outperforming a planned launch.",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/philips-india-names-rocking-star-yash-brand-ambassador-for-mens-grooming-launches-trimmers-ka-baap-campaign/",
+          "date": "2026-08-18",
+          "companies": [
+            {
+              "name": "Philips India",
+              "url": "https://www.philips.co.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Yash",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Tata Play partners with Spotify for four-month Premium offer",
+          "description": "Tata Play Binge subscribers get a four-month complimentary trial of Spotify Premium, rolling out via the Tata Play Mobile App from August 17.",
+          "why_important": "Bundling a global music-streaming perk into a DTH/OTT subscription is a retention play against churn as JioHotstar and other super-bundles reshape India's pay-TV economics.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/mktg/tata-play-partners-with-spotify-for-four-month-premium-offer-12267237",
+          "date": "2026-08-17",
+          "companies": [
+            {
+              "name": "Tata Play",
+              "url": "https://www.tataplay.com"
+            },
+            {
+              "name": "Spotify",
+              "url": "https://www.spotify.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket2": [
+        {
+          "headline": "CCI approves General Atlantic's acquisition of additional stake in Acko Tech",
+          "description": "The Competition Commission of India cleared General Atlantic's proposal to acquire an additional stake in insurtech Acko Technology & Services, crossing the 25% shareholding threshold via its Singapore affiliate.",
+          "why_important": "A regulatory green light for a PE major to deepen its stake signals continued institutional confidence in India's insurtech sector even as broader startup funding stays selective.",
+          "region": "India",
+          "deal_value": "Undisclosed (additional stake, crosses 25% shareholding threshold)",
+          "source_name": "Upstox",
+          "source_url": "https://upstox.com/news/business-news/latest-updates/cci-approves-general-atlantic-s-acquisition-of-additional-stake-in-acko-tech/article-198864/",
+          "date": "2026-08-19",
+          "companies": [
+            {
+              "name": "General Atlantic",
+              "url": "https://www.generalatlantic.com"
+            },
+            {
+              "name": "Acko",
+              "url": "https://www.acko.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Wipro Consumer Care makes digital-brand foray with the acquisition of Dermatouch",
+          "description": "Wipro Consumer Care & Lighting acquired a 60% stake in dermocosmetics D2C brand Dermatouch at an enterprise value of ₹387.5 crore, with the remaining 40% to be picked up over three years.",
+          "why_important": "Wipro's first acquisition of a digital-first D2C brand marks its entry into premium skincare — another large FMCG house buying its way into a category it couldn't build fast enough organically.",
+          "region": "India",
+          "deal_value": "₹387.5 crore (~$40.8 million) for 60% stake",
+          "source_name": "Outlook Business",
+          "source_url": "https://www.outlookbusiness.com/story/corporate/wipro-consumer-care-enters-digital-beauty-with-3875-cr-deal-for-60-dermatouch-stake",
+          "date": "2026-08-18",
+          "companies": [
+            {
+              "name": "Wipro Consumer Care",
+              "url": "https://www.wiproconsumercare.com"
+            },
+            {
+              "name": "Dermatouch",
+              "url": "https://dermatouch.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket3": [
+        {
+          "headline": "Radico Khaitan launches Magic Moments Aam Panna vodka across 14 markets",
+          "description": "Radico Khaitan launched a new Aam Panna (raw mango) flavoured variant of Magic Moments vodka across 14 markets including Delhi, Maharashtra and Karnataka.",
+          "why_important": "A desi-flavoured vodka variant is part of a broader premiumisation trend in Indian spirits, localising Western spirit categories with familiar regional flavours to widen the audience.",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-marketing/radico-khaitan-launches-magic-moments-aam-panna-vodka-across-14-markets-108507.htm",
+          "date": "2026-08-23",
+          "companies": [
+            {
+              "name": "Radico Khaitan",
+              "url": "https://www.radicokhaitan.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Kalyan Jewellers launches regional jewellery brand 'Akshaya Thanga Maligai' in Tamil Nadu",
+          "description": "Kalyan Jewellers launched a new regional jewellery brand, Akshaya Thanga Maligai (ATM), in Tamil Nadu with its first showroom in Chennai, appointing actor Sivakarthikeyan as brand ambassador.",
+          "why_important": "A national jeweller launching a distinct regional sub-brand, rather than just a new showroom, shows how hyper-local brand identity is becoming a deliberate growth lever in jewellery retail.",
+          "source_name": "The Retail Jeweller",
+          "source_url": "https://retailjewellerindia.com/kalyan-jewellers-launches-regional-jewellery-brand-akshaya-thanga-maligai-in-tamil-nadu/",
+          "date": "2026-08-21",
+          "companies": [
+            {
+              "name": "Kalyan Jewellers",
+              "url": "https://www.kalyanjewellers.net"
+            }
+          ],
+          "people": [
+            {
+              "name": "Sivakarthikeyan",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Instamart brings MINISO to quick commerce with 90+ products",
+          "description": "Swiggy Instamart added Chinese lifestyle brand MINISO to its quick-commerce catalogue, listing 90+ products across bags, kitchenware, stationery and toys for rapid delivery.",
+          "why_important": "A global lifestyle retailer choosing quick commerce as an India distribution layer, alongside physical stores, shows how far 10-30 minute delivery has expanded beyond groceries.",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-marketing/instamart-brings-miniso-to-quick-commerce-with-90-products-108434.htm",
+          "date": "2026-08-21",
+          "companies": [
+            {
+              "name": "MINISO",
+              "url": "https://www.miniso.com"
+            },
+            {
+              "name": "Swiggy Instamart",
+              "url": "https://www.swiggy.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Why did Fujifilm open an experience centre in the age of AI?",
+          "description": "Fujifilm India opened its first 'House of Photography' experience centre in Mumbai, timed to World Photography Day, letting customers try cameras, instax and printing formats hands-on.",
+          "why_important": "A camera brand betting on physical, experiential retail in the age of AI-generated imagery is a bet that hands-on brand experience still drives category loyalty better than a feed ad.",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/marketing-shorts/arun-babu-fujifilm-experiential-photography-12396329",
+          "date": "2026-08-19",
+          "companies": [
+            {
+              "name": "Fujifilm India",
+              "url": "https://www.fujifilm.com/in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Crompton unveils brand revamp with launch of premium water 'biofier'",
+          "description": "Crompton Greaves Consumer Electricals revamped its brand identity around a new emblem, 'Cephyr,' and the tagline 'Amazing, Every Day,' while launching a premium water purifier, 'biofier,' and a new sub-brand, Crompton Rhion.",
+          "why_important": "A full corporate rebrand paired with a genuinely new premium sub-brand signals Crompton is repositioning up-market beyond its legacy fans-and-appliances image.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/mktg/crompton-unveils-brand-revamp-with-launch-of-premium-water-biofier-12393691",
+          "date": "2026-08-18",
+          "companies": [
+            {
+              "name": "Crompton",
+              "url": "https://www.crompton.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Amorepacific launches Mamonde in India exclusively with Nykaa",
+          "description": "Korean beauty major Amorepacific launched skincare brand Mamonde in India exclusively through Nykaa, marking the brand's first entry into the Indian market.",
+          "why_important": "K-beauty's push into India continues to route through Nykaa as the exclusive distribution gateway — a template other Korean and global beauty brands are likely to follow.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/mktg/amorepacific-launches-mamonde-in-india-exclusively-with-nykaa-12315040",
+          "date": "2026-08-17",
+          "companies": [
+            {
+              "name": "Amorepacific",
+              "url": "https://www.apgroup.com"
+            },
+            {
+              "name": "Mamonde",
+              "url": "https://www.mamonde.com"
+            },
+            {
+              "name": "Nykaa",
+              "url": "https://www.nykaa.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "India Today launches Tamil YouTube channel",
+          "description": "India Today TV launched a dedicated Tamil-language YouTube channel focused on Tamil Nadu news and current affairs, inaugurated at an India Today Tamil Roundtable in Chennai.",
+          "why_important": "A national English/Hindi news brand building a dedicated regional-language digital channel reflects how much of India's news-consumption growth is happening in vernacular formats on YouTube.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/companies/india-today-launches-tamil-youtube-channel-12301521",
+          "date": "2026-08-17",
+          "companies": [
+            {
+              "name": "India Today",
+              "url": "https://www.indiatoday.in"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket4": [
+        {
+          "person": "Manish Anandani",
+          "org": "Colgate-Palmolive India",
+          "previous_role": "Managing Director, India & South Asia, Kenvue",
+          "new_role_title": "Managing Director & CEO (effective September 28; succeeds Prabha Narasimhan, who is elevated to EVP-Marketing, Asia-Pacific)",
+          "new_company": "Colgate-Palmolive India",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/colgate-palmolive-india-names-manish-anandani-new-md-and-ceo-ws-l-108329.htm",
+          "date": "2026-08-21",
+          "linkedin_url": null,
+          "company_url": "https://www.colgatepalmolive.co.in"
+        },
+        {
+          "person": "Andréa Mallard",
+          "org": "Microsoft AI",
+          "previous_role": "Chief Marketing Officer, Microsoft AI",
+          "new_role_title": "Stepping down as CMO; transitioning to an advisory role, Copilot marketing consolidated under Jared Spataro",
+          "new_company": "Microsoft AI",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/industry-updates/microsoft-ai-cmo-andr%C3%A9a-mallard-step-down-12399560",
+          "date": "2026-08-19",
+          "linkedin_url": "http://www.linkedin.com/in/andreamallard",
+          "company_url": "https://www.microsoft.ai"
+        },
+        {
+          "person": "Ravpreet Ganesh",
+          "org": "ZIEL Network",
+          "previous_role": "Chief Marketing Officer, Rukam Capital",
+          "new_role_title": "Group Chief Strategy Officer",
+          "new_company": "ZIEL Network",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/ziel-network-appoints-ravpreet-ganesh-as-group-chief-strategy-officer-12394026",
+          "date": "2026-08-19",
+          "linkedin_url": null,
+          "company_url": "https://ziel.network"
+        },
+        {
+          "person": "Hrishikesh Parandekar",
+          "org": "Kolte-Patil Developers",
+          "previous_role": "Prior real estate leadership role",
+          "new_role_title": "Chief Executive Officer (effective August 24)",
+          "new_company": "Kolte-Patil Developers",
+          "source_name": "Business Standard",
+          "source_url": "https://www.business-standard.com/companies/news/kolte-patil-developers-appoints-hrishikesh-parandekar-as-new-ceo-126081901213_1.html",
+          "date": "2026-08-19",
+          "linkedin_url": null,
+          "company_url": "https://www.kolte-patil.com"
+        },
+        {
+          "person": "Himavant Kurnala",
+          "org": "Swiggy",
+          "previous_role": "Prior leadership role, Swiggy Instamart",
+          "new_role_title": "Chief Growth and Product Officer, Instamart",
+          "new_company": "Swiggy",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/swiggy-expands-leadership-team-across-instamart-and-food-marketplace-108027.htm",
+          "date": "2026-08-18",
+          "linkedin_url": null,
+          "company_url": "https://www.swiggy.com"
+        },
+        {
+          "person": "Nitesh Garg",
+          "org": "Swiggy",
+          "previous_role": "SVP of Engineering, Swiggy",
+          "new_role_title": "Chief Technology Officer, Instamart",
+          "new_company": "Swiggy",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/swiggy-expands-leadership-team-across-instamart-and-food-marketplace-108027.htm",
+          "date": "2026-08-18",
+          "linkedin_url": "http://www.linkedin.com/in/niteshgarg",
+          "company_url": "https://www.swiggy.com"
+        },
+        {
+          "person": "Saagar Sethi",
+          "org": "Dentsu",
+          "previous_role": "President, Amplifi India, Dentsu",
+          "new_role_title": "Chief Business Officer, South Asia (effective September 1; Kartik Iyer retires as COO, South Asia)",
+          "new_company": "Dentsu",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/industry-updates/dentsu-kartik-iyer-retires-coo-saagar-sethi-as-cbo-12307989",
+          "date": "2026-08-17",
+          "linkedin_url": "http://www.linkedin.com/in/saagar-sethi-b31360a",
+          "company_url": "https://www.dentsu.com"
+        }
+      ],
+      "bucket5": [
+        {
+          "headline": "Sprite's branded train is a made-for-Memed content engine on wheels",
+          "product_fit": "Crunchy + Memed + ScoopWhoop",
+          "insight": "A physically branded train running for six months is a live backdrop for ongoing content, not a one-time PR photo — Crunchy could produce a recurring on-ground content series aboard the 'Sprite' Tejas Express, Memed would turn passenger reactions and vinyl-wrap reveals into short-form clips throughout the run, and ScoopWhoop could amplify the novelty angle to a broader youth audience.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Sprite to brand India's first private train for six months",
+          "source_url": "https://www.afaqs.com/news/advertising/sprite-to-brand-indias-first-private-train-for-six-months-12257211"
+        },
+        {
+          "headline": "Lahori Zeera's newspaper takeover is a single print asset that needs a second life online",
+          "product_fit": "Memed + ScoopWhoop",
+          "insight": "Lahori Zeera's 'Thanda of India' front-page takeover is a striking still-image stunt confined to print — Memed's clipper network could turn scans and reaction videos into shareable social moments, while ScoopWhoop's owned reach extends the challenger-vs-cola narrative well past print's one-day shelf life.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Can Lahori Zeera own 'thanda'? New print ad tests challenger strategy",
+          "source_url": "https://bestmediainfo.com/mediainfo/advertising/can-lahori-zeera-own-thanda-new-print-ad-tests-challenger-strategy-12425357"
+        },
+        {
+          "headline": "JK Super Cement's 53-episode micro-drama is a Memed clipping pipeline out of the gate",
+          "product_fit": "Memed + Solo",
+          "insight": "A 53-episode vertical drama already built for ShareChat/Moj is exactly the kind of long-running video asset Memed's clipper network exists to redistribute into bite-size hooks across Instagram and X; Solo could pair the drama's cast with creator-led behind-the-scenes content to sustain interest between episode drops.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "JK Super Cement explores micro-drama format with 'Tera Ghar Mera Ghar'",
+          "source_url": "https://www.afaqs.com/design-digest/jk-super-cement-explores-micro-drama-format-with-tera-ghar-mera-ghar-12405188"
+        },
+        {
+          "headline": "Zomato's Chennai anthem with Paal Dabba is built to be clipped and localised further",
+          "product_fit": "Memed + Solo",
+          "insight": "A rapper-fronted city anthem is a made-for-remix asset — Memed can turn the track and its visuals into dozens of native, hyper-local clips across Chennai-specific meme pages, while Solo could extend the model city-by-city with other regional creators for Zomato's next market.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Zomato launches Chennai anthem 'Veppam is our Weapon' with rapper Paal Dabba",
+          "source_url": "https://www.storyboard18.com/brand-marketing/zomato-launches-chennai-anthem-veppam-is-our-weapon-with-rapper-paal-dabba-108448.htm"
+        },
+        {
+          "headline": "Bigg Boss Bangla's four-sponsor stack is a ready-made Memed distribution brief",
+          "product_fit": "Memed + ScoopWhoop",
+          "insight": "A season-long reality show with four sponsor brands (Asian Paints, Hero Xoom, Britannia, Everyuth) generates daily raw footage that Memed's clipper network could turn into sponsor-integrated highlight reels running the length of the season, with ScoopWhoop's owned reach amplifying breakout moments beyond the Bengali-speaking core audience.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Bigg Boss Bangla Arrives in Bengal: Sourav Ganguly takes charge as the battle for the crown begins",
+          "source_url": "https://www.exchange4media.com/marketing-initiative-news/bigg-boss-bangla-arrives-in-bengal-sourav-ganguly-takes-charge-as-battle-for-crown-begins-157542.html"
+        },
+        {
+          "headline": "Coca-Cola's Central Cee film is a single cinematic asset built for a Memed second wind",
+          "product_fit": "Memed",
+          "insight": "'Taste Every Second' is a single two-minute cinematic film meant to carry an entire Premier League season — the literal Memed use case: list the film as a brief, let clippers cut Central Cee's arc into standalone match-day hooks, and stretch one production into months of native short-form instead of a single flight.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Coca-Cola gives its Premier League partnership a Central Cee remix",
+          "source_url": "https://www.afaqs.com/news/advertising/coca-cola-gives-its-premier-league-partnership-a-central-cee-remix-12397217"
+        },
+        {
+          "headline": "Philips' fan-spotted Yash moment shows why Solo's organic-creator model beats a planned campaign",
+          "product_fit": "Solo",
+          "insight": "The ambassador deal only happened because fans organically spotted Yash using a Philips trimmer and it went viral before any brief existed — precisely the unplanned, high-intent creator signal Solo Scout is built to catch and convert into a managed campaign, rather than Philips having to manufacture the moment from scratch next time.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Philips India names Yash brand ambassador for men's grooming, launches 'Trimmers Ka Baap'",
+          "source_url": "https://www.medianews4u.com/philips-india-names-rocking-star-yash-brand-ambassador-for-mens-grooming-launches-trimmers-ka-baap-campaign/"
+        },
+        {
+          "headline": "Kalyan Jewellers' new regional brand needs a market-appropriate digital storefront",
+          "product_fit": "Imagined + Solo",
+          "insight": "Akshaya Thanga Maligai is a genuinely new regional brand identity, not just another showroom — it needs its own digital presence distinct from the parent Kalyan brand, which is Imagined's core brief, while Solo could pair Sivakarthikeyan's ambassador role with Tamil Nadu creator amplification to build awareness beyond Chennai's first store.",
+          "ref_bucket_label": "Bucket 3 — New Products & Brand Launches",
+          "ref_item": "Kalyan Jewellers launches regional jewellery brand 'Akshaya Thanga Maligai' in Tamil Nadu",
+          "source_url": "https://retailjewellerindia.com/kalyan-jewellers-launches-regional-jewellery-brand-akshaya-thanga-maligai-in-tamil-nadu/"
+        },
+        {
+          "headline": "Beco's comparative-ad playbook is competitive pressure on Crunchy's stunt-marketing turf, not a pitch opportunity",
+          "product_fit": "Crunchy (competitive signal)",
+          "insight": "Beco's willingness to name HUL's products directly in outdoor ads is the kind of high-risk, high-attention stunt marketing Crunchy specialises in producing for clients — worth tracking as a competitive case study in how far a challenger brand can push disparagement-adjacent creative before legal risk outweighs the attention, rather than as a direct sales opportunity to either party.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "HUL vs BECO: FMCG's billboard tussle boils over",
+          "source_url": "https://www.exchange4media.com/out-of-home-news/hul-vs-beco-fmcgs-billboard-tussle-boils-over-157532.html"
+        }
+      ],
       "flagged": {
         "bucket1": [],
         "bucket2": [],
@@ -2452,5 +3118,5 @@
       }
     }
   ],
-  "updated_at": "2026-08-18T08:11:16.451317+00:00"
+  "updated_at": "2026-08-25T06:31:26.189417+00:00"
 }
