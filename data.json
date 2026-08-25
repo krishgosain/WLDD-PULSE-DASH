@@ -43,7 +43,8 @@
         ]
       },
       "week_start": "2026-08-24",
-      "week_end": "2026-08-31"
+      "week_end": "2026-08-31",
+      "updated_at": "2026-08-25T07:34:05.767315+00:00"
     },
     {
       "week_start": "2026-08-17",
@@ -679,7 +680,8 @@
         "bucket2": [],
         "bucket3": [],
         "bucket4": []
-      }
+      },
+      "updated_at": "2026-08-25T07:34:05.767315+00:00"
     },
     {
       "week_start": "2026-08-10",
@@ -1713,7 +1715,8 @@
           "Person (unresolved): Runa Akhtar — Marketing Head, Urology at Cipla",
           "Person (unresolved): Ashwini Ramakrishnan — Brand Lead, India at Levi Strauss & Co"
         ]
-      }
+      },
+      "updated_at": "2026-08-24T07:34:05.767315+00:00"
     },
     {
       "week_start": "2026-08-03",
@@ -2260,7 +2263,8 @@
           "Person (unresolved): Siddharth Parakh — Head of Strategy & Business Development at Britannia Industries",
           "Person (unresolved): Nandita Sinha — Chief Executive Officer at Swiggy Instamart"
         ]
-      }
+      },
+      "updated_at": "2026-08-23T07:34:05.767315+00:00"
     },
     {
       "week_start": "2026-07-27",
@@ -2639,7 +2643,8 @@
           "Company (unresolved): Marsia Labs — in \"Marsia Labs launches AI-powered PR communications platform\""
         ],
         "bucket4": []
-      }
+      },
+      "updated_at": "2026-08-22T07:34:05.767315+00:00"
     },
     {
       "bucket1": [],
@@ -2748,7 +2753,8 @@
         ]
       },
       "week_start": "2026-07-20",
-      "week_end": "2026-07-27"
+      "week_end": "2026-07-27",
+      "updated_at": "2026-08-21T07:34:05.767315+00:00"
     },
     {
       "week_start": "2026-07-13",
@@ -2960,7 +2966,8 @@
         "bucket4": [
           "Company (unresolved): Prakul Bakshi Events — re: Jesse Julka"
         ]
-      }
+      },
+      "updated_at": "2026-08-20T07:34:05.767315+00:00"
     },
     {
       "week_start": "2026-06-29",
@@ -3010,7 +3017,8 @@
         "bucket2": [],
         "bucket3": [],
         "bucket4": []
-      }
+      },
+      "updated_at": "2026-08-19T07:34:05.767315+00:00"
     },
     {
       "bucket1": [
@@ -3041,7 +3049,8 @@
         "bucket4": []
       },
       "week_start": "2026-06-15",
-      "week_end": "2026-06-22"
+      "week_end": "2026-06-22",
+      "updated_at": "2026-08-18T07:34:05.767315+00:00"
     },
     {
       "week_start": "2026-05-18",
@@ -3078,7 +3087,8 @@
         "bucket2": [],
         "bucket3": [],
         "bucket4": []
-      }
+      },
+      "updated_at": "2026-08-17T07:34:05.767315+00:00"
     },
     {
       "week_start": "2026-03-09",
@@ -3115,7 +3125,8 @@
         "bucket2": [],
         "bucket3": [],
         "bucket4": []
-      }
+      },
+      "updated_at": "2026-08-16T07:34:05.767315+00:00"
     }
   ],
   "updated_at": "2026-08-25T06:31:26.189417+00:00"

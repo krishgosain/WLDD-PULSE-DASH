@@ -290,9 +290,30 @@ fetch("/data.json")
   .then((data) => {
     WEEKS = data.weeks || [];
     updatedAt = data.updated_at;
-    const hasContent = (w) => ["bucket1", "bucket2", "bucket3", "bucket4", "bucket5"].some((b) => (w[b] || []).length);
-    const firstNonEmpty = WEEKS.findIndex(hasContent);
-    if (firstNonEmpty > 0) activeWeekIndex = firstNonEmpty;
+
+    // Default to the most recently UPDATED week (when the scraper last actually
+    // added content to it) rather than the literal current calendar week — a
+    // brand-new week can sit near-empty for days, and a single stray item
+    // shouldn't hijack the landing view either, so ties break on total item count.
+    const totalItems = (w) => ["bucket1", "bucket2", "bucket3", "bucket4", "bucket5"].reduce((n, b) => n + (w[b] || []).length, 0);
+    let bestIndex = -1;
+    let bestUpdatedAt = null;
+    let bestCount = -1;
+    WEEKS.forEach((w, i) => {
+      const count = totalItems(w);
+      if (!count) return;
+      const wUpdated = w.updated_at || "";
+      if (
+        bestIndex === -1 ||
+        wUpdated > bestUpdatedAt ||
+        (wUpdated === bestUpdatedAt && count > bestCount)
+      ) {
+        bestIndex = i;
+        bestUpdatedAt = wUpdated;
+        bestCount = count;
+      }
+    });
+    if (bestIndex >= 0) activeWeekIndex = bestIndex;
     if (updatedAt) {
       document.getElementById("lastUpdated").textContent = "Updated " + new Date(updatedAt).toDateString();
     }

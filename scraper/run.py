@@ -209,6 +209,13 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
     merged = json.loads(json.dumps(existing))
     merged.setdefault("weeks", [])
     run_date = run_date or datetime.now(timezone.utc).date()
+    now_iso = datetime.now(timezone.utc).isoformat()
+
+    def touch(wk):
+        # Stamps the week with when it last actually gained content — used by the
+        # site to pick a sensible default week (the most recently UPDATED one,
+        # not just the current calendar week or "any week with something in it").
+        wk["updated_at"] = now_iso
 
     for bucket in ("bucket1", "bucket2", "bucket3", "bucket4"):
         for item in incoming_items.get(bucket, []):
@@ -219,6 +226,7 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
             if item_key(bucket, item) not in existing_keys:
                 wk[bucket].append(item)
                 wk[bucket].sort(key=lambda i: i.get("date") or "", reverse=True)
+                touch(wk)
 
     if incoming_items.get("bucket5"):
         for item in incoming_items["bucket5"]:
@@ -229,6 +237,7 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
             existing_refs = {i.get("ref_item") for i in wk["bucket5"]}
             if item.get("ref_item") not in existing_refs:
                 wk["bucket5"].append(item)
+                touch(wk)
 
     if incoming_items.get("flagged"):
         ws, we = week_bounds_for(run_date)
