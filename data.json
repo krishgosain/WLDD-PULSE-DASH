@@ -3,6 +3,76 @@
     {
       "bucket1": [
         {
+          "headline": "Mia by Tanishq and Zepto bring a Rakhi surprise to doorsteps in Mumbai and Delhi NCR",
+          "description": "Extending its 'Make Your Sister Cry' Raksha Bandhan campaign, Mia by Tanishq partnered with Zepto so select deliveries across Mumbai and Delhi NCR carried Mia-branded tissue paper and, in some orders, a Mia gift voucher — turning an everyday delivery into an unexpected Rakhi moment.",
+          "why_important": "A jewellery brand using quick-commerce parcels as a physical media surface shows how 10-minute delivery has become a genuine last-mile advertising channel, not just a fulfilment mechanic, for occasion-led gifting categories.",
+          "source_name": "Business Standard",
+          "source_url": "https://www.business-standard.com/content/press-releases-ani/mia-by-tanishq-and-zepto-bring-an-unexpected-rakhi-surprise-to-doorsteps-across-mumbai-and-delhi-ncr-126082900328_1.html",
+          "date": "2026-08-29",
+          "companies": [
+            {
+              "name": "Tanishq",
+              "url": "https://www.tanishq.co.in"
+            },
+            {
+              "name": "Zepto",
+              "url": "https://www.zeptonow.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Kissht signs Sachin Tendulkar for 'Loans Without Hiccups' campaign",
+          "description": "Fintech lending platform Kissht appointed Sachin Tendulkar as brand ambassador and launched a digital film series in which he gets hiccups every time a Kissht loan gets approved, spotlighting the app's fast, paperless lending process.",
+          "why_important": "A digital lender using a three-year cricket-icon association to dramatise 'instant approval' as a comic gag shows fintech lenders are borrowing FMCG-style celebrity-led brand-building to build trust in a category still associated with predatory lending.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/sachin-tendulkar-gets-hiccups-every-time-kissht-approves-a-loan-12443578",
+          "date": "2026-08-28",
+          "companies": [
+            {
+              "name": "Kissht",
+              "url": "https://www.kissht.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Sachin Tendulkar",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Zepto, Haldiram's and Bakingo take contrasting angles on Raksha Bandhan 2026",
+          "description": "Zepto rolled out 'Rigged Rakhi' (created with Cadbury Celebrations and GIVA, giving sisters control of the gifting narrative via an in-app virtual Mithai Shop), Haldiram's launched 'Keh Do Dil Ki Baat, Haldiram's Ke Saath', and Bakingo turned years of sibling scorekeeping into a Snakes-and-Ladders game with 'Hisaab Barabar'.",
+          "why_important": "Three very different categories — quick-commerce, snacks and bakery — converging on the same festive occasion with distinct creative devices shows how crowded and creatively competitive single-day festive marketing moments have become in India.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/raksha-bandhan-2026-brands-find-new-ways-to-talk-about-sibling-bonds-12444461",
+          "date": "2026-08-28",
+          "companies": [
+            {
+              "name": "Zepto",
+              "url": "https://www.zeptonow.com"
+            },
+            {
+              "name": "Haldiram's",
+              "url": "https://www.haldiram.com"
+            },
+            {
+              "name": "Bakingo",
+              "url": "https://www.bakingo.com"
+            },
+            {
+              "name": "Cadbury Celebrations",
+              "url": "https://www.mondelezinternational.com"
+            },
+            {
+              "name": "GIVA",
+              "url": "https://www.giva.co"
+            }
+          ],
+          "people": []
+        },
+        {
           "headline": "Maars Communicates wins communications mandate for EMOMEE",
           "description": "Children's edutainment IP EMOMEE appointed Maars Communicates as its strategic communications partner in India, covering PR, social and digital strategy as the brand expands beyond content into streaming, products and licensing.",
           "why_important": "A fast-scaling homegrown kids' IP investing in a dedicated comms partner right after its Netflix debut shows India-origin content IPs are professionalising their brand-building playbook as they chase global licensing ambitions.",
@@ -17,6 +87,86 @@
             {
               "name": "Maars Communicates",
               "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Royaloak partners with PVR INOX for its first AI-created ad campaign",
+          "description": "Furniture brand Royaloak launched a brand film created entirely using AI, running across 250 PVR INOX screens over three months, built around its 'International Furniture. Unbeatable Price.' positioning and marking the brand's first move into cinema advertising.",
+          "why_important": "A mass-furniture retailer choosing to debut in cinema advertising with a fully AI-generated film shows AI production is now mature enough for brands to skip traditional shoots entirely for a big-format, high-visibility launch.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/royaloak-partners-with-pvr-inox-for-ai-created-campaign-12444096",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "Royaloak",
+              "url": "https://www.royaloakindia.com"
+            },
+            {
+              "name": "PVR INOX",
+              "url": "https://www.pvrinox.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "OpenAI introduces ChatGPT Ads to India ahead of planned IPO",
+          "description": "OpenAI began rolling out ads on ChatGPT's Free and Go tiers in India, its second-largest market by weekly active users, with more than 50 brands live at launch and a self-serve Ads Manager opening September 4 with daily budgets starting at ₹725.",
+          "why_important": "India becoming one of the first markets for ChatGPT's ad rollout signals a new, AI-native ad inventory pool is opening up alongside search and social — a structural shift every performance and organic-media player will need to react to.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/openai-introduces-chatgpt-ads-to-india-ahead-of-planned-ipo-12441898",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "OpenAI",
+              "url": "https://openai.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Tata Capital marks Raksha Bandhan with '#CountOnTheBond' campaign",
+          "description": "Tata Capital launched a Schbang-conceived Raksha Bandhan campaign, '#CountOnTheBond', reframing the sibling relationship as one where support and reliability flow both ways rather than following the traditional brother-as-protector template.",
+          "why_important": "An NBFC choosing a quieter, mutual-support take on Raksha Bandhan instead of a gifting or comedy angle shows BFSI brands increasingly using festive moments to build emotional trust rather than just drive short-term product association.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/19802/tata-capital-marks-raksha-bandhan-with-countonthebond-campaign",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "Tata Capital",
+              "url": "https://www.tatacapital.com"
+            },
+            {
+              "name": "Schbang",
+              "url": "https://www.schbang.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "MIB empanels JioHotstar, ZEE5, Amazon MX Player and FanCode for government OTT ad spend",
+          "description": "The Ministry of Information & Broadcasting's Central Bureau of Communication empanelled four OTT platforms — JioHotstar, ZEE5, Amazon MX Player and FanCode — under Category A of its ad panel for a three-year term starting August 27, 2026, opening a new government advertising pipeline into streaming.",
+          "why_important": "Government ad spend formally extending to OTT platforms for the first time is a structural expansion of India's public-sector media buy beyond print, TV and radio, and a new revenue lever for streaming platforms beyond subscriptions and brand advertising.",
+          "source_name": "exchange4media",
+          "source_url": "https://www.exchange4media.com/digital-news/mib-opens-ott-advertising-pipeline-with-jiohotstar-zee5-amazon-mx-player-and-fancode-157771.html",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "JioStar",
+              "url": "https://www.jiostar.com"
+            },
+            {
+              "name": "ZEE5",
+              "url": "https://www.zee5.com"
+            },
+            {
+              "name": "MX Player",
+              "url": "https://www.mxplayer.in"
+            },
+            {
+              "name": "FanCode",
+              "url": "https://www.fancode.com"
             }
           ],
           "people": []
@@ -77,6 +227,26 @@
           "people": []
         },
         {
+          "headline": "GIVA pulls down Kriti Sanon's Raksha Bandhan ad amid backlash",
+          "description": "Jewellery brand GIVA withdrew its Kriti Sanon-fronted Raksha Bandhan ad across platforms after criticism over her outfit and the film's choice to show her tying a rakhi to a dog, with the controversy escalating after Kangana Ranaut and other public figures weighed in.",
+          "why_important": "A festive jewellery ad getting pulled mid-campaign over styling and symbolism choices is a reminder that culturally loaded occasions like Raksha Bandhan carry real reputational risk when creative reinterprets tradition too aggressively.",
+          "source_name": "India TV News",
+          "source_url": "https://www.indiatvnews.com/entertainment/celebrities/kriti-sanon-raksha-bandhan-ad-taken-down-by-jewellery-brand-giva-amid-social-media-controversy-2026-08-26-1052425",
+          "date": "2026-08-26",
+          "companies": [
+            {
+              "name": "GIVA",
+              "url": "https://www.giva.co"
+            }
+          ],
+          "people": [
+            {
+              "name": "Kriti Sanon",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
           "headline": "Social Panga wins digital mandate for DeVANS' beer & gin brands",
           "description": "Social Panga's Delhi office won the digital mandate for DeVANS Modern Breweries' beer brands Six Fields and Godfather and its gin brand Gingalalahu, covering social strategy, content and always-on digital engagement.",
           "why_important": "A digital-first agency stepping into the tightly regulated alco-bev category shows brands in that space increasingly need specialist always-on social/content partners rather than traditional above-the-line agencies.",
@@ -120,6 +290,25 @@
           ]
         },
         {
+          "headline": "CreativeMud wins Uflex's creative and digital mandate",
+          "description": "Independent agency CreativeMud won the creative and digital mandate for packaging major Uflex Ltd following a multi-agency pitch, taking on brand communication and digital strategy for the company.",
+          "why_important": "A B2B packaging giant investing in a dedicated creative and digital agency rather than running communications in-house shows even industrial manufacturers are professionalising brand-building as they compete for both customers and talent.",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/industry-updates/creativemud-wins-uflexs-creative-and-digital-mandate-12433043",
+          "date": "2026-08-25",
+          "companies": [
+            {
+              "name": "Uflex",
+              "url": "https://www.uflexltd.com"
+            },
+            {
+              "name": "CreativeMud",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
           "headline": "SW Network wins Garden Vareli's performance marketing mandate",
           "description": "Delhi-based independent agency SW Network won the performance marketing mandate for legacy saree brand Garden Vareli following a multi-agency pitch, covering media planning and digital campaign execution.",
           "why_important": "A heritage textile brand shifting spend to a digital-first performance agency signals traditional saree/ethnic-wear players are finally prioritising measurable, always-on digital marketing over legacy print/TV-led strategies.",
@@ -137,9 +326,88 @@
             }
           ],
           "people": []
+        },
+        {
+          "headline": "boAt gets Arbaaz Khan to trade 'Bhai' swagger for 'Achha Bhaiya' with Blinkit",
+          "description": "Ahead of Raksha Bandhan, boAt teamed up with quick-commerce platform Blinkit and actor Arbaaz Khan for a mock-documentary film poking fun at Bollywood's stock 'Bhai' persona, pushing boAt's Rockerz 480 headphones and Chrome Iris smartwatch as gifting options available via 10-minute delivery.",
+          "why_important": "A wearables brand pairing a festive celebrity film directly with quick-commerce fulfilment shows gifting-occasion marketing is collapsing the gap between seeing an ad and buying the product to near-zero.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/boat-gets-arbaaz-khan-to-trade-bhai-swagger-for-achha-bhaiya-12427704",
+          "date": "2026-08-24",
+          "companies": [
+            {
+              "name": "boAt",
+              "url": "https://www.boat-lifestyle.com"
+            },
+            {
+              "name": "Blinkit",
+              "url": "https://www.blinkit.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Arbaaz Khan",
+              "linkedin_url": null
+            }
+          ]
         }
       ],
       "bucket2": [
+        {
+          "headline": "Hero MotoCorp raises stake in Ather Energy to 32.8% with ₹1,758 crore investment",
+          "description": "Hero MotoCorp's board approved an investment of up to ₹1,758 crore to buy additional shares in electric two-wheeler maker Ather Energy from an existing shareholder, raising its fully diluted stake from 29.88% to up to 32.8%, with completion expected by September 3, 2026.",
+          "why_important": "India's largest two-wheeler maker deepening its stake in Ather rather than just partnering shows legacy ICE manufacturers are choosing to consolidate control of EV capability through ownership as the category matures, not just via arm's-length investment.",
+          "region": "India",
+          "deal_value": "₹1,758 crore (~$210 million) for a 2.92 percentage-point stake increase",
+          "source_name": "Business Standard",
+          "source_url": "https://www.business-standard.com/markets/capital-market-news/ather-energy-surges-as-hero-motocorp-to-hike-stake-to-32-8-126082800369_1.html",
+          "date": "2026-08-28",
+          "companies": [
+            {
+              "name": "Hero MotoCorp",
+              "url": "https://www.heromotocorp.com"
+            },
+            {
+              "name": "Ather Energy",
+              "url": "https://www.atherenergy.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Deepinder Goyal's Temple acquires London-based longevity clinic Longevous",
+          "description": "Wearable-health startup Temple, founded by Zomato/Eternal's Deepinder Goyal, acquired London-based longevity medicine practice Longevous for an undisclosed sum ahead of its first product launch, with Longevous founders Robert Mohr and Avi Roy joining Temple full-time as chief medical officer and head of science respectively.",
+          "why_important": "A consumer wearables startup buying a clinical longevity practice rather than just hiring doctors shows health-tech founders increasingly treating clinical credibility as an acquirable asset, not a slow in-house build, ahead of a product launch.",
+          "region": "Global",
+          "deal_value": "Undisclosed",
+          "source_name": "Business Today",
+          "source_url": "https://www.businesstoday.in/technology/story/deepinder-goyals-temple-acquires-london-based-longevity-medicine-firm-longevous-551824-2026-08-27",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "Temple",
+              "url": "http://www.temple.com"
+            },
+            {
+              "name": "Longevous",
+              "url": null
+            }
+          ],
+          "people": [
+            {
+              "name": "Deepinder Goyal",
+              "linkedin_url": "http://www.linkedin.com/in/deepigoyal"
+            },
+            {
+              "name": "Robert Mohr",
+              "linkedin_url": null
+            },
+            {
+              "name": "Avi Roy",
+              "linkedin_url": null
+            }
+          ]
+        },
         {
           "headline": "TCS acquires Porsche's MHP consulting unit in €320M deal, lands $1.5B AI partnership",
           "description": "Tata Consultancy Services agreed to acquire Porsche's IT and management consulting subsidiary MHP for around €320 million (~$373.6 million), alongside a five-year, ~€1.25 billion AI partnership with Porsche. MHP, which employs roughly 4,500 people, will keep its brand and operate as an independent consultancy within TCS.",
@@ -185,6 +453,36 @@
       ],
       "bucket3": [
         {
+          "headline": "Ather unveils EL01, its first mass-market electric scooter",
+          "description": "Ather Energy debuted the EL01 at its fourth annual Community Day in Bengaluru, its first scooter on the new, more affordable EL platform, expected to be priced around ₹1-1.25 lakh (ex-showroom) — well below its existing 450-series line-up.",
+          "why_important": "Ather moving downmarket with a dedicated mass-market platform, rather than just trimming its premium 450 series, shows India's EV scooter makers now see volume-segment pricing as essential to outgrowing early-adopter demand.",
+          "source_name": "Bike Advice",
+          "source_url": "https://bikeadvice.in/ather-el01-electric-scooter-debut-on-aug-29-2026/",
+          "date": "2026-08-29",
+          "companies": [
+            {
+              "name": "Ather Energy",
+              "url": "https://www.atherenergy.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "UAE jewellery brand Nishka opens its first India showroom in Kozhikode",
+          "description": "UAE-based jewellery brand Nishka Momentous Jewellery entered India with its debut showroom on Mavoor Road, Kozhikode, marking the brand's first retail footprint in the country.",
+          "why_important": "A Gulf-based jewellery brand choosing Kozhikode, not a metro, for its India entry shows overseas jewellers see Kerala's NRI-linked gold-buying market as a more direct entry point into India than the traditional metro-first playbook.",
+          "source_name": "Retail Jeweller India",
+          "source_url": "https://retailjewellerindia.com/uae-jewellery-brand-nishka-set-to-enter-india-with-launch-of-first-showroom-in-kozhikode/",
+          "date": "2026-08-29",
+          "companies": [
+            {
+              "name": "Nishka Momentous Jewellery",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
           "headline": "Yamaha launches YZF-R2 sportbike in India",
           "description": "Yamaha Motor India launched the all-new YZF-R2, a 204cc single-cylinder sportbike slotted above the YZF-R15 in its line-up, priced from ₹2.30 lakh with deliveries starting mid-September.",
           "why_important": "Yamaha adding a new mid-capacity sportbike tier between its entry and flagship models shows two-wheeler makers are betting on India's growing appetite for affordable performance bikes beyond commuter segments.",
@@ -219,6 +517,51 @@
           "people": []
         },
         {
+          "headline": "Samsung unveils the Galaxy S26 FE",
+          "description": "Samsung held its Galaxy Event on August 27, 2026 to launch the Galaxy S26 FE, the latest addition to its flagship-adjacent 'Fan Edition' line bringing S26-series design and camera technology to a lower price point.",
+          "why_important": "Samsung sustaining an annual Fan Edition cadence keeps pressure on Chinese mid-range rivals in India by giving cost-conscious buyers a flagship-adjacent option without waiting for price cuts on the main S-series.",
+          "source_name": "Business Today",
+          "source_url": "https://www.businesstoday.in/amp/technology/news/story/samsung-galaxy-s26-fe-launch-on-august-27-what-to-expect-551143-2026-08-26",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "Samsung",
+              "url": "https://www.samsung.com/in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Xiaomi launches the Redmi Note 17 series globally, led by its first-ever Pro Max",
+          "description": "Xiaomi globally launched the Redmi Note 17 series — Redmi Note 17, Note 17 5G, Note 17 Pro 5G and, for the first time, a Note 17 Pro Max — with the Pro Max topping the line-up on a 9,210-10,000mAh battery and 100W fast charging.",
+          "why_important": "Redmi adding a 'Pro Max' tier above its existing Pro model shows budget-phone makers are following Apple/Samsung-style three-tier naming to justify premium pricing within what was once a strictly value-focused series.",
+          "source_name": "TechCabal",
+          "source_url": "https://techcabal.com/2026/08/27/redmi-note-17-pro-max-release-date-price-specs/",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "Xiaomi",
+              "url": "https://www.mi.com/in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Realme launches the P4s 5G with a 144Hz AMOLED display and 8,000mAh battery",
+          "description": "Realme launched the P4s 5G in India with a 6.78-inch 1.5K 144Hz Samsung AMOLED display, MediaTek Dimensity 7400 Ultra chipset with a dedicated HyperVision+ AI chip, 80W-charging 8,000mAh battery and a 50MP OIS camera, priced from ₹37,999.",
+          "why_important": "Packing a large-capacity fast-charging battery and a dedicated on-device AI chip into a sub-₹40,000 phone shows the AI-features and big-battery arms race has moved decisively into India's mass mid-range segment, not just flagships.",
+          "source_name": "Phonebunch",
+          "source_url": "https://www.phonebunch.com/news/realme-p4s-5g-launch-india-price-specifications_9659.html",
+          "date": "2026-08-26",
+          "companies": [
+            {
+              "name": "Realme",
+              "url": "https://www.realme.com/in"
+            }
+          ],
+          "people": []
+        },
+        {
           "headline": "boltt (Fire-Boltt) launches its first smartphones, Ace 5G and Evo 4G",
           "description": "Wearables brand Fire-Boltt entered the smartphone category with its new 'boltt' sub-brand, launching the Ace 5G and Evo 4G — bloatware-free Android 16 devices with 6.79-inch 120Hz displays, sold via Flipkart and priced under ₹20,000.",
           "why_important": "A homegrown wearables player pushing into smartphones under a distinct sub-brand shows Indian consumer-tech companies are using category adjacency and e-commerce-exclusive launches to challenge established budget-phone incumbents.",
@@ -244,6 +587,51 @@
             {
               "name": "AKAI India",
               "url": "https://akaiindia.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Dot & Key launches India's first 15-shade tinted sunscreen range",
+          "description": "D2C skincare brand Dot & Key launched its Strawberry Dew Tinted Sunscreen range in 15 shades tailored to Indian skin tones, offering broad-spectrum UVA/UVB and blue-light protection with a dewy, no-white-cast finish.",
+          "why_important": "A homegrown skincare brand shipping the widest tinted-sunscreen shade range built specifically for Indian skin tones signals shade-inclusivity is becoming a genuine product differentiator in India's sunscreen category, not just a marketing claim.",
+          "source_name": "vmpl.scnwire.com",
+          "source_url": "https://vmpl.scnwire.com/2026/08/dot-key-skincare-launches-indias-first.html",
+          "date": "2026-08-25",
+          "companies": [
+            {
+              "name": "Dot & Key",
+              "url": "https://www.dotandkey.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Bajaj Auto unveils all-new Pulsar 150 and Pulsar 125 to mark 25 years of Pulsar",
+          "description": "Bajaj Auto launched redesigned versions of the Pulsar 150 and Pulsar 125 on a new diamond-type frame with a centrally mounted gas-charged monoshock, marking a quarter-century of India's best-selling performance motorcycle sub-brand.",
+          "why_important": "Bajaj re-engineering its most affordable Pulsar variants — not just the flagship — for a 25th-anniversary relaunch shows the brand is defending its entry-level performance-bike base just as EV and premium options crowd the category.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/19728/bajaj-auto-celebrates-25-years-of-pulsar-with-all-new-pulsar-150-and-pulsar-125",
+          "date": "2026-08-24",
+          "companies": [
+            {
+              "name": "Bajaj Auto",
+              "url": "https://www.bajajauto.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Zee TV premieres new drama Dilon Ki Ram Leela",
+          "description": "Zee TV launched Dilon Ki Ram Leela, the Hindi adaptation of Telugu hit Ammayi Garu, starring Mishkat Varma and Aastha Sharma with Eijaz Khan and Mansi Salvi in lead roles, also streaming on ZEE5.",
+          "why_important": "Zee TV adapting a proven regional-language hit for Hindi GEC audiences shows broadcasters are increasingly using cross-language format remakes, rather than fresh IP, to de-risk new fiction launches.",
+          "source_name": "Filmibeat",
+          "source_url": "https://www.filmibeat.com/television/news/2026/dilon-ki-ram-leela-episode-1-release-time-today-what-to-expect-from-new-zee-tv-show-plot-streaming-528745.html",
+          "date": "2026-08-24",
+          "companies": [
+            {
+              "name": "Zee TV",
+              "url": "https://www.zeel.com"
             }
           ],
           "people": []
@@ -287,6 +675,30 @@
           "company_url": "https://www.jiostar.com"
         },
         {
+          "person": "Upasana Naithani",
+          "org": "Punt Creative",
+          "previous_role": "Senior Vice President, FCB Kinnect",
+          "new_role_title": "Head of Business",
+          "new_company": "Punt Creative",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/punt-creative-appoints-upasana-naithani-as-head-of-business-12446402",
+          "date": "2026-08-28",
+          "linkedin_url": null,
+          "company_url": "https://punt.partners"
+        },
+        {
+          "person": "Sai Karthik",
+          "org": "Ulka",
+          "previous_role": "Led strategy at Talented, including Urban Company's 'Dignity of Labour', The Hindu's 'Written by Journalists' and Zee5's 'Apni Bhasha, Apni Kahaniyan'",
+          "new_role_title": "Senior Vice President & Head of Strategy, South",
+          "new_company": "Ulka (BBDO Group India)",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/ulka-south-appoints-sai-karthik-as-svp-head-of-strategy-12431787",
+          "date": "2026-08-26",
+          "linkedin_url": null,
+          "company_url": "https://www.ulkaads.com"
+        },
+        {
           "person": "Kketan Chopra",
           "org": "WPP Media",
           "previous_role": "Head North|West|East – Commerce Lead, WPP Media",
@@ -297,6 +709,42 @@
           "date": "2026-08-25",
           "linkedin_url": "http://www.linkedin.com/in/ketanchopra1",
           "company_url": "https://www.wppmedia.com"
+        },
+        {
+          "person": "Prathmesh Mishra",
+          "org": "Varun Beverages",
+          "previous_role": "MD & CEO, South Korea and Japan, Diageo; earlier Chief Commercial Officer and Chief Operating Officer (West), Diageo India",
+          "new_role_title": "CEO & Managing Director, KIVA Spirits and Company (Varun Beverages' new alcoholic-beverages subsidiary)",
+          "new_company": "Varun Beverages",
+          "source_name": "Business Today",
+          "source_url": "https://www.businesstoday.in/jobs/story/varun-beverages-enters-alcohol-business-taps-former-diageo-executive-prathmesh-mishra-551301-2026-08-25",
+          "date": "2026-08-25",
+          "linkedin_url": null,
+          "company_url": "https://www.varunbeverages.com"
+        },
+        {
+          "person": "Abhishek Bhattacharya",
+          "org": "Madison Media Ultra",
+          "previous_role": "Media leadership roles at JioStar, Bloomberg TV India, Times Group, ABP Group and HT Media",
+          "new_role_title": "Vice President (leads a portfolio of brands in Mumbai, business development and partnerships)",
+          "new_company": "Madison Media Ultra",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/madison-world-announces-leadership-appointments-across-media-content-and-ooh-12431855",
+          "date": "2026-08-25",
+          "linkedin_url": null,
+          "company_url": "https://www.madisonworld.com"
+        },
+        {
+          "person": "Hardev Dhindsa",
+          "org": "Apostrophe Ventures",
+          "previous_role": "Technology entrepreneur; built global technology businesses",
+          "new_role_title": "Chief Technology and AI Advisor",
+          "new_company": "Apostrophe Ventures",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/apostrophe-ventures-unveils-senior-leadership-team-appoints-hardev-dhindsa-as-chief-technology-and-ai-advisor/",
+          "date": "2026-08-25",
+          "linkedin_url": null,
+          "company_url": null
         },
         {
           "person": "Prasenjit Basu",
@@ -375,27 +823,99 @@
           "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
           "ref_item": "CaratLane puts 30% of August media behind Rakhi as gifting gets more personal",
           "source_url": "https://www.socialsamosa.com/marketing-shorts/caratlane-puts-30-percent-august-media-rakhi-12428348"
+        },
+        {
+          "headline": "OpenAI's ChatGPT Ads launch in India is competitive pressure on organic-media plays, not a WLDD opportunity",
+          "product_fit": "Solo (competitive pressure)",
+          "insight": "ChatGPT Ads landing in India with 50+ brands already live is a new paid-attention channel entering the exact space WLDD's organic model was built to sidestep — the honest read is competitive pressure on Solo's 'earn attention, don't buy it' pitch, not a service opportunity, and it's worth tracking how fast performance budgets start shifting toward AI-chat inventory.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "OpenAI introduces ChatGPT Ads to India ahead of planned IPO",
+          "source_url": "https://www.afaqs.com/news/advertising/openai-introduces-chatgpt-ads-to-india-ahead-of-planned-ipo-12441898"
+        },
+        {
+          "headline": "Royaloak's AI-made cinema film needs a life beyond 250 PVR INOX screens",
+          "product_fit": "Memed + Crunchy",
+          "insight": "Royaloak's fully AI-generated brand film is a finished video asset currently confined to pre-show cinema slots — Memed's clipper network could re-cut it into short-form for social to extend reach past theatre footfall, while the AI-production approach itself is a direct signal of the kind of fast, non-precious production Crunchy already specialises in for brands wanting to skip traditional shoots.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Royaloak partners with PVR INOX for its first AI-created ad campaign",
+          "source_url": "https://www.afaqs.com/news/advertising/royaloak-partners-with-pvr-inox-for-ai-created-campaign-12444096"
+        },
+        {
+          "headline": "Mia by Tanishq's Zepto-parcel stunt is a template for a Crunchy-produced, Memed-distributed activation",
+          "product_fit": "Crunchy + Memed + ScoopWhoop",
+          "insight": "Turning quick-commerce delivery parcels into a branded surprise moment is exactly the kind of physical, engineered-for-shareability stunt Crunchy is built to produce (in the lineage of the Amazon Crane and Philips OneBlade topiary activations) — Memed's clippers could turn real customer unboxing reactions into native social content, with ScoopWhoop amplifying the 'make your sister cry' narrative to a wider audience once the on-ground moment has run its course.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Mia by Tanishq and Zepto bring a Rakhi surprise to doorsteps in Mumbai and Delhi NCR",
+          "source_url": "https://www.business-standard.com/content/press-releases-ani/mia-by-tanishq-and-zepto-bring-an-unexpected-rakhi-surprise-to-doorsteps-across-mumbai-and-delhi-ncr-126082900328_1.html"
+        },
+        {
+          "headline": "Kissht's hiccup-gag film series is a single running joke built for clip-by-clip distribution",
+          "product_fit": "Memed",
+          "insight": "Kissht's three-year Sachin Tendulkar deal is structured around a repeatable comic device (hiccups on loan approval) rather than one hero film — Memed's clipper network is the literal mechanism to turn each new instalment into dozens of native reaction and meme-style cuts as the campaign extends 'beyond the initial launch' per the brand's own framing.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Kissht signs Sachin Tendulkar for 'Loans Without Hiccups' campaign",
+          "source_url": "https://www.afaqs.com/news/advertising/sachin-tendulkar-gets-hiccups-every-time-kissht-approves-a-loan-12443578"
+        },
+        {
+          "headline": "Ather's mass-market EL01 needs a digital storefront and creator push to reach first-time EV buyers",
+          "product_fit": "Imagined + Solo",
+          "insight": "Ather's move downmarket with the EL01 targets a first-time, price-sensitive EV buyer who is a very different audience from its existing 450-series base — Imagined could build a dedicated EL-platform digital storefront and configurator distinct from Ather's premium site, while Solo's Collab Link is a natural fit for the value-conscious, comparison-shopping creator content this launch will need to win over commuters currently choosing ICE scooters.",
+          "ref_bucket_label": "Bucket 3 — New Products & Brand Launches",
+          "ref_item": "Ather unveils EL01, its first mass-market electric scooter",
+          "source_url": "https://bikeadvice.in/ather-el01-electric-scooter-debut-on-aug-29-2026/"
+        },
+        {
+          "headline": "Nishka's Kozhikode debut needs an India-specific digital presence from day one",
+          "product_fit": "Imagined + Solo",
+          "insight": "A Gulf jewellery brand entering India through a single Kerala showroom, rather than a metro flagship, is a textbook market-entry case — Imagined can build the India-specific e-commerce and brand site the launch is currently missing, while Solo can organise the wave of regional beauty and jewellery creators likely to cover a new NRI-market entrant before Nishka has any in-house creator process to manage them.",
+          "ref_bucket_label": "Bucket 3 — New Products & Brand Launches",
+          "ref_item": "UAE jewellery brand Nishka opens its first India showroom in Kozhikode",
+          "source_url": "https://retailjewellerindia.com/uae-jewellery-brand-nishka-set-to-enter-india-with-launch-of-first-showroom-in-kozhikode/"
+        },
+        {
+          "headline": "Dot & Key's 15-shade sunscreen is built for shade-matching creator content, not a hero film",
+          "product_fit": "Solo",
+          "insight": "A 15-shade tinted sunscreen range lives or dies on real people finding their shade match on camera — Solo's Collab Link and Solo Scout are the natural mechanism to organise the flood of diverse-skin-tone creator try-on content this launch needs at scale, rather than Dot & Key relying on a handful of paid influencer posts.",
+          "ref_bucket_label": "Bucket 3 — New Products & Brand Launches",
+          "ref_item": "Dot & Key launches India's first 15-shade tinted sunscreen range",
+          "source_url": "https://vmpl.scnwire.com/2026/08/dot-key-skincare-launches-indias-first.html"
         }
       ],
       "flagged": {
         "bucket1": [
+          "Person (unresolved): Sachin Tendulkar — in \"Kissht signs Sachin Tendulkar for 'Loans Without Hiccups' campaign\"",
           "Company (unresolved): Maars Communicates — in \"Maars Communicates wins communications mandate for EMOMEE\"",
           "Person (unresolved): Kenny Sebastian — in \"Louis Philippe brings Kenny Sebastian into new Onam campaign\"",
           "Person (unresolved): Rajkummar Rao — in \"Traya rolls out hair loss awareness campaign with Rajkummar Rao\"",
+          "Person (unresolved): Kriti Sanon — in \"GIVA pulls down Kriti Sanon's Raksha Bandhan ad amid backlash\"",
           "Person (unresolved): Ashlesha — in \"CaratLane puts 30% of August media behind Rakhi as gifting gets more personal\"",
-          "Person (unresolved): Vedant — in \"CaratLane puts 30% of August media behind Rakhi as gifting gets more personal\""
+          "Person (unresolved): Vedant — in \"CaratLane puts 30% of August media behind Rakhi as gifting gets more personal\"",
+          "Company (unresolved): CreativeMud — in \"CreativeMud wins Uflex's creative and digital mandate\"",
+          "Person (unresolved): Arbaaz Khan — in \"boAt gets Arbaaz Khan to trade 'Bhai' swagger for 'Achha Bhaiya' with Blinkit\""
         ],
-        "bucket2": [],
-        "bucket3": [],
+        "bucket2": [
+          "Company (unresolved): Longevous — in \"Deepinder Goyal's Temple acquires London-based longevity clinic Longevous\"",
+          "Person (unresolved): Robert Mohr — in \"Deepinder Goyal's Temple acquires London-based longevity clinic Longevous\"",
+          "Person (unresolved): Avi Roy — in \"Deepinder Goyal's Temple acquires London-based longevity clinic Longevous\""
+        ],
+        "bucket3": [
+          "Company (unresolved): Nishka Momentous Jewellery — in \"UAE jewellery brand Nishka opens its first India showroom in Kozhikode\""
+        ],
         "bucket4": [
           "Person (unresolved): Saman Khan — Senior Vice President & Head of Corporate Communications at IndusInd Bank",
           "Person (unresolved): Dwijendra Parashar — Senior Director, Marketing – Sports at JioStar",
+          "Person (unresolved): Upasana Naithani — Head of Business at Punt Creative",
+          "Person (unresolved): Sai Karthik — Senior Vice President & Head of Strategy, South at Ulka (BBDO Group India)",
+          "Person (unresolved): Prathmesh Mishra — CEO & Managing Director, KIVA Spirits and Company (Varun Beverages' new alcoholic-beverages subsidiary) at Varun Beverages",
+          "Person (unresolved): Abhishek Bhattacharya — Vice President (leads a portfolio of brands in Mumbai, business development and partnerships) at Madison Media Ultra",
+          "Person (unresolved): Hardev Dhindsa — Chief Technology and AI Advisor at Apostrophe Ventures",
+          "Company (unresolved): Apostrophe Ventures — re: Hardev Dhindsa",
           "Person (unresolved): Prasenjit Basu — Head – Marketing & Corporate Communications at Voltas"
         ]
       },
       "week_start": "2026-08-24",
       "week_end": "2026-08-31",
-      "updated_at": "2026-08-31T06:29:47.343226+00:00"
+      "updated_at": "2026-08-31T07:01:36.681231+00:00"
     },
     {
       "week_start": "2026-08-17",
@@ -3496,5 +4016,5 @@
       "updated_at": "2026-08-16T07:34:05.767315+00:00"
     }
   ],
-  "updated_at": "2026-08-31T06:29:47.343478+00:00"
+  "updated_at": "2026-08-31T07:01:36.681565+00:00"
 }
