@@ -1,10 +1,303 @@
 {
   "weeks": [
     {
-      "bucket1": [],
-      "bucket2": [],
-      "bucket3": [],
+      "bucket1": [
+        {
+          "headline": "Maars Communicates wins communications mandate for EMOMEE",
+          "description": "Children's edutainment IP EMOMEE appointed Maars Communicates as its strategic communications partner in India, covering PR, social and digital strategy as the brand expands beyond content into streaming, products and licensing.",
+          "why_important": "A fast-scaling homegrown kids' IP investing in a dedicated comms partner right after its Netflix debut shows India-origin content IPs are professionalising their brand-building playbook as they chase global licensing ambitions.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/newbizwins/maars-communicates-wins-communications-mandate-for-emomee-12443201",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "EMOMEE",
+              "url": "https://emomee.com"
+            },
+            {
+              "name": "Maars Communicates",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Louis Philippe brings Kenny Sebastian into new Onam campaign",
+          "description": "Louis Philippe launched its Onam Collection 2026 with comedian Kenny Sebastian in a Schbang-conceived campaign, 'Get Louis Philippe. Get Onam Right,' built around Malayali homecoming rituals and family wardrobe inspections.",
+          "why_important": "A national menswear brand building an entire festive campaign around one regional festival's specific cultural rituals, fronted by a regional-origin comedian, shows the shift from generic pan-India festive ads to hyper-local storytelling.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/louis-philippe-brings-kenny-sebastian-into-new-onam-campaign-12436755",
+          "date": "2026-08-26",
+          "companies": [
+            {
+              "name": "Louis Philippe",
+              "url": "https://www.louisphilippe.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Kenny Sebastian",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Traya rolls out hair loss awareness campaign with Rajkummar Rao",
+          "description": "D2C hair-loss brand Traya launched a Hair Loss Awareness Month digital campaign fronted by actor Rajkummar Rao, using a one-minute at-home hair-pull test to help viewers distinguish normal shedding from active hair loss.",
+          "why_important": "A D2C wellness brand using a Bollywood star to popularise a simple self-diagnostic test is a low-cost-per-acquisition awareness play that doubles as top-of-funnel lead generation for its subscription hair-care programme.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/traya-rolls-out-hair-loss-awareness-campaign-with-rajkummar-rao-12436057",
+          "date": "2026-08-26",
+          "companies": [
+            {
+              "name": "Traya",
+              "url": "https://traya.health"
+            }
+          ],
+          "people": [
+            {
+              "name": "Rajkummar Rao",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Zomato turns newspaper into banana leaf for Onam-themed print ad",
+          "description": "As part of Kerala's Onam festivities, Zomato recreated the look of a traditional sadya spread by transforming a newspaper page into a banana-leaf-style print execution, joining brands like DTDC, Birla Opus Paints and MyG in ritual-led Onam creative this year.",
+          "why_important": "A quick-commerce/food-delivery brand investing in a craft-led print stunt for a single regional festival shows performance-first platforms are borrowing brand-building tactics from FMCG to build emotional equity in specific markets.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/mktg/from-backwaters-to-banana-leaves-how-brands-are-celebrating-onam-2026-12436215",
+          "date": "2026-08-26",
+          "companies": [
+            {
+              "name": "Zomato",
+              "url": "https://www.zomato.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Social Panga wins digital mandate for DeVANS' beer & gin brands",
+          "description": "Social Panga's Delhi office won the digital mandate for DeVANS Modern Breweries' beer brands Six Fields and Godfather and its gin brand Gingalalahu, covering social strategy, content and always-on digital engagement.",
+          "why_important": "A digital-first agency stepping into the tightly regulated alco-bev category shows brands in that space increasingly need specialist always-on social/content partners rather than traditional above-the-line agencies.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/newbizwins/social-panga-wins-digital-mandate-for-devans-beer-gin-brands-12426681",
+          "date": "2026-08-25",
+          "companies": [
+            {
+              "name": "DeVANS Modern Breweries",
+              "url": "https://devans.co.in"
+            },
+            {
+              "name": "Social Panga",
+              "url": "https://www.socialpanga.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "CaratLane puts 30% of August media behind Rakhi as gifting gets more personal",
+          "description": "CaratLane allocated nearly a third of its August 2026 media investment to Raksha Bandhan, running a campaign featuring on-screen siblings Ashlesha and Vedant from The Family Man built around sibling banter and gifting.",
+          "why_important": "A jewellery brand front-loading a third of a month's media budget into one festive occasion shows how concentrated, moment-led spending is replacing steady always-on jewellery advertising.",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/marketing-shorts/caratlane-puts-30-percent-august-media-rakhi-12428348",
+          "date": "2026-08-25",
+          "companies": [
+            {
+              "name": "CaratLane",
+              "url": "https://www.caratlane.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Ashlesha",
+              "linkedin_url": null
+            },
+            {
+              "name": "Vedant",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "SW Network wins Garden Vareli's performance marketing mandate",
+          "description": "Delhi-based independent agency SW Network won the performance marketing mandate for legacy saree brand Garden Vareli following a multi-agency pitch, covering media planning and digital campaign execution.",
+          "why_important": "A heritage textile brand shifting spend to a digital-first performance agency signals traditional saree/ethnic-wear players are finally prioritising measurable, always-on digital marketing over legacy print/TV-led strategies.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/newbizwins/sw-network-bags-garden-varelis-performance-marketing-mandate-12425632",
+          "date": "2026-08-24",
+          "companies": [
+            {
+              "name": "Garden Vareli",
+              "url": "https://www.gardenvareli.com"
+            },
+            {
+              "name": "SW Network",
+              "url": "https://www.sociowash.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket2": [
+        {
+          "headline": "TCS acquires Porsche's MHP consulting unit in €320M deal, lands $1.5B AI partnership",
+          "description": "Tata Consultancy Services agreed to acquire Porsche's IT and management consulting subsidiary MHP for around €320 million (~$373.6 million), alongside a five-year, ~€1.25 billion AI partnership with Porsche. MHP, which employs roughly 4,500 people, will keep its brand and operate as an independent consultancy within TCS.",
+          "why_important": "India's largest IT services firm buying a European automotive-consulting specialist while simultaneously landing a $1.5 billion AI deal shows Indian IT majors moving up the value chain from services delivery to owning specialist automotive-AI capability outright.",
+          "region": "Global",
+          "deal_value": "€320 million (~$373.6 million) for MHP; separate ~€1.25 billion / $1.46 billion five-year AI partnership with Porsche",
+          "source_name": "CNBC",
+          "source_url": "https://www.cnbc.com/2026/08/25/porsche-inks-billion-ai-deal-india-it-tcs.html",
+          "date": "2026-08-25",
+          "companies": [
+            {
+              "name": "TCS",
+              "url": "https://www.tcs.com"
+            },
+            {
+              "name": "Porsche",
+              "url": "https://www.porsche.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Honasa Consumer calls off ₹135 crore Fluence Pharma acquisition",
+          "description": "Honasa Consumer terminated its proposed acquisition of a 58% stake in nutraceuticals company Fluence Pharma, citing non-fulfilment of closing conditions under the share purchase agreement — just over two months after announcing the deal in June.",
+          "why_important": "A listed D2C beauty major walking away from a nutraceuticals bolt-on mid-process is a reminder that not every inorganic bet in India's hot D2C M&A market closes cleanly, and signals continued discipline from acquirers on deal terms.",
+          "region": "India",
+          "deal_value": "₹135 crore (deal terminated, did not close)",
+          "source_name": "BW Businessworld",
+          "source_url": "https://www.businessworld.in/article/honasa-consumer-calls-off-fluence-pharma-acquisition-over-closing-conditions-620812",
+          "date": "2026-08-25",
+          "companies": [
+            {
+              "name": "Honasa Consumer",
+              "url": "https://honasa.in"
+            },
+            {
+              "name": "Fluence Pharma",
+              "url": "https://www.fluencepharma.in"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket3": [
+        {
+          "headline": "Yamaha launches YZF-R2 sportbike in India",
+          "description": "Yamaha Motor India launched the all-new YZF-R2, a 204cc single-cylinder sportbike slotted above the YZF-R15 in its line-up, priced from ₹2.30 lakh with deliveries starting mid-September.",
+          "why_important": "Yamaha adding a new mid-capacity sportbike tier between its entry and flagship models shows two-wheeler makers are betting on India's growing appetite for affordable performance bikes beyond commuter segments.",
+          "source_name": "DriveSpark",
+          "source_url": "https://www.drivespark.com/two-wheelers/2026/yamaha-yzf-r2-launched-at-rs-2-30-lakh-specs-features-images-088059.html",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "Yamaha Motor India",
+              "url": "https://www.yamaha-motor-india.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Two Brothers India Farms teams up with Sweetish House Mafia for a peanut butter cookie collab",
+          "description": "Organic foods brand Two Brothers India Farms partnered with cult cookie label Sweetish House Mafia on a limited-edition peanut and peanut-butter cookie range, spanning three textures from chunky-and-gooey to thin-and-crunchy.",
+          "why_important": "A clean-label organic-farms brand co-creating a limited-edition treat with an indulgent D2C cookie label shows even health-positioned F&B brands are borrowing hype-drop tactics to reach younger, discovery-led shoppers.",
+          "source_name": "LocalSamosa",
+          "source_url": "https://www.localsamosa.com/business/brand-announcements-fourth-week-of-august-2026-12442747",
+          "date": "2026-08-27",
+          "companies": [
+            {
+              "name": "Two Brothers India Farms",
+              "url": "https://twobrothersindiashop.com"
+            },
+            {
+              "name": "Sweetish House Mafia",
+              "url": "https://www.sweetishhousemafia.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "boltt (Fire-Boltt) launches its first smartphones, Ace 5G and Evo 4G",
+          "description": "Wearables brand Fire-Boltt entered the smartphone category with its new 'boltt' sub-brand, launching the Ace 5G and Evo 4G — bloatware-free Android 16 devices with 6.79-inch 120Hz displays, sold via Flipkart and priced under ₹20,000.",
+          "why_important": "A homegrown wearables player pushing into smartphones under a distinct sub-brand shows Indian consumer-tech companies are using category adjacency and e-commerce-exclusive launches to challenge established budget-phone incumbents.",
+          "source_name": "Fonearena",
+          "source_url": "https://www.fonearena.com/blog/488777/boltt-evo-4g-ace-5g-launch-date.html",
+          "date": "2026-08-25",
+          "companies": [
+            {
+              "name": "Fire-Boltt",
+              "url": "https://fireboltt.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "AKAI launches nature-themed Glass Finish Door refrigerators in India",
+          "description": "Japanese appliance brand AKAI launched a new line of 190-litre Direct Cool refrigerators in India with glass-finish doors in Violet Leaf and Golden Flower designs, priced from ₹18,190 with a 10-year compressor warranty.",
+          "why_important": "A legacy Japanese appliance brand betting on decor-led glass-finish design for an entry-level refrigerator shows aesthetics, not just capacity or energy rating, is becoming a differentiator in India's crowded mass-appliance segment.",
+          "source_name": "Khabarpatri English",
+          "source_url": "https://english.khabarpatri.com/2026/08/27/akai-brings-nature-into-indian-kitchens-with-new-glass-finish-door-direct-cool-refrigerators/",
+          "date": "2026-08-25",
+          "companies": [
+            {
+              "name": "AKAI India",
+              "url": "https://akaiindia.in"
+            }
+          ],
+          "people": []
+        }
+      ],
       "bucket4": [
+        {
+          "person": "Peyman Kargar",
+          "org": "TVS Motor Company",
+          "previous_role": "President, TVS International (Head of International Business), TVS Motor Company",
+          "new_role_title": "Director & CEO, effective January 27, 2027 (succeeds K N Radhakrishnan, who continues as CEO through the transition, then becomes non-executive director)",
+          "new_company": "TVS Motor Company",
+          "source_name": "exchange4media",
+          "source_url": "https://www.exchange4media.com/people-movement-news/tvs-motor-company-appoints-peyman-kargar-as-director-ceo-157723.html",
+          "date": "2026-08-28",
+          "linkedin_url": "http://www.linkedin.com/in/peyman-kargar-b9a7b333",
+          "company_url": "https://www.tvsmotor.com"
+        },
+        {
+          "person": "Saman Khan",
+          "org": "IndusInd Bank",
+          "previous_role": "Vice President, Corporate Communications, Generali Central Insurance",
+          "new_role_title": "Senior Vice President & Head of Corporate Communications",
+          "new_company": "IndusInd Bank",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/indusind-bank-appoints-saman-khan-as-svp-and-head-of-corporate-communications-12446632",
+          "date": "2026-08-28",
+          "linkedin_url": null,
+          "company_url": "https://www.indusind.com"
+        },
+        {
+          "person": "Dwijendra Parashar",
+          "org": "JioStar",
+          "previous_role": "Marketing & innovation roles at Tata Consumer Products; earlier Head of Marketing, Rajasthan Royals, and cricket marketing lead at The Walt Disney Company",
+          "new_role_title": "Senior Director, Marketing – Sports",
+          "new_company": "JioStar",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/jiostar-appoints-dwijendra-parashar-as-senior-director-of-marketing-sports-12446596",
+          "date": "2026-08-28",
+          "linkedin_url": null,
+          "company_url": "https://www.jiostar.com"
+        },
+        {
+          "person": "Kketan Chopra",
+          "org": "WPP Media",
+          "previous_role": "Head North|West|East – Commerce Lead, WPP Media",
+          "new_role_title": "Senior Vice President – Commerce (continues to lead commerce-led growth: e-commerce strategy, P&L, retail media)",
+          "new_company": "WPP Media",
+          "source_name": "exchange4media",
+          "source_url": "https://www.exchange4media.com/people-movement-news/wpp-media-promotes-kketan-chopra-to-senior-vice-president-commerce-157613.html",
+          "date": "2026-08-25",
+          "linkedin_url": "http://www.linkedin.com/in/ketanchopra1",
+          "company_url": "https://www.wppmedia.com"
+        },
         {
           "person": "Prasenjit Basu",
           "org": "Voltas",
@@ -18,7 +311,72 @@
           "company_url": "https://www.voltas.com"
         }
       ],
-      "bucket5": [],
+      "bucket5": [
+        {
+          "headline": "Louis Philippe's Onam hero film and its short-form cutdowns are a ready-made regional distribution pipeline",
+          "product_fit": "Memed + Crunchy",
+          "insight": "Louis Philippe's Onam film and its three short-form extensions (gifting, festive season, outfit choice) are exactly the kind of finished video assets that need distribution muscle post-launch — Memed's clipper network could re-cut Kenny Sebastian's 'wardrobe inspection' moments into hyper-shareable regional clips, while Crunchy is the template for how a national brand should localise a hero film for future festivals beyond Kerala.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Louis Philippe brings Kenny Sebastian into new Onam campaign",
+          "source_url": "https://www.afaqs.com/news/advertising/louis-philippe-brings-kenny-sebastian-into-new-onam-campaign-12436755"
+        },
+        {
+          "headline": "Traya's hair-pull test film is a single asset built to be clipped a hundred ways",
+          "product_fit": "Memed",
+          "insight": "Traya's one-minute hair-pull test film with Rajkummar Rao is a single polished asset carrying an entire month-long awareness push — Memed's clipper network could turn the test itself into dozens of native reaction/duet-style clips across Instagram and Reels, extending reach well beyond one hero film's paid distribution.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Traya rolls out hair loss awareness campaign with Rajkummar Rao",
+          "source_url": "https://www.afaqs.com/news/advertising/traya-rolls-out-hair-loss-awareness-campaign-with-rajkummar-rao-12436057"
+        },
+        {
+          "headline": "Zomato's banana-leaf print stunt needs a second life beyond one day of newsprint",
+          "product_fit": "Memed + ScoopWhoop",
+          "insight": "Zomato's newspaper-to-banana-leaf print stunt is a striking still-image idea trapped in a one-day print run — Memed's clippers could generate short unboxing/reveal-style videos of the print execution for social, and ScoopWhoop's owned reach can carry the 'sadya spread' narrative to a pan-India audience well past Onam week.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Zomato turns newspaper into banana leaf for Onam-themed print ad",
+          "source_url": "https://www.afaqs.com/news/mktg/from-backwaters-to-banana-leaves-how-brands-are-celebrating-onam-2026-12436215"
+        },
+        {
+          "headline": "EMOMEE's post-Netflix comms push is about to attract a flood of kidfluencer/parenting creator pitches",
+          "product_fit": "Solo + The Lit School",
+          "insight": "EMOMEE's move to formalise comms right after its Netflix debut signals a kids'-IP brand about to lean hard into creator-driven storytelling to build a global fanbase — Solo's Collab Link and Solo Scout could organise the flood of parenting/kidfluencer creator pitches EMOMEE will now attract, while The Lit School is a natural talent-pipeline tie-in as the brand scales its content team.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Maars Communicates wins communications mandate for EMOMEE",
+          "source_url": "https://www.afaqs.com/news/newbizwins/maars-communicates-wins-communications-mandate-for-emomee-12443201"
+        },
+        {
+          "headline": "Garden Vareli's first real performance-marketing bet is a category ripe for creator-led growth",
+          "product_fit": "Solo",
+          "insight": "Garden Vareli handing performance marketing to a digital-first agency after decades of print/TV-led brand-building is a heritage textile brand's first real bet on measurable digital growth — Solo's managed creator-campaign service is the natural next step to pair performance media with high-intent creator content for a category that has historically under-invested in influencer marketing.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "SW Network wins Garden Vareli's performance marketing mandate",
+          "source_url": "https://www.afaqs.com/news/newbizwins/sw-network-bags-garden-varelis-performance-marketing-mandate-12425632"
+        },
+        {
+          "headline": "boltt's smartphone debut needs a storefront and a clipping engine to match its Flipkart-only launch",
+          "product_fit": "Imagined + Memed",
+          "insight": "A wearables brand launching an entirely new smartphone sub-brand needs a market-appropriate digital storefront and product-education presence fast — Imagined could build boltt's dedicated e-commerce/brand site beyond its Flipkart listing, while Memed clips the launch-day unboxing and spec-reveal content already circulating across tech media into broader consumer-facing short-form.",
+          "ref_bucket_label": "Bucket 3 — New Products & Brand Launches",
+          "ref_item": "boltt (Fire-Boltt) launches its first smartphones, Ace 5G and Evo 4G",
+          "source_url": "https://www.fonearena.com/blog/488777/boltt-evo-4g-ace-5g-launch-date.html"
+        },
+        {
+          "headline": "A called-off acquisition leaves Fluence Pharma's brand/growth talent in limbo",
+          "product_fit": "The Lit School",
+          "insight": "A called-off acquisition often leaves target-company talent — Fluence Pharma's nutraceuticals R&D and brand team — in limbo with an uncertain next step; this is a talent-pool opportunity for The Lit School's creator-economy and growth-marketing pipeline rather than a service pitch to either Honasa or Fluence directly.",
+          "ref_bucket_label": "Bucket 2 — M&A",
+          "ref_item": "Honasa Consumer calls off ₹135 crore Fluence Pharma acquisition",
+          "source_url": "https://www.businessworld.in/article/honasa-consumer-calls-off-fluence-pharma-acquisition-over-closing-conditions-620812"
+        },
+        {
+          "headline": "CaratLane's concentrated Rakhi media bet needs rapid-turnaround follow-on content to sustain its window",
+          "product_fit": "Crunchy + Memed",
+          "insight": "Putting 30% of a month's media behind one festive moment means CaratLane's Ashlesha-Vedant film needs to work exceptionally hard in a short window — Crunchy's fast-turnaround production model suits the kind of rapid follow-on cutdowns a concentrated festive spend demands, while Memed can extend the campaign's shelf life through creator-driven reaction content once paid media tapers off.",
+          "ref_bucket_label": "Bucket 1 — Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "CaratLane puts 30% of August media behind Rakhi as gifting gets more personal",
+          "source_url": "https://www.socialsamosa.com/marketing-shorts/caratlane-puts-30-percent-august-media-rakhi-12428348"
+        }
+      ],
       "flagged": {
         "bucket1": [
           "Person (unresolved): Yash — in \"Philips India names Yash brand ambassador for men's grooming, launches 'Trimmers Ka Baap'\"",
@@ -28,7 +386,12 @@
           "Person (unresolved): Riyan Parag — in same item",
           "Person (unresolved): Sanju Samson — in same item",
           "Person (unresolved): Harmanpreet Kaur — in \"Harmanpreet Kaur and SPNI challenge cricket's 'gentleman's game' tag\"",
-          "Person (unresolved): Central Cee — in \"Coca-Cola gives its Premier League partnership a Central Cee remix\""
+          "Person (unresolved): Central Cee — in \"Coca-Cola gives its Premier League partnership a Central Cee remix\"",
+          "Person (unresolved): Kenny Sebastian — in \"Louis Philippe brings Kenny Sebastian into new Onam campaign\"",
+          "Person (unresolved): Rajkummar Rao — in \"Traya rolls out hair loss awareness campaign with Rajkummar Rao\"",
+          "Person (unresolved): Ashlesha — in \"CaratLane puts 30% of August media behind Rakhi as gifting gets more personal\"",
+          "Person (unresolved): Vedant — in same item",
+          "Company (unresolved domain): Maars Communicates — in \"Maars Communicates wins communications mandate for EMOMEE\""
         ],
         "bucket2": [],
         "bucket3": [
@@ -39,12 +402,14 @@
           "Person (unresolved): Hrishikesh Parandekar — Chief Executive Officer at Kolte-Patil Developers",
           "Person (unresolved): Manish Anandani — Managing Director & CEO at Colgate-Palmolive India",
           "Person (unresolved): Himavant Kurnala — Chief Growth and Product Officer, Instamart at Swiggy",
-          "Person (unresolved): Prasenjit Basu — Head Marketing & Corporate Communications at Voltas"
+          "Person (unresolved): Prasenjit Basu — Head Marketing & Corporate Communications at Voltas",
+          "Person (unresolved LinkedIn via Apollo): Saman Khan — SVP & Head of Corporate Communications at IndusInd Bank",
+          "Person (unresolved LinkedIn via Apollo): Dwijendra Parashar — Senior Director, Marketing - Sports at JioStar"
         ]
       },
       "week_start": "2026-08-24",
       "week_end": "2026-08-31",
-      "updated_at": "2026-08-25T07:34:05.767315+00:00"
+      "updated_at": "2026-08-31T06:29:47.343226+00:00"
     },
     {
       "week_start": "2026-08-17",
@@ -3129,5 +3494,5 @@
       "updated_at": "2026-08-16T07:34:05.767315+00:00"
     }
   ],
-  "updated_at": "2026-08-25T06:31:26.189417+00:00"
+  "updated_at": "2026-08-31T06:29:47.343478+00:00"
 }
