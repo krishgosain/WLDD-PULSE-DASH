@@ -379,32 +379,18 @@
       ],
       "flagged": {
         "bucket1": [
-          "Person (unresolved): Yash — in \"Philips India names Yash brand ambassador for men's grooming, launches 'Trimmers Ka Baap'\"",
-          "Person (unresolved): Paal Dabba — in \"Zomato launches Chennai anthem 'Veppam is our Weapon' with rapper Paal Dabba\"",
-          "Company (unresolved domain): European T20 Premier League — in \"TCS joins European T20 Premier League as digital transformation partner\"",
-          "Person (unresolved): Tiger Shroff — in \"JioStar bets big on Premier League, launches 'Humara Long Distance Love' campaign featuring Tiger Shroff, Riyan Parag and Sanju Samson\"",
-          "Person (unresolved): Riyan Parag — in same item",
-          "Person (unresolved): Sanju Samson — in same item",
-          "Person (unresolved): Harmanpreet Kaur — in \"Harmanpreet Kaur and SPNI challenge cricket's 'gentleman's game' tag\"",
-          "Person (unresolved): Central Cee — in \"Coca-Cola gives its Premier League partnership a Central Cee remix\"",
+          "Company (unresolved): Maars Communicates — in \"Maars Communicates wins communications mandate for EMOMEE\"",
           "Person (unresolved): Kenny Sebastian — in \"Louis Philippe brings Kenny Sebastian into new Onam campaign\"",
           "Person (unresolved): Rajkummar Rao — in \"Traya rolls out hair loss awareness campaign with Rajkummar Rao\"",
           "Person (unresolved): Ashlesha — in \"CaratLane puts 30% of August media behind Rakhi as gifting gets more personal\"",
-          "Person (unresolved): Vedant — in same item",
-          "Company (unresolved domain): Maars Communicates — in \"Maars Communicates wins communications mandate for EMOMEE\""
+          "Person (unresolved): Vedant — in \"CaratLane puts 30% of August media behind Rakhi as gifting gets more personal\""
         ],
         "bucket2": [],
-        "bucket3": [
-          "Person (unresolved): Sivakarthikeyan — in \"Kalyan Jewellers launches regional jewellery brand 'Akshaya Thanga Maligai' in Tamil Nadu\""
-        ],
+        "bucket3": [],
         "bucket4": [
-          "Person (unresolved): Ravpreet Ganesh — Group Chief Strategy Officer at ZIEL Network",
-          "Person (unresolved): Hrishikesh Parandekar — Chief Executive Officer at Kolte-Patil Developers",
-          "Person (unresolved): Manish Anandani — Managing Director & CEO at Colgate-Palmolive India",
-          "Person (unresolved): Himavant Kurnala — Chief Growth and Product Officer, Instamart at Swiggy",
-          "Person (unresolved): Prasenjit Basu — Head Marketing & Corporate Communications at Voltas",
-          "Person (unresolved LinkedIn via Apollo): Saman Khan — SVP & Head of Corporate Communications at IndusInd Bank",
-          "Person (unresolved LinkedIn via Apollo): Dwijendra Parashar — Senior Director, Marketing - Sports at JioStar"
+          "Person (unresolved): Saman Khan — Senior Vice President & Head of Corporate Communications at IndusInd Bank",
+          "Person (unresolved): Dwijendra Parashar — Senior Director, Marketing – Sports at JioStar",
+          "Person (unresolved): Prasenjit Basu — Head – Marketing & Corporate Communications at Voltas"
         ]
       },
       "week_start": "2026-08-24",
@@ -1041,10 +1027,26 @@
         }
       ],
       "flagged": {
-        "bucket1": [],
+        "bucket1": [
+          "Person (unresolved): Paal Dabba — in \"Zomato launches Chennai anthem 'Veppam is our Weapon' with rapper Paal Dabba\"",
+          "Company (unresolved): European T20 Premier League — in \"TCS joins European T20 Premier League as digital transformation partner\"",
+          "Person (unresolved): Tiger Shroff — in \"JioStar bets big on Premier League, launches 'Humara Long Distance Love' campaign featuring Tiger Shroff, Riyan Parag and Sanju Samson\"",
+          "Person (unresolved): Riyan Parag — in \"JioStar bets big on Premier League, launches 'Humara Long Distance Love' campaign featuring Tiger Shroff, Riyan Parag and Sanju Samson\"",
+          "Person (unresolved): Sanju Samson — in \"JioStar bets big on Premier League, launches 'Humara Long Distance Love' campaign featuring Tiger Shroff, Riyan Parag and Sanju Samson\"",
+          "Person (unresolved): Harmanpreet Kaur — in \"Harmanpreet Kaur and SPNI challenge cricket's 'gentleman's game' tag\"",
+          "Person (unresolved): Central Cee — in \"Coca-Cola gives its Premier League partnership a Central Cee remix\"",
+          "Person (unresolved): Yash — in \"Philips India names Yash brand ambassador for men's grooming, launches 'Trimmers Ka Baap'\""
+        ],
         "bucket2": [],
-        "bucket3": [],
-        "bucket4": []
+        "bucket3": [
+          "Person (unresolved): Sivakarthikeyan — in \"Kalyan Jewellers launches regional jewellery brand 'Akshaya Thanga Maligai' in Tamil Nadu\""
+        ],
+        "bucket4": [
+          "Person (unresolved): Manish Anandani — Managing Director & CEO (effective September 28; succeeds Prabha Narasimhan, who is elevated to EVP-Marketing, Asia-Pacific) at Colgate-Palmolive India",
+          "Person (unresolved): Ravpreet Ganesh — Group Chief Strategy Officer at ZIEL Network",
+          "Person (unresolved): Hrishikesh Parandekar — Chief Executive Officer (effective August 24) at Kolte-Patil Developers",
+          "Person (unresolved): Himavant Kurnala — Chief Growth and Product Officer, Instamart at Swiggy"
+        ]
       },
       "updated_at": "2026-08-25T07:34:05.767315+00:00"
     },

@@ -20,12 +20,17 @@ Usage:
 new_items.json is a FLAT (not week-nested) buckets object — the item shape data.json
 uses inside each week entry:
     {"bucket1": [...], "bucket2": [...], "bucket3": [...], "bucket4": [...],
-     "bucket5": [...], "flagged": {...}}
+     "bucket5": [...]}
+("flagged" is accepted for backward compatibility but ignored — see below.)
 
 `merge` routes each bucket1-4 item into its own Monday-start week bucket by the
 item's `date` field (strict, non-overlapping weeks — a date that IS a Monday
-belongs to the week starting on it, not the one ending on it). bucket5 and
-flagged entries are filed under the week containing today (the run date).
+belongs to the week starting on it, not the one ending on it). bucket5 entries
+are filed under the SAME week as the bucket1-4 item they reference. Each
+touched week's `flagged` arrays are then rebuilt from scratch from that week's
+own items' unresolved links (recompute_flagged) — not accepted as external
+input — so flagged notes can never land in the wrong week (e.g. a run that
+happens to fall on a Monday no longer misfiles them into next week).
 data.json itself is week-nested: {"weeks": [{"week_start", "week_end",
 "bucket1".."bucket5", "flagged"}, ...], "updated_at"}, newest week first.
 
@@ -198,6 +203,31 @@ def find_items_week(data: dict, source_url: str, headline: str):
     return None
 
 
+def recompute_flagged(wk: dict) -> None:
+    """Rebuilds a week's `flagged` arrays from scratch based on the current state
+    of its own items (any company/person with no resolved url). Derived, not
+    accepted as external input — a week's flagged list should always describe
+    that week's own items, and computing it here (rather than trusting an
+    incoming `flagged` blob tied to an ambiguous run-date week) sidesteps the
+    bug where flagged entries could land in the wrong week when the run date
+    itself fell on a Monday."""
+    flagged = {"bucket1": [], "bucket2": [], "bucket3": [], "bucket4": []}
+    for bucket in ("bucket1", "bucket2", "bucket3"):
+        for it in wk.get(bucket, []):
+            for c in it.get("companies", []) or []:
+                if c.get("url") is None:
+                    flagged[bucket].append(f"Company (unresolved): {c['name']} — in \"{it['headline']}\"")
+            for p in it.get("people", []) or []:
+                if p.get("linkedin_url") is None:
+                    flagged[bucket].append(f"Person (unresolved): {p['name']} — in \"{it['headline']}\"")
+    for it in wk.get("bucket4", []):
+        if it.get("linkedin_url") is None:
+            flagged["bucket4"].append(f"Person (unresolved): {it['person']} — {it.get('new_role_title', '')} at {it.get('new_company', '')}")
+        if it.get("company_url") is None and it.get("new_company"):
+            flagged["bucket4"].append(f"Company (unresolved): {it['new_company']} — re: {it['person']}")
+    wk["flagged"] = flagged
+
+
 def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> dict:
     """incoming_items has the same per-bucket shape as before (flat lists of new
     items to add), NOT a weeks-shaped object. Each item is routed into its own
@@ -205,17 +235,22 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
     rule. bucket5 items are filed into the SAME week as the bucket1-4 item they
     reference (via ref_item/source_url) — NOT the run date — so a week's
     strategic insights always live alongside the news that inspired them. Only
-    falls back to the run-date week if no matching referenced item is found."""
+    falls back to the run-date week if no matching referenced item is found.
+    `incoming_items["flagged"]` is accepted for backward compatibility but
+    ignored — each touched week's flagged list is derived fresh from its own
+    items' unresolved links instead (see recompute_flagged)."""
     merged = json.loads(json.dumps(existing))
     merged.setdefault("weeks", [])
     run_date = run_date or datetime.now(timezone.utc).date()
     now_iso = datetime.now(timezone.utc).isoformat()
+    touched = {}
 
     def touch(wk):
         # Stamps the week with when it last actually gained content — used by the
         # site to pick a sensible default week (the most recently UPDATED one,
         # not just the current calendar week or "any week with something in it").
         wk["updated_at"] = now_iso
+        touched[wk["week_start"]] = wk
 
     for bucket in ("bucket1", "bucket2", "bucket3", "bucket4"):
         for item in incoming_items.get(bucket, []):
@@ -239,15 +274,10 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
                 wk["bucket5"].append(item)
                 touch(wk)
 
-    if incoming_items.get("flagged"):
-        ws, we = week_bounds_for(run_date)
-        wk = find_or_create_week(merged, ws, we)
-        for bucket, flags in incoming_items["flagged"].items():
-            wk.setdefault("flagged", {}).setdefault(bucket, [])
-            for f in flags:
-                if f not in wk["flagged"][bucket]:
-                    wk["flagged"][bucket].append(f)
+    for wk in touched.values():
+        recompute_flagged(wk)
 
+    merged["weeks"] = [wk for wk in merged["weeks"] if any(wk[b] for b in ("bucket1", "bucket2", "bucket3", "bucket4", "bucket5"))]
     merged["weeks"].sort(key=lambda w: w["week_start"], reverse=True)
     merged["updated_at"] = datetime.now(timezone.utc).isoformat()
     return merged
