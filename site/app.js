@@ -250,6 +250,13 @@ function render() {
     document.getElementById("tabs").classList.remove("hidden");
     renderBucket(activeBucket);
   }
+  // Restart the content fade-in on every render (tab switch, week change,
+  // search) — CSS animations don't replay on their own when only a node's
+  // innerHTML changes, so force a reflow between removing and re-adding the class.
+  const content = document.getElementById("content");
+  content.classList.remove("content-in");
+  void content.offsetWidth;
+  content.classList.add("content-in");
 }
 
 function populateWeekSelect() {
