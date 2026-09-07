@@ -10,9 +10,21 @@
     { "name": "Financial Times – India", "url": "https://www.ft.com/india" },
     { "name": "Economic Times", "url": "https://economictimes.indiatimes.com" },
     { "name": "Storyboard18", "url": "https://www.storyboard18.com" },
-    { "name": "Digiday", "url": "https://digiday.com" }
+    { "name": "Digiday", "url": "https://digiday.com" },
+    { "name": "Adgully", "url": "https://www.adgully.com" },
+    { "name": "MediaNews4U", "url": "https://www.medianews4u.com" },
+    { "name": "Passionate in Marketing", "url": "https://www.passionateinmarketing.com" },
+    { "name": "Manifest Media", "url": "https://www.manifest-media.in" },
+    { "name": "Media4Growth", "url": "https://www.media4growth.com" },
+    { "name": "Retail Jeweller India", "url": "https://retailjewellerindia.com" },
+    { "name": "MediaPost", "url": "https://www.mediapost.com" },
+    { "name": "Adweek", "url": "https://www.adweek.com" },
+    { "name": "Musically", "url": "https://musically.com" },
+    { "name": "Search Engine Land", "url": "https://searchengineland.com" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com" },
+    { "name": "Business Today", "url": "https://www.businesstoday.in" }
   ],
   "lookback_days": 28,
   "general_web_search": true,
-  "notes": "This list is editable. run.py fetches each source, then runs a general web search pass to catch relevant items missed by the fixed sources above. Items older than lookback_days are deprioritized."
+  "notes": "This list is editable. run.py fetches each source, then runs a general web search pass to catch relevant items missed by the fixed sources above. Items older than lookback_days are deprioritized. Diversity matters as much as recency: pull broadly across FMCG, fashion, jewellery, F&B, e-commerce, BFSI and D2C brand campaigns/launches/stunts, not just agency 'mandate win' listicle pages — those under-represent the range of client categories worth tracking."
 }

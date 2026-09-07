@@ -48,6 +48,49 @@ function peopleHtml(item) {
   return item.people.map((p) => linkOrText(p.name, p.linkedin_url)).join(", ");
 }
 
+function escapeRegExp(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// Inline-links every occurrence of a known company/person name within a block of
+// text (description, why-it-matters) with its resolved URL. Never applied to the
+// headline, since the headline is already one big link to the source article —
+// nesting an <a> inside an <a> would break that.
+function linkifyText(text, item) {
+  if (!text) return text;
+  const entities = [
+    ...(item.companies || []).map((c) => ({ name: c.name, url: c.url })),
+    ...(item.people || []).map((p) => ({ name: p.name, url: p.linkedin_url })),
+  ].filter((e) => e.url && e.name);
+  if (!entities.length) return text;
+
+  const sorted = [...entities].sort((a, b) => b.name.length - a.name.length);
+  const matches = [];
+  for (const e of sorted) {
+    const re = new RegExp(escapeRegExp(e.name), "g");
+    let m;
+    while ((m = re.exec(text))) {
+      const start = m.index;
+      const end = start + e.name.length;
+      if (!matches.some((x) => start < x.end && end > x.start)) {
+        matches.push({ start, end, entity: e });
+      }
+    }
+  }
+  if (!matches.length) return text;
+  matches.sort((a, b) => a.start - b.start);
+
+  let out = "";
+  let cursor = 0;
+  for (const m of matches) {
+    out += text.slice(cursor, m.start);
+    out += `<a href="${m.entity.url}" target="_blank" rel="noopener">${text.slice(m.start, m.end)}</a>`;
+    cursor = m.end;
+  }
+  out += text.slice(cursor);
+  return out;
+}
+
 function renderCard(item, bucket) {
   const newTag = isNew(item.date) ? `<span class="tag">NEW</span>` : "";
   const regionTag =
@@ -55,7 +98,7 @@ function renderCard(item, bucket) {
       ? `<span class="tag ${item.region === "Global" ? "region-global" : ""}">${item.region}</span>`
       : "";
   const why = item.why_important
-    ? `<div class="card-why"><b>Why it matters —</b> ${item.why_important}</div>`
+    ? `<div class="card-why"><b>Why it matters —</b> ${linkifyText(item.why_important, item)}</div>`
     : "";
   const companies = companiesHtml(item);
   const people = peopleHtml(item);
@@ -67,7 +110,7 @@ function renderCard(item, bucket) {
       <div class="card-headline"><a href="${item.source_url}" target="_blank" rel="noopener">${item.headline}</a></div>
       ${newTag}${regionTag}
     </div>
-    <div class="card-desc">${item.description || ""}</div>
+    <div class="card-desc">${linkifyText(item.description, item) || ""}</div>
     ${why}
     <div class="card-foot">
       <span>${entities}</span>
@@ -207,6 +250,13 @@ function render() {
     document.getElementById("tabs").classList.remove("hidden");
     renderBucket(activeBucket);
   }
+  // Restart the content fade-in on every render (tab switch, week change,
+  // search) — CSS animations don't replay on their own when only a node's
+  // innerHTML changes, so force a reflow between removing and re-adding the class.
+  const content = document.getElementById("content");
+  content.classList.remove("content-in");
+  void content.offsetWidth;
+  content.classList.add("content-in");
 }
 
 function populateWeekSelect() {
@@ -247,6 +297,30 @@ fetch("/data.json")
   .then((data) => {
     WEEKS = data.weeks || [];
     updatedAt = data.updated_at;
+
+    // Default to the most recently UPDATED week (when the scraper last actually
+    // added content to it) rather than the literal current calendar week — a
+    // brand-new week can sit near-empty for days, and a single stray item
+    // shouldn't hijack the landing view either, so ties break on total item count.
+    const totalItems = (w) => ["bucket1", "bucket2", "bucket3", "bucket4", "bucket5"].reduce((n, b) => n + (w[b] || []).length, 0);
+    let bestIndex = -1;
+    let bestUpdatedAt = null;
+    let bestCount = -1;
+    WEEKS.forEach((w, i) => {
+      const count = totalItems(w);
+      if (!count) return;
+      const wUpdated = w.updated_at || "";
+      if (
+        bestIndex === -1 ||
+        wUpdated > bestUpdatedAt ||
+        (wUpdated === bestUpdatedAt && count > bestCount)
+      ) {
+        bestIndex = i;
+        bestUpdatedAt = wUpdated;
+        bestCount = count;
+      }
+    });
+    if (bestIndex >= 0) activeWeekIndex = bestIndex;
     if (updatedAt) {
       document.getElementById("lastUpdated").textContent = "Updated " + new Date(updatedAt).toDateString();
     }
