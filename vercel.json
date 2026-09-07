@@ -3,5 +3,13 @@
   "rewrites": [
     { "source": "/data.json", "destination": "/data.json" },
     { "source": "/(.*)", "destination": "/site/$1" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
   ]
 }
