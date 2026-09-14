@@ -6,17 +6,19 @@
 <title>WLDD Pulse Dash</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
 <header class="topbar">
   <div class="brand">
     <span class="brand-mark">WLDD</span>
-    <span class="brand-name">PULSE DASH</span>
+    <span class="brand-name">Pulse Dash</span>
   </div>
-  <div class="meta">
-    <span id="lastUpdated">—</span>
+  <div class="topbar-right">
+    <span><span class="live-dot"></span><span id="lastUpdated">—</span></span>
+    <button class="kbd-hint" id="shortcutsBtn">? shortcuts</button>
   </div>
 </header>
 
@@ -26,24 +28,44 @@
     <select id="weekSelect"></select>
   </div>
   <div class="search-box">
-    <input id="searchInput" type="text" placeholder="Search all weeks — company, person, headline…" autocomplete="off" />
+    <input id="searchInput" type="text" placeholder="Search every week — company, person, headline…" autocomplete="off" />
     <button id="searchClear" class="search-clear" hidden>&times;</button>
+    <span class="search-slash" id="searchSlash">/</span>
   </div>
 </div>
 
-<nav class="tabs" id="tabs">
-  <button class="tab active" data-bucket="bucket1">Mandates &amp; Campaigns</button>
-  <button class="tab" data-bucket="bucket2">M&amp;A</button>
-  <button class="tab" data-bucket="bucket3">New Products</button>
-  <button class="tab" data-bucket="bucket4">People Moves</button>
-  <button class="tab" data-bucket="bucket5">Strategic Insights</button>
-</nav>
+<nav class="pulse" id="pulse"></nav>
 
-<main id="content"><div class="empty-state">Loading Pulse Dash…</div></main>
+<div class="filterbar">
+  <button class="chip active" data-filter="all">All</button>
+  <button class="chip" data-filter="unread">Unread<span class="chip-num" id="cntUnread"></span></button>
+  <button class="chip" data-filter="starred">Starred<span class="chip-num" id="cntStarred"></span></button>
+  <div class="progress-wrap" id="progressWrap">
+    <span id="progressLabel">0 / 0 read</span>
+    <span class="progress-track"><span class="progress-fill" id="progressFill"></span></span>
+  </div>
+</div>
+
+<main id="content"><div class="empty-state">Loading signal…</div></main>
 
 <footer class="footer">
-  <span>Internal tool — WLDD BD team. Auto-updated weekly, Monday 10:00 AM IST.</span>
+  <span>Internal — WLDD BD team · auto-updated Mondays 10:00 IST</span>
 </footer>
+
+<div class="overlay" id="shortcutsOverlay" hidden>
+  <div class="overlay-panel">
+    <h2>Keyboard</h2>
+    <dl>
+      <dt><kbd>1</kbd>–<kbd>5</kbd></dt><dd>Switch bucket</dd>
+      <dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>Next / previous item</dd>
+      <dt><kbd>e</kbd></dt><dd>Expand "why it matters"</dd>
+      <dt><kbd>o</kbd></dt><dd>Open source article</dd>
+      <dt><kbd>s</kbd></dt><dd>Star / unstar</dd>
+      <dt><kbd>/</kbd></dt><dd>Search</dd>
+      <dt><kbd>Esc</kbd></dt><dd>Clear / close</dd>
+    </dl>
+  </div>
+</div>
 
 <script src="app.js"></script>
 </body>
