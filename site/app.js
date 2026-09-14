@@ -60,6 +60,25 @@ store.set("wldd:lastVisit", new Date().toISOString());
 function persistRead() { store.set("wldd:read", [...readSet]); }
 function persistStar() { store.set("wldd:star", [...starSet]); }
 
+/* ---------- theme ---------- */
+
+const SUN = `<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>`;
+const MOON = `<path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"></path>`;
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  store.set("wldd:theme", theme);
+  const icon = document.getElementById("themeIcon");
+  if (icon) icon.innerHTML = theme === "dark" ? SUN : MOON;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", theme === "dark" ? "#07080d" : "#eef0f4");
+}
+
+function toggleTheme() {
+  const now = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  applyTheme(now);
+}
+
 /* ---------- helpers ---------- */
 
 function itemId(item, bucket) {
@@ -131,6 +150,9 @@ function passesFilter(item, bucket) {
 
 const CHEV = `<svg width="9" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
+// shown only when a card is read — colour + label, so "read" is visible at a glance
+const READ_FLAG = `<span class="read-flag"><svg width="8" height="8" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.5l3 3 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Read</span>`;
+
 function starBtn(id) {
   const on = starSet.has(id);
   return `<button class="star ${on ? "on" : ""}" data-star="${esc(id)}" title="${on ? "Starred" : "Star this"}" aria-label="${on ? "Unstar" : "Star"}">${on ? "★" : "☆"}</button>`;
@@ -157,7 +179,7 @@ function renderCard(item, bucket, fresh) {
   <article class="card ${why ? "has-why" : ""} ${readSet.has(id) ? "is-read" : ""}" data-id="${esc(id)}" data-url="${esc(item.source_url || "")}">
     <div class="card-head">
       <div class="card-headline"><a href="${esc(item.source_url)}" target="_blank" rel="noopener">${esc(item.headline)}</a></div>
-      <div class="card-tags">${tags.join("")}${starBtn(id)}</div>
+      <div class="card-tags">${READ_FLAG}${tags.join("")}${starBtn(id)}</div>
     </div>
     <div class="card-foot">
       <span class="entities">${ents}</span>
@@ -176,7 +198,7 @@ function renderPeopleCard(item, fresh) {
   <article class="card people-card ${readSet.has(id) ? "is-read" : ""}" data-id="${esc(id)}" data-url="${esc(item.source_url || "")}">
     <div class="card-head">
       <div class="move">${person} joins <b>${company}</b> as ${esc(item.new_role_title || "")}</div>
-      <div class="card-tags">${fresh ? `<span class="tag tag-fresh">New</span>` : ""}${starBtn(id)}</div>
+      <div class="card-tags">${READ_FLAG}${fresh ? `<span class="tag tag-fresh">New</span>` : ""}${starBtn(id)}</div>
     </div>
     <div class="prev">Previously: ${esc(item.previous_role || "—")}</div>
     <div class="card-foot">
@@ -430,10 +452,15 @@ document.getElementById("content").addEventListener("click", (e) => {
     return;
   }
 
-  // anywhere else on a card with a "why" toggles the drawer
-  if (card && card.classList.contains("has-why")) {
+  if (!card) return;
+
+  // a card with a "why" toggles its drawer; either way, engaging with a card
+  // marks it read so the colour state reflects what you've actually looked at
+  if (card.classList.contains("has-why")) {
     card.classList.toggle("is-open");
     if (card.classList.contains("is-open")) markRead(card.dataset.id, card);
+  } else {
+    markRead(card.dataset.id, card);
   }
 });
 
@@ -466,6 +493,47 @@ searchClear.addEventListener("click", () => {
 const overlay = document.getElementById("shortcutsOverlay");
 document.getElementById("shortcutsBtn").addEventListener("click", () => { overlay.hidden = !overlay.hidden; });
 overlay.addEventListener("click", () => { overlay.hidden = true; });
+document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+
+/* ---------- cursor-tracked 3D tilt ---------- */
+// One rAF-throttled listener for the whole grid. Cards tilt toward the cursor
+// and a specular highlight tracks it, which is what sells the depth.
+
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+let tiltFrame = null;
+let tiltTarget = null;
+let tiltEvent = null;
+
+function applyTilt() {
+  tiltFrame = null;
+  if (!tiltTarget || !tiltEvent) return;
+  const r = tiltTarget.getBoundingClientRect();
+  const px = (tiltEvent.clientX - r.left) / r.width;
+  const py = (tiltEvent.clientY - r.top) / r.height;
+  const max = 5;
+  tiltTarget.style.setProperty("--mx", (px * 100).toFixed(1) + "%");
+  tiltTarget.style.setProperty("--my", (py * 100).toFixed(1) + "%");
+  tiltTarget.style.transform =
+    `perspective(1100px) rotateX(${((0.5 - py) * max).toFixed(2)}deg) rotateY(${((px - 0.5) * max).toFixed(2)}deg) translateY(-3px)`;
+}
+
+function clearTilt(el) {
+  if (!el) return;
+  el.style.transform = "";
+  el.style.removeProperty("--mx");
+  el.style.removeProperty("--my");
+}
+
+document.addEventListener("mousemove", (e) => {
+  if (reduceMotion.matches) return;
+  const card = e.target.closest("#content .card, .tile");
+  if (card !== tiltTarget) { clearTilt(tiltTarget); tiltTarget = card; }
+  if (!card) return;
+  tiltEvent = e;
+  if (!tiltFrame) tiltFrame = requestAnimationFrame(applyTilt);
+}, { passive: true });
+
+document.addEventListener("mouseleave", () => { clearTilt(tiltTarget); tiltTarget = null; }, true);
 
 function cards() { return [...document.querySelectorAll("#content .card")]; }
 
@@ -497,6 +565,7 @@ document.addEventListener("keydown", (e) => {
 
   if (e.key === "/") { e.preventDefault(); searchInput.focus(); return; }
   if (e.key === "?") { overlay.hidden = !overlay.hidden; return; }
+  if (e.key === "t") { toggleTheme(); return; }
 
   if (e.key >= "1" && e.key <= "5") {
     activeBucket = BUCKETS[Number(e.key) - 1];
@@ -535,6 +604,8 @@ function populateWeekSelect() {
   sel.innerHTML = WEEKS.map((w, i) => `<option value="${i}">${esc(weekLabel(w, i))}</option>`).join("");
   sel.value = String(activeWeekIndex);
 }
+
+applyTheme(store.get("wldd:theme", "dark"));
 
 fetch("/data.json")
   .then((r) => r.json())
