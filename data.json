@@ -3,6 +3,913 @@
     {
       "bucket1": [
         {
+          "headline": "LVMH shifts APAC media account to Publicis, ending WPP's nine-year hold",
+          "description": "LVMH moved its Asia-Pacific media business - covering Louis Vuitton, Dior, Fendi, Celine, Loewe, Tiffany & Co., Bulgari and Sephora across 13 markets - from WPP's L'Atelier to Publicis Media without a competitive pitch, effective January 2027; Dentsu continues to handle Japan.",
+          "why_important": "A luxury conglomerate handing its media business to a rival network without even running a pitch shows how fragile even decade-long holding-company relationships have become, and further consolidates Publicis' hold on LVMH's global media spend after it already won the account in North America.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20480/lvmh-shifts-asia-pacific-media-account-to-publicis-ending-nine-year-wpp-partnership",
+          "date": "2026-09-12",
+          "companies": [
+            {
+              "name": "LVMH",
+              "url": "https://www.lvmh.com"
+            },
+            {
+              "name": "Publicis Groupe",
+              "url": "https://www.publicisgroupe.com"
+            },
+            {
+              "name": "WPP",
+              "url": "https://www.wpp.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "KFC India becomes first QSR brand to advertise inside ChatGPT",
+          "description": "In partnership with WPP Media, KFC India began running sponsored placements inside ChatGPT responses promoting its Rs 99 Chicken Krisper Meal, shown to Free and Go-tier users - part of a wider India rollout expected to include 50+ brands including Mamaearth and Sebamed.",
+          "why_important": "The first Indian QSR ad inside an AI chat interface marks a real, monetised shift from search-bar advertising to conversational-AI advertising - a new distribution surface every performance-marketing-led brand and agency will now have to plan for.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20479/kfc-india-launches-ad-campaign-on-chatgpt-becoming-first-qsr-brand-on-platform",
+          "date": "2026-09-12",
+          "companies": [
+            {
+              "name": "KFC India",
+              "url": "https://www.kfc.co.in"
+            },
+            {
+              "name": "WPP Media",
+              "url": "https://www.wppmedia.com"
+            },
+            {
+              "name": "OpenAI",
+              "url": "https://openai.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Vi unveils dynamic brand identity, taps Shah Rukh Khan for 'Vi Pe Sab Hain VIP' campaign",
+          "description": "Vodafone Idea's Vi rolled out a refreshed 3D brand identity - its signature dot evolving into an animated sphere - across consumer touchpoints from September 1, then launched 'Vi Pe Sab Hain VIP' with Shah Rukh Khan, conceptualised by Ogilvy and produced by Chrome Films, dramatising how Vi's upgrades and privileges are built for every customer, not just one.",
+          "why_important": "A telecom operator fighting for relevance against Jio and Airtel betting on a full identity refresh plus a marquee Bollywood star signals Vi is trying to buy back brand salience with its ad spend rather than compete purely on price or network.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/vi-unveils-dynamic-brand-identity-with-shah-rukh-khan/4ts05r2yn687849f3ap6x53jny",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Vi (Vodafone Idea)",
+              "url": "https://www.myvi.in"
+            },
+            {
+              "name": "Ogilvy",
+              "url": "https://www.ogilvy.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Shah Rukh Khan",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Omnicom plans ~15,000 job cuts after losing PepsiCo's global creative business",
+          "description": "Omnicom Group is preparing workforce reductions - bringing headcount down to roughly 105,000 by end-2026 from about 120,000 - and an internal business review after PepsiCo shifted a large share of its global creative work for Pepsi, Lay's and Doritos away from BBDO and Alma, following the earlier loss of PepsiCo's ~$1.8bn media business to Publicis.",
+          "why_important": "A holding company cutting more than 10% of its workforce off the back of one legacy client's realignment shows how concentrated client risk still is at scale, and how quickly a single account loss can cascade into structural cost-cutting across an entire network.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20456/omnicom-plans-workforce-cuts-following-loss-of-global-pepsico-creative-account",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Omnicom Group",
+              "url": "https://www.omnicomgroup.com"
+            },
+            {
+              "name": "PepsiCo",
+              "url": "https://www.pepsico.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "BMW India names Ranveer Singh brand ambassador, unveils new 7 Series range",
+          "description": "BMW India signed Bollywood actor Ranveer Singh as brand ambassador as part of the unveiling of its refreshed 7 Series luxury sedan range.",
+          "why_important": "Luxury auto brands in India increasingly lean on top-tier Bollywood star power rather than performance specs alone to build aspirational pull for their flagship models in a market still price-sensitive at the very top of the segment.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20464/bmw-names-ranveer-singh-brand-ambassador-unveils-new-7-series-range",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "BMW India",
+              "url": "https://www.bmw.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Ranveer Singh",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Swiggy Instamart's 'Switch' campaign turns a 25-year snack habit into a pitch for change",
+          "description": "Instamart's new film shows a woman revealing she's eaten the same packaged namkeen for nearly 25 years before a delivery partner nudges her toward a palm-oil-free alternative, launching the platform's 'Switch' proposition encouraging shoppers to try better alternatives to habitual purchases.",
+          "why_important": "As quick commerce becomes the default grocery channel, Instamart is using its own delivery-partner touchpoint as a brand storytelling device to actively steer purchase behaviour toward newer/better products - a discovery-engine pitch to challenger FMCG brands, not just a consumer ad.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/instamart-turns-a-25-year-snack-habit-into-a-case-for-switch-12519330",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Swiggy Instamart",
+              "url": "https://www.swiggy.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Amazon NOW turns sibling personality quirks into a Rakhi 'match' campaign",
+          "description": "With 'Jaisa Bhai Ka Vibe, Waisa Rakhi Ka Type,' Amazon NOW built an interactive Sibling Match format around Raksha Bandhan, matching brothers' personalities to rakhi styles as a personality-led product-discovery hook on its quick-commerce app.",
+          "why_important": "It shows quick-commerce players using festival occasions as personality-led discovery mechanics rather than plain discounting - an approach built for shareable, creator-friendly social content rather than performance media alone.",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/campaign-spot/amazon-now-turns-brothers-personality-into-a-rakhi-match-12518541",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Amazon NOW",
+              "url": "https://www.amazon.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Jennifer Winget fronts Ekatra Jewels' story-led 'NOT JUST ONE' collection",
+          "description": "Actor Jennifer Winget became a celebrity partner and tastemaker for lab-grown diamond brand Ekatra Jewels (backed by Ekta Kapoor), unveiling a personal story-led jewellery collection alongside fellow partners Apoorva Mukhija and Pragya Kapoor.",
+          "why_important": "It's another sign of lab-grown diamond jewellery brands using multiple individually-branded celebrity collections - rather than one generic ambassador deal - to build a modern, women-led luxury positioning distinct from legacy gold/diamond retailers.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20449/jennifer-winget-steps-into-a-new-creative-chapter-with-ekatra-jewels-not-just-one",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Ekatra Jewels",
+              "url": "https://ekatrajewels.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Jennifer Winget",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Complan revives 'Complan Boy' mnemonic with teen cricket sensation Vaibhav Sooryavanshi",
+          "description": "Zydus Wellness' Complan brought back its long-running 'Complan Boy' growth positioning, this time fronted by breakout young IPL batter Vaibhav Sooryavanshi.",
+          "why_important": "It shows a legacy kids'-nutrition brand reaching for a new-generation icon from a completely different (and currently hotter) cultural moment - youth cricket stardom - to refresh a decades-old mnemonic instead of retiring it.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/complan-brings-back-its-complan-boy-with-vaibhav-sooryavanshi-12518661",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Complan (Zydus Wellness)",
+              "url": "https://www.complan.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Vaibhav Sooryavanshi",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Triptii Dimri joins Peep Beauty as investor and co-creator for 'Made You Look'",
+          "description": "Actor Triptii Dimri took an investor and co-creator stake in colour-cosmetics/contact-lens D2C brand Peep Beauty, fronting its 'Made You Look' campaign for what it positions as India's first dedicated 'eye beauty' category push.",
+          "why_important": "It's a template increasingly used by newer D2C beauty brands - trading a straight ambassador fee for an equity/co-creator stake - that turns the celebrity into a long-term stakeholder rather than a one-campaign face.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20450/triptii-dimri-joins-peep-beauty-as-investor-unveils-made-you-look-campaign-for-indias-first-eye-be",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Peep Beauty",
+              "url": "https://peepbeauty.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Triptii Dimri",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "BULLET Microdrama partners Tata Motors Commercial Vehicles for branded series 'Apna Superstar'",
+          "description": "Microdrama OTT platform BULLET launched its first branded microdrama, 'Apna Superstar,' with Tata Motors Commercial Vehicles woven into a story about a young man building a business in his late father's memory, with the Tata Azura as a supporting enabler within the plot.",
+          "why_important": "It shows a mainstream auto OEM buying into scripted, vertical-video microdrama as a branded-content format - placing the product inside the narrative itself rather than around it - a format still nascent in India but growing fast on OTT-style short-video apps.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20451/bullet-microdrama-partners-with-tata-motors-commercial-vehicles-for-apna-superstar",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "BULLET Microdrama",
+              "url": "https://www.bulletshorts.com"
+            },
+            {
+              "name": "Tata Motors",
+              "url": "https://www.tatamotors.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Zydus Lifesciences spotlights silent liver health risks with '#LiverKiSuno'",
+          "description": "Zydus Lifesciences expanded its '#LiverKiSuno' public-awareness push around metabolic liver risk factors - diabetes, excess weight, high triglycerides - building on its earlier Global Fatty Liver Day campaign featuring actor Ashish Vidyarthi.",
+          "why_important": "A pharma major running sustained, multi-phase disease-awareness content (rather than a single-day PSA) reflects the wider pharma-marketing shift toward owned, always-on health-education IP that also builds category salience for its liver-health portfolio.",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/campaign-spot/zydus-liverkisuno-campaign-spotlights-liver-health-risks-12514458",
+          "date": "2026-09-10",
+          "companies": [
+            {
+              "name": "Zydus Lifesciences",
+              "url": "https://www.zyduslife.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Ashish Vidyarthi",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Prudential Health India spotlights everyday insurance problems in new campaign",
+          "description": "Prudential Health India - the standalone health-insurance JV between Prudential plc and HCL Group's Vama Sundari Investments - put common, relatable insurance friction points front and centre in a new brand campaign.",
+          "why_important": "It's an early brand-building move from a still-young standalone health insurer trying to differentiate on customer-problem empathy rather than product features, as India's health-insurance category gets more crowded and more marketing-led.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/advertising/prudential-health-india-puts-everyday-insurance-problems-in-the-spotlight-12515607",
+          "date": "2026-09-10",
+          "companies": [
+            {
+              "name": "Prudential Health India",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Levi's returns with Alia Bhatt in new campaign",
+          "description": "Levi's brought back Alia Bhatt as its face for a new campaign push in India, continuing the denim brand's Bollywood-led marketing approach.",
+          "why_important": "It underscores how heritage global denim brands continue to lean on top Bollywood stars to stay culturally relevant in India's crowded, increasingly D2C-led casualwear market.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/levi-s-returns-with-alia-bhatt-in-new-campaign/4t9e9w5pw85gy11d0d18tv7xwa",
+          "date": "2026-09-09",
+          "companies": [
+            {
+              "name": "Levi's",
+              "url": "https://levi.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Alia Bhatt",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Gulf Pride launches 'Kuch Behad Kar' with MS Dhoni",
+          "description": "Gulf Oil's Gulf Pride lubricants brand launched a new campaign, 'Kuch Behad Kar,' fronted by MS Dhoni.",
+          "why_important": "It shows a legacy B2B-leaning automotive lubricants brand investing in mainstream celebrity-led consumer brand-building, a category that has traditionally marketed through mechanics/distribution rather than star power.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/gulf-pride-launches-kuch-behad-kar-with-ms-dhoni/4jz2g8n9nh0yj0v7pmp380cx5v",
+          "date": "2026-09-09",
+          "companies": [
+            {
+              "name": "Gulf Pride (Gulf Oil)",
+              "url": "https://www.gulfoilindia.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "MS Dhoni",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Kissht launches 'Loans Without Any Hiccups' with Sachin Tendulkar",
+          "description": "Consumer lending platform Kissht launched a new brand campaign, 'Loans Without Any Hiccups,' featuring Sachin Tendulkar, aimed at easing anxiety around personal-loan processes.",
+          "why_important": "It's another instance of India's digital-lending category using top-tier cricket icons to build trust and de-risk the perceived friction/legitimacy of instant personal loans, a category still fighting a trust deficit.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/kissht-launches-loans-without-any-hiccups-with-sachin-tendulkar/4j4jnr9cgrn0dx94fm402kyzdj",
+          "date": "2026-09-09",
+          "companies": [
+            {
+              "name": "Kissht",
+              "url": "https://www.kissht.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Sachin Tendulkar",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "PEDIGREE launches 'Healthy Belly' campaign with KL Rahul",
+          "description": "Mars' PEDIGREE dog-food brand launched its 'Healthy Belly' platform in India fronted by cricketer KL Rahul, focused on digestive health for dogs.",
+          "why_important": "It reflects the pet-care category's push to educate Indian pet parents on functional health benefits (not just taste/price) using mainstream celebrity credibility rather than category-specific vet messaging alone.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/pedigree-launches-healthy-belly-with-kl-rahul/4j9k2w9wvbxt1zzx8pg3faht5y",
+          "date": "2026-09-09",
+          "companies": [
+            {
+              "name": "PEDIGREE (Mars Petcare)",
+              "url": "https://www.pedigree.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "KL Rahul",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Calvin Klein taps Sadie Sink and Tate McRae for Fall 2026 denim campaign",
+          "description": "Calvin Klein unveiled its global Fall 2026 denim campaign with two separate ambassador reveals - actor Sadie Sink and singer Tate McRae - anchoring the season's push.",
+          "why_important": "It's a reminder that even in a quiet week for big India-specific fashion news, global fashion houses are running celebrity-dense, multi-territory denim pushes that Indian fashion e-commerce and licensing partners will localise off of.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/calvin-klein-taps-sadie-sink-for-fall-2026-denim-campaign/49jrwpqwtyk8ty5v6t9xbknhnk",
+          "date": "2026-09-09",
+          "companies": [
+            {
+              "name": "Calvin Klein",
+              "url": "https://www.calvinklein.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Sadie Sink",
+              "linkedin_url": null
+            },
+            {
+              "name": "Tate McRae",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Lawyered launches 'ChallanPay - Aaram Se' with Pratik Gandhi",
+          "description": "Legal-tech platform Lawyered launched 'ChallanPay - Aaram Se' with actor Pratik Gandhi, using humour around pending traffic challans to promote a simplified challan-payment product.",
+          "why_important": "It's a good example of a legal/govtech-adjacent utility product using comedic celebrity-led storytelling - normally reserved for FMCG/D2C - to make a mundane compliance pain point (traffic fines) feel approachable enough to drive app downloads.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/lawyered-launches-challanpay-aaram-se-with-pratik-gandhi/48txtm7d3wg5h6r8r2rrjb0jdq",
+          "date": "2026-09-09",
+          "companies": [
+            {
+              "name": "Lawyered",
+              "url": "https://lawyered.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Pratik Gandhi",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "PR Professionals wins PR mandate for Spark Minda Group",
+          "description": "PR Professionals (PRP) was awarded the public relations mandate for auto-components maker Spark Minda Group, covering media relations, leadership profiling, thought leadership and stakeholder engagement across its passenger, commercial, two-wheeler and off-road vehicle businesses.",
+          "why_important": "A dedicated PR mandate win for a major auto-components supplier - rather than a marquee consumer brand - is a reminder that a large share of agency billings growth is quietly happening in B2B/industrial corporate communications, not consumer advertising.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/pr-professionals-wins-spark-minda-group-pr-mandate/48jsyzdg49xvf3pznxasgm3rnv",
+          "date": "2026-09-07",
+          "companies": [
+            {
+              "name": "PR Professionals",
+              "url": "https://prprofessionals.in"
+            },
+            {
+              "name": "Spark Minda Group",
+              "url": "https://www.sparkminda.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket2": [
+        {
+          "headline": "Udaan acquires Swiggy's LYNK Logistics in Rs 500 crore share-swap deal",
+          "description": "B2B e-commerce platform Udaan is acquiring Swiggy-owned retail distribution platform LYNK Logistics - which gives FMCG majors like HUL, Marico, Britannia and ITC direct reach into 100,000+ kirana stores across eight cities - via a share swap that hands Swiggy a 3.2% stake in Udaan (2.8% via the swap plus a Rs 75 crore cash infusion for a further 0.4%).",
+          "why_important": "It consolidates last-mile FMCG distribution infrastructure into fewer hands ahead of Udaan's planned IPO, and gives Swiggy a strategic equity stake in a B2B distribution rival rather than a clean exit - reshaping who controls kirana-store reach for major FMCG advertisers.",
+          "region": "India",
+          "deal_value": "Rs 500 crore share-swap (Swiggy also receives a combined 3.2% stake in Udaan)",
+          "source_name": "Business Standard",
+          "source_url": "https://www.business-standard.com/industry/news/udaan-buys-swiggy-s-lynk-for-500-cr-as-e-commerce-firm-readies-for-ipo-126090701103_1.html",
+          "date": "2026-09-07",
+          "companies": [
+            {
+              "name": "Udaan",
+              "url": "https://udaan.com"
+            },
+            {
+              "name": "Swiggy",
+              "url": "https://www.swiggy.com"
+            },
+            {
+              "name": "LYNK Logistics",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Tata Motors launches EUR 3.82 billion tender offer to acquire Iveco Group",
+          "description": "Tata Motors' all-cash tender offer for Italy's Iveco Group opened on September 7 and runs through October 26, at EUR 14.10 per share, valuing the commercial-vehicle maker at EUR 3.82 billion; the deal follows Iveco's earlier sale of its defence unit to Leonardo and is backed by Iveco's largest shareholder, Exor.",
+          "why_important": "This creates one of the world's largest commercial-vehicle groups by combining Tata Motors' scale in India and emerging markets with Iveco's European and Latin American footprint - a major structural shift in global truck/bus manufacturing with direct implications for Tata's brand and marketing scale internationally.",
+          "region": "Global (India / Italy)",
+          "deal_value": "EUR 3.82 billion (EUR 14.10 per share, all-cash tender offer)",
+          "source_name": "Business Standard",
+          "source_url": "https://www.business-standard.com/companies/news/tata-motors-launches-all-cash-offer-for-iveco-acceptance-opens-september-7-126090500201_1.html",
+          "date": "2026-09-07",
+          "companies": [
+            {
+              "name": "Tata Motors",
+              "url": "https://www.tatamotors.com"
+            },
+            {
+              "name": "Iveco Group",
+              "url": "https://www.ivecogroup.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket3": [
+        {
+          "headline": "Vijay Deverakonda co-launches skincare brand Unhype for young India",
+          "description": "Actor Vijay Deverakonda co-founded Unhype, a functional skincare line built around the philosophy 'No BS. Only what works,' targeting 18-30 year olds with routines tailored to Indian skin and weather; pre-booking opened September 11 with full shipping from September 21.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20446/vijay-deverakonda-unviels-skincare-brand-unhype",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Unhype",
+              "url": "https://unhype.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Vijay Deverakonda",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Tata Play launches dedicated Reality TV channel anchored by Bigg Boss",
+          "description": "Tata Play launched a new linear Reality TV channel bringing together past and current seasons of Bigg Boss and other reality formats for its DTH and streaming subscribers.",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/news/media/tata-play-launches-reality-tv-channel-with-bigg-boss-seasons-12519128",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Tata Play",
+              "url": "https://www.tataplay.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "ICICI Prudential Life unveils 'ICICI Life Partner Stack 2.0' for advisors",
+          "description": "ICICI Prudential Life Insurance upgraded its distribution-partner platform to 'ICICI Life Partner Stack 2.0,' adding AI-enabled tools to strengthen advisor and distribution-partner digital capabilities.",
+          "source_name": "Business News This Week",
+          "source_url": "https://businessnewsthisweek.com/news/icici-prudential-life-insurance-unveils-icici-life-partner-stack-20-to-transform-digital-capabilities-of-advisors-and-distribution-partners/",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "ICICI Prudential Life Insurance",
+              "url": "https://www.iciciprulife.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Mint Money launches Bill Payments feature at Global Fintech Fest 2026",
+          "description": "HT Media's fintech app Mint Money launched a Bill Payments feature at Global Fintech Fest 2026, letting users track bills, get reminders and pay directly in-app with Auto Pay and rewards.",
+          "source_name": "ANI News",
+          "source_url": "https://aninews.in/news/business/mint-money-unveils-its-app-with-bill-payments-at-global-fintech-fest-202620260911175116/",
+          "date": "2026-09-11",
+          "companies": [
+            {
+              "name": "Mint Money (HT Media)",
+              "url": "https://www.livemint.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "BGauss launches C12 MaxR electric scooter with 178 km range",
+          "description": "RR Kabel-backed EV maker BGauss launched the C12 MaxR electric scooter, built on its WSA platform with a 3.8 kWh IP67-rated LFP battery and IDC-certified 178 km range, opening for bookings at Rs 1.46 lakh.",
+          "source_name": "EMobility+",
+          "source_url": "https://emobilityplus.com/2026/09/10/bgauss-launches-c12-maxr-electric-scooter-with-178-km-range/",
+          "date": "2026-09-10",
+          "companies": [
+            {
+              "name": "BGauss",
+              "url": "https://www.bgauss.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Bloomberg Media launches Bloomberg India digital news hub",
+          "description": "Bloomberg Media launched a dedicated Bloomberg India digital news destination, expanding its India-specific business and markets coverage.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/bloomberg-media-launches-bloomberg-india-digital-news-hub/4qm7ar8f0am185d7gs1590y9m0",
+          "date": "2026-09-08",
+          "companies": [
+            {
+              "name": "Bloomberg Media",
+              "url": "https://www.bloomberg.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Macis Group plans five new news channels across India",
+          "description": "Karnataka-rooted business group Macis Group announced plans to launch five new news channels across Indian markets as part of its expansion into media.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/macis-group-plans-five-news-channels-across-india/4zsprgz15yrvs08z2y6wtsb0mw",
+          "date": "2026-09-08",
+          "companies": [
+            {
+              "name": "Macis Group",
+              "url": "https://www.macisgroup.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "ShareChat's Mohalla Tech partners Pratilipi for 75+ microdramas",
+          "description": "Mohalla Tech (ShareChat's parent) partnered with storytelling platform Pratilipi to co-produce and distribute a slate of more than 75 microdramas across its platforms.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/mohalla-tech-partners-with-pratilipi-for-75-microdramas/4xhf0e9q225hcywe8dagsf1dm1",
+          "date": "2026-09-08",
+          "companies": [
+            {
+              "name": "Mohalla Tech (ShareChat)",
+              "url": "https://sharechat.com"
+            },
+            {
+              "name": "Pratilipi",
+              "url": "https://pratilipi.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Genus Innovation positions MaxiLion as a 'power bank-like' inverter",
+          "description": "Genus Innovation launched marketing around its MaxiLion lithium-ion inverter range, positioning it as a compact, maintenance-free, power-bank-style home backup product.",
+          "source_name": "Campaign India",
+          "source_url": "https://www.campaignindia.in/article/genus-innovation-positions-maxilion-as-a-power-bank-like-inverter/4nsfd6ccb9m0etd73dj59apqck",
+          "date": "2026-09-07",
+          "companies": [
+            {
+              "name": "Genus Innovation",
+              "url": "https://www.genusinnovation.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "LIC launches two new life insurance plans, Bima Platinum and Jeevan Raksha",
+          "description": "Life Insurance Corporation of India began selling two new individual life insurance products - Bima Platinum, a non-participating savings plan, and Jeevan Raksha - from September 7.",
+          "source_name": "PSU Connect",
+          "source_url": "https://www.psuconnect.in/psu-news/lic-launches-two-new-insurance-plans-bima-platinum-jeevan-raksha-from-7-sept-2026",
+          "date": "2026-09-07",
+          "companies": [
+            {
+              "name": "Life Insurance Corporation of India (LIC)",
+              "url": "https://www.licindia.in"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket4": [
+        {
+          "person": "Siddharth Mehta",
+          "org": "Ulka South (FCB Group India)",
+          "previous_role": "Not specified",
+          "new_role_title": "Group Creative Director",
+          "new_company": "Ulka South",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/ulka-south-appoints-siddharth-mehta-as-group-creative-director-12520027",
+          "date": "2026-09-11",
+          "linkedin_url": null,
+          "company_url": "https://www.fcbulka.com"
+        },
+        {
+          "person": "Vivek Mohan Sharma",
+          "org": "Pinkvilla",
+          "previous_role": "Not specified",
+          "new_role_title": "Chief Executive Officer",
+          "new_company": "Pinkvilla",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/pinkvilla-appoints-vivek-mohan-sharma-as-ceo-12519306",
+          "date": "2026-09-11",
+          "linkedin_url": null,
+          "company_url": "https://www.pinkvilla.com"
+        },
+        {
+          "person": "Geeta Mohan",
+          "org": "India Today",
+          "previous_role": "Senior journalist, India Today",
+          "new_role_title": "Elevated to senior editorial role",
+          "new_company": "India Today",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/india-today-elevates-geeta-mohan-and-akshita-nandagopal-to-senior-editorial-roles-12518925",
+          "date": "2026-09-11",
+          "linkedin_url": null,
+          "company_url": "https://www.indiatoday.in"
+        },
+        {
+          "person": "Akshita Nandagopal",
+          "org": "India Today",
+          "previous_role": "Senior Editor and Anchor, India Today",
+          "new_role_title": "Elevated to senior editorial role",
+          "new_company": "India Today",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/india-today-elevates-geeta-mohan-and-akshita-nandagopal-to-senior-editorial-roles-12518925",
+          "date": "2026-09-11",
+          "linkedin_url": "http://www.linkedin.com/in/akshita-nandagopal-95bb233a",
+          "company_url": "https://www.indiatoday.in"
+        },
+        {
+          "person": "Amit Mehta",
+          "org": "Sony Pictures Networks India (SPNI)",
+          "previous_role": "Chief Human Resources Officer, upGrad",
+          "new_role_title": "Chief Human Resources Officer (effective October 1, 2026)",
+          "new_company": "Sony Pictures Networks India",
+          "source_name": "BestMediaInfo",
+          "source_url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/sony-pictures-networks-india-appoints-amit-mehta-as-chro-succeeding-manu-wadhwa-12514441",
+          "date": "2026-09-11",
+          "linkedin_url": null,
+          "company_url": null
+        },
+        {
+          "person": "Shraddha Waikar",
+          "org": "ADF Foods",
+          "previous_role": "Not specified",
+          "new_role_title": "Chief Marketing Officer - Global Markets",
+          "new_company": "ADF Foods",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20471/adf-foods-appoints-shraddha-waikar-as-chief-marketing-officer-global-markets",
+          "date": "2026-09-11",
+          "linkedin_url": null,
+          "company_url": "https://www.adf-foods.com"
+        },
+        {
+          "person": "Vinay Wadhwa",
+          "org": "Landmark Group",
+          "previous_role": "Not specified",
+          "new_role_title": "Chief Sales Officer",
+          "new_company": "Landmark Group",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20453/landmark-group-appoints-vinay-wadhwa-as-chief-sales-officer",
+          "date": "2026-09-11",
+          "linkedin_url": null,
+          "company_url": "https://www.landmarkgroup.com"
+        },
+        {
+          "person": "Nandini Singh",
+          "org": "Cloudstrats",
+          "previous_role": "Not specified",
+          "new_role_title": "Chief Executive Officer",
+          "new_company": "Cloudstrats",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/20469/cloudstrats-appoints-nandini-singh-as-ceo",
+          "date": "2026-09-11",
+          "linkedin_url": null,
+          "company_url": "https://www.cloudstrats.com"
+        },
+        {
+          "person": "Kinshuk Gupta",
+          "org": "Reliance Jio",
+          "previous_role": "Chief Communications Officer, Tata Consultancy Services (TCS)",
+          "new_role_title": "Senior Vice President, Corporate Communications",
+          "new_company": "Reliance Jio",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/ex-tcs-cco-kinshuk-gupta-joins-reliance-jio-to-lead-corporate-communications-12513430",
+          "date": "2026-09-10",
+          "linkedin_url": null,
+          "company_url": "https://www.jio.com"
+        },
+        {
+          "person": "Rohan Prakash",
+          "org": "WPP Media",
+          "previous_role": "Not specified",
+          "new_role_title": "Associate Vice President",
+          "new_company": "WPP Media",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/wpp-media-appoints-rohan-prakash-as-associate-vice-president-12515245",
+          "date": "2026-09-10",
+          "linkedin_url": null,
+          "company_url": "https://www.wppmedia.com"
+        },
+        {
+          "person": "Mayank Kumar",
+          "org": "IndiGo",
+          "previous_role": "Not specified",
+          "new_role_title": "Head of Content & Creative - Marketing",
+          "new_company": "IndiGo",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/indigo-appoints-mayank-kumar-as-head-of-content-creative-marketing-12514196",
+          "date": "2026-09-10",
+          "linkedin_url": null,
+          "company_url": "https://www.goindigo.in"
+        },
+        {
+          "person": "Andrew Robertson",
+          "org": "Omnicom Advertising",
+          "previous_role": "Chairman, BBDO Worldwide",
+          "new_role_title": "Chief Executive Officer, Omnicom Advertising",
+          "new_company": "Omnicom Advertising",
+          "source_name": "afaqs!",
+          "source_url": "https://www.afaqs.com/people-spotting/omnicom-advertising-names-andrew-robertson-ceo-as-troy-ruhanen-steps-down-12513652",
+          "date": "2026-09-09",
+          "linkedin_url": null,
+          "company_url": "https://www.omnicomgroup.com"
+        },
+        {
+          "person": "Ganesh Iyer",
+          "org": "Network18",
+          "previous_role": "Chief Brand Officer, Network18",
+          "new_role_title": "Chief Marketing Officer",
+          "new_company": "Network18",
+          "source_name": "Social Samosa",
+          "source_url": "https://www.socialsamosa.com/industry-updates/network18-ganesh-iyer-cmo-12509638",
+          "date": "2026-09-09",
+          "linkedin_url": null,
+          "company_url": "https://www.network18online.com"
+        },
+        {
+          "person": "Emma Chalwin",
+          "org": "Accenture",
+          "previous_role": "Chief Marketing Officer, Workday",
+          "new_role_title": "Chief Marketing Officer (effective October 1, 2026)",
+          "new_company": "Accenture",
+          "source_name": "Accenture Newsroom",
+          "source_url": "https://newsroom.accenture.com/news/2026/accenture-appoints-emma-chalwin-as-chief-marketing-officer",
+          "date": "2026-09-08",
+          "linkedin_url": null,
+          "company_url": "https://www.accenture.com"
+        },
+        {
+          "person": "Sanjay Dutta",
+          "org": "Third Wave Coffee",
+          "previous_role": "Chief Technology Officer, Theobroma Foods",
+          "new_role_title": "Chief Technology Officer",
+          "new_company": "Third Wave Coffee",
+          "source_name": "Storyboard18",
+          "source_url": "https://www.storyboard18.com/brand-makers/third-wave-coffee-names-sanjay-dutta-as-chief-technology-officer-109967.htm",
+          "date": "2026-09-07",
+          "linkedin_url": null,
+          "company_url": "https://www.thirdwavecoffee.in"
+        }
+      ],
+      "bucket5": [
+        {
+          "headline": "BULLET's scripted branded microdrama for Tata Motors is competitive pressure on Memed/Crunchy's turf",
+          "product_fit": "Memed + Crunchy (competitive pressure)",
+          "insight": "BULLET's first branded microdrama for Tata Motors Commercial Vehicles shows a rival platform building scripted, vertical-video branded IP directly with an auto OEM - the same territory Crunchy could produce and Memed could clip/distribute. It signals WLDD needs to pitch similar branded-microdrama formats proactively before more OEMs default to BULLET's in-house pipeline.",
+          "ref_bucket_label": "Bucket 1 - Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "BULLET Microdrama partners Tata Motors Commercial Vehicles for branded series 'Apna Superstar'",
+          "source_url": "https://www.adgully.com/post/20451/bullet-microdrama-partners-with-tata-motors-commercial-vehicles-for-apna-superstar"
+        },
+        {
+          "headline": "Vi's SRK-led 'Vi Pe Sab Hain VIP' film is ready-made for Memed's clipping engine",
+          "product_fit": "Memed",
+          "insight": "The finished, high-talent-value 'Vi Pe Sab Hain VIP' ad film with Shah Rukh Khan is exactly the kind of single-run hero film Memed's 5,000+ clipper network could re-cut into dozens of native, shareable moments - SRK reaction cuts, 'VIP' meme templates - extending reach well past its paid TV/OOH run.",
+          "ref_bucket_label": "Bucket 1 - Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Vi unveils dynamic brand identity, taps Shah Rukh Khan for 'Vi Pe Sab Hain VIP' campaign",
+          "source_url": "https://www.campaignindia.in/article/vi-unveils-dynamic-brand-identity-with-shah-rukh-khan/4ts05r2yn687849f3ap6x53jny"
+        },
+        {
+          "headline": "Peep Beauty's Triptii Dimri-led launch is a high-intent creator-campaign candidate for Solo",
+          "product_fit": "Solo",
+          "insight": "As a fast-moving new D2C beauty brand launching a debut category push, Peep Beauty needs an ongoing, high-velocity creator-content pipeline rather than a single-agency AOR - exactly the performance-based, high-intent creator matching Solo's Collab Link and Solo Scout are built for.",
+          "ref_bucket_label": "Bucket 1 - Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Triptii Dimri joins Peep Beauty as investor and co-creator for 'Made You Look'",
+          "source_url": "https://www.adgully.com/post/20450/triptii-dimri-joins-peep-beauty-as-investor-unveils-made-you-look-campaign-for-indias-first-eye-be"
+        },
+        {
+          "headline": "Vijay Deverakonda's Unhype launch needs a digital storefront and creator-led awareness",
+          "product_fit": "Imagined + Solo",
+          "insight": "A brand-new D2C skincare line launching direct-to-consumer with pre-booking needs a market-ready storefront/app experience (Imagined) alongside an ongoing creator-content engine to reach the 18-30 target cohort at launch velocity (Solo).",
+          "ref_bucket_label": "Bucket 3 - Product & Brand Launches",
+          "ref_item": "Vijay Deverakonda co-launches skincare brand Unhype for young India",
+          "source_url": "https://www.adgully.com/post/20446/vijay-deverakonda-unviels-skincare-brand-unhype"
+        },
+        {
+          "headline": "KFC's ChatGPT ad buy previews an AI-surface competitor to WLDD's owned reach",
+          "product_fit": "ScoopWhoop (competitive pressure)",
+          "insight": "As conversational-AI interfaces start carrying sponsored placements, some organic-discovery budget once aimed at Third Space content could shift toward AI-answer real estate - a new distribution channel WLDD should track as competitive pressure on ScoopWhoop's owned reach, not a channel it currently offers.",
+          "ref_bucket_label": "Bucket 1 - Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "KFC India becomes first QSR brand to advertise inside ChatGPT",
+          "source_url": "https://www.adgully.com/post/20479/kfc-india-launches-ad-campaign-on-chatgpt-becoming-first-qsr-brand-on-platform"
+        },
+        {
+          "headline": "ShareChat-Pratilipi's 75+ microdrama slate raises the bar for branded microdrama supply",
+          "product_fit": "Crunchy + Memed (competitive pressure)",
+          "insight": "A platform-scale microdrama content deal between ShareChat's parent and Pratilipi signals the format is moving from experimental to industrial scale - WLDD should pitch Crunchy-produced, Memed-distributed branded microdramas to advertisers proactively before distribution platforms lock up the format with in-house/partner content pipelines.",
+          "ref_bucket_label": "Bucket 3 - Product & Brand Launches",
+          "ref_item": "ShareChat's Mohalla Tech partners Pratilipi for 75+ microdramas",
+          "source_url": "https://www.campaignindia.in/article/mohalla-tech-partners-with-pratilipi-for-75-microdramas/4xhf0e9q225hcywe8dagsf1dm1"
+        },
+        {
+          "headline": "Omnicom's PepsiCo-driven layoffs are a talent-pipeline opportunity for The Lit School",
+          "product_fit": "The Lit School",
+          "insight": "Roughly 15,000 planned Omnicom job cuts, concentrated in creative/account teams at BBDO and Alma, will put experienced marketing and creative talent into the job market - a pool The Lit School's practitioner-led programs and creator-economy pipeline could tap for mentor talent or fast-track hiring conversations, not a sales angle to Omnicom itself.",
+          "ref_bucket_label": "Bucket 1 - Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Omnicom plans ~15,000 job cuts after losing PepsiCo's global creative business",
+          "source_url": "https://www.adgully.com/post/20456/omnicom-plans-workforce-cuts-following-loss-of-global-pepsico-creative-account"
+        },
+        {
+          "headline": "Ekatra Jewels' multi-celebrity 'partner' model is a Solo-shaped creator-economy structure",
+          "product_fit": "Solo",
+          "insight": "Ekatra Jewels is running three parallel celebrity-partner collections (Winget, Mukhija, Kapoor) rather than one ambassador deal - a structure that mirrors Solo's model of managing many high-intent creator relationships at once, and could extend to Solo Scout sourcing more up-and-coming creator-partners as the brand scales the format.",
+          "ref_bucket_label": "Bucket 1 - Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Jennifer Winget fronts Ekatra Jewels' story-led 'NOT JUST ONE' collection",
+          "source_url": "https://www.adgully.com/post/20449/jennifer-winget-steps-into-a-new-creative-chapter-with-ekatra-jewels-not-just-one"
+        },
+        {
+          "headline": "Bloomberg India's new digital hub is a fresh market-entry build Imagined-shaped work targets",
+          "product_fit": "Imagined",
+          "insight": "A global media brand standing up a market-specific India digital destination is exactly the kind of market-entry digital-product build - localized site/app experience, India-specific IA - that Imagined Studio's full-stack design/dev capability is built to deliver for brands entering or re-launching in India.",
+          "ref_bucket_label": "Bucket 3 - Product & Brand Launches",
+          "ref_item": "Bloomberg Media launches Bloomberg India digital news hub",
+          "source_url": "https://www.campaignindia.in/article/bloomberg-media-launches-bloomberg-india-digital-news-hub/4qm7ar8f0am185d7gs1590y9m0"
+        },
+        {
+          "headline": "Instamart's 'Switch' film is another quick-commerce hero film ripe for Memed's clipper network",
+          "product_fit": "Memed",
+          "insight": "Instamart's single narrative-led 'Switch' film - built around a relatable, meme-able reveal ('same snack for 25 years') - is a natural fit for Memed's clipper network to cut into shareable Reels/Reddit moments, the same repurposing playbook that's worked for other quick-commerce and OTT hero films.",
+          "ref_bucket_label": "Bucket 1 - Ad Mandates, Campaigns & Marketing Stunts",
+          "ref_item": "Swiggy Instamart's 'Switch' campaign turns a 25-year snack habit into a pitch for change",
+          "source_url": "https://www.afaqs.com/news/advertising/instamart-turns-a-25-year-snack-habit-into-a-case-for-switch-12519330"
+        }
+      ],
+      "flagged": {
+        "bucket1": [
+          "Person (unresolved): Shah Rukh Khan — in \"Vi unveils dynamic brand identity, taps Shah Rukh Khan for 'Vi Pe Sab Hain VIP' campaign\"",
+          "Person (unresolved): Ranveer Singh — in \"BMW India names Ranveer Singh brand ambassador, unveils new 7 Series range\"",
+          "Person (unresolved): Jennifer Winget — in \"Jennifer Winget fronts Ekatra Jewels' story-led 'NOT JUST ONE' collection\"",
+          "Person (unresolved): Vaibhav Sooryavanshi — in \"Complan revives 'Complan Boy' mnemonic with teen cricket sensation Vaibhav Sooryavanshi\"",
+          "Person (unresolved): Triptii Dimri — in \"Triptii Dimri joins Peep Beauty as investor and co-creator for 'Made You Look'\"",
+          "Person (unresolved): Ashish Vidyarthi — in \"Zydus Lifesciences spotlights silent liver health risks with '#LiverKiSuno'\"",
+          "Company (unresolved): Prudential Health India — in \"Prudential Health India spotlights everyday insurance problems in new campaign\"",
+          "Person (unresolved): Alia Bhatt — in \"Levi's returns with Alia Bhatt in new campaign\"",
+          "Person (unresolved): MS Dhoni — in \"Gulf Pride launches 'Kuch Behad Kar' with MS Dhoni\"",
+          "Person (unresolved): Sachin Tendulkar — in \"Kissht launches 'Loans Without Any Hiccups' with Sachin Tendulkar\"",
+          "Person (unresolved): KL Rahul — in \"PEDIGREE launches 'Healthy Belly' campaign with KL Rahul\"",
+          "Person (unresolved): Sadie Sink — in \"Calvin Klein taps Sadie Sink and Tate McRae for Fall 2026 denim campaign\"",
+          "Person (unresolved): Tate McRae — in \"Calvin Klein taps Sadie Sink and Tate McRae for Fall 2026 denim campaign\"",
+          "Person (unresolved): Pratik Gandhi — in \"Lawyered launches 'ChallanPay - Aaram Se' with Pratik Gandhi\""
+        ],
+        "bucket2": [
+          "Company (unresolved): LYNK Logistics — in \"Udaan acquires Swiggy's LYNK Logistics in Rs 500 crore share-swap deal\""
+        ],
+        "bucket3": [
+          "Person (unresolved): Vijay Deverakonda — in \"Vijay Deverakonda co-launches skincare brand Unhype for young India\""
+        ],
+        "bucket4": [
+          "Person (unresolved): Siddharth Mehta — Group Creative Director at Ulka South",
+          "Person (unresolved): Vivek Mohan Sharma — Chief Executive Officer at Pinkvilla",
+          "Person (unresolved): Geeta Mohan — Elevated to senior editorial role at India Today",
+          "Person (unresolved): Amit Mehta — Chief Human Resources Officer (effective October 1, 2026) at Sony Pictures Networks India",
+          "Company (unresolved): Sony Pictures Networks India — re: Amit Mehta",
+          "Person (unresolved): Shraddha Waikar — Chief Marketing Officer - Global Markets at ADF Foods",
+          "Person (unresolved): Vinay Wadhwa — Chief Sales Officer at Landmark Group",
+          "Person (unresolved): Nandini Singh — Chief Executive Officer at Cloudstrats",
+          "Person (unresolved): Kinshuk Gupta — Senior Vice President, Corporate Communications at Reliance Jio",
+          "Person (unresolved): Rohan Prakash — Associate Vice President at WPP Media",
+          "Person (unresolved): Mayank Kumar — Head of Content & Creative - Marketing at IndiGo",
+          "Person (unresolved): Andrew Robertson — Chief Executive Officer, Omnicom Advertising at Omnicom Advertising",
+          "Person (unresolved): Ganesh Iyer — Chief Marketing Officer at Network18",
+          "Person (unresolved): Emma Chalwin — Chief Marketing Officer (effective October 1, 2026) at Accenture",
+          "Person (unresolved): Sanjay Dutta — Chief Technology Officer at Third Wave Coffee"
+        ]
+      },
+      "week_start": "2026-09-07",
+      "week_end": "2026-09-14",
+      "updated_at": "2026-09-14T04:55:25.959045+00:00"
+    },
+    {
+      "bucket1": [
+        {
           "headline": "BIBA bets on teachers as ethnicwear's next big occasion with 'BIBA For Teachers'",
           "description": "BIBA launched 'BIBA For Teachers', anchored by a Teacher Privilege Pass (flat 15% off for educators with a valid teaching ID, September 1–6), a curated Teacher's Wardrobe edit, in-store outreach to local schools and colleges, Teachers' Evenings, and a long-term 'BIBA Teacher Circle' community.",
           "why_important": "Building an owned, recurring occasion and community IP around Teachers' Day — rather than a one-day greeting ad — shows ethnicwear retailers trying to manufacture a new, defensible annual shopping occasion the way jewellers and D2C brands already do around festivals.",
@@ -4795,5 +5702,5 @@
       "updated_at": "2026-08-16T07:34:05.767315+00:00"
     }
   ],
-  "updated_at": "2026-09-07T07:26:04.691206+00:00"
+  "updated_at": "2026-09-14T04:55:25.959475+00:00"
 }
