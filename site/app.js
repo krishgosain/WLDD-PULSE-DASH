@@ -60,6 +60,8 @@ store.set("wldd:lastVisit", new Date().toISOString());
 function persistRead() { store.set("wldd:read", [...readSet]); }
 function persistStar() { store.set("wldd:star", [...starSet]); }
 
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
 /* ---------- theme ---------- */
 
 const SUN = `<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>`;
@@ -100,16 +102,28 @@ function fmtDate(iso) {
 
 function shortDate(iso) {
   if (!iso) return "";
-  const parts = iso.split("-");
-  return parts.length >= 3 ? `${parts[1]}.${parts[2]}` : iso;
+  const parts = String(iso).split("-");
+  if (parts.length >= 3) return `${parts[1]}.${parts[2]}`;
+  // a few older entries only carry a month or a year — show that, not a broken date
+  if (parts.length === 2) return `${parts[1]}.${String(parts[0]).slice(2)}`;
+  return parts[0];
+}
+
+// week_end is exclusive, so the last day people actually read about is the day before
+function weekRange(week) {
+  const start = new Date(week.week_start + "T00:00:00Z");
+  const end = new Date(week.week_end + "T00:00:00Z");
+  end.setUTCDate(end.getUTCDate() - 1);
+  const opts = { month: "short", day: "numeric", timeZone: "UTC" };
+  return `${start.toLocaleDateString("en-US", opts)} – ${end.toLocaleDateString("en-US", { ...opts, year: "numeric" })}`;
 }
 
 function weekLabel(week, idx) {
-  const start = fmtDate(week.week_start);
-  const end = new Date(week.week_end + "T00:00:00Z");
-  end.setUTCDate(end.getUTCDate() - 1);
-  const endStr = end.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
-  return `${idx === 0 ? "This week — " : ""}${start} – ${endStr}`;
+  return `${idx === 0 ? "This week — " : ""}${weekRange(week)}`;
+}
+
+function weekTotal(week) {
+  return BUCKETS.reduce((n, b) => n + (week[b] || []).length, 0);
 }
 
 function isFresh(week) {
@@ -264,7 +278,7 @@ function renderPulse() {
 function animateCounts() {
   document.querySelectorAll(".tile-count").forEach((el) => {
     const target = Number(el.dataset.target) || 0;
-    if (target === 0 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (target === 0 || reduceMotion.matches) {
       el.textContent = String(target);
       return;
     }
@@ -282,6 +296,8 @@ function animateCounts() {
 
 /* ---------- progress + filters ---------- */
 
+let wasComplete = false;
+
 function updateChrome() {
   const items = bucketItems(activeBucket);
   const ids = items.map((i) => itemId(i, activeBucket));
@@ -295,10 +311,50 @@ function updateChrome() {
   const pct = ids.length ? Math.round((read / ids.length) * 100) : 0;
   document.getElementById("progressFill").style.width = pct + "%";
   document.getElementById("progressLabel").textContent = `${read} / ${ids.length} read`;
-  document.getElementById("progressWrap").classList.toggle("is-complete", ids.length > 0 && read === ids.length);
+
+  const wrap = document.getElementById("progressWrap");
+  const complete = ids.length > 0 && read === ids.length;
+  wrap.classList.toggle("is-complete", complete);
+  // celebrate only on the transition into "done", never on every re-render
+  if (complete && !wasComplete) celebrate(wrap);
+  wasComplete = complete;
 
   document.querySelectorAll(".chip").forEach((c) => c.classList.toggle("active", c.dataset.filter === activeFilter));
   document.querySelectorAll(".tile").forEach((t) => t.classList.toggle("active", t.dataset.bucket === activeBucket));
+}
+
+/* ---------- particle burst ---------- */
+
+function burst(x, y, count) {
+  if (reduceMotion.matches) return;
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement("span");
+    p.className = "burst";
+    const angle = (Math.PI * 2 * i) / count + Math.random() * 0.5;
+    const dist = 26 + Math.random() * 30;
+    p.style.left = x + "px";
+    p.style.top = y + "px";
+    p.style.setProperty("--bx", (Math.cos(angle) * dist).toFixed(1) + "px");
+    p.style.setProperty("--by", (Math.sin(angle) * dist).toFixed(1) + "px");
+    p.style.animationDelay = (i * 12) + "ms";
+    document.body.appendChild(p);
+    setTimeout(() => p.remove(), 900 + i * 12);
+  }
+}
+
+function burstFrom(el, count) {
+  const r = el.getBoundingClientRect();
+  burst(r.left + r.width / 2, r.top + r.height / 2, count || 8);
+}
+
+function celebrate(wrap) {
+  wrap.classList.add("just-completed");
+  setTimeout(() => wrap.classList.remove("just-completed"), 950);
+  const track = wrap.querySelector(".progress-track");
+  if (track) {
+    const r = track.getBoundingClientRect();
+    burst(r.right - 4, r.top + r.height / 2, 14);
+  }
 }
 
 /* ---------- main render ---------- */
@@ -346,6 +402,15 @@ function renderBucket(bucket) {
   const cards = content.querySelectorAll(".card");
   cards.forEach((c, i) => { c.style.animationDelay = Math.min(i * 22, 340) + "ms"; });
 }
+
+// cardIn is `animation-fill-mode: both`, so its final keyframe (`transform: none`)
+// keeps winning over the inline transform the tilt sets. Drop the animation once
+// it has finished and the cursor tilt takes over cleanly.
+document.getElementById("content").addEventListener("animationend", (e) => {
+  if (e.animationName === "cardIn" && e.target.classList.contains("card")) {
+    e.target.style.animation = "none";
+  }
+});
 
 /* ---------- search ---------- */
 
@@ -440,7 +505,7 @@ document.getElementById("content").addEventListener("click", (e) => {
     e.preventDefault();
     const id = starEl.dataset.star;
     if (starSet.has(id)) { starSet.delete(id); starEl.classList.remove("on"); starEl.textContent = "☆"; }
-    else { starSet.add(id); starEl.classList.add("on"); starEl.textContent = "★"; }
+    else { starSet.add(id); starEl.classList.add("on"); starEl.textContent = "★"; burstFrom(starEl, 8); }
     persistStar();
     updateChrome();
     return;
@@ -464,12 +529,6 @@ document.getElementById("content").addEventListener("click", (e) => {
   }
 });
 
-document.getElementById("weekSelect").addEventListener("change", (e) => {
-  activeWeekIndex = Number(e.target.value);
-  renderPulse();
-  render();
-});
-
 const searchInput = document.getElementById("searchInput");
 const searchClear = document.getElementById("searchClear");
 
@@ -488,6 +547,215 @@ searchClear.addEventListener("click", () => {
   render();
 });
 
+/* ============================================================
+   WEEK COMBOBOX
+   A native <select> renders its popup with OS chrome that ignores
+   our dark palette — grey-on-white and unreadable. This is the same
+   control built from real elements so it obeys the theme, and it can
+   carry per-week volume that a <select> never could.
+   ============================================================ */
+
+const combo = document.getElementById("weekCombo");
+const comboBtn = document.getElementById("weekBtn");
+const comboLabel = document.getElementById("weekBtnLabel");
+const comboPanel = document.getElementById("weekPanel");
+let comboCursor = 0;
+
+function renderWeekPanel() {
+  const max = Math.max(1, ...WEEKS.map(weekTotal));
+  comboPanel.innerHTML = WEEKS.map((w, i) => {
+    const n = weekTotal(w);
+    const width = Math.max(4, Math.round((n / max) * 46));
+    return `<button class="combo-opt" role="option" data-week="${i}" aria-selected="${i === activeWeekIndex}" tabindex="-1">
+      <span>${esc(weekRange(w))}</span>
+      <span class="combo-right">
+        ${i === 0 ? `<span class="combo-now">NOW</span>` : ""}
+        <span class="combo-vol" style="width:${width}px"></span>
+        <span class="combo-count">${n}</span>
+      </span>
+    </button>`;
+  }).join("");
+  comboLabel.textContent = WEEKS[activeWeekIndex] ? weekLabel(WEEKS[activeWeekIndex], activeWeekIndex) : "—";
+}
+
+function moveComboCursor(delta) {
+  const opts = [...comboPanel.querySelectorAll(".combo-opt")];
+  if (!opts.length) return;
+  opts.forEach((o) => o.classList.remove("cursor"));
+  comboCursor = Math.max(0, Math.min(opts.length - 1, comboCursor + delta));
+  opts[comboCursor].classList.add("cursor");
+  opts[comboCursor].scrollIntoView({ block: "nearest" });
+}
+
+function openCombo() {
+  comboPanel.hidden = false;
+  combo.classList.add("open");
+  comboBtn.setAttribute("aria-expanded", "true");
+  comboCursor = activeWeekIndex;
+  moveComboCursor(0);
+}
+
+function closeCombo() {
+  comboPanel.hidden = true;
+  combo.classList.remove("open");
+  comboBtn.setAttribute("aria-expanded", "false");
+}
+
+function selectWeek(index) {
+  activeWeekIndex = index;
+  renderWeekPanel();
+  renderPulse();
+  wasComplete = false; // a different week is a different reading target
+  render();
+}
+
+comboBtn.addEventListener("click", () => {
+  if (comboPanel.hidden) openCombo(); else closeCombo();
+});
+
+comboPanel.addEventListener("click", (e) => {
+  const opt = e.target.closest(".combo-opt");
+  if (!opt) return;
+  selectWeek(Number(opt.dataset.week));
+  closeCombo();
+  comboBtn.focus();
+});
+
+combo.addEventListener("keydown", (e) => {
+  if (comboPanel.hidden) {
+    if (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") { e.preventDefault(); openCombo(); }
+    return;
+  }
+  if (e.key === "ArrowDown") { e.preventDefault(); moveComboCursor(1); }
+  else if (e.key === "ArrowUp") { e.preventDefault(); moveComboCursor(-1); }
+  else if (e.key === "Home") { e.preventDefault(); comboCursor = 0; moveComboCursor(0); }
+  else if (e.key === "End") { e.preventDefault(); comboCursor = WEEKS.length - 1; moveComboCursor(0); }
+  else if (e.key === "Enter" || e.key === " ") { e.preventDefault(); selectWeek(comboCursor); closeCombo(); }
+  else if (e.key === "Escape") { e.preventDefault(); closeCombo(); comboBtn.focus(); }
+});
+
+document.addEventListener("click", (e) => {
+  if (!comboPanel.hidden && !combo.contains(e.target)) closeCombo();
+});
+
+/* ============================================================
+   COMMAND PALETTE (⌘K / Ctrl-K)
+   Buckets, weeks and every headline in the archive in one index.
+   ============================================================ */
+
+const palette = document.getElementById("palette");
+const paletteInput = document.getElementById("paletteInput");
+const paletteResults = document.getElementById("paletteResults");
+let paletteIndex = [];
+let paletteHits = [];
+let paletteCursor = 0;
+
+function itemTitle(item, bucket) {
+  if (bucket === "bucket4") return `${item.person} → ${item.new_company}`;
+  return item.headline || item.ref_item || "";
+}
+
+function buildPaletteIndex() {
+  paletteIndex = [];
+  BUCKETS.forEach((b, i) => {
+    paletteIndex.push({ kind: "tab", text: BUCKET_LONG[b], sub: `press ${i + 1}`, bucket: b });
+  });
+  WEEKS.forEach((w, i) => {
+    paletteIndex.push({ kind: "week", text: weekRange(w), sub: `${weekTotal(w)} items`, weekIndex: i });
+  });
+  WEEKS.forEach((w, wi) => {
+    BUCKETS.forEach((b) => {
+      (w[b] || []).forEach((item) => {
+        paletteIndex.push({
+          kind: BUCKET_LABELS[b],
+          text: itemTitle(item, b),
+          sub: shortDate(item.date) || weekRange(w).split(" – ")[0],
+          weekIndex: wi,
+          bucket: b,
+          id: itemId(item, b),
+        });
+      });
+    });
+  });
+}
+
+function renderPalette(q) {
+  const query = q.trim().toLowerCase();
+  paletteHits = query
+    ? paletteIndex.filter((o) => (o.text + " " + o.kind).toLowerCase().includes(query)).slice(0, 40)
+    : paletteIndex.filter((o) => o.kind === "tab" || o.kind === "week").slice(0, 14);
+  paletteCursor = 0;
+
+  paletteResults.innerHTML = paletteHits.length
+    ? paletteHits.map((o, i) => `
+        <button class="palette-opt ${i === 0 ? "cursor" : ""}" data-i="${i}">
+          <span class="palette-kind">${esc(o.kind === "tab" ? "go" : o.kind === "week" ? "week" : o.kind)}</span>
+          <span class="palette-txt">${esc(o.text)}</span>
+          <span class="palette-sub">${esc(o.sub || "")}</span>
+        </button>`).join("")
+    : `<div class="palette-empty">Nothing matches “${esc(q)}”</div>`;
+}
+
+function movePaletteCursor(delta) {
+  const opts = [...paletteResults.querySelectorAll(".palette-opt")];
+  if (!opts.length) return;
+  opts.forEach((o) => o.classList.remove("cursor"));
+  paletteCursor = (paletteCursor + delta + opts.length) % opts.length;
+  opts[paletteCursor].classList.add("cursor");
+  opts[paletteCursor].scrollIntoView({ block: "nearest" });
+}
+
+function runPalette(hit) {
+  if (!hit) return;
+  closePalette();
+  if (searchQuery) { searchQuery = ""; searchInput.value = ""; searchClear.hidden = true; document.getElementById("searchSlash").style.display = ""; }
+
+  if (hit.kind === "tab") { activeBucket = hit.bucket; render(); return; }
+  if (hit.kind === "week") { selectWeek(hit.weekIndex); return; }
+
+  // a picked headline may live in another week, another bucket, or behind a
+  // filter — clear all three so the card is guaranteed to be on screen
+  activeBucket = hit.bucket;
+  activeFilter = "all";
+  activeWeekIndex = hit.weekIndex;
+  wasComplete = false;
+  renderWeekPanel();
+  renderPulse();
+  render();
+
+  // land the eye on the exact card that was picked
+  const el = [...document.querySelectorAll("#content .card")].find((c) => c.dataset.id === hit.id);
+  if (el) {
+    el.scrollIntoView({ block: "center", behavior: reduceMotion.matches ? "auto" : "smooth" });
+    el.classList.add("is-cursor");
+    cursor = [...document.querySelectorAll("#content .card")].indexOf(el);
+  }
+}
+
+function openPalette() {
+  palette.hidden = false;
+  paletteInput.value = "";
+  renderPalette("");
+  paletteInput.focus();
+}
+
+function closePalette() { palette.hidden = true; }
+
+document.getElementById("paletteBtn").addEventListener("click", openPalette);
+paletteInput.addEventListener("input", (e) => renderPalette(e.target.value));
+paletteResults.addEventListener("click", (e) => {
+  const opt = e.target.closest(".palette-opt");
+  if (opt) runPalette(paletteHits[Number(opt.dataset.i)]);
+});
+palette.addEventListener("click", (e) => { if (e.target === palette) closePalette(); });
+
+paletteInput.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowDown") { e.preventDefault(); movePaletteCursor(1); }
+  else if (e.key === "ArrowUp") { e.preventDefault(); movePaletteCursor(-1); }
+  else if (e.key === "Enter") { e.preventDefault(); runPalette(paletteHits[paletteCursor]); }
+  else if (e.key === "Escape") { e.preventDefault(); closePalette(); }
+});
+
 /* ---------- keyboard ---------- */
 
 const overlay = document.getElementById("shortcutsOverlay");
@@ -495,18 +763,26 @@ document.getElementById("shortcutsBtn").addEventListener("click", () => { overla
 overlay.addEventListener("click", () => { overlay.hidden = true; });
 document.getElementById("themeToggle").addEventListener("click", toggleTheme);
 
-/* ---------- cursor-tracked 3D tilt ---------- */
-// One rAF-throttled listener for the whole grid. Cards tilt toward the cursor
-// and a specular highlight tracks it, which is what sells the depth.
+/* ---------- cursor glow + 3D tilt ---------- */
+// One rAF-throttled listener for the whole page. Cards tilt toward the cursor,
+// a specular highlight tracks it, and a soft accent glow follows the pointer —
+// which together is what sells the depth.
 
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const glow = document.getElementById("cursorGlow");
 let tiltFrame = null;
 let tiltTarget = null;
 let tiltEvent = null;
 
 function applyTilt() {
   tiltFrame = null;
-  if (!tiltTarget || !tiltEvent) return;
+  if (!tiltEvent) return;
+
+  if (glow) {
+    glow.style.transform = `translate3d(${tiltEvent.clientX}px, ${tiltEvent.clientY}px, 0)`;
+    glow.classList.add("on");
+  }
+
+  if (!tiltTarget) return;
   const r = tiltTarget.getBoundingClientRect();
   const px = (tiltEvent.clientX - r.left) / r.width;
   const py = (tiltEvent.clientY - r.top) / r.height;
@@ -528,12 +804,27 @@ document.addEventListener("mousemove", (e) => {
   if (reduceMotion.matches) return;
   const card = e.target.closest("#content .card, .tile");
   if (card !== tiltTarget) { clearTilt(tiltTarget); tiltTarget = card; }
-  if (!card) return;
   tiltEvent = e;
   if (!tiltFrame) tiltFrame = requestAnimationFrame(applyTilt);
 }, { passive: true });
 
-document.addEventListener("mouseleave", () => { clearTilt(tiltTarget); tiltTarget = null; }, true);
+document.addEventListener("mouseleave", () => {
+  clearTilt(tiltTarget);
+  tiltTarget = null;
+  if (glow) glow.classList.remove("on");
+}, true);
+
+/* ---------- scroll parallax on the ambient field ---------- */
+
+const aurora = document.querySelector(".aurora");
+let parFrame = null;
+window.addEventListener("scroll", () => {
+  if (reduceMotion.matches || parFrame) return;
+  parFrame = requestAnimationFrame(() => {
+    parFrame = null;
+    aurora.style.setProperty("--par", (-window.scrollY * 0.14).toFixed(1) + "px");
+  });
+}, { passive: true });
 
 function cards() { return [...document.querySelectorAll("#content .card")]; }
 
@@ -550,10 +841,20 @@ function moveCursor(delta) {
 function cursorCard() { return cards()[cursor] || null; }
 
 document.addEventListener("keydown", (e) => {
+  // ⌘K / Ctrl-K works from anywhere, including inside the search field
+  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+    e.preventDefault();
+    if (palette.hidden) openPalette(); else closePalette();
+    return;
+  }
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (!palette.hidden) return; // the palette owns its own keys
+
   const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
 
   if (e.key === "Escape") {
     if (!overlay.hidden) { overlay.hidden = true; return; }
+    if (!comboPanel.hidden) { closeCombo(); return; }
     if (typing) { document.activeElement.blur(); return; }
     if (searchQuery) { searchClear.click(); return; }
     cards().forEach((c) => c.classList.remove("is-cursor"));
@@ -561,11 +862,12 @@ document.addEventListener("keydown", (e) => {
     return;
   }
 
-  if (typing) return;
+  if (typing || !comboPanel.hidden) return;
 
   if (e.key === "/") { e.preventDefault(); searchInput.focus(); return; }
   if (e.key === "?") { overlay.hidden = !overlay.hidden; return; }
   if (e.key === "t") { toggleTheme(); return; }
+  if (e.key === "w") { e.preventDefault(); openCombo(); comboBtn.focus(); return; }
 
   if (e.key >= "1" && e.key <= "5") {
     activeBucket = BUCKETS[Number(e.key) - 1];
@@ -573,7 +875,7 @@ document.addEventListener("keydown", (e) => {
     return;
   }
 
-  if (e.key === "j") { e.preventDefault(); moveCursor(cursor === -1 ? 1 : 1); return; }
+  if (e.key === "j") { e.preventDefault(); moveCursor(1); return; }
   if (e.key === "k") { e.preventDefault(); moveCursor(-1); return; }
 
   const el = cursorCard();
@@ -597,15 +899,52 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-/* ---------- boot ---------- */
+/* ============================================================
+   BOOT
+   The curtain tracks the real fetch. The only added time is a short
+   floor so the sequence doesn't flash out of existence on a warm cache.
+   ============================================================ */
 
-function populateWeekSelect() {
-  const sel = document.getElementById("weekSelect");
-  sel.innerHTML = WEEKS.map((w, i) => `<option value="${i}">${esc(weekLabel(w, i))}</option>`).join("");
-  sel.value = String(activeWeekIndex);
+const boot = document.getElementById("boot");
+const bootBar = document.getElementById("bootBar");
+const bootStatus = document.getElementById("bootStatus");
+const BOOT_FLOOR = 1080;
+const bootStart = performance.now();
+
+const BOOT_STEPS = [
+  [0, "establishing signal", 14],
+  [300, "pulling the week", 44],
+  [620, "resolving entities", 72],
+  [880, "ranking the pulse", 90],
+];
+const bootTimers = BOOT_STEPS.map(([at, msg, pct]) =>
+  setTimeout(() => { bootStatus.textContent = msg; bootBar.style.width = pct + "%"; }, at)
+);
+
+function finishBoot(status) {
+  // the staged copy is allowed to play out to the floor; past it, the curtain
+  // lifts the moment the data is in hand
+  const wait = Math.max(0, BOOT_FLOOR - (performance.now() - bootStart));
+  setTimeout(() => {
+    bootTimers.forEach(clearTimeout);
+    bootStatus.textContent = status || "live";
+    bootBar.style.width = "100%";
+    setTimeout(() => boot.classList.add("done"), 300);
+  }, wait);
+}
+
+function showSkeletons(n) {
+  document.getElementById("content").innerHTML =
+    `<div class="grid">${Array.from({ length: n }, () => `
+      <div class="skeleton">
+        <div class="sk-line w80"></div>
+        <div class="sk-line w60"></div>
+        <div class="sk-line w40"></div>
+      </div>`).join("")}</div>`;
 }
 
 applyTheme(store.get("wldd:theme", "dark"));
+showSkeletons(6);
 
 fetch("/data.json")
   .then((r) => r.json())
@@ -614,10 +953,9 @@ fetch("/data.json")
 
     // land on the most recently *updated* week, tie-broken by volume, so a
     // single stray item in a brand-new week can't hijack the landing view
-    const total = (w) => BUCKETS.reduce((n, b) => n + (w[b] || []).length, 0);
     let best = -1, bestStamp = "", bestCount = -1;
     WEEKS.forEach((w, i) => {
-      const c = total(w);
+      const c = weekTotal(w);
       if (!c) return;
       const stamp = w.updated_at || "";
       if (best === -1 || stamp > bestStamp || (stamp === bestStamp && c > bestCount)) {
@@ -632,10 +970,13 @@ fetch("/data.json")
         "Updated " + d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
     }
 
-    populateWeekSelect();
+    renderWeekPanel();
+    buildPaletteIndex();
     renderPulse();
     render();
+    finishBoot();
   })
   .catch(() => {
     document.getElementById("content").innerHTML = `<div class="empty-state">Could not load data.json</div>`;
+    finishBoot("signal lost");
   });
