@@ -48,70 +48,27 @@ function peopleHtml(item) {
   return item.people.map((p) => linkOrText(p.name, p.linkedin_url)).join(", ");
 }
 
-function escapeRegExp(s) {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-// Inline-links every occurrence of a known company/person name within a block of
-// text (description, why-it-matters) with its resolved URL. Never applied to the
-// headline, since the headline is already one big link to the source article —
-// nesting an <a> inside an <a> would break that.
-function linkifyText(text, item) {
-  if (!text) return text;
-  const entities = [
-    ...(item.companies || []).map((c) => ({ name: c.name, url: c.url })),
-    ...(item.people || []).map((p) => ({ name: p.name, url: p.linkedin_url })),
-  ].filter((e) => e.url && e.name);
-  if (!entities.length) return text;
-
-  const sorted = [...entities].sort((a, b) => b.name.length - a.name.length);
-  const matches = [];
-  for (const e of sorted) {
-    const re = new RegExp(escapeRegExp(e.name), "g");
-    let m;
-    while ((m = re.exec(text))) {
-      const start = m.index;
-      const end = start + e.name.length;
-      if (!matches.some((x) => start < x.end && end > x.start)) {
-        matches.push({ start, end, entity: e });
-      }
-    }
-  }
-  if (!matches.length) return text;
-  matches.sort((a, b) => a.start - b.start);
-
-  let out = "";
-  let cursor = 0;
-  for (const m of matches) {
-    out += text.slice(cursor, m.start);
-    out += `<a href="${m.entity.url}" target="_blank" rel="noopener">${text.slice(m.start, m.end)}</a>`;
-    cursor = m.end;
-  }
-  out += text.slice(cursor);
-  return out;
-}
-
+// Bucket 1/2/3 cards are headline-led by design: the headline (linked to the
+// source article) carries the story, with company/person names still linked
+// via the footer chips below. No description or "why it matters" paragraph —
+// keeps the grid scannable instead of dense with running text. People Moves
+// and Strategic Insights use their own renderers and are untouched by this.
 function renderCard(item, bucket) {
   const newTag = isNew(item.date) ? `<span class="tag">NEW</span>` : "";
   const regionTag =
     bucket === "bucket2" && item.region
       ? `<span class="tag ${item.region === "Global" ? "region-global" : ""}">${item.region}</span>`
       : "";
-  const why = item.why_important
-    ? `<div class="card-why"><b>Why it matters —</b> ${linkifyText(item.why_important, item)}</div>`
-    : "";
   const companies = companiesHtml(item);
   const people = peopleHtml(item);
   const entities = [companies, people].filter(Boolean).join(" &middot; ");
 
   return `
-  <article class="card">
+  <article class="card card-headline-only">
     <div class="card-top">
       <div class="card-headline"><a href="${item.source_url}" target="_blank" rel="noopener">${item.headline}</a></div>
       ${newTag}${regionTag}
     </div>
-    <div class="card-desc">${linkifyText(item.description, item) || ""}</div>
-    ${why}
     <div class="card-foot">
       <span>${entities}</span>
       <span>${item.source_name || ""} · ${item.date || ""}</span>
