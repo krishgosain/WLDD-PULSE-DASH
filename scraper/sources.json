@@ -1,30 +1,226 @@
 {
   "sources": [
-    { "name": "Social Media Today", "url": "https://www.socialmediatoday.com" },
-    { "name": "Social Samosa", "url": "https://www.socialsamosa.com" },
-    { "name": "exchange4media – Digital News", "url": "https://www.exchange4media.com/digital-news.html" },
-    { "name": "exchange4media – Latest News", "url": "https://www.exchange4media.com/latest-news.html" },
-    { "name": "Campaign India", "url": "https://www.campaignindia.in" },
-    { "name": "afaqs!", "url": "https://www.afaqs.com" },
-    { "name": "BestMediaInfo", "url": "https://www.bestmediainfo.com" },
-    { "name": "Financial Times – India", "url": "https://www.ft.com/india" },
-    { "name": "Economic Times", "url": "https://economictimes.indiatimes.com" },
-    { "name": "Storyboard18", "url": "https://www.storyboard18.com" },
-    { "name": "Digiday", "url": "https://digiday.com" },
-    { "name": "Adgully", "url": "https://www.adgully.com" },
-    { "name": "MediaNews4U", "url": "https://www.medianews4u.com" },
-    { "name": "Passionate in Marketing", "url": "https://www.passionateinmarketing.com" },
-    { "name": "Manifest Media", "url": "https://www.manifest-media.in" },
-    { "name": "Media4Growth", "url": "https://www.media4growth.com" },
-    { "name": "Retail Jeweller India", "url": "https://retailjewellerindia.com" },
-    { "name": "MediaPost", "url": "https://www.mediapost.com" },
-    { "name": "Adweek", "url": "https://www.adweek.com" },
-    { "name": "Musically", "url": "https://musically.com" },
-    { "name": "Search Engine Land", "url": "https://searchengineland.com" },
-    { "name": "TechCrunch", "url": "https://techcrunch.com" },
-    { "name": "Business Today", "url": "https://www.businesstoday.in" }
+    {
+      "name": "Social Media Today",
+      "url": "https://www.socialmediatoday.com",
+      "section": "core"
+    },
+    {
+      "name": "Social Samosa",
+      "url": "https://www.socialsamosa.com",
+      "section": "core"
+    },
+    {
+      "name": "exchange4media – Digital News",
+      "url": "https://www.exchange4media.com/digital-news.html",
+      "section": "core"
+    },
+    {
+      "name": "exchange4media – Latest News",
+      "url": "https://www.exchange4media.com/latest-news.html",
+      "section": "core"
+    },
+    {
+      "name": "Campaign India",
+      "url": "https://www.campaignindia.in",
+      "section": "core"
+    },
+    {
+      "name": "afaqs!",
+      "url": "https://www.afaqs.com",
+      "section": "core"
+    },
+    {
+      "name": "BestMediaInfo",
+      "url": "https://www.bestmediainfo.com",
+      "section": "core"
+    },
+    {
+      "name": "Financial Times – India",
+      "url": "https://www.ft.com/india",
+      "section": "core"
+    },
+    {
+      "name": "Economic Times",
+      "url": "https://economictimes.indiatimes.com",
+      "section": "core"
+    },
+    {
+      "name": "Storyboard18",
+      "url": "https://www.storyboard18.com",
+      "section": "core"
+    },
+    {
+      "name": "Digiday",
+      "url": "https://digiday.com",
+      "section": "core"
+    },
+    {
+      "name": "Adgully",
+      "url": "https://www.adgully.com",
+      "section": "core"
+    },
+    {
+      "name": "MediaNews4U",
+      "url": "https://www.medianews4u.com",
+      "section": "core"
+    },
+    {
+      "name": "Passionate in Marketing",
+      "url": "https://www.passionateinmarketing.com",
+      "section": "core"
+    },
+    {
+      "name": "Manifest Media",
+      "url": "https://www.manifest-media.in",
+      "section": "core"
+    },
+    {
+      "name": "Media4Growth",
+      "url": "https://www.media4growth.com",
+      "section": "core"
+    },
+    {
+      "name": "Retail Jeweller India",
+      "url": "https://retailjewellerindia.com",
+      "section": "core"
+    },
+    {
+      "name": "MediaPost",
+      "url": "https://www.mediapost.com",
+      "section": "core"
+    },
+    {
+      "name": "Adweek",
+      "url": "https://www.adweek.com",
+      "section": "core"
+    },
+    {
+      "name": "Musically",
+      "url": "https://musically.com",
+      "section": "core"
+    },
+    {
+      "name": "Search Engine Land",
+      "url": "https://searchengineland.com",
+      "section": "core"
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com",
+      "section": "core"
+    },
+    {
+      "name": "Business Today",
+      "url": "https://www.businesstoday.in",
+      "section": "core"
+    },
+    {
+      "name": "EVENTFAQS India",
+      "url": "https://in.eventfaqs.com",
+      "section": "experiential"
+    },
+    {
+      "name": "Everything Experiential",
+      "url": "https://everythingexperiential.com",
+      "section": "experiential"
+    },
+    {
+      "name": "Rolling Stone India",
+      "url": "https://rollingstoneindia.com",
+      "section": "experiential"
+    },
+    {
+      "name": "The Hollywood Reporter India",
+      "url": "https://www.hollywoodreporterindia.com",
+      "section": "experiential"
+    },
+    {
+      "name": "Bollywood Hungama – Box Office",
+      "url": "https://www.bollywoodhungama.com/box-office-collections/",
+      "section": "experiential"
+    },
+    {
+      "name": "Sacnilk – Box Office",
+      "url": "https://www.sacnilk.com",
+      "section": "experiential"
+    },
+    {
+      "name": "Storyboard18 – Media & Entertainment",
+      "url": "https://www.storyboard18.com/media-and-entertainment/",
+      "section": "experiential"
+    },
+    {
+      "name": "SportzPower",
+      "url": "https://sportzpower.com",
+      "section": "experiential"
+    },
+    {
+      "name": "The Bridge",
+      "url": "https://thebridge.in",
+      "section": "experiential"
+    },
+    {
+      "name": "Procam International – News",
+      "url": "https://www.procam.in",
+      "section": "experiential"
+    },
+    {
+      "name": "Pollstar",
+      "url": "https://news.pollstar.com",
+      "section": "experiential"
+    },
+    {
+      "name": "IQ Magazine",
+      "url": "https://www.iqmagazine.com",
+      "section": "experiential"
+    },
+    {
+      "name": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com",
+      "section": "experiential"
+    },
+    {
+      "name": "CelebrityAccess",
+      "url": "https://celebrityaccess.com",
+      "section": "experiential"
+    },
+    {
+      "name": "Variety – Asia",
+      "url": "https://variety.com/c/global/asia/",
+      "section": "experiential"
+    },
+    {
+      "name": "SportsPro",
+      "url": "https://www.sportspromedia.com",
+      "section": "experiential"
+    },
+    {
+      "name": "Event Marketer",
+      "url": "https://www.eventmarketer.com",
+      "section": "experiential"
+    },
+    {
+      "name": "BizBash",
+      "url": "https://www.bizbash.com",
+      "section": "experiential"
+    }
   ],
   "lookback_days": 28,
   "general_web_search": true,
-  "notes": "This list is editable. run.py fetches each source, then runs a general web search pass to catch relevant items missed by the fixed sources above. Items older than lookback_days are deprioritized. Diversity matters as much as recency: pull broadly across FMCG, fashion, jewellery, F&B, e-commerce, BFSI and D2C brand campaigns/launches/stunts, not just agency 'mandate win' listicle pages — those under-represent the range of client categories worth tracking."
+  "notes": "This list is editable. run.py fetches each source, then runs a general web search pass to catch relevant items missed by the fixed sources above. Items older than lookback_days are deprioritized. Diversity matters as much as recency: pull broadly across FMCG, fashion, jewellery, F&B, e-commerce, BFSI and D2C brand campaigns/launches/stunts, not just agency 'mandate win' listicle pages — those under-represent the range of client categories worth tracking. Sources tagged section=experiential feed the Experiential Economy section (bucket6); run the experiential_search_queries too, since many of the best items (tours, races, box office) surface via search rather than trade-press home pages.",
+  "experiential_search_queries": [
+    "India concert tour announced <month year> tickets presale sponsor",
+    "stand-up comedy India tour stadium <month year> District OR BookMyShow",
+    "HYROX India <city> <month year>",
+    "marathon OR half marathon India <month year> title sponsor OR elite field",
+    "Ironman OR triathlon OR cyclothon India <month year>",
+    "box office opening weekend <month year> Hindi OR Telugu OR Tamil",
+    "trailer launch event OR fan screening <month year> India",
+    "music festival India lineup announced <month year> (Lollapalooza, NH7 Weekender, Sunburn, Zomaland, Echoes of Earth, Magnetic Fields)",
+    "brand pop-up OR immersive experience OR brand IP event India <month year>",
+    "BookMyShow OR District OR thumpN OR Paytm Insider <month year> live events",
+    "live events policy OR venue OR stadium concert India <month year>",
+    "global: Live Nation OR AEG OR Sphere OR stadium tour gross <month year>"
+  ]
 }

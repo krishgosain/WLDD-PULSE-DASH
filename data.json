@@ -1,6 +1,162 @@
 {
   "weeks": [
     {
+      "bucket1": [],
+      "bucket2": [],
+      "bucket3": [],
+      "bucket4": [],
+      "bucket5": [
+        {
+          "headline": "Drishyam's ₹272 crore opening is a Memed brief waiting to be written",
+          "product_fit": "Memed + ScoopWhoop",
+          "insight": "A franchise finale with 34.93 lakh weekend tickets sold has weeks of second-wave hype left: scenes, theories and fan reactions. Memed has done exactly this movie-hype clipping for Netflix and JioHotstar. Pitch the studio and its co-promotion brands on a clip-and-meme push through week 2-3, amplified on ScoopWhoop.",
+          "ref_bucket_label": "Experiential Economy",
+          "ref_item": "Drishyam: The Conclusion opens to ₹272.8 crore worldwide, with 34.93 lakh tickets sold on BookMyShow",
+          "source_url": "https://www.hollywoodreporterindia.com/features/insight/drishyam-the-conclusion-box-office-ajay-devgn-tabu-starrer-grosses-over-272-crore-worldwide-in-opening-weekend"
+        },
+        {
+          "headline": "Kotak Solitaire bought Arijit's presale; it still needs the tour to feel like its own",
+          "product_fit": "Crunchy + Memed",
+          "insight": "Presenting sponsors usually stop at a logo and a presale window. With nine cities from January to May 2027, Kotak Solitaire has months of on-ground footage to make the card the hero of the experience: Crunchy for cardholder-only moments at venues, Memed to clip and distribute them city by city.",
+          "ref_bucket_label": "Experiential Economy",
+          "ref_item": "Arijit Singh's nine-city 2027 tour lands Kotak Solitaire as presenting sponsor, sold only on thumpN",
+          "source_url": "https://rollingstoneindia.com/arijit-singh-india-tour-2027-dates-tickets-cities/"
+        }
+      ],
+      "bucket6": [
+        {
+          "headline": "MIB: India's live events sector grew 44% in a year, and the target is to double it by 2030",
+          "description": "I&B Secretary Chanchal Kumar says India hosted about 34,000 live events in the past year, supporting 10 million+ livelihoods; nodal officers now sit in 29 states and UTs, up from 16.",
+          "why_important": "The government is now treating live entertainment as an industry to be scaled, not a permissions headache. Faster clearances in more states mean more tours, more cities and more sponsorable inventory every quarter.",
+          "category": "Ticketing, Venues & Policy",
+          "region": "India",
+          "source_name": "exchange4media",
+          "source_url": "https://www.exchange4media.com/media-others-news/indias-live-events-sector-grew-by-44-over-the-past-year-govt-158977.html",
+          "date": "2026-10-08",
+          "companies": [
+            {
+              "name": "Ministry of Information & Broadcasting",
+              "url": "https://mib.gov.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Chanchal Kumar",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "John Mayer books six Sphere nights for April 2027",
+          "description": "Each night splits into solo, full-band and trio sets with Steve Jordan and Pino Palladino; tickets from $129, general sale October 9.",
+          "why_important": "Sphere keeps converting legacy acts into multi-night residencies. It is the clearest proof that a venue built as an experience can outsell a standard arena tour.",
+          "category": "Concerts & Live Shows",
+          "region": "Global",
+          "source_name": "CelebrityAccess",
+          "source_url": "https://celebrityaccess.com/2026/10/07/john-mayer-live-at-the-sphere-in-april-2027",
+          "date": "2026-10-07",
+          "companies": [
+            {
+              "name": "Sphere Entertainment",
+              "url": "https://www.sphereentertainmentco.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "John Mayer",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Arijit Singh's nine-city 2027 tour lands Kotak Solitaire as presenting sponsor, sold only on thumpN",
+          "description": "Team Innovation produces the tour from Ahmedabad (Jan 9, 2027) to Hyderabad (May 15, 2027); Kotak Solitaire Visa presale opens October 10, general sale October 13.",
+          "why_important": "A premium credit card buying presale access to India's biggest live draw is now the standard sponsorship template. Exclusive ticketing on thumpN also shows how far the market has moved beyond BookMyShow and District.",
+          "category": "Concerts & Live Shows",
+          "region": "India",
+          "source_name": "Rolling Stone India",
+          "source_url": "https://rollingstoneindia.com/arijit-singh-india-tour-2027-dates-tickets-cities/",
+          "date": "2026-10-05",
+          "companies": [
+            {
+              "name": "Kotak Mahindra Bank",
+              "url": "https://www.kotak.com"
+            },
+            {
+              "name": "Team Innovation",
+              "url": null
+            },
+            {
+              "name": "thumpN",
+              "url": null
+            }
+          ],
+          "people": [
+            {
+              "name": "Arijit Singh",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Echoes of Earth announces its 10th edition: Thievery Corporation's India debut at Nandi Hills",
+          "description": "December 5-6, 2026 in the foothills of Nandi Hills outside Bengaluru, themed 'Arteries of Life', with Yussef Dayes, Parra for Cuva, MEUTE and Joris Voorn.",
+          "why_important": "A sustainability-led boutique festival reaching ten editions shows there is durable demand below the mega-festival tier. It is a natural home for brands that want a curated, design-led crowd rather than raw scale.",
+          "category": "Festivals & Culture",
+          "region": "India",
+          "source_name": "Rolling Stone India",
+          "source_url": "https://rollingstoneindia.com/echoes-of-earth-2026-lineup/",
+          "date": "2026-10-05",
+          "companies": [
+            {
+              "name": "Echoes of Earth",
+              "url": "https://www.echoesofearth.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Drishyam: The Conclusion opens to ₹272.8 crore worldwide, with 34.93 lakh tickets sold on BookMyShow",
+          "description": "₹211.8 crore domestic and ₹61 crore overseas across the first three days (₹62 cr Fri, ₹53.5 cr Sat, ₹61 cr Sun), Ajay Devgn's biggest opening.",
+          "why_important": "A franchise finale turning into a theatrical event at this scale is the strongest argument yet that cinema-going in India is now bought as an experience. Brand tie-ins, in-cinema activations and fan screenings around tentpoles are worth more than they were a year ago.",
+          "category": "Film & Entertainment Launches",
+          "region": "India",
+          "source_name": "The Hollywood Reporter India",
+          "source_url": "https://www.hollywoodreporterindia.com/features/insight/drishyam-the-conclusion-box-office-ajay-devgn-tabu-starrer-grosses-over-272-crore-worldwide-in-opening-weekend",
+          "date": "2026-10-05",
+          "companies": [
+            {
+              "name": "BookMyShow",
+              "url": "https://in.bookmyshow.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Ajay Devgn",
+              "linkedin_url": null
+            }
+          ]
+        }
+      ],
+      "flagged": {
+        "bucket1": [],
+        "bucket2": [],
+        "bucket3": [],
+        "bucket4": [],
+        "bucket6": [
+          "Person (unresolved): Chanchal Kumar — in \"MIB: India's live events sector grew 44% in a year, and the target is to double it by 2030\"",
+          "Person (unresolved): John Mayer — in \"John Mayer books six Sphere nights for April 2027\"",
+          "Company (unresolved): Team Innovation — in \"Arijit Singh's nine-city 2027 tour lands Kotak Solitaire as presenting sponsor, sold only on thumpN\"",
+          "Company (unresolved): thumpN — in \"Arijit Singh's nine-city 2027 tour lands Kotak Solitaire as presenting sponsor, sold only on thumpN\"",
+          "Person (unresolved): Arijit Singh — in \"Arijit Singh's nine-city 2027 tour lands Kotak Solitaire as presenting sponsor, sold only on thumpN\"",
+          "Person (unresolved): Ajay Devgn — in \"Drishyam: The Conclusion opens to ₹272.8 crore worldwide, with 34.93 lakh tickets sold on BookMyShow\""
+        ]
+      },
+      "week_start": "2026-10-05",
+      "week_end": "2026-10-12",
+      "updated_at": "2026-10-08T07:35:52.063384+00:00"
+    },
+    {
       "bucket1": [
         {
           "headline": "The Hindu and Zepto put a Gandhi collector's edition in ten-minute delivery",
@@ -19,7 +175,8 @@
               "url": "https://www.zeptonow.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "Ray-Ban names Ranveer Singh its India brand ambassador",
@@ -39,7 +196,8 @@
               "name": "Ranveer Singh",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "AJIO signs Ahaan Panday as brand ambassador",
@@ -59,7 +217,8 @@
               "name": "Ahaan Panday",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "STING drives into Formula 1 with a Malaysia debut",
@@ -74,7 +233,8 @@
               "url": "https://www.pepsico.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Raymond Lifestyle hands Publicis Groupe India its first integrated mandate",
@@ -93,7 +253,8 @@
               "url": "https://www.publicisgroupe.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "The ISL becomes the MG Indian Super League",
@@ -112,7 +273,8 @@
               "url": "https://www.indiansuperleague.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Honda takes title sponsorship of the Indian Supercross League",
@@ -135,7 +297,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Birla Opus Paints builds a Durga Pujo campaign on roots",
@@ -150,7 +313,8 @@
               "url": "https://www.birlaopus.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Freedom Healthy Cooking Oils runs a heart-health push with Rahul Dravid",
@@ -170,7 +334,8 @@
               "name": "Rahul Dravid",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "MOMS Outdoor builds a city-by-city OOH run for Welspun QuikDry",
@@ -189,7 +354,8 @@
               "url": "https://www.welspun.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "MTR decodes India's sweetest language for the festive season",
@@ -204,7 +370,8 @@
               "url": "https://www.mtrfoods.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "PhonePe tries to name all 70 crore of its users for its tenth birthday",
@@ -219,7 +386,8 @@
               "url": "https://www.phonepe.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "super.money turns Tiger Shroff's splits into a payment hack",
@@ -239,7 +407,8 @@
               "name": "Tiger Shroff",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Heer by GIVA brings 9KT gold to everyday wear with Anushka Sharma",
@@ -259,7 +428,8 @@
               "name": "Anushka Sharma",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Nykaa Cosmetics gets 'Lovestruck' with Rasha Thadani and Rohit Saraf",
@@ -283,7 +453,8 @@
               "name": "Rohit Saraf",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Rakhi Sawant stages a beauty heist inside Nykaa's warehouse",
@@ -303,7 +474,8 @@
               "name": "Rakhi Sawant",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Keerthy Suresh fronts Chandrika's Ayurvedic soap campaign",
@@ -323,7 +495,8 @@
               "name": "Keerthy Suresh",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Schneider Electric makes the switch a festive design statement",
@@ -338,7 +511,8 @@
               "url": "https://www.se.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Interio by Godrej sells steel kitchens on durability and design",
@@ -353,7 +527,8 @@
               "url": "https://www.godrejinterio.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Union Mutual Fund gives its investor-awareness platform a jingle",
@@ -368,7 +543,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Too Faced puts Sahher Bambba in its festive spotlight",
@@ -388,7 +564,8 @@
               "name": "Sahher Bambba",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "SocialTAG takes CCAvenue's Global Fintech Fest launches off the event floor",
@@ -407,7 +584,8 @@
               "url": "https://www.ccavenue.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "YAAP picks up Narayana Health's social media mandate across five clusters",
@@ -426,7 +604,8 @@
               "url": "https://www.narayanahealth.org"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Healthcare & Pharma"
         },
         {
           "headline": "boAt takes its CREST AI film to the middle of the ocean",
@@ -441,7 +620,8 @@
               "url": "https://www.boat-lifestyle.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Reliance Foundation ties a child's first sport to Asian Games glory",
@@ -456,7 +636,8 @@
               "url": "https://www.reliancefoundation.org"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Other"
         },
         {
           "headline": "Ghadi Detergent brings Madhuri Dixit into 'Vishwas Ki Pariksha'",
@@ -476,7 +657,8 @@
               "name": "Madhuri Dixit",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Rohit Sharma becomes Freyr Energy's first brand ambassador",
@@ -496,7 +678,8 @@
               "name": "Rohit Sharma",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Energy & Industrial"
         },
         {
           "headline": "OPPO F35 5G rides 'Drishyam The Conclusion' into the festive window",
@@ -511,7 +694,8 @@
               "url": "https://www.oppo.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Saffola Gold and PHD India launch a women's heart-health movement",
@@ -530,7 +714,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Traya puts women's hair fall on a seven-foot installation in Mumbai",
@@ -545,7 +730,8 @@
               "url": "https://traya.health"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "KisaanSay tells India's dry-fruit story with Baba Sehgal",
@@ -565,7 +751,8 @@
               "name": "Baba Sehgal",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Whisper World activates in-content advertising for Patanjali's Nutrela",
@@ -584,7 +771,8 @@
               "url": "https://www.patanjalifoods.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "PharmEasy turns CPR into a song for World Heart Day",
@@ -599,7 +787,8 @@
               "url": "https://pharmeasy.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Healthcare & Pharma"
         },
         {
           "headline": "Flipkart and McCann bring numerology to Big Billion Days",
@@ -618,7 +807,8 @@
               "url": "https://www.mccann.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "ASCI issues labelling guidelines for AI-generated advertising content",
@@ -633,7 +823,8 @@
               "url": "https://www.ascionline.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "JioStar's new season film headlines Shreyas Iyer and two teenage stars",
@@ -661,7 +852,8 @@
               "name": "Abhishek Sharma",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "Sprite mixes celebrity, food and dares in 'Truth & Spice'",
@@ -676,7 +868,8 @@
               "url": "https://www.coca-colaindia.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "SKINN casts Ayushmann Khurrana and Sobhita Dhulipala for its festive push",
@@ -700,7 +893,8 @@
               "name": "Sobhita Dhulipala",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Aashirvaad Salt Active goes after Delhi's blood pressure",
@@ -715,7 +909,8 @@
               "url": "https://www.itcportal.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "AGL-Hakuhodo folds ChatGPT Ads into its digital media strategy",
@@ -734,7 +929,8 @@
               "url": "https://openai.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "Ranbir Kapoor revives his own characters for Flux Theory's FMCG debut",
@@ -754,7 +950,8 @@
               "name": "Ranbir Kapoor",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "BC Web Wise builds a miniature world for Tata Power EZ CHARGE",
@@ -773,7 +970,8 @@
               "url": "https://www.tatapower.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Energy & Industrial"
         },
         {
           "headline": "OpenAI signs Sachin Tendulkar to widen AI adoption in India",
@@ -793,7 +991,8 @@
               "name": "Sachin Tendulkar",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Stayfree makes boys the allies in #BetaStayfreeLeAana",
@@ -808,7 +1007,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Voltas Beko argues for smarter appliance choices in 'Sense Toh Banta Hai'",
@@ -823,7 +1023,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Joy Personal Care signs Tamannaah Bhatia for its lotions portfolio",
@@ -843,7 +1044,8 @@
               "name": "Tamannaah Bhatia",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "MESC appoints KlugKlug as its official influencer intelligence platform",
@@ -862,7 +1064,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "Doraemon's India release gets a 360-degree campaign",
@@ -877,7 +1080,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "Fast&Up powers Indian athletes with 'Fuel Forward' at the Asian Games",
@@ -892,7 +1096,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Aspect Sports signs Olympic medallist Aman Sehrawat",
@@ -912,7 +1117,8 @@
               "name": "Aman Sehrawat",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Media, Entertainment & Sports"
         }
       ],
       "bucket2": [
@@ -1720,11 +1926,88 @@
           "Person (unresolved): Laura Ryan — Chief Media Officer at WPP Media",
           "Person (unresolved): Rishabh Sachdev — Director & Chief Executive Officer at Aspect Realty",
           "Company (unresolved): Aspect Realty — re: Rishabh Sachdev"
+        ],
+        "bucket6": [
+          "Person (unresolved): Diljit Dosanjh — in \"Diljit Dosanjh's Aura Tour India leg goes seven cities, presented by RuPay and promoted by BookMyShow\""
         ]
       },
       "week_start": "2026-09-28",
       "week_end": "2026-10-05",
-      "updated_at": "2026-10-05T04:42:58.498173+00:00"
+      "updated_at": "2026-10-08T07:35:52.063384+00:00",
+      "bucket6": [
+        {
+          "headline": "Diljit Dosanjh's Aura Tour India leg goes seven cities, presented by RuPay and promoted by BookMyShow",
+          "description": "Delhi-NCR (Nov 1) through Indore, Ahmedabad, Mumbai, Bengaluru and Lucknow (Dec 5), plus Chandigarh TBA; RuPay credit card presale from October 6.",
+          "why_important": "After Dil-Luminati, Diljit is the most bankable stadium act in India. RuPay taking the title slot puts a payment network against the card-led presale model that Kotak and others are using.",
+          "category": "Concerts & Live Shows",
+          "region": "India",
+          "source_name": "Outlook India",
+          "source_url": "https://www.outlookindia.com/art-entertainment/diljit-dosanjh-aura-tour-india-singer-announces-seven-city-pan-india-concert-tour",
+          "date": "2026-10-04",
+          "companies": [
+            {
+              "name": "RuPay",
+              "url": "https://www.rupay.co.in"
+            },
+            {
+              "name": "BookMyShow",
+              "url": "https://in.bookmyshow.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Diljit Dosanjh",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Live Nation fights state AGs' push for discovery into its DOJ antitrust settlement",
+          "description": "States that rejected the March settlement want details of negotiations they say began a year before they were told; Live Nation calls the requests burdensome as the Tunney Act review continues.",
+          "why_important": "How the world's largest promoter and ticketer is regulated in the US shapes the playbook its India arm (Lollapalooza India) and local rivals will follow on exclusivity and ticketing.",
+          "category": "Ticketing, Venues & Policy",
+          "region": "Global",
+          "source_name": "CelebrityAccess",
+          "source_url": "https://celebrityaccess.com/2026/10/03/live-nation-pushes-back-as-states-seek-details-behind-doj-antitrust-settlement/",
+          "date": "2026-10-03",
+          "companies": [
+            {
+              "name": "Live Nation Entertainment",
+              "url": "https://www.livenationentertainment.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "FICCI FRAMES: India's live events are selling out, but venues and rules aren't keeping up",
+          "description": "Panelists cited a Samay Raina tour that sold 150,000 tickets against a 200,000 target and took four months just to book venues; five states have adopted a model order with a 15-day permission deadline.",
+          "why_important": "Demand is no longer the constraint, supply is. Whoever controls purpose-built venues and fast permissions will capture the margin, and brands that can bring their own space or IP have an edge.",
+          "category": "Ticketing, Venues & Policy",
+          "region": "India",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/indias-live-events-are-sold-out-but-venues-rules-are-still-missing-ficci-frames-2026/",
+          "date": "2026-09-30",
+          "companies": [
+            {
+              "name": "FICCI",
+              "url": "https://ficci.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Durga Puja 2026 (Oct 17-21): brands told to participate in the pandal experience, not just buy visibility",
+          "description": "With Mahalaya on October 10, the piece argues brands should earn a place in Kolkata's five-day pandal-hopping through local cultural insight across print, TV, outdoor and digital.",
+          "why_important": "Puja is India's largest annual walk-through experience. The pitch is moving from pandal hoardings to participatory formats, which is exactly where on-ground activations and creator-led coverage win.",
+          "category": "Festivals & Culture",
+          "region": "India",
+          "source_name": "exchange4media",
+          "source_url": "https://www.exchange4media.com/marketing-news/when-the-east-celebrates-brands-follow-the-durga-puja-opportunity-158717.html",
+          "date": "2026-09-29",
+          "companies": [],
+          "people": []
+        }
+      ]
     },
     {
       "bucket1": [
@@ -1750,7 +2033,8 @@
               "name": "Ranbir Kapoor",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Zee5 Marathi and TheSmallBigIdea stretch Bappa past Ganeshotsav",
@@ -1769,7 +2053,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "McDonald's says its ad business can reach $1 billion",
@@ -1784,7 +2069,8 @@
               "url": "https://www.mcdonalds.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Pankaj Tripathi fronts Sony's push for India's biggest football party",
@@ -1804,7 +2090,8 @@
               "name": "Pankaj Tripathi",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "SEBI proposes a common ad code and opens the door to celebrity endorsements",
@@ -1819,7 +2106,8 @@
               "url": "https://www.sebi.gov.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "The Body Shop India lights up Diwali with 'Spark Your Inner Radiance'",
@@ -1834,7 +2122,8 @@
               "url": "https://www.thebodyshop.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Stayfree gets boys talking about periods for Daughter's Day",
@@ -1849,7 +2138,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Shaya by CaratLane signs Shreya Ghoshal",
@@ -1869,7 +2159,8 @@
               "name": "Shreya Ghoshal",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "KreditBee gets 'practical' about ambition",
@@ -1884,7 +2175,8 @@
               "url": "https://www.kreditbee.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Muthoot FinCorp locks BCCI home title sponsorship to March 2028",
@@ -1903,7 +2195,8 @@
               "url": "https://www.bcci.tv"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "JioStar signs 15 brands across 8 categories for India-West Indies",
@@ -1918,7 +2211,8 @@
               "url": "https://www.jiostar.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "Ambrane puts charging-cable jokes across the Delhi Metro",
@@ -1933,7 +2227,8 @@
               "url": "https://www.ambraneindia.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "ITA Airways flies 'Simply Italian' with Sharon Stone",
@@ -1953,7 +2248,8 @@
               "name": "Sharon Stone",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Travel & Hospitality"
         },
         {
           "headline": "YES BANK deepens its Indian Olympic Association tie-up for the Asian Games",
@@ -1972,7 +2268,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Flipkart's Big Billion Days asks if you're really Gen Z",
@@ -1987,7 +2284,8 @@
               "url": "https://www.flipkart.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Schneider Electric turns a light switch into a Ganpati blessing",
@@ -2002,7 +2300,8 @@
               "url": "https://www.se.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "JSW Group releases 'Tere Sang Bharat' for Team India at the Asian Games",
@@ -2017,7 +2316,8 @@
               "url": "https://www.jsw.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Energy & Industrial"
         },
         {
           "headline": "Clinic Plus makes daughters the source of a mother's strength",
@@ -2032,7 +2332,8 @@
               "url": "https://www.hul.co.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "LAVA launches Virat Curve 5G with Rohit Saraf and Pratibha Ranta",
@@ -2056,7 +2357,8 @@
               "name": "Pratibha Ranta",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Rungta Steel puts SRK, Alia and Ranbir in one TMT bar ad",
@@ -2084,7 +2386,8 @@
               "name": "Ranbir Kapoor",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Real Estate & Building Materials"
         },
         {
           "headline": "Bajaj Life switches on advertising inside ChatGPT",
@@ -2103,7 +2406,8 @@
               "url": "https://openai.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "TCS renews Jaguar TCS Racing title deal and adds an AI partner role",
@@ -2122,7 +2426,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Coca-Cola India widens its festive footprint across occasions",
@@ -2137,7 +2442,8 @@
               "url": "https://www.coca-colaindia.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Social Panga builds a digital graveyard for 12 rejected ideas",
@@ -2152,7 +2458,8 @@
               "url": "https://www.socialpanga.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "Axis Bank asks what happens when customers get used to better",
@@ -2167,7 +2474,8 @@
               "url": "https://www.axisbank.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Cashfree reveals a new identity with Biswa Kalyan Rath's 'Mithai Joint Family'",
@@ -2187,7 +2495,8 @@
               "name": "Biswa Kalyan Rath",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Hero MotoCorp runs its first programmatic DOOH launch for the Destini",
@@ -2206,7 +2515,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Flipkart turns Kolkata's BBD Bagh into Big Billion Days",
@@ -2221,7 +2531,8 @@
               "url": "https://www.flipkart.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "VERO MODA names Aditi Rao Hydari the face of AW'26",
@@ -2241,7 +2552,8 @@
               "name": "Aditi Rao Hydari",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Campa Energy turns a 65,000 sq ft Chennai mural into an Ajith Kumar fan magnet",
@@ -2261,7 +2573,8 @@
               "name": "Ajith Kumar",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Zomato brings The Great Khali to HYROX Mumbai",
@@ -2281,7 +2594,8 @@
               "name": "The Great Khali",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Coca-Cola and Zepto turn a World Cup win into a collectible",
@@ -2300,7 +2614,8 @@
               "url": "https://www.zeptonow.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Godrej HIT brings back the hard sell with Shefali Shah",
@@ -2320,7 +2635,8 @@
               "name": "Shefali Shah",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Škoda and BBH India go 'For the Restless' on the Kylaq Sportline",
@@ -2339,7 +2655,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Air India extends its brand platform with Vaibhav Sooryavanshi",
@@ -2359,7 +2676,8 @@
               "name": "Vaibhav Sooryavanshi",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Travel & Hospitality"
         },
         {
           "headline": "Max Estates sells wellbeing through a 19th-century photographic process",
@@ -2374,7 +2692,8 @@
               "url": "https://www.maxestates.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Real Estate & Building Materials"
         },
         {
           "headline": "Interbrand takes on JSW Greentech's Ampstar brand build",
@@ -2393,7 +2712,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Energy & Industrial"
         },
         {
           "headline": "Glam21 launches a micro-drama series to sell beauty",
@@ -2408,7 +2728,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Canva runs its biggest India campaign yet around AI creativity",
@@ -2423,7 +2744,8 @@
               "url": "https://www.canva.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Macaw Paints signs Kartik Aaryan for a festive makeover push",
@@ -2443,7 +2765,8 @@
               "name": "Kartik Aaryan",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Star Health builds a campaign around nationwide claims support",
@@ -2458,7 +2781,8 @@
               "url": "https://www.starhealth.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Story Digital wins Wozoyo India's creative digital mandate",
@@ -2477,7 +2801,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Other"
         },
         {
           "headline": "Havas Play partners iion to scale playable ads across APAC",
@@ -2496,7 +2821,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         }
       ],
       "bucket2": [
@@ -3361,11 +3687,61 @@
           "Person (unresolved): Klaus Zellmer — President & Chief Executive Officer at Volvo Cars",
           "Person (unresolved): Nabeel A Khan — Lead – Global Business and Upcoming Media Ventures at MarkNext Group",
           "Company (unresolved): MarkNext Group — re: Nabeel A Khan"
+        ],
+        "bucket6": [
+          "Person (unresolved): Samay Raina — in \"Samay Raina Live: comedian's biggest India tour goes exclusive on District, with two Gachibowli Stadium nights\"",
+          "Person (unresolved): Shreya Ghoshal — in \"Shreya Ghoshal's 14-city Unstoppable Tour opens in Bengaluru on November 22, ticketed on District\""
         ]
       },
       "week_start": "2026-09-21",
       "week_end": "2026-09-28",
-      "updated_at": "2026-09-28T04:43:21.303962+00:00"
+      "updated_at": "2026-10-08T07:35:52.063384+00:00",
+      "bucket6": [
+        {
+          "headline": "Samay Raina Live: comedian's biggest India tour goes exclusive on District, with two Gachibowli Stadium nights",
+          "description": "November 2026 to April 2027 across Delhi, Jaipur, Hyderabad, Pune, Bengaluru and Mumbai, with more cities to come; presale opened September 28 and general sale September 30.",
+          "why_important": "Stand-up comedy is now filling stadiums. District locking the exclusive is a direct shot at BookMyShow in the ticketing war, and the fanbase skews exactly to the Gen Z audience brands want.",
+          "category": "Concerts & Live Shows",
+          "region": "India",
+          "source_name": "Telangana Today",
+          "source_url": "https://telanganatoday.com/samay-raina-announces-hyderabad-shows-as-part-of-india-tour",
+          "date": "2026-09-26",
+          "companies": [
+            {
+              "name": "District by Zomato",
+              "url": "https://www.district.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Samay Raina",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Shreya Ghoshal's 14-city Unstoppable Tour opens in Bengaluru on November 22, ticketed on District",
+          "description": "Runs through Guwahati, Kolkata, Jaipur, New Delhi, Mumbai and Indore before closing on April 3, 2027; venues still to be announced.",
+          "why_important": "A 14-city run reaching tier-2 cities like Guwahati and Indore shows touring is spreading well beyond the metro circuit, which opens up regional sponsors.",
+          "category": "Concerts & Live Shows",
+          "region": "India",
+          "source_name": "Rolling Stone India",
+          "source_url": "https://rollingstoneindia.com/shreya-ghoshal-unstoppable-india-tour-dates-tickets-cities/",
+          "date": "2026-09-21",
+          "companies": [
+            {
+              "name": "District by Zomato",
+              "url": "https://www.district.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Shreya Ghoshal",
+              "linkedin_url": null
+            }
+          ]
+        }
+      ]
     },
     {
       "bucket1": [
@@ -3387,7 +3763,8 @@
               "name": "Rinku Singh",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Adani Group renews Indian Olympic Association deal through the Asian Games",
@@ -3406,7 +3783,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Energy & Industrial"
         },
         {
           "headline": "adidas hands India's Asian Games squad a campaign in four languages",
@@ -3438,7 +3816,8 @@
               "name": "Simran Sharma",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Samsung hires an actual man named Tim Cook to sell the Galaxy Z Fold 8",
@@ -3453,7 +3832,8 @@
               "url": "https://www.samsung.com/in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Haier locks UEFA Champions League global partnership through 2031",
@@ -3472,7 +3852,8 @@
               "url": "https://www.uefa.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Estée Lauder puts the whole Shetty family in one festive film",
@@ -3487,7 +3868,8 @@
               "url": "https://www.esteelauder.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Jockey turns 150 and builds a campaign out of the anniversary",
@@ -3502,7 +3884,8 @@
               "url": "https://www.jockey.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Crompton makes its Ganesh Chaturthi film with AI — for water pumps",
@@ -3517,7 +3900,8 @@
               "url": "https://www.crompton.co.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Ujjivan Small Finance Bank signs R. Madhavan for 'Nothing Small About Us'",
@@ -3537,7 +3921,8 @@
               "name": "R. Madhavan",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Country Delight sends Vijay Sethupathi back to a taste of childhood",
@@ -3557,7 +3942,8 @@
               "name": "Vijay Sethupathi",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Flipkart turns bad luck into Big Billion Days in 'Luck Badal Sakta Hai'",
@@ -3572,7 +3958,8 @@
               "url": "https://www.flipkart.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Hershey's finds a sweet fix for life's hard days",
@@ -3587,7 +3974,8 @@
               "url": "https://www.thehersheycompany.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Mercedes-Benz brings its 140-year global expedition to India",
@@ -3606,7 +3994,8 @@
               "url": "https://www.bbdo.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "House of McDowell's Soda gives its 'yaari' platform a new vibe",
@@ -3621,7 +4010,8 @@
               "url": "https://www.diageoindia.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Traya makes men confront hair loss in a mirror that tells the truth",
@@ -3636,7 +4026,8 @@
               "url": "https://traya.health"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Bajaj Pulsar brings back its 2001 nurses, 25 years later",
@@ -3655,7 +4046,8 @@
               "url": "https://www.ogilvy.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Welspun turns monsoon billboards into giant towel textures",
@@ -3670,7 +4062,8 @@
               "url": "https://www.welspun.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Delhi HC orders Bombay Shaving Company to edit its Switch4 ad or pull it",
@@ -3689,7 +4082,8 @@
               "url": "https://www.gillette.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "INNOCEAN India picks up GianChand Single Malt's digital and social mandate",
@@ -3708,7 +4102,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Bridgers retains IIT Kanpur E-Cell's UpStart 2026 media mandate",
@@ -3727,7 +4122,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Education"
         },
         {
           "headline": "Parul University buys its way into ChatGPT's student search with LS Digital",
@@ -3746,7 +4142,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Education"
         },
         {
           "headline": "Borosil and V-Mart take over Kolkata with 'Swaad Se Taaj Tak'",
@@ -3765,7 +4162,8 @@
               "url": "https://www.vmartretail.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "BC Web Wise wins Procam International's HDOR digital mandate",
@@ -3784,7 +4182,8 @@
               "url": "https://www.procam.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "NESCAFÉ drops a rap anthem with Spotify for the Gen Z hustle",
@@ -3803,7 +4202,8 @@
               "url": "https://www.spotify.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Sushmita Sen fronts Philips' 'Airfryer Matlab Philips'",
@@ -3823,7 +4223,8 @@
               "name": "Sushmita Sen",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Libas builds its 'Utsav' festive campaign around expressions of Shakti",
@@ -3838,7 +4239,8 @@
               "url": "https://www.libas.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Rivaah by Tanishq reframes the Indian wedding as many stories, not one",
@@ -3857,7 +4259,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "World Gold Council opens a 'First Diwali' chapter of The Moment is Gold",
@@ -3872,7 +4275,8 @@
               "url": "https://www.gold.org"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         }
       ],
       "bucket2": [
@@ -4627,7 +5031,8 @@
       },
       "week_start": "2026-09-14",
       "week_end": "2026-09-21",
-      "updated_at": "2026-09-21T04:59:20.945669+00:00"
+      "updated_at": "2026-09-21T04:59:20.945669+00:00",
+      "bucket6": []
     },
     {
       "bucket1": [
@@ -4652,7 +5057,8 @@
               "url": "https://www.wpp.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "KFC India becomes first QSR brand to advertise inside ChatGPT",
@@ -4675,7 +5081,8 @@
               "url": "https://openai.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Vi unveils dynamic brand identity, taps Shah Rukh Khan for 'Vi Pe Sab Hain VIP' campaign",
@@ -4699,7 +5106,8 @@
               "name": "Shah Rukh Khan",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Omnicom plans ~15,000 job cuts after losing PepsiCo's global creative business",
@@ -4718,7 +5126,8 @@
               "url": "https://www.pepsico.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "BMW India names Ranveer Singh brand ambassador, unveils new 7 Series range",
@@ -4738,7 +5147,8 @@
               "name": "Ranveer Singh",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Swiggy Instamart's 'Switch' campaign turns a 25-year snack habit into a pitch for change",
@@ -4753,7 +5163,8 @@
               "url": "https://www.swiggy.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Amazon NOW turns sibling personality quirks into a Rakhi 'match' campaign",
@@ -4768,7 +5179,8 @@
               "url": "https://www.amazon.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Jennifer Winget fronts Ekatra Jewels' story-led 'NOT JUST ONE' collection",
@@ -4788,7 +5200,8 @@
               "name": "Jennifer Winget",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Complan revives 'Complan Boy' mnemonic with teen cricket sensation Vaibhav Sooryavanshi",
@@ -4808,7 +5221,8 @@
               "name": "Vaibhav Sooryavanshi",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Triptii Dimri joins Peep Beauty as investor and co-creator for 'Made You Look'",
@@ -4828,7 +5242,8 @@
               "name": "Triptii Dimri",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "BULLET Microdrama partners Tata Motors Commercial Vehicles for branded series 'Apna Superstar'",
@@ -4847,7 +5262,8 @@
               "url": "https://www.tatamotors.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Zydus Lifesciences spotlights silent liver health risks with '#LiverKiSuno'",
@@ -4867,7 +5283,8 @@
               "name": "Ashish Vidyarthi",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Healthcare & Pharma"
         },
         {
           "headline": "Prudential Health India spotlights everyday insurance problems in new campaign",
@@ -4882,7 +5299,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Levi's returns with Alia Bhatt in new campaign",
@@ -4902,7 +5320,8 @@
               "name": "Alia Bhatt",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Gulf Pride launches 'Kuch Behad Kar' with MS Dhoni",
@@ -4922,7 +5341,8 @@
               "name": "MS Dhoni",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Kissht launches 'Loans Without Any Hiccups' with Sachin Tendulkar",
@@ -4942,7 +5362,8 @@
               "name": "Sachin Tendulkar",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "PEDIGREE launches 'Healthy Belly' campaign with KL Rahul",
@@ -4962,7 +5383,8 @@
               "name": "KL Rahul",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Calvin Klein taps Sadie Sink and Tate McRae for Fall 2026 denim campaign",
@@ -4986,7 +5408,8 @@
               "name": "Tate McRae",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Lawyered launches 'ChallanPay - Aaram Se' with Pratik Gandhi",
@@ -5006,7 +5429,8 @@
               "name": "Pratik Gandhi",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "PR Professionals wins PR mandate for Spark Minda Group",
@@ -5025,7 +5449,8 @@
               "url": "https://www.sparkminda.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         }
       ],
       "bucket2": [
@@ -5530,11 +5955,35 @@
           "Person (unresolved): Ganesh Iyer — Chief Marketing Officer at Network18",
           "Person (unresolved): Emma Chalwin — Chief Marketing Officer (effective October 1, 2026) at Accenture",
           "Person (unresolved): Sanjay Dutta — Chief Technology Officer at Third Wave Coffee"
-        ]
+        ],
+        "bucket6": []
       },
       "week_start": "2026-09-07",
       "week_end": "2026-09-14",
-      "updated_at": "2026-09-14T04:55:25.959045+00:00"
+      "updated_at": "2026-10-08T07:35:52.063384+00:00",
+      "bucket6": [
+        {
+          "headline": "Vedanta Delhi Half Marathon names a 36-athlete elite field for October 18, with a $275,732 purse",
+          "description": "Procam International's 21st edition, a World Athletics Gold Label race, headlined by two-time champion Birhanu Legese and Irine Cheptai; $27,000 to each category winner.",
+          "why_important": "Mass-participation running is one of India's most sponsor-dense experiences. Gold Label status and a growing elite purse keep the Procam calendar a premium title-sponsorship property for corporates like Vedanta and Tata.",
+          "category": "Sports & Endurance",
+          "region": "India",
+          "source_name": "myKhel",
+          "source_url": "https://www.mykhel.com/more-sports/vedanta-delhi-half-marathon-2026-legese-eyes-3rd-title-cheptai-returns-452505.html",
+          "date": "2026-09-08",
+          "companies": [
+            {
+              "name": "Vedanta",
+              "url": "https://www.vedantalimited.com"
+            },
+            {
+              "name": "Procam International",
+              "url": "https://www.procam.in"
+            }
+          ],
+          "people": []
+        }
+      ]
     },
     {
       "bucket1": [
@@ -5551,7 +6000,8 @@
               "url": "https://www.biba.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Greenply unveils 'Migration', spotlighting TermiVax's termite defence",
@@ -5566,7 +6016,8 @@
               "url": "https://www.greenply.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Real Estate & Building Materials"
         },
         {
           "headline": "Reversing the OOH game: first Star Health and now Safi put their ads behind the billboard",
@@ -5585,7 +6036,8 @@
               "url": "https://www.hamdard.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Rinse, mock, repeat: Beco names and shames HUL's Vim and Surf Excel in rival-roast campaign",
@@ -5604,7 +6056,8 @@
               "url": "https://www.hul.co.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Ugaoo gets Jackie and Tiger Shroff to poke fun at plant parenting",
@@ -5628,7 +6081,8 @@
               "name": "Tiger Shroff",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Home & Durables"
         },
         {
           "headline": "WazirX brings back 'Ramadhir Singh' (as 'Bauji') for crypto futures campaign",
@@ -5648,7 +6102,8 @@
               "name": "Tigmanshu Dhulia",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "HDFC Mutual Fund rolls out 'Barni Se Azadi' Dahi Handi campaign for Janmashtami",
@@ -5663,7 +6118,8 @@
               "url": "https://www.hdfcfund.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "After Airtel and Jio, Shah Rukh Khan now endorses Vi",
@@ -5683,7 +6139,8 @@
               "name": "Shah Rukh Khan",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Turtlemint launches 'Naye India Ka Naya Digital Partner' campaign",
@@ -5698,7 +6155,8 @@
               "url": "https://www.turtlemint.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Volvo CE launches 'Aaj Banayein Kal' campaign spotlighting India's infrastructure builders",
@@ -5713,7 +6171,8 @@
               "url": "https://www.volvoce.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Real Estate & Building Materials"
         },
         {
           "headline": "Wonderla takes college rivalries beyond campus with 'Wonderla Off-Campus' campaign",
@@ -5728,7 +6187,8 @@
               "url": "https://www.wonderla.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Travel & Hospitality"
         },
         {
           "headline": "Lauritz Knudsen launches 'Partner Hai Na' campaign for Indian homes",
@@ -5748,7 +6208,8 @@
               "name": "Benny Dayal",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Publicis wins PepsiCo's global media business, exits Coca-Cola pitch",
@@ -5767,7 +6228,8 @@
               "url": "https://www.pepsico.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "MS Dhoni joins SpeakX as brand ambassador for 'Muh Khol, English Bol' campaign",
@@ -5787,7 +6249,8 @@
               "name": "MS Dhoni",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Education"
         },
         {
           "headline": "Lawyered launches 'ChallanPay – Aaram Se' campaign featuring Pratik Gandhi",
@@ -5807,7 +6270,8 @@
               "name": "Pratik Gandhi",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "Aquaguard deepens TVF tie-up with two new Gram Chikitsalay branded films",
@@ -5826,7 +6290,8 @@
               "url": "https://theviralfever.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         }
       ],
       "bucket2": [
@@ -6313,7 +6778,8 @@
       },
       "week_start": "2026-08-31",
       "week_end": "2026-09-07",
-      "updated_at": "2026-09-07T07:26:04.690906+00:00"
+      "updated_at": "2026-09-07T07:26:04.690906+00:00",
+      "bucket6": []
     },
     {
       "bucket1": [
@@ -6334,7 +6800,8 @@
               "url": "https://www.zeptonow.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Kissht signs Sachin Tendulkar for 'Loans Without Hiccups' campaign",
@@ -6354,7 +6821,8 @@
               "name": "Sachin Tendulkar",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "Zepto, Haldiram's and Bakingo take contrasting angles on Raksha Bandhan 2026",
@@ -6385,7 +6853,8 @@
               "url": "https://www.giva.co"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Maars Communicates wins communications mandate for EMOMEE",
@@ -6404,7 +6873,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Other"
         },
         {
           "headline": "Royaloak partners with PVR INOX for its first AI-created ad campaign",
@@ -6423,7 +6893,8 @@
               "url": "https://www.pvrinox.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "OpenAI introduces ChatGPT Ads to India ahead of planned IPO",
@@ -6438,7 +6909,8 @@
               "url": "https://openai.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "Tata Capital marks Raksha Bandhan with '#CountOnTheBond' campaign",
@@ -6457,7 +6929,8 @@
               "url": "https://www.schbang.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "MIB empanels JioHotstar, ZEE5, Amazon MX Player and FanCode for government OTT ad spend",
@@ -6484,7 +6957,8 @@
               "url": "https://www.fancode.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "Louis Philippe brings Kenny Sebastian into new Onam campaign",
@@ -6504,7 +6978,8 @@
               "name": "Kenny Sebastian",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Traya rolls out hair loss awareness campaign with Rajkummar Rao",
@@ -6524,7 +6999,8 @@
               "name": "Rajkummar Rao",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Zomato turns newspaper into banana leaf for Onam-themed print ad",
@@ -6539,7 +7015,8 @@
               "url": "https://www.zomato.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "GIVA pulls down Kriti Sanon's Raksha Bandhan ad amid backlash",
@@ -6559,7 +7036,8 @@
               "name": "Kriti Sanon",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Social Panga wins digital mandate for DeVANS' beer & gin brands",
@@ -6578,7 +7056,8 @@
               "url": "https://www.socialpanga.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "CaratLane puts 30% of August media behind Rakhi as gifting gets more personal",
@@ -6602,7 +7081,8 @@
               "name": "Vedant",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "CreativeMud wins Uflex's creative and digital mandate",
@@ -6621,7 +7101,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Energy & Industrial"
         },
         {
           "headline": "SW Network wins Garden Vareli's performance marketing mandate",
@@ -6640,7 +7121,8 @@
               "url": "https://www.sociowash.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "boAt gets Arbaaz Khan to trade 'Bhai' swagger for 'Achha Bhaiya' with Blinkit",
@@ -6664,7 +7146,8 @@
               "name": "Arbaaz Khan",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Tech, Telecom & Electronics"
         }
       ],
       "bucket2": [
@@ -7230,7 +7713,8 @@
       },
       "week_start": "2026-08-24",
       "week_end": "2026-08-31",
-      "updated_at": "2026-08-31T07:01:36.681231+00:00"
+      "updated_at": "2026-08-31T07:01:36.681231+00:00",
+      "bucket6": []
     },
     {
       "week_start": "2026-08-17",
@@ -7253,7 +7737,8 @@
               "url": "https://timesofindia.indiatimes.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Zomato launches Chennai anthem 'Veppam is our Weapon' with rapper Paal Dabba",
@@ -7273,7 +7758,8 @@
               "name": "Paal Dabba",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "JK Super Cement explores micro-drama format with 'Tera Ghar Mera Ghar'",
@@ -7292,7 +7778,8 @@
               "url": "https://www.zee5.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Real Estate & Building Materials"
         },
         {
           "headline": "Bigg Boss Bangla Arrives in Bengal: Sourav Ganguly takes charge as the battle for the crown begins",
@@ -7328,7 +7815,8 @@
               "name": "Sourav Ganguly",
               "linkedin_url": "http://www.linkedin.com/in/sourav-ganguly"
             }
-          ]
+          ],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "TCS joins European T20 Premier League as digital transformation partner",
@@ -7347,7 +7835,8 @@
               "url": null
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Tech, Telecom & Electronics"
         },
         {
           "headline": "JioStar bets big on Premier League, launches 'Humara Long Distance Love' campaign featuring Tiger Shroff, Riyan Parag and Sanju Samson",
@@ -7375,7 +7864,8 @@
               "name": "Sanju Samson",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "Harmanpreet Kaur and SPNI challenge cricket's 'gentleman's game' tag",
@@ -7395,7 +7885,8 @@
               "name": "Harmanpreet Kaur",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "Coca-Cola gives its Premier League partnership a Central Cee remix",
@@ -7419,7 +7910,8 @@
               "name": "Central Cee",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "CaratLane puts 30% of August media behind Rakhi as gifting gets more personal",
@@ -7434,7 +7926,8 @@
               "url": "https://www.caratlane.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Sprite to brand India's first private train for six months",
@@ -7453,7 +7946,8 @@
               "url": "https://www.irctc.co.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Havas wins Policybazaar's media mandate, account pegged at over Rs 300 crore",
@@ -7472,7 +7966,8 @@
               "url": "https://www.havas.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "HUL vs BECO: FMCG's billboard tussle boils over",
@@ -7491,7 +7986,8 @@
               "url": "https://www.letsbeco.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Philips India names Yash brand ambassador for men's grooming, launches 'Trimmers Ka Baap'",
@@ -7511,7 +8007,8 @@
               "name": "Yash",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Tata Play partners with Spotify for four-month Premium offer",
@@ -7530,7 +8027,8 @@
               "url": "https://www.spotify.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Media, Entertainment & Sports"
         }
       ],
       "bucket2": [
@@ -7883,7 +8381,8 @@
           "Person (unresolved): Himavant Kurnala — Chief Growth and Product Officer, Instamart at Swiggy"
         ]
       },
-      "updated_at": "2026-08-25T07:34:05.767315+00:00"
+      "updated_at": "2026-08-25T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "week_start": "2026-08-10",
@@ -7902,7 +8401,8 @@
               "url": "https://www.flipkart.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "SharkNinja APAC appoints WPP Media as integrated media partner",
@@ -7921,7 +8421,8 @@
               "url": "https://www.wppmedia.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Liqvd Asia picks up social media mandate for Narayana Health",
@@ -7940,7 +8441,8 @@
               "url": "https://www.narayanahealth.org"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Healthcare & Pharma"
         },
         {
           "headline": "Bandhan Mutual Fund launches Independence Day campaign \"Kya Azaad Ho Tum?\"",
@@ -7959,7 +8461,8 @@
               "url": "https://www.grey.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "BFSI & Fintech"
         },
         {
           "headline": "AdLift bags Casagrand mandate for AI search visibility platform Tesseract",
@@ -7978,7 +8481,8 @@
               "url": "https://www.casagrand.co.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Real Estate & Building Materials"
         },
         {
           "headline": "Maars Communicates wins strategic communications mandate for Studio Blo",
@@ -7997,7 +8501,8 @@
               "url": "https://www.studioblo.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Team Pumpkin wins Lavie Sport's social media mandate",
@@ -8016,7 +8521,8 @@
               "url": "https://www.lavieworld.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Indriya signs Krithi Shetty for Varalakshmi festive campaign",
@@ -8036,7 +8542,8 @@
               "name": "Krithi Shetty",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Peter England launches Gen Z sub-brand \"VYBE\"",
@@ -8051,7 +8558,8 @@
               "url": "https://www.peterengland.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "CenturyPly launches \"Total Cover\" warranty campaign with Aamir Khan",
@@ -8075,7 +8583,8 @@
               "name": "Aamir Khan",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Real Estate & Building Materials"
         },
         {
           "headline": "McCann India wins integrated creative mandate for 3M Consumer Business",
@@ -8106,7 +8615,8 @@
               "url": "https://www.meguiars.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "The Minimalist wins integrated digital mandate for TyresNmore",
@@ -8125,7 +8635,8 @@
               "url": "https://www.tyresnmore.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Auto & Mobility"
         },
         {
           "headline": "Dentsu Creative Isobar wins Blackberrys' integrated creative mandate",
@@ -8144,7 +8655,8 @@
               "url": "https://www.blackberrys.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Cadbury Celebrations launches Raksha Bandhan campaign \"#ThisTakraarIsSweet\"",
@@ -8167,7 +8679,8 @@
               "url": "https://www.wppmedia.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Godrej Industries Group unveils corporate brand film \"At Godrej Industries, We Craft\"",
@@ -8199,7 +8712,8 @@
               "name": "Aakash Bhatia",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Other"
         },
         {
           "headline": "Alpino launches High Protein Oats campaign with The Great Khali and Mukesh Gahlot",
@@ -8223,7 +8737,8 @@
               "name": "Mukesh Gahlot",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Food, Beverage & FMCG"
         }
       ],
       "bucket2": [
@@ -8918,7 +9433,8 @@
           "Person (unresolved): Ashwini Ramakrishnan — Brand Lead, India at Levi Strauss & Co"
         ]
       },
-      "updated_at": "2026-08-24T07:34:05.767315+00:00"
+      "updated_at": "2026-08-24T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "week_start": "2026-08-03",
@@ -8941,7 +9457,8 @@
               "url": "https://talentgum.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Education"
         },
         {
           "headline": "Tata Play marks 20th anniversary with folk-music reinterpretation of \"Life Jingalala\"",
@@ -8960,7 +9477,8 @@
               "url": "https://www.maatibaani.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Media, Entertainment & Sports"
         },
         {
           "headline": "Nykaa runs multi-city \"The Lipstick Wardrobe\" experiential activation",
@@ -8975,7 +9493,8 @@
               "url": "https://www.nykaa.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Snap launches 'human-first' AI-powered MCP server for advertisers",
@@ -9002,7 +9521,8 @@
               "url": "https://www.meta.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "Punt Creative wins PizzaExpress India's communications mandate",
@@ -9021,7 +9541,8 @@
               "url": "https://www.pizzaexpress.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Pears unveils \"Farak Clear Hai\" campaign showing soap-making craft",
@@ -9036,7 +9557,8 @@
               "url": "https://www.hul.co.in"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         },
         {
           "headline": "Zomato wishes rival Swiggy happy birthday with minimalist print ad",
@@ -9055,7 +9577,8 @@
               "url": "https://www.swiggy.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Apostrophe Ventures bags Tilaknagar Industries' corporate PR mandate",
@@ -9074,7 +9597,8 @@
               "url": "https://www.tilind.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         },
         {
           "headline": "Liqvd Asia wins Narayana Health's social media & ORM mandate",
@@ -9093,7 +9617,8 @@
               "url": "https://www.narayanahealth.org"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Healthcare & Pharma"
         },
         {
           "headline": "Wavemaker (WPP Media) wins SharkNinja APAC's India media mandate",
@@ -9112,7 +9637,8 @@
               "url": "https://www.sharkninja.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Home & Durables"
         },
         {
           "headline": "Tanishq launches new \"Festival of Diamonds\" edition with Ananya Panday",
@@ -9132,7 +9658,8 @@
               "name": "Ananya Panday",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         }
       ],
       "bucket2": [
@@ -9466,7 +9993,8 @@
           "Person (unresolved): Nandita Sinha — Chief Executive Officer at Swiggy Instamart"
         ]
       },
-      "updated_at": "2026-08-23T07:34:05.767315+00:00"
+      "updated_at": "2026-08-23T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "week_start": "2026-07-27",
@@ -9490,7 +10018,8 @@
               "name": "Abhay Deol",
               "linkedin_url": null
             }
-          ]
+          ],
+          "industry": "Fashion & Jewellery"
         },
         {
           "headline": "Havas Media India's Arena Media bags Keo Karpin's media mandate",
@@ -9513,7 +10042,8 @@
               "url": "https://keokarpin.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Beauty & Personal Care"
         }
       ],
       "bucket2": [
@@ -9846,7 +10376,8 @@
         ],
         "bucket4": []
       },
-      "updated_at": "2026-08-22T07:34:05.767315+00:00"
+      "updated_at": "2026-08-22T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "bucket1": [],
@@ -9956,7 +10487,8 @@
       },
       "week_start": "2026-07-20",
       "week_end": "2026-07-27",
-      "updated_at": "2026-08-21T07:34:05.767315+00:00"
+      "updated_at": "2026-08-21T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "week_start": "2026-07-13",
@@ -9975,7 +10507,8 @@
               "url": "https://anymindgroup.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Adtech, Agencies & Regulation"
         },
         {
           "headline": "HiveMinds wins Dr. Reddy's digital mandate",
@@ -9994,7 +10527,8 @@
               "url": "https://www.drreddys.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Healthcare & Pharma"
         },
         {
           "headline": "Air India launches 'Change is in the Air' brand campaign",
@@ -10009,7 +10543,8 @@
               "url": "https://www.airindia.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Travel & Hospitality"
         },
         {
           "headline": "Zepto stages live 10-minute delivery guerrilla activation",
@@ -10024,7 +10559,8 @@
               "url": "https://www.zeptonow.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         },
         {
           "headline": "Godrej x Swiggy Instamart 'house keys' campaign wins Cannes Gold Lion",
@@ -10043,7 +10579,8 @@
               "url": "https://www.swiggy.com/instamart"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         }
       ],
       "bucket2": [
@@ -10169,7 +10706,8 @@
           "Company (unresolved): Prakul Bakshi Events — re: Jesse Julka"
         ]
       },
-      "updated_at": "2026-08-20T07:34:05.767315+00:00"
+      "updated_at": "2026-08-20T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "week_start": "2026-06-29",
@@ -10192,7 +10730,8 @@
               "url": "https://www.wondercement.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Real Estate & Building Materials"
         },
         {
           "headline": "Flipkart's GOAT Sale campaign features viral 'buffalo Don'",
@@ -10207,7 +10746,8 @@
               "url": "https://www.flipkart.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "E-commerce & Quick Commerce"
         }
       ],
       "bucket2": [],
@@ -10220,7 +10760,8 @@
         "bucket3": [],
         "bucket4": []
       },
-      "updated_at": "2026-08-19T07:34:05.767315+00:00"
+      "updated_at": "2026-08-19T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "bucket1": [
@@ -10237,7 +10778,8 @@
               "url": "https://www.mcdonaldsindia.com"
             }
           ],
-          "people": []
+          "people": [],
+          "industry": "Food, Beverage & FMCG"
         }
       ],
       "bucket2": [],
@@ -10252,7 +10794,8 @@
       },
       "week_start": "2026-06-15",
       "week_end": "2026-06-22",
-      "updated_at": "2026-08-18T07:34:05.767315+00:00"
+      "updated_at": "2026-08-18T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "week_start": "2026-05-18",
@@ -10290,7 +10833,8 @@
         "bucket3": [],
         "bucket4": []
       },
-      "updated_at": "2026-08-17T07:34:05.767315+00:00"
+      "updated_at": "2026-08-17T07:34:05.767315+00:00",
+      "bucket6": []
     },
     {
       "week_start": "2026-03-09",
@@ -10328,8 +10872,9 @@
         "bucket3": [],
         "bucket4": []
       },
-      "updated_at": "2026-08-16T07:34:05.767315+00:00"
+      "updated_at": "2026-08-16T07:34:05.767315+00:00",
+      "bucket6": []
     }
   ],
-  "updated_at": "2026-10-05T04:42:58.499298+00:00"
+  "updated_at": "2026-10-08T07:35:52.064216+00:00"
 }

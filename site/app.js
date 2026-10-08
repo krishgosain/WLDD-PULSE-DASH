@@ -7,10 +7,12 @@
    structure untouched.
    ============================================================ */
 
-const BUCKETS = ["bucket1", "bucket2", "bucket3", "bucket4", "bucket5"];
+// display order — bucket6 (Experiential Economy) sits right after Mandates & Campaigns
+const BUCKETS = ["bucket1", "bucket6", "bucket2", "bucket3", "bucket4", "bucket5"];
 
 const BUCKET_LABELS = {
   bucket1: "Mandates & Campaigns",
+  bucket6: "Experiential Economy",
   bucket2: "M&A",
   bucket3: "New Products",
   bucket4: "People Moves",
@@ -19,14 +21,21 @@ const BUCKET_LABELS = {
 
 const BUCKET_LONG = {
   bucket1: "Ad Mandates, Campaigns & Marketing Stunts",
+  bucket6: "Experiential Economy — concerts, film launches, HYROX, marathons, festivals",
   bucket2: "M&A",
   bucket3: "New Products & Brand Launches",
   bucket4: "People Moves",
   bucket5: "Strategic Insights",
 };
 
+// bucket1 groups by brand industry, bucket6 by kind of experience
+const GROUP_FIELD = { bucket1: "industry", bucket6: "category" };
+const GROUP_ALL_LABEL = { bucket1: "All industries", bucket6: "All experiences" };
+const GROUP_FALLBACK = { bucket1: "Other", bucket6: "Brand Experiences & IPs" };
+
 let WEEKS = [];
 let activeBucket = "bucket1";
+let activeGroup = { bucket1: "all", bucket6: "all" };
 let activeWeekIndex = 0;
 let searchQuery = "";
 let activeFilter = "all";
@@ -146,7 +155,55 @@ function entitiesHtml(item) {
 }
 
 function currentWeek() {
-  return WEEKS[activeWeekIndex] || { bucket1: [], bucket2: [], bucket3: [], bucket4: [], bucket5: [], flagged: {} };
+  return WEEKS[activeWeekIndex] || { bucket1: [], bucket2: [], bucket3: [], bucket4: [], bucket5: [], bucket6: [], flagged: {} };
+}
+
+function groupOf(item, bucket) {
+  return item[GROUP_FIELD[bucket]] || GROUP_FALLBACK[bucket];
+}
+
+// [label, items] pairs, biggest group first so the busiest industry leads
+function groupItems(items, bucket) {
+  const map = new Map();
+  items.forEach((i) => {
+    const g = groupOf(i, bucket);
+    if (!map.has(g)) map.set(g, []);
+    map.get(g).push(i);
+  });
+  return [...map.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+}
+
+function renderGroupBar(allItems, bucket) {
+  const groups = groupItems(allItems, bucket);
+  if (!groups.length) return "";
+  const cur = activeGroup[bucket];
+  const chip = (val, label, n) =>
+    `<button class="gchip ${cur === val ? "active" : ""}" data-group="${esc(val)}">${esc(label)}<span class="chip-num">${n}</span></button>`;
+  return `<div class="groupbar" role="toolbar" aria-label="Filter by ${GROUP_FIELD[bucket]}">${
+    chip("all", GROUP_ALL_LABEL[bucket], allItems.length)
+  }${groups.map(([g, list]) => chip(g, g, list.length)).join("")}</div>`;
+}
+
+// Mandates & Campaigns and Experiential Economy: chip row to narrow to one
+// group, and a sectioned grid (one heading per industry / category) by default
+function renderGrouped(bucket, all, items, fresh, emptyMsg, week) {
+  // a week where the picked group doesn't exist falls back to everything
+  if (activeGroup[bucket] !== "all" && !all.some((i) => groupOf(i, bucket) === activeGroup[bucket])) {
+    activeGroup[bucket] = "all";
+  }
+  const cur = activeGroup[bucket];
+  const shown = cur === "all" ? items : items.filter((i) => groupOf(i, bucket) === cur);
+  let body;
+  if (!shown.length) {
+    body = `<div class="grid"><div class="empty-state">${emptyMsg}</div></div>`;
+  } else if (cur === "all") {
+    body = groupItems(shown, bucket).map(([g, list]) => `
+      <div class="section-title">${esc(g)}<span class="section-count">${list.length}</span></div>
+      <div class="grid">${list.map((i) => renderCard(i, bucket, fresh)).join("")}</div>`).join("");
+  } else {
+    body = `<div class="grid">${shown.map((i) => renderCard(i, bucket, fresh)).join("")}</div>`;
+  }
+  return `${renderGroupBar(all, bucket)}${body}${renderFlagged(week.flagged && week.flagged[bucket], "Unresolved names")}`;
 }
 
 function bucketItems(bucket) {
@@ -173,12 +230,19 @@ function starBtn(id) {
 }
 
 // Bucket 1/2/3 — headline-led. No paragraph in the default state.
-function renderCard(item, bucket, fresh) {
+function renderCard(item, bucket, fresh, showGroup) {
   const id = itemId(item, bucket);
   const tags = [];
   if (fresh) tags.push(`<span class="tag tag-fresh">New</span>`);
   if (bucket === "bucket2" && item.region) {
     tags.push(`<span class="tag ${item.region.toLowerCase().includes("global") ? "region-global" : ""}">${esc(item.region)}</span>`);
+  }
+  if (bucket === "bucket6" && (item.region || "").toLowerCase().includes("global")) {
+    tags.push(`<span class="tag region-global">Global</span>`);
+  }
+  // the group is already the section heading in the bucket view; only label it where that context is missing (search)
+  if (showGroup && GROUP_FIELD[bucket]) {
+    tags.push(`<span class="tag tag-group">${esc(groupOf(item, bucket))}</span>`);
   }
 
   const why = item.why_important || item.description;
@@ -389,6 +453,8 @@ function renderBucket(bucket) {
     content.innerHTML = `
       <div class="grid">${items.map((i) => renderPeopleCard(i, fresh)).join("") || `<div class="empty-state">${emptyMsg}</div>`}</div>
       ${renderFlagged(week.flagged && week.flagged.bucket4, "Unresolved names")}`;
+  } else if (GROUP_FIELD[bucket]) {
+    content.innerHTML = renderGrouped(bucket, all, items, fresh, emptyMsg, week);
   } else if (bucket === "bucket5") {
     content.innerHTML = `
       <div class="grid">${items.map(renderStrategicCard).join("") || `<div class="empty-state">${emptyMsg}</div>`}</div>`;
@@ -396,6 +462,13 @@ function renderBucket(bucket) {
     content.innerHTML = `
       <div class="grid">${items.map((i) => renderCard(i, bucket, fresh)).join("") || `<div class="empty-state">${emptyMsg}</div>`}</div>
       ${renderFlagged(week.flagged && week.flagged[bucket], "Unresolved names")}`;
+  }
+
+  // on phones the chip row scrolls sideways; keep the picked chip on screen after a re-render
+  const bar = content.querySelector(".groupbar");
+  const on = bar && bar.querySelector(".gchip.active");
+  if (on && (on.offsetLeft + on.offsetWidth > bar.scrollLeft + bar.clientWidth || on.offsetLeft < bar.scrollLeft)) {
+    bar.scrollLeft = Math.max(0, on.offsetLeft - bar.offsetLeft - 14);
   }
 
   // stagger the entrance so the grid assembles rather than snapping in
@@ -418,6 +491,7 @@ function matchText(item, q) {
   return [
     item.headline, item.description, item.why_important, item.person, item.new_company,
     item.previous_role, item.new_role_title, item.insight, item.ref_item, item.product_fit,
+    item.industry, item.category,
     ...(item.companies || []).map((c) => c.name),
     ...(item.people || []).map((p) => p.name),
   ].filter(Boolean).join(" ␟").toLowerCase().includes(q);
@@ -445,7 +519,7 @@ function renderSearch(query) {
     const card =
       bucket === "bucket4" ? renderPeopleCard(item, false)
       : bucket === "bucket5" ? renderStrategicCard(item)
-      : renderCard(item, bucket, false);
+      : renderCard(item, bucket, false, true);
     return `<div class="search-result">
       <div class="search-meta">${esc(BUCKET_LABELS[bucket])} · week of ${fmtDate(week.week_start)}</div>
       ${card}
@@ -498,6 +572,13 @@ document.querySelector(".filterbar").addEventListener("click", (e) => {
 });
 
 document.getElementById("content").addEventListener("click", (e) => {
+  const gchip = e.target.closest(".gchip");
+  if (gchip) {
+    activeGroup[activeBucket] = gchip.dataset.group;
+    render();
+    return;
+  }
+
   const card = e.target.closest(".card");
 
   const starEl = e.target.closest("[data-star]");
@@ -869,7 +950,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "t") { toggleTheme(); return; }
   if (e.key === "w") { e.preventDefault(); openCombo(); comboBtn.focus(); return; }
 
-  if (e.key >= "1" && e.key <= "5") {
+  if (e.key >= "1" && e.key <= String(BUCKETS.length)) {
     activeBucket = BUCKETS[Number(e.key) - 1];
     if (searchQuery) searchClear.click(); else render();
     return;

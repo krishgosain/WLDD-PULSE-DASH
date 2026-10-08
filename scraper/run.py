@@ -20,7 +20,14 @@ Usage:
 new_items.json is a FLAT (not week-nested) buckets object — the item shape data.json
 uses inside each week entry:
     {"bucket1": [...], "bucket2": [...], "bucket3": [...], "bucket4": [...],
-     "bucket5": [...]}
+     "bucket5": [...], "bucket6": [...]}
+
+bucket6 is the Experiential Economy section (concerts, film launches, HYROX,
+marathons, festivals, brand experiences, ticketing). It uses the bucket1 item
+shape plus a required `category` from taxonomy.json's experience_categories
+(and optional `region`: "India" | "Global"). Every bucket1 item needs an
+`industry` from taxonomy.json's industries. merge warns on, and files as
+"Other" / the closest default, any missing or unknown label.
 ("flagged" is accepted for backward compatibility but ignored — see below.)
 
 `merge` routes each bucket1-4 item into its own Monday-start week bucket by the
@@ -34,7 +41,7 @@ happens to fall on a Monday no longer misfiles them into next week).
 data.json itself is week-nested: {"weeks": [{"week_start", "week_end",
 "bucket1".."bucket5", "flagged"}, ...], "updated_at"}, newest week first.
 
-Dedup key: source_url (bucket1-3), or (person, new_company, date) for bucket4,
+Dedup key: source_url (bucket1-3, bucket6), or (person, new_company, date) for bucket4,
 scoped within each item's own week.
 """
 
@@ -49,6 +56,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = Path(__file__).resolve().parent / "sources.json"
+TAXONOMY_FILE = Path(__file__).resolve().parent / "taxonomy.json"
+
+# news buckets that carry dated items (bucket5 is derived from these)
+ITEM_BUCKETS = ("bucket1", "bucket2", "bucket3", "bucket4", "bucket6")
+ALL_BUCKETS = ("bucket1", "bucket2", "bucket3", "bucket4", "bucket5", "bucket6")
+HEADLINE_BUCKETS = ("bucket1", "bucket2", "bucket3", "bucket6")
 DATA_FILE = ROOT / "data.json"
 
 USER_AGENT = (
@@ -64,8 +77,30 @@ EMPTY_WEEK = {
     "bucket3": [],
     "bucket4": [],
     "bucket5": [],
-    "flagged": {"bucket1": [], "bucket2": [], "bucket3": [], "bucket4": []},
+    "bucket6": [],
+    "flagged": {"bucket1": [], "bucket2": [], "bucket3": [], "bucket4": [], "bucket6": []},
 }
+
+
+def load_taxonomy() -> dict:
+    return json.loads(TAXONOMY_FILE.read_text())
+
+
+def normalize_labels(incoming: dict) -> None:
+    """Make sure bucket1 items carry a known `industry` and bucket6 items a
+    known `category`. Unknown/missing labels are warned about on stderr and
+    replaced with a safe default, so the dashboard grouping never fragments."""
+    tax = load_taxonomy()
+    industries = set(tax["industries"])
+    cats = set(tax["experience_categories"])
+    for it in incoming.get("bucket1", []):
+        if it.get("industry") not in industries:
+            print(f"WARN bucket1 industry {it.get('industry')!r} not in taxonomy -> 'Other': {it.get('headline')}", file=sys.stderr)
+            it["industry"] = "Other"
+    for it in incoming.get("bucket6", []):
+        if it.get("category") not in cats:
+            print(f"WARN bucket6 category {it.get('category')!r} not in taxonomy -> 'Brand Experiences & IPs': {it.get('headline')}", file=sys.stderr)
+            it["category"] = "Brand Experiences & IPs"
 
 
 def monday_of(d: date) -> date:
@@ -180,6 +215,7 @@ def item_key(bucket: str, item: dict):
 def find_or_create_week(data: dict, week_start: str, week_end: str) -> dict:
     for wk in data["weeks"]:
         if wk["week_start"] == week_start:
+            wk.setdefault("bucket6", [])
             return wk
     wk = json.loads(json.dumps(EMPTY_WEEK))
     wk["week_start"] = week_start
@@ -193,8 +229,8 @@ def find_items_week(data: dict, source_url: str, headline: str):
     """Locate which week a bucket1-4 item lives in, matching by source_url (or
     headline as a fallback). Returns the week dict, or None if not found."""
     for wk in data["weeks"]:
-        for bucket in ("bucket1", "bucket2", "bucket3"):
-            for it in wk[bucket]:
+        for bucket in HEADLINE_BUCKETS:
+            for it in wk.get(bucket, []):
                 if (source_url and it.get("source_url") == source_url) or it.get("headline") == headline:
                     return wk
         for it in wk["bucket4"]:
@@ -211,8 +247,8 @@ def recompute_flagged(wk: dict) -> None:
     incoming `flagged` blob tied to an ambiguous run-date week) sidesteps the
     bug where flagged entries could land in the wrong week when the run date
     itself fell on a Monday."""
-    flagged = {"bucket1": [], "bucket2": [], "bucket3": [], "bucket4": []}
-    for bucket in ("bucket1", "bucket2", "bucket3"):
+    flagged = {"bucket1": [], "bucket2": [], "bucket3": [], "bucket4": [], "bucket6": []}
+    for bucket in HEADLINE_BUCKETS:
         for it in wk.get(bucket, []):
             for c in it.get("companies", []) or []:
                 if c.get("url") is None:
@@ -241,6 +277,9 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
     items' unresolved links instead (see recompute_flagged)."""
     merged = json.loads(json.dumps(existing))
     merged.setdefault("weeks", [])
+    for wk in merged["weeks"]:
+        wk.setdefault("bucket6", [])
+    normalize_labels(incoming_items)
     run_date = run_date or datetime.now(timezone.utc).date()
     now_iso = datetime.now(timezone.utc).isoformat()
     touched = {}
@@ -252,7 +291,7 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
         wk["updated_at"] = now_iso
         touched[wk["week_start"]] = wk
 
-    for bucket in ("bucket1", "bucket2", "bucket3", "bucket4"):
+    for bucket in ITEM_BUCKETS:
         for item in incoming_items.get(bucket, []):
             d = parse_item_date(item.get("date")) or run_date
             ws, we = week_bounds_for(d)
@@ -277,7 +316,7 @@ def merge_data(existing: dict, incoming_items: dict, run_date: date = None) -> d
     for wk in touched.values():
         recompute_flagged(wk)
 
-    merged["weeks"] = [wk for wk in merged["weeks"] if any(wk[b] for b in ("bucket1", "bucket2", "bucket3", "bucket4", "bucket5"))]
+    merged["weeks"] = [wk for wk in merged["weeks"] if any(wk.get(b) for b in ALL_BUCKETS)]
     merged["weeks"].sort(key=lambda w: w["week_start"], reverse=True)
     merged["updated_at"] = datetime.now(timezone.utc).isoformat()
     return merged
@@ -315,8 +354,8 @@ def main():
             DATA_FILE.write_text(json.dumps(merged, indent=2, ensure_ascii=False) + "\n")
             print(f"Merged. data.json now has {len(merged['weeks'])} week(s):", file=sys.stderr)
             for wk in merged["weeks"]:
-                counts = "/".join(str(len(wk[b])) for b in ("bucket1", "bucket2", "bucket3", "bucket4", "bucket5"))
-                print(f"  {wk['week_start']} .. {wk['week_end']}: {counts} (buckets 1-5)", file=sys.stderr)
+                counts = "/".join(str(len(wk.get(b, []))) for b in ALL_BUCKETS)
+                print(f"  {wk['week_start']} .. {wk['week_end']}: {counts} (buckets 1-6; 6 = experiential)", file=sys.stderr)
 
 
 if __name__ == "__main__":

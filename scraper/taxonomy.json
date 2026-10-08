@@ -1,0 +1,55 @@
+{
+  "notes": "Fixed label sets. run.py merge warns on (and files as 'Other') any label not listed here, so the dashboard's groups stay clean week to week. Classify by the BRAND/CLIENT's industry, not the agency's (e.g. 'YAAP wins Narayana Health' → Healthcare & Pharma). Add a label here first if a genuinely new industry keeps showing up.",
+  "industries": [
+    "Food, Beverage & FMCG",
+    "Beauty & Personal Care",
+    "Fashion & Jewellery",
+    "E-commerce & Quick Commerce",
+    "BFSI & Fintech",
+    "Auto & Mobility",
+    "Tech, Telecom & Electronics",
+    "Home & Durables",
+    "Real Estate & Building Materials",
+    "Media, Entertainment & Sports",
+    "Healthcare & Pharma",
+    "Travel & Hospitality",
+    "Education",
+    "Energy & Industrial",
+    "Adtech, Agencies & Regulation",
+    "Other"
+  ],
+  "industry_guide": {
+    "Food, Beverage & FMCG": "packaged food, soft drinks, alcobev, QSR, home care/detergents, pet food, nutrition",
+    "Beauty & Personal Care": "cosmetics, skincare, haircare, soaps, hygiene, fragrance, grooming",
+    "Fashion & Jewellery": "apparel, footwear, sportswear, eyewear, jewellery, luxury",
+    "E-commerce & Quick Commerce": "Flipkart, Amazon, Myntra, AJIO, Zepto, Blinkit, Swiggy/Instamart, Zomato",
+    "BFSI & Fintech": "banks, NBFCs, insurance (incl. health insurance), mutual funds, payments, crypto",
+    "Auto & Mobility": "cars, two-wheelers, commercial vehicles, lubricants, tyres, auto parts",
+    "Tech, Telecom & Electronics": "telcos, smartphones, consumer electronics, software, AI products, IT services",
+    "Home & Durables": "appliances, paints, furniture, kitchenware, electricals, home textiles",
+    "Real Estate & Building Materials": "developers, cement, steel, plywood, construction equipment",
+    "Media, Entertainment & Sports": "broadcasters, OTT, publishers, film releases, leagues, sports bodies",
+    "Healthcare & Pharma": "hospitals, pharma, e-pharmacy, diagnostics",
+    "Travel & Hospitality": "airlines, hotels, theme parks, travel platforms",
+    "Education": "universities, edtech, upskilling, campus events",
+    "Energy & Industrial": "power, solar, EV charging, conglomerate corporate campaigns, packaging/industrial",
+    "Adtech, Agencies & Regulation": "agency-network news, ad platforms/adtech, ASCI/SEBI/MIB ad rules",
+    "Other": "only when nothing above fits"
+  },
+  "experience_categories": [
+    "Concerts & Live Shows",
+    "Film & Entertainment Launches",
+    "Sports & Endurance",
+    "Festivals & Culture",
+    "Brand Experiences & IPs",
+    "Ticketing, Venues & Policy"
+  ],
+  "experience_guide": {
+    "Concerts & Live Shows": "music tours, stand-up comedy tours, residencies, one-off gigs — incl. presenting sponsors and ticketing partners",
+    "Film & Entertainment Launches": "film releases and box office, trailer/teaser launch events, fan screenings, series premieres, theatrical-experience formats",
+    "Sports & Endurance": "HYROX, marathons/half-marathons, triathlons, Ironman, cyclothons, mass-participation fitness, title events and leagues as live experiences",
+    "Festivals & Culture": "music festivals (Lollapalooza, NH7, Sunburn, Echoes of Earth), Durga Puja/Ganesh/Diwali-scale cultural moments, food & art festivals",
+    "Brand Experiences & IPs": "brand-owned events and IPs, pop-ups, immersive activations, brand-led festivals (e.g. Zomaland, Red Bull, Bacardi NH7)",
+    "Ticketing, Venues & Policy": "BookMyShow/District/thumpN moves, venue launches, live-events policy, industry data, promoter business news (Live Nation etc.)"
+  }
+}

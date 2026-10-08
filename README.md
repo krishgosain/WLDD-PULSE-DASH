@@ -11,7 +11,8 @@ strategic pass.
 wldd-pulse-dash/
 ├── site/              dashboard frontend (static HTML/CSS/JS, reads ../data.json)
 ├── scraper/
-│   ├── sources.json   editable list of tracked sources
+│   ├── sources.json   editable list of tracked sources (core + experiential)
+│   ├── taxonomy.json  fixed industry / experience-category labels
 │   ├── run.py         weekly job: fetch → extract → categorize → link → save
 │   └── prompt.md       WLDD product context used for the Bucket 5 strategic pass
 ├── data.json          weekly-bucketed items, newest week first (source of truth for the site)
@@ -20,7 +21,7 @@ wldd-pulse-dash/
 
 ## How it works
 
-1. **Site** (`site/`) is a static page with a week picker, a 5-tab bucket view for
+1. **Site** (`site/`) is a static page with a week picker, a 6-tab bucket view for
    the selected week, and a search box that queries every archived week at once.
    It fetches `data.json` and renders it client-side. No build step; deploys as-is
    on Vercel.
@@ -51,7 +52,7 @@ most recent week and lets you browse every earlier week via the week picker, or
 search across all of them at once — searched matches are not deleted or rotated
 out, they just move into the archive as new weeks are added.
 
-## The 5 buckets
+## The buckets
 
 1. **Ad mandates, campaigns & marketing stunts** — agency mandates, notable
    campaigns, feature rollouts, stunts. Each item has a "why it's important" subline.
@@ -64,6 +65,19 @@ out, they just move into the archive as new weeks are added.
 5. **Strategic insights** — for the week's highest-potential items, how WLDD could
    sell in, mapped to a specific WLDD product (Solo, Memed, Imagined, The Lit
    School, Scoopwhoop).
+6. **Experiential Economy** (`bucket6`, shown second on the site, right after
+   Mandates & Campaigns) — concerts and comedy tours, film releases and trailer
+   launches, HYROX, marathons and endurance events, music and cultural festivals,
+   brand-owned experiences/IPs, and ticketing/venue/policy news. Same item shape
+   as bucket 1 plus a required `category` and optional `region` (India/Global).
+
+### Grouping labels
+
+Every bucket 1 item carries an `industry` (the brand/client's industry, not the
+agency's) and every bucket 6 item a `category`. Both label sets are fixed in
+`scraper/taxonomy.json`; `run.py merge` warns about and defaults any unknown
+label. On the site, bucket 1 and bucket 6 show a chip row to narrow to one
+industry/category and, by default, a sectioned view grouped by it.
 
 ## Hyperlinking
 

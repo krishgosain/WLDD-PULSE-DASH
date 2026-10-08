@@ -130,6 +130,23 @@ self-expression formats that read as internet culture, not advertising.
    - A platform/tooling launch (AI ad tools, adtech, etc.) that's a *competitor* to a
      WLDD capability → frame as competitive pressure on that WLDD product, not a
      sales opportunity — say so explicitly rather than forcing a pitch.
+   - **Experiential Economy items (bucket6)** — concerts, comedy tours, film
+     releases, HYROX/marathons, festivals, brand IPs. These are often the richest
+     pitches because every live experience produces raw footage and a fan
+     community:
+     - Tour/festival with a presenting or title sponsor → **Crunchy** (sponsor-owned
+       on-ground moments) + **Memed** (clip each city/night) — pitch the *sponsor*,
+       not the artist.
+     - Film release / trailer launch / box-office moment → **Memed** first (movie-hype
+       clipping is a proven Memed use case: Netflix, JioHotstar) + **ScoopWhoop**.
+     - Mass-participation sport (HYROX, marathons) → **Solo** (fitness creators who
+       actually race) + **Memed** (finish-line/race-day footage) for the title sponsor
+       and participating brands.
+     - Brand-owned IP or pop-up → **Crunchy** (produce) + **ScoopWhoop** (reach); if
+       it's a new IP needing a ticketing/landing site, **Imagined**.
+     - Ticketing/venue/policy news → usually context, not a pitch; only map it if a
+       specific brand is named with a clear need.
+     Use `ref_bucket_label: "Experiential Economy"` for these.
 3. Multi-product items are fine and often the strongest pitches — say so explicitly
    (e.g. "Crunchy to produce, Memed to distribute, ScoopWhoop to amplify further").
 4. Don't force a mapping if nothing fits well — quality over hitting a target count.
