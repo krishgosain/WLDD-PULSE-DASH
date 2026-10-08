@@ -65,8 +65,8 @@ out, they just move into the archive as new weeks are added.
 5. **Strategic insights** — for the week's highest-potential items, how WLDD could
    sell in, mapped to a specific WLDD product (Solo, Memed, Imagined, The Lit
    School, Scoopwhoop).
-6. **Experiential Economy** (`bucket6`, shown second on the site, right after
-   Mandates & Campaigns) — concerts and comedy tours, film releases and trailer
+6. **Experiential Economy** (`bucket6`, shown on the site just before
+   Strategic Insights, which is always the last tab) — concerts and comedy tours, film releases and trailer
    launches, HYROX, marathons and endurance events, music and cultural festivals,
    brand-owned experiences/IPs, and ticketing/venue/policy news. Same item shape
    as bucket 1 plus a required `category` and optional `region` (India/Global).

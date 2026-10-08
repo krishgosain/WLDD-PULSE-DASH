@@ -7,8 +7,8 @@
    structure untouched.
    ============================================================ */
 
-// display order — bucket6 (Experiential Economy) sits right after Mandates & Campaigns
-const BUCKETS = ["bucket1", "bucket6", "bucket2", "bucket3", "bucket4", "bucket5"];
+// display order — Experiential Economy (bucket6) sits just before Strategic Insights, which is always last
+const BUCKETS = ["bucket1", "bucket2", "bucket3", "bucket4", "bucket6", "bucket5"];
 
 const BUCKET_LABELS = {
   bucket1: "Mandates & Campaigns",
