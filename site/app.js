@@ -1,1063 +1,855 @@
-/* ============================================================
-   WLDD PULSE DASH
-   Bucket 1/2/3 are headline-led: the headline (linked to the source)
-   carries the item, company/person links live in the footer, and the
-   "why it matters" is collapsed behind an optional expand.
-   People Moves (b4) and Strategic Insights (b5) keep their own
-   structure untouched.
-   ============================================================ */
+/* ══════════════════════════════════════════════════════════════════
+   WLDD PULSE DASH — app
+   Buckets and capabilities unchanged. Cards show the headline only;
+   everything else lives behind the open state.
+   ══════════════════════════════════════════════════════════════════ */
+(function () {
+"use strict";
 
-// display order — Experiential Economy (bucket6) sits just before Strategic Insights, which is always last
-const BUCKETS = ["bucket1", "bucket2", "bucket3", "bucket4", "bucket6", "bucket5"];
+/* ── bucket definitions (order is the reading order) ───────────────
+   Strategic Insights is always last; Experiential sits before it.   */
+const BUCKETS = [
+  { key:"bucket1", n:"01", slug:"mandates",     title:"Mandates &amp;<br>Campaigns",      short:"Mandates & Campaigns",     band:"yellow", dot:"pink",   groupBy:"industry" },
+  { key:"bucket2", n:"02", slug:"ma",           title:"Mergers &amp;<br>Acquisitions",    short:"M&A",                      band:"purple", dot:"yellow", groupBy:"region" },
+  { key:"bucket3", n:"03", slug:"launches",     title:"New Products &amp;<br>Launches",   short:"New Products & Launches",  band:"blue",   dot:"pink",   groupBy:null },
+  { key:"bucket4", n:"04", slug:"people",       title:"People<br>Moves",                  short:"People Moves",             band:"green",  dot:"pink",   groupBy:null },
+  { key:"bucket6", n:"05", slug:"experiential", title:"Experiential<br>Economy",          short:"Experiential Economy",     band:"pink",   dot:"yellow", groupBy:"category" },
+  { key:"bucket5", n:"06", slug:"strategic",    title:"Strategic<br>Insights",            short:"Strategic Insights",       band:"ink",    dot:"pink",   groupBy:null, acc:"pink" },
+];
+const BY_KEY = Object.fromEntries(BUCKETS.map(b => [b.key, b]));
 
-const BUCKET_LABELS = {
-  bucket1: "Mandates & Campaigns",
-  bucket6: "Experiential Economy",
-  bucket2: "M&A",
-  bucket3: "New Products",
-  bucket4: "People Moves",
-  bucket5: "Strategic Insights",
+/* ── state ────────────────────────────────────────────────────────── */
+const S = {
+  data:null, wi:0, filter:"all", q:"", sub:{},
+  read:new Set(), star:new Set(), cursor:-1, open:null,
 };
 
-const BUCKET_LONG = {
-  bucket1: "Ad Mandates, Campaigns & Marketing Stunts",
-  bucket6: "Experiential Economy — concerts, film launches, HYROX, marathons, festivals",
-  bucket2: "M&A",
-  bucket3: "New Products & Brand Launches",
-  bucket4: "People Moves",
-  bucket5: "Strategic Insights",
+const $  = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+
+/* ── storage ──────────────────────────────────────────────────────── */
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
 };
 
-// bucket1 groups by brand industry, bucket6 by kind of experience
-const GROUP_FIELD = { bucket1: "industry", bucket6: "category" };
-const GROUP_ALL_LABEL = { bucket1: "All industries", bucket6: "All experiences" };
-const GROUP_FALLBACK = { bucket1: "Other", bucket6: "Brand Experiences & IPs" };
+/* ── small helpers ────────────────────────────────────────────────── */
+const esc = s => String(s == null ? "" : s)
+  .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 
-let WEEKS = [];
-let activeBucket = "bucket1";
-let activeGroup = { bucket1: "all", bucket6: "all" };
-let activeWeekIndex = 0;
-let searchQuery = "";
-let activeFilter = "all";
-let cursor = -1;
-
-/* ---------- persisted state (per browser) ---------- */
-
-const store = {
-  get(key, fallback) {
-    try {
-      const raw = localStorage.getItem(key);
-      return raw ? JSON.parse(raw) : fallback;
-    } catch (e) {
-      return fallback;
-    }
-  },
-  set(key, val) {
-    try {
-      localStorage.setItem(key, JSON.stringify(val));
-    } catch (e) {
-      /* private mode / blocked storage — state just won't persist */
-    }
-  },
-};
-
-let readSet = new Set(store.get("wldd:read", []));
-let starSet = new Set(store.get("wldd:star", []));
-const lastVisit = store.get("wldd:lastVisit", null);
-store.set("wldd:lastVisit", new Date().toISOString());
-
-function persistRead() { store.set("wldd:read", [...readSet]); }
-function persistStar() { store.set("wldd:star", [...starSet]); }
-
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-/* ---------- theme ---------- */
-
-const SUN = `<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>`;
-const MOON = `<path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"></path>`;
-
-function applyTheme(theme) {
-  document.documentElement.setAttribute("data-theme", theme);
-  store.set("wldd:theme", theme);
-  const icon = document.getElementById("themeIcon");
-  if (icon) icon.innerHTML = theme === "dark" ? SUN : MOON;
-  const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.setAttribute("content", theme === "dark" ? "#07080d" : "#eef0f4");
+function hash(s) {
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+  return "i" + (h >>> 0).toString(36);
 }
 
-function toggleTheme() {
-  const now = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-  applyTheme(now);
-}
-
-/* ---------- helpers ---------- */
-
-function itemId(item, bucket) {
-  if (bucket === "bucket4") return `${item.person}|${item.new_company}|${item.date}`;
-  if (bucket === "bucket5") return `b5|${item.ref_item}|${item.product_fit}`;
-  return item.source_url || `${bucket}|${item.headline}`;
-}
-
-function esc(s) {
-  return String(s == null ? "" : s)
-    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function fmtDate(iso) {
-  const d = new Date(iso + "T00:00:00Z");
-  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
-}
-
-function shortDate(iso) {
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function d2(iso) {
   if (!iso) return "";
-  const parts = String(iso).split("-");
-  if (parts.length >= 3) return `${parts[1]}.${parts[2]}`;
-  // a few older entries only carry a month or a year — show that, not a broken date
-  if (parts.length === 2) return `${parts[1]}.${String(parts[0]).slice(2)}`;
-  return parts[0];
+  const d = new Date(iso);
+  if (isNaN(d)) return String(iso);
+  return d.getUTCDate() + " " + MON[d.getUTCMonth()];
+}
+function weekLabel(w, withYear) {
+  const a = new Date(w.week_start), b = new Date(w.week_end);
+  if (isNaN(a) || isNaN(b)) return "This week";
+  const end = new Date(b.getTime() - 86400000); // inclusive end
+  const l = a.getUTCDate() + " " + MON[a.getUTCMonth()] + " — " + end.getUTCDate() + " " + MON[end.getUTCMonth()];
+  return withYear ? l + " " + end.getUTCFullYear() : l;
+}
+function stampLabel(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return "—";
+  const days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  return "Updated " + days[d.getUTCDay()] + ", " + d.getUTCDate() + " " + MON[d.getUTCMonth()];
 }
 
-// week_end is exclusive, so the last day people actually read about is the day before
-function weekRange(week) {
-  const start = new Date(week.week_start + "T00:00:00Z");
-  const end = new Date(week.week_end + "T00:00:00Z");
-  end.setUTCDate(end.getUTCDate() - 1);
-  const opts = { month: "short", day: "numeric", timeZone: "UTC" };
-  return `${start.toLocaleDateString("en-US", opts)} – ${end.toLocaleDateString("en-US", { ...opts, year: "numeric" })}`;
-}
+/* ── normalise any bucket record into one shape ───────────────────── */
+function norm(raw, bkey, wi) {
+  const b = BY_KEY[bkey];
+  const o = { bucket:bkey, wi:wi, raw:raw, kind:bkey };
 
-function weekLabel(week, idx) {
-  return `${idx === 0 ? "This week — " : ""}${weekRange(week)}`;
-}
-
-function weekTotal(week) {
-  return BUCKETS.reduce((n, b) => n + (week[b] || []).length, 0);
-}
-
-function isFresh(week) {
-  // "new since you last opened the dashboard" — genuine freshness, not a badge for its own sake
-  if (!lastVisit || !week.updated_at) return false;
-  return new Date(week.updated_at) > new Date(lastVisit);
-}
-
-function linkOrText(name, url) {
-  if (url) return `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)}</a>`;
-  return esc(name);
-}
-
-function entitiesHtml(item) {
-  const parts = [
-    ...(item.companies || []).map((c) => linkOrText(c.name, c.url)),
-    ...(item.people || []).map((p) => linkOrText(p.name, p.linkedin_url)),
-  ];
-  return parts.join(", ");
-}
-
-function currentWeek() {
-  return WEEKS[activeWeekIndex] || { bucket1: [], bucket2: [], bucket3: [], bucket4: [], bucket5: [], bucket6: [], flagged: {} };
-}
-
-function groupOf(item, bucket) {
-  return item[GROUP_FIELD[bucket]] || GROUP_FALLBACK[bucket];
-}
-
-// [label, items] pairs, biggest group first so the busiest industry leads
-function groupItems(items, bucket) {
-  const map = new Map();
-  items.forEach((i) => {
-    const g = groupOf(i, bucket);
-    if (!map.has(g)) map.set(g, []);
-    map.get(g).push(i);
-  });
-  return [...map.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
-}
-
-function renderGroupBar(allItems, bucket) {
-  const groups = groupItems(allItems, bucket);
-  if (!groups.length) return "";
-  const cur = activeGroup[bucket];
-  const chip = (val, label, n) =>
-    `<button class="gchip ${cur === val ? "active" : ""}" data-group="${esc(val)}">${esc(label)}<span class="chip-num">${n}</span></button>`;
-  return `<div class="groupbar" role="toolbar" aria-label="Filter by ${GROUP_FIELD[bucket]}">${
-    chip("all", GROUP_ALL_LABEL[bucket], allItems.length)
-  }${groups.map(([g, list]) => chip(g, g, list.length)).join("")}</div>`;
-}
-
-// Mandates & Campaigns and Experiential Economy: chip row to narrow to one
-// group, and a sectioned grid (one heading per industry / category) by default
-function renderGrouped(bucket, all, items, fresh, emptyMsg, week) {
-  // a week where the picked group doesn't exist falls back to everything
-  if (activeGroup[bucket] !== "all" && !all.some((i) => groupOf(i, bucket) === activeGroup[bucket])) {
-    activeGroup[bucket] = "all";
-  }
-  const cur = activeGroup[bucket];
-  const shown = cur === "all" ? items : items.filter((i) => groupOf(i, bucket) === cur);
-  let body;
-  if (!shown.length) {
-    body = `<div class="grid"><div class="empty-state">${emptyMsg}</div></div>`;
-  } else if (cur === "all") {
-    body = groupItems(shown, bucket).map(([g, list]) => `
-      <div class="section-title">${esc(g)}<span class="section-count">${list.length}</span></div>
-      <div class="grid">${list.map((i) => renderCard(i, bucket, fresh)).join("")}</div>`).join("");
+  if (bkey === "bucket4") {
+    const who  = raw.person || "Someone";
+    const role = raw.new_role_title || "a new role";
+    const co   = raw.new_company || raw.org || "";
+    o.headline = who + " → " + role + (co ? ", " + co : "");
+    o.desc     = raw.previous_role && !/^not disclosed$/i.test(raw.previous_role)
+                 ? "Previously: " + raw.previous_role : "";
+    o.why      = "";
+    o.group    = null;
+    o.ents     = [];
+    if (raw.linkedin_url) o.ents.push({ name:who, url:raw.linkedin_url, kind:"in" });
+    if (raw.company_url)  o.ents.push({ name:co || raw.org, url:raw.company_url, kind:"co" });
+    o.tag = co || raw.org || "";
+  } else if (bkey === "bucket5") {
+    o.headline = raw.headline || "";
+    o.desc     = "";
+    o.why      = raw.insight || "";
+    o.group    = null;
+    o.ents     = [];
+    o.fit      = raw.product_fit || "";
+    o.ref      = raw.ref_item ? (raw.ref_bucket_label || "") + " — " + raw.ref_item : "";
+    o.tag      = raw.product_fit || "";
   } else {
-    body = `<div class="grid">${shown.map((i) => renderCard(i, bucket, fresh)).join("")}</div>`;
-  }
-  return `${renderGroupBar(all, bucket)}${body}${renderFlagged(week.flagged && week.flagged[bucket], "Unresolved names")}`;
-}
-
-function bucketItems(bucket) {
-  return currentWeek()[bucket] || [];
-}
-
-function passesFilter(item, bucket) {
-  const id = itemId(item, bucket);
-  if (activeFilter === "unread") return !readSet.has(id);
-  if (activeFilter === "starred") return starSet.has(id);
-  return true;
-}
-
-/* ---------- card renderers ---------- */
-
-const CHEV = `<svg width="9" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-
-// shown only when a card is read — colour + label, so "read" is visible at a glance
-const READ_FLAG = `<span class="read-flag"><svg width="8" height="8" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.5l3 3 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Read</span>`;
-
-function starBtn(id) {
-  const on = starSet.has(id);
-  return `<button class="star ${on ? "on" : ""}" data-star="${esc(id)}" title="${on ? "Starred" : "Star this"}" aria-label="${on ? "Unstar" : "Star"}">${on ? "★" : "☆"}</button>`;
-}
-
-// Bucket 1/2/3 — headline-led. No paragraph in the default state.
-function renderCard(item, bucket, fresh, showGroup) {
-  const id = itemId(item, bucket);
-  const tags = [];
-  if (fresh) tags.push(`<span class="tag tag-fresh">New</span>`);
-  if (bucket === "bucket2" && item.region) {
-    tags.push(`<span class="tag ${item.region.toLowerCase().includes("global") ? "region-global" : ""}">${esc(item.region)}</span>`);
-  }
-  if (bucket === "bucket6" && (item.region || "").toLowerCase().includes("global")) {
-    tags.push(`<span class="tag region-global">Global</span>`);
-  }
-  // the group is already the section heading in the bucket view; only label it where that context is missing (search)
-  if (showGroup && GROUP_FIELD[bucket]) {
-    tags.push(`<span class="tag tag-group">${esc(groupOf(item, bucket))}</span>`);
+    o.headline = raw.headline || "";
+    o.desc     = raw.description || "";
+    o.why      = raw.why_important || "";
+    o.group    = b.groupBy ? (raw[b.groupBy] || "Other") : null;
+    o.ents     = []
+      .concat((raw.companies || []).map(c => ({ name:c.name, url:c.url, kind:"co" })))
+      .concat((raw.people    || []).map(p => ({ name:p.name, url:p.url || p.linkedin_url, kind:"in" })))
+      .filter(e => e.name);
+    o.tag = bkey === "bucket1" ? raw.industry
+          : bkey === "bucket2" ? raw.region
+          : bkey === "bucket6" ? raw.category : "";
+    if (bkey === "bucket2" && raw.deal_value && !/^not disclosed$/i.test(raw.deal_value)) o.deal = raw.deal_value;
   }
 
-  const why = item.why_important || item.description;
-  const drawer = why
-    ? `<button class="expand" data-expand="${esc(id)}" title="Why it matters" aria-label="Why it matters">${CHEV}</button>
-       <div class="drawer"><div class="drawer-inner"><div class="why"><b>Why it matters</b>${esc(why)}</div></div></div>`
-    : "";
-
-  const ents = entitiesHtml(item);
-
-  return `
-  <article class="card ${why ? "has-why" : ""} ${readSet.has(id) ? "is-read" : ""}" data-id="${esc(id)}" data-url="${esc(item.source_url || "")}">
-    <div class="card-head">
-      <div class="card-headline"><a href="${esc(item.source_url)}" target="_blank" rel="noopener">${esc(item.headline)}</a></div>
-      <div class="card-tags">${READ_FLAG}${tags.join("")}${starBtn(id)}</div>
-    </div>
-    <div class="card-foot">
-      <span class="entities">${ents}</span>
-      <span class="meta">${esc(item.source_name || "")}<br>${shortDate(item.date)}</span>
-    </div>
-    ${drawer}
-  </article>`;
+  o.src  = raw.source_name || "";
+  o.url  = raw.source_url || "";
+  o.date = raw.date || "";
+  o.id   = hash(bkey + "|" + o.headline + "|" + o.url);
+  o.hay  = (o.headline + " " + o.desc + " " + o.why + " " + o.tag + " " + o.src + " " +
+            o.ents.map(e => e.name).join(" ")).toLowerCase();
+  return o;
 }
 
-// Bucket 4 — unchanged in structure: person joins company as role, plus previous role.
-function renderPeopleCard(item, fresh) {
-  const id = itemId(item, "bucket4");
-  const person = linkOrText(item.person, item.linkedin_url);
-  const company = linkOrText(item.new_company, item.company_url);
-  return `
-  <article class="card people-card ${readSet.has(id) ? "is-read" : ""}" data-id="${esc(id)}" data-url="${esc(item.source_url || "")}">
-    <div class="card-head">
-      <div class="move">${person} joins <b>${company}</b> as ${esc(item.new_role_title || "")}</div>
-      <div class="card-tags">${READ_FLAG}${fresh ? `<span class="tag tag-fresh">New</span>` : ""}${starBtn(id)}</div>
-    </div>
-    <div class="prev">Previously: ${esc(item.previous_role || "—")}</div>
-    <div class="card-foot">
-      <span class="entities"></span>
-      <span class="meta"><a href="${esc(item.source_url)}" target="_blank" rel="noopener">${esc(item.source_name || "source")}</a><br>${shortDate(item.date)}</span>
-    </div>
-  </article>`;
+/* ── build the working set for the current view ───────────────────── */
+function itemsFor(bkey) {
+  const q = S.q.trim().toLowerCase();
+  let list = [];
+  if (q) {
+    // search runs across every week
+    S.data.weeks.forEach((w, i) => (w[bkey] || []).forEach(r => list.push(norm(r, bkey, i))));
+    list = list.filter(it => it.hay.includes(q));
+  } else {
+    const w = S.data.weeks[S.wi] || {};
+    list = (w[bkey] || []).map(r => norm(r, bkey, S.wi));
+  }
+  if (S.filter === "unread")  list = list.filter(it => !S.read.has(it.id));
+  if (S.filter === "starred") list = list.filter(it =>  S.star.has(it.id));
+  const sub = S.sub[bkey];
+  if (sub) list = list.filter(it => it.group === sub);
+  return list;
 }
 
-// Bucket 5 — unchanged in structure: product fit, headline, full insight, reference.
-function renderStrategicCard(item) {
-  const id = itemId(item, "bucket5");
-  return `
-  <article class="card strategic-card" data-id="${esc(id)}" data-url="${esc(item.source_url || "")}">
-    <div class="fit">${esc(item.product_fit || "WLDD")}</div>
-    <div class="card-headline">${esc(item.headline)}</div>
-    <div class="insight">${esc(item.insight)}</div>
-    <div class="ref">Ref: ${esc(item.ref_bucket_label || "")} — <a href="${esc(item.source_url)}" target="_blank" rel="noopener">${esc(item.ref_item || "source")}</a></div>
-  </article>`;
+/* counts shown on the tiles — week totals, before filters */
+function tileCounts() {
+  const w = S.data.weeks[S.wi] || {};
+  const o = {};
+  BUCKETS.forEach(b => { o[b.key] = (w[b.key] || []).length; });
+  return o;
 }
 
-function renderFlagged(list, label) {
-  if (!list || !list.length) return "";
-  return `<details class="flagged"><summary>${label} (${list.length})</summary><ul>${list
-    .map((f) => `<li>${esc(f)}</li>`)
-    .join("")}</ul></details>`;
-}
+/* ══════════════════════════ render ═══════════════════════════════ */
 
-/* ---------- pulse tiles ---------- */
+function renderChrome() {
+  const w = S.data.weeks[S.wi];
+  $("#weekBtnLabel").textContent = weekLabel(w, true);
+  $("#lastUpdated").textContent  = stampLabel(w.updated_at || S.data.updated_at);
 
-function weekTotals(bucket) {
-  // last 8 weeks, oldest → newest, for the sparkline
-  const slice = WEEKS.slice(0, 8).reverse();
-  return slice.map((w) => (w[bucket] || []).length);
-}
+  const counts = tileCounts();
+  const total  = BUCKETS.reduce((a, b) => a + counts[b.key], 0);
+  const words  = total === 1 ? "thing" : "things";
+  $("#heroH").innerHTML  = total + " " + words + "<br>worth knowing<i>.</i>";
+  $("#heroMeta").textContent = "WLDD PULSE DASH / " + weekLabel(w, true) + " / INTERNAL";
 
-function renderPulse() {
-  const wrap = document.getElementById("pulse");
-  wrap.innerHTML = BUCKETS.map((b, i) => {
-    const count = bucketItems(b).length;
-    const series = weekTotals(b);
-    const max = Math.max(1, ...series);
-    const bars = series
-      .map((v, idx) => {
-        const h = Math.max(2, Math.round((v / max) * 26));
-        const isCurrent = idx === series.length - 1 - activeWeekIndex;
-        return `<span class="spark-bar ${isCurrent ? "is-current" : ""}" style="height:${h}px" title="${v} items"></span>`;
-      })
-      .join("");
-    return `
-      <button class="tile ${b === activeBucket ? "active" : ""}" data-bucket="${b}" title="${esc(BUCKET_LONG[b])} — press ${i + 1}">
-        <div class="tile-label">${esc(BUCKET_LABELS[b])}</div>
-        <div class="tile-row">
-          <span class="tile-count ${count === 0 ? "is-zero" : ""}" data-target="${count}">0</span>
-          <span class="spark">${bars}</span>
-        </div>
-      </button>`;
+  const all = allItemsThisWeek();
+  const readN = all.filter(it => S.read.has(it.id)).length;
+  $("#heroStat").textContent = readN
+    ? "You've read " + readN + " of " + all.length + " this week. Star what matters, tap copy, send it on."
+    : "Six buckets, one pass. Star what matters, tap copy, send it on.";
+
+  // week panel
+  $("#weekPanel").innerHTML = S.data.weeks.map((wk, i) => {
+    const n = BUCKETS.reduce((a, b) => a + (wk[b.key] || []).length, 0);
+    return '<button class="wk' + (i === S.wi ? " is-on" : "") + '" role="option" data-wi="' + i +
+           '" aria-selected="' + (i === S.wi) + '">' + esc(weekLabel(wk, true)) +
+           "<small>" + n + " items</small></button>";
   }).join("");
 
-  animateCounts();
+  // tiles
+  const prev = S.data.weeks[S.wi + 1];
+  $("#tiles").innerHTML = BUCKETS.map(b => {
+    const list = (S.data.weeks[S.wi][b.key] || []).map(r => norm(r, b.key, S.wi));
+    const read = list.filter(it => S.read.has(it.id)).length;
+    const pct  = list.length ? Math.round(read / list.length * 100) : 0;
+
+    // week-over-week movement, so the tile says something a static count cannot
+    let delta = "";
+    if (prev) {
+      const d = list.length - (prev[b.key] || []).length;
+      delta = '<span class="tile-d" title="vs the week before">' +
+              (d > 0 ? "↑ " + d : d < 0 ? "↓ " + Math.abs(d) : "— level") + "</span>";
+    }
+
+    return '<a class="tile tile-' + b.key.replace("bucket","") + '" href="#b-' + b.slug + '" data-slug="' + b.slug + '">' +
+      '<span class="tile-l">' + esc(b.short) + "</span>" +
+      '<span class="tile-row"><span class="tile-n" data-n="' + list.length + '">' + list.length + "</span>" + delta + "</span>" +
+      '<span class="tile-bar"><i style="width:' + pct + '%"></i></span></a>';
+  }).join("");
+  countUp();
 }
 
-function animateCounts() {
-  document.querySelectorAll(".tile-count").forEach((el) => {
-    const target = Number(el.dataset.target) || 0;
-    if (target === 0 || reduceMotion.matches) {
-      el.textContent = String(target);
+/* the counts roll up once, on arrival */
+function countUp() {
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  $$(".tile-n").forEach(el => {
+    const target = Number(el.dataset.n) || 0;
+    if (target < 2) return;
+    const t0 = performance.now(), dur = 620;
+    el.textContent = "0";
+    (function step(t) {
+      const k = Math.min(1, (t - t0) / dur);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3)));
+      if (k < 1) requestAnimationFrame(step);
+    })(t0);
+  });
+}
+
+function allItemsThisWeek() {
+  const w = S.data.weeks[S.wi] || {};
+  return BUCKETS.flatMap(b => (w[b.key] || []).map(r => norm(r, b.key, S.wi)));
+}
+
+function renderProgress() {
+  const all = allItemsThisWeek();
+  const readN = all.filter(it => S.read.has(it.id)).length;
+  $("#progressLabel").textContent = readN + " / " + all.length + " read";
+  $("#progBar").style.width = all.length ? (readN / all.length * 100) + "%" : "0%";
+  $("#nUnread").textContent = all.length - readN;
+  $("#nStar").textContent   = S.star.size;
+
+  const n = S.star.size;
+  const tray = $("#tray");
+  tray.hidden = n === 0;
+  $("#trayN").textContent = n;
+  $("#trayT") && ($("#trayT").textContent = n === 1 ? "starred" : "starred");
+}
+
+const ICON_STAR  = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M12 3.5l2.6 5.6 6 .8-4.4 4.2 1.1 6.1L12 17.3 6.7 20.2l1.1-6.1L3.4 9.9l6-.8z"/></svg>';
+const ICON_STARF = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M12 3.5l2.6 5.6 6 .8-4.4 4.2 1.1 6.1L12 17.3 6.7 20.2l1.1-6.1L3.4 9.9l6-.8z"/></svg>';
+const ICON_COPY  = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 4.5h-11a2 2 0 0 0-2 2v11" stroke-linecap="round"/></svg>';
+const ICON_TICK  = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg>';
+
+/* the button confirms on itself, before the toast has even landed */
+function flashCopied(btn) {
+  if (!btn) return;
+  btn.classList.add("done");
+  btn.innerHTML = ICON_TICK;
+  clearTimeout(btn._t);
+  btn._t = setTimeout(() => { btn.classList.remove("done"); btn.innerHTML = ICON_COPY; }, 1100);
+}
+
+function rowHTML(it) {
+  const b = BY_KEY[it.bucket];
+  const starred = S.star.has(it.id);
+  const isRead  = S.read.has(it.id);
+  const open    = S.open === it.id;
+
+  const meta = [];
+  if (it.fit) { /* strategic: fit badge sits above the headline instead */ }
+  if (it.tag && it.bucket !== "bucket5") meta.push(esc(it.tag));
+  if (it.src)  meta.push(esc(it.src));
+  if (S.q && S.data.weeks[it.wi]) meta.push(esc(weekLabel(S.data.weeks[it.wi], false)));
+
+  let body = "";
+  if (it.desc)  body += '<p class="desc">' + esc(it.desc) + "</p>";
+  if (it.why)   body += '<div class="why"><span class="eyebrow">' +
+                        (it.bucket === "bucket5" ? "The play" : "Why it matters") +
+                        '</span><p>' + esc(it.why) + "</p></div>";
+  if (it.deal)  body += '<p class="ref">Deal value — ' + esc(it.deal) + "</p>";
+  if (it.ref)   body += '<p class="ref">From ' + esc(it.ref) + "</p>";
+  if (it.ents.length) {
+    body += '<div class="ents">' + it.ents.map(e => e.url
+      ? '<a class="ent" href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.name) +
+        '<span class="ent-x" aria-hidden="true">' + (e.kind === "in" ? "in" : "↗") + "</span></a>"
+      : '<span class="ent">' + esc(e.name) + "</span>"
+    ).join("") + "</div>";
+  }
+  if (it.url) {
+    body += '<a class="src-row" href="' + esc(it.url) + '" target="_blank" rel="noopener">' +
+            "<span>" + (it.src ? "Read it on " + esc(it.src) : "Read the source story") + "</span>" +
+            '<span aria-hidden="true">↗</span></a>';
+  }
+
+  return '<article class="row' + (isRead ? " is-read" : "") + (open ? " is-open" : "") +
+         '" id="r-' + it.id + '" data-id="' + it.id + '" data-bucket="' + it.bucket + '">' +
+    '<span class="row-dot" aria-hidden="true"></span>' +
+    '<div class="row-head">' +
+      '<button class="row-main" aria-expanded="' + open + '" aria-controls="body-' + it.id + '">' +
+        (it.fit ? '<span class="fit">' + esc(it.fit) + "</span>" : "") +
+        '<h3 class="row-h">' + esc(it.headline) + "</h3>" +
+        (meta.length || it.date
+          ? '<p class="row-meta">' + meta.join('<span class="sep">·</span>') +
+            (it.date ? (meta.length ? '<span class="sep">·</span>' : "") +
+              '<span class="row-date">' + esc(d2(it.date)) + "</span>" : "") + "</p>"
+          : "") +
+      "</button>" +
+      '<div class="row-acts">' +
+        '<button class="act js-copy" aria-label="Copy this item as text">' + ICON_COPY + "</button>" +
+        '<button class="act js-star' + (starred ? " is-star" : "") + '" aria-pressed="' + starred +
+          '" aria-label="' + (starred ? "Unstar" : "Star") + ' this item">' +
+          (starred ? ICON_STARF : ICON_STAR) + "</button>" +
+      "</div>" +
+    "</div>" +
+    '<div class="row-body" id="body-' + it.id + '">' + body + "</div>" +
+  "</article>";
+}
+
+function renderBuckets() {
+  const host = $("#buckets");
+  let any = false;
+
+  host.innerHTML = BUCKETS.map(b => {
+    const list = itemsFor(b.key);
+    if (list.length) any = true;
+
+    // sub-filter chips, built from the unfiltered week (or search set)
+    let chips = "";
+    if (b.groupBy) {
+      const base = (S.q
+        ? S.data.weeks.flatMap((w, i) => (w[b.key] || []).map(r => norm(r, b.key, i))).filter(it => it.hay.includes(S.q.trim().toLowerCase()))
+        : (S.data.weeks[S.wi][b.key] || []).map(r => norm(r, b.key, S.wi)));
+      const groups = {};
+      base.forEach(it => { groups[it.group] = (groups[it.group] || 0) + 1; });
+      const keys = Object.keys(groups).sort((a, c) => groups[c] - groups[a]);
+      if (keys.length > 1) {
+        chips = '<div class="chips">' +
+          '<button class="chip' + (!S.sub[b.key] ? " is-on" : "") + '" data-sub="" data-bk="' + b.key + '">All' +
+            '<span class="chip-n">' + base.length + "</span></button>" +
+          keys.map(k => '<button class="chip' + (S.sub[b.key] === k ? " is-on" : "") +
+            '" data-sub="' + esc(k) + '" data-bk="' + b.key + '">' + esc(k) +
+            '<span class="chip-n">' + groups[k] + "</span></button>").join("") + "</div>";
+      }
+    }
+
+    // group items under hairline headings when no sub-filter is active
+    let listHTML;
+    if (b.groupBy && !S.sub[b.key] && list.length) {
+      const groups = {};
+      list.forEach(it => { (groups[it.group] = groups[it.group] || []).push(it); });
+      const keys = Object.keys(groups).sort((a, c) => groups[c].length - groups[a].length);
+      listHTML = keys.map(k =>
+        '<div class="grp"><h3>' + esc(k) + '</h3><span class="eyebrow">' + groups[k].length + "</span></div>" +
+        groups[k].map(rowHTML).join("")
+      ).join("");
+    } else {
+      listHTML = list.map(rowHTML).join("");
+    }
+
+    if (!list.length) listHTML = '<p class="row-meta" style="padding:30px 0;opacity:.55">Nothing here under the current filters.</p>';
+
+    return '<section class="bucket reveal" id="b-' + b.slug + '" data-bk="' + b.key + '" style="--acc:var(--' + (b.acc || b.band) + ');--dot:var(--' + b.dot + ')">' +
+      '<div class="band band-' + b.band + ' band-head">' +
+        '<span class="ghost" aria-hidden="true">' + b.n + "</span>" +
+        '<div class="wrap">' +
+        '<span class="eyebrow">' + b.n + " / Bucket</span>" +
+        "<h2>" + b.title + "<i>.</i></h2>" +
+        '<div class="band-foot">' +
+          '<span class="badge">' + list.length + " item" + (list.length === 1 ? "" : "s") + "</span>" +
+          '<button class="tlink js-copy-sec" data-bk="' + b.key + '">Copy this section <span aria-hidden="true">⧉</span></button>' +
+        "</div>" +
+      "</div></div>" +
+      '<div class="wrap">' + chips +
+        '<div class="list' + (b.band === "ink" ? " list-ink" : "") + '">' + listHTML + "</div>" +
+      "</div>" +
+      (b.band === "ink" ? "" : "") +
+    "</section>";
+  }).join("");
+
+  // the ink bucket's list needs the ink ground to run to the edges
+  const inkSec = $('.bucket[data-bk="bucket5"]');
+  if (inkSec) inkSec.style.background = "var(--ink)";
+
+  // rows arrive in sequence behind their section, capped so a long list never drags
+  $$(".bucket").forEach(sec => {
+    $$(".row", sec).forEach((r, i) => r.style.setProperty("--d", Math.min(i * 22, 260) + "ms"));
+  });
+
+  $("#noResults").hidden = any;
+  sweepReveals();
+  armRevealFailsafe();
+  renderProgress();
+  onScroll();
+}
+
+function render() { renderChrome(); renderBuckets(); }
+
+/* ══════════════════════════ copy ═════════════════════════════════ */
+
+function fmtItem(it, n) {
+  const L = [];
+  const head = (n ? n + ". " : "") + it.headline;
+  L.push(head);
+  if (it.why)  L.push("", (it.bucket === "bucket5" ? "The play: " : "Why it matters: ") + it.why);
+  else if (it.desc) L.push("", it.desc);
+  const src = [it.src, d2(it.date)].filter(Boolean).join(" · ");
+  if (src) L.push("", src);
+  if (it.url) L.push(it.url);
+  return L.join("\n");
+}
+
+function sign() {
+  const w = S.data.weeks[S.wi];
+  return "— WLDD Pulse · " + weekLabel(w, true);
+}
+
+function copy(text, msg) {
+  const done = () => toast(msg || "Copied ↗");
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(done, () => fallback(text, done));
+  } else fallback(text, done);
+}
+function fallback(text, done) {
+  const t = document.createElement("textarea");
+  t.value = text; t.setAttribute("readonly", "");
+  t.style.cssText = "position:fixed;top:-1000px;opacity:0";
+  document.body.appendChild(t); t.select();
+  try { document.execCommand("copy"); done(); } catch (e) { toast("Couldn't copy"); }
+  document.body.removeChild(t);
+}
+
+let toastT;
+function toast(msg) {
+  const el = $("#toast");
+  $("#toastText").textContent = msg;
+  el.hidden = false;
+  el.style.animation = "none"; void el.offsetWidth; el.style.animation = "";
+  clearTimeout(toastT);
+  toastT = setTimeout(() => { el.hidden = true; }, 2200);
+}
+
+function findItem(id) {
+  for (const b of BUCKETS) {
+    const w = S.data.weeks[S.wi] || {};
+    for (const r of (w[b.key] || [])) { const it = norm(r, b.key, S.wi); if (it.id === id) return it; }
+  }
+  // search view may surface items from other weeks
+  for (let i = 0; i < S.data.weeks.length; i++) {
+    for (const b of BUCKETS) {
+      for (const r of (S.data.weeks[i][b.key] || [])) { const it = norm(r, b.key, i); if (it.id === id) return it; }
+    }
+  }
+  return null;
+}
+
+function copyItem(id) {
+  const it = findItem(id);
+  if (!it) return;
+  copy(fmtItem(it) + "\n\n" + sign(), "Copied — paste it anywhere ↗");
+  markRead(id, true);
+}
+
+function copySection(bkey) {
+  const list = itemsFor(bkey);
+  if (!list.length) return toast("Nothing to copy here");
+  const b = BY_KEY[bkey];
+  const head = "WLDD PULSE · " + b.short.toUpperCase() + "\n" + weekLabel(S.data.weeks[S.wi], true) +
+               "\n" + list.length + " item" + (list.length === 1 ? "" : "s");
+  copy(head + "\n\n" + list.map((it, i) => fmtItem(it, i + 1)).join("\n\n") + "\n\n" + sign(),
+       "Copied " + list.length + " items ↗");
+}
+
+function copyStarred() {
+  const ids = Array.from(S.star);
+  const list = ids.map(findItem).filter(Boolean);
+  if (!list.length) return toast("Nothing starred yet");
+  const head = "WLDD PULSE — worth your attention\n" + weekLabel(S.data.weeks[S.wi], true);
+  copy(head + "\n\n" + list.map((it, i) => fmtItem(it, i + 1)).join("\n\n") + "\n\n" + sign(),
+       "Copied " + list.length + " starred ↗");
+}
+
+function copyWeek() {
+  const parts = [];
+  let n = 0;
+  BUCKETS.forEach(b => {
+    const list = (S.data.weeks[S.wi][b.key] || []).map(r => norm(r, b.key, S.wi));
+    if (!list.length) return;
+    n += list.length;
+    parts.push("▌" + b.short.toUpperCase() + " (" + list.length + ")\n\n" +
+               list.map((it, i) => fmtItem(it, i + 1)).join("\n\n"));
+  });
+  const head = "WLDD PULSE · " + weekLabel(S.data.weeks[S.wi], true) + "\n" + n + " things worth knowing";
+  copy(head + "\n\n" + parts.join("\n\n\n") + "\n\n" + sign(), "Copied the full week ↗");
+}
+
+/* ══════════════════════════ actions ══════════════════════════════ */
+
+function markRead(id, v) {
+  if (v) S.read.add(id); else S.read.delete(id);
+  LS.set("wldd:read", Array.from(S.read));
+  const el = $("#r-" + id);
+  if (el) el.classList.toggle("is-read", v);
+  renderProgress();
+  // keep the tile bars honest
+  const counts = tileCounts();
+  BUCKETS.forEach(b => {
+    const list = (S.data.weeks[S.wi][b.key] || []).map(r => norm(r, b.key, S.wi));
+    const read = list.filter(x => S.read.has(x.id)).length;
+    const bar = $('.tile[data-slug="' + b.slug + '"] .tile-bar i');
+    if (bar) bar.style.width = (counts[b.key] ? read / counts[b.key] * 100 : 0) + "%";
+  });
+}
+
+function toggleStar(id) {
+  const on = !S.star.has(id);
+  if (on) S.star.add(id); else S.star.delete(id);
+  LS.set("wldd:star", Array.from(S.star));
+  const btn = $("#r-" + id + " .js-star");
+  if (btn) {
+    btn.classList.toggle("is-star", on);
+    btn.setAttribute("aria-pressed", String(on));
+    btn.setAttribute("aria-label", (on ? "Unstar" : "Star") + " this item");
+    btn.innerHTML = on ? ICON_STARF : ICON_STAR;
+  }
+  renderProgress();
+  if (S.filter === "starred") renderBuckets();
+}
+
+function toggleOpen(id) {
+  const was = S.open === id;
+  const prev = S.open ? $("#r-" + S.open) : null;
+  if (prev) { prev.classList.remove("is-open"); const b = $(".row-main", prev); if (b) b.setAttribute("aria-expanded", "false"); }
+  S.open = was ? null : id;
+  const el = $("#r-" + id);
+  if (el && !was) {
+    el.classList.add("is-open");
+    const b = $(".row-main", el); if (b) b.setAttribute("aria-expanded", "true");
+    markRead(id, true);
+  }
+}
+
+/* ══════════════════════════ keyboard ═════════════════════════════ */
+
+function rows() { return $$(".row"); }
+function moveCursor(d) {
+  const r = rows();
+  if (!r.length) return;
+  S.cursor = Math.max(0, Math.min(r.length - 1, S.cursor + d));
+  const el = r[S.cursor];
+  const btn = $(".row-main", el);
+  if (btn) btn.focus({ preventScroll:true });
+  el.scrollIntoView({ block:"center", behavior:"smooth" });
+}
+function cursorId() {
+  const r = rows();
+  if (S.cursor < 0 || !r[S.cursor]) {
+    const act = document.activeElement && document.activeElement.closest(".row");
+    return act ? act.dataset.id : null;
+  }
+  return r[S.cursor].dataset.id;
+}
+
+/* ══════════════════════════ sheets ═══════════════════════════════ */
+
+function openSheet(sel) {
+  $$(".sheet").forEach(s => { s.hidden = true; });
+  $("#scrim").hidden = false;
+  $(sel).hidden = false;
+  const inp = $("input", $(sel));
+  if (inp) { inp.value = ""; inp.focus(); buildPalette(""); }
+  else { const b = $("button", $(sel)); b && b.focus(); }
+}
+function closeSheets() {
+  $$(".sheet").forEach(s => { s.hidden = true; });
+  $("#scrim").hidden = true;
+}
+
+function palItems() {
+  const out = [];
+  BUCKETS.forEach(b => out.push({ t:b.short, s:"Bucket " + b.n, go:() => jump(b.slug) }));
+  S.data.weeks.forEach((w, i) => out.push({ t:weekLabel(w, true), s:"Week", go:() => setWeek(i) }));
+  const inds = new Set();
+  (S.data.weeks[S.wi].bucket1 || []).forEach(r => r.industry && inds.add(r.industry));
+  inds.forEach(k => out.push({ t:k, s:"Industry", go:() => { S.sub.bucket1 = k; renderBuckets(); jump("mandates"); } }));
+  out.push({ t:"Copy this week's digest", s:"Action", go:copyWeek });
+  out.push({ t:"Copy everything starred", s:"Action", go:copyStarred });
+  out.push({ t:"Switch theme", s:"Action", go:flipTheme });
+  return out;
+}
+let palCache = [], palSel = 0;
+function buildPalette(q) {
+  const all = palItems();
+  palCache = q ? all.filter(x => (x.t + " " + x.s).toLowerCase().includes(q.toLowerCase())) : all;
+  palSel = 0;
+  $("#palList").innerHTML = palCache.map((x, i) =>
+    '<button class="pal' + (i === 0 ? " is-on" : "") + '" data-i="' + i + '" role="option">' +
+    esc(x.t) + "<small>" + esc(x.s) + "</small></button>").join("");
+}
+function palMove(d) {
+  if (!palCache.length) return;
+  palSel = (palSel + d + palCache.length) % palCache.length;
+  $$(".pal").forEach((el, i) => el.classList.toggle("is-on", i === palSel));
+  const el = $$(".pal")[palSel]; el && el.scrollIntoView({ block:"nearest" });
+}
+function palRun() {
+  const x = palCache[palSel];
+  if (x) { closeSheets(); x.go(); }
+}
+
+function jump(slug) {
+  const el = $("#b-" + slug);
+  if (el) el.scrollIntoView({ behavior:"smooth", block:"start" });
+}
+
+function setWeek(i) {
+  S.wi = i; S.open = null; S.cursor = -1; S.sub = {};
+  $("#weekPanel").hidden = true;
+  $("#weekBtn").setAttribute("aria-expanded", "false");
+  render();
+  window.scrollTo({ top:0, behavior:"smooth" });
+}
+
+function flipTheme() {
+  const now = document.documentElement.getAttribute("data-theme") === "ink" ? "paper" : "ink";
+  document.documentElement.setAttribute("data-theme", now);
+  LS.set("wldd:theme", now);
+  $("#themeLabel").textContent = now === "ink" ? "Light" : "Dark";
+  $('meta[name="theme-color"]').setAttribute("content", now === "ink" ? "#111111" : "#72cc8b");
+}
+
+/* ══════════════════════════ the rail ═════════════════════════════
+   Depth of scroll as width, and the bucket you are standing in as
+   colour — so the masthead always answers "where am I" without a
+   sidebar or a second nav.                                          */
+let lastFlat = "", rafQ = false;
+
+function onScroll() {
+  const doc = document.documentElement;
+  const bar = $("#railBar");
+  if (!bar) return;
+
+  const max = doc.scrollHeight - doc.clientHeight;
+  bar.style.width = (max > 0 ? Math.min(1, doc.scrollTop / max) * 100 : 0) + "%";
+
+  const mastH = parseInt(getComputedStyle(doc).getPropertyValue("--mast-h"), 10) || 74;
+  let cur = null;
+  $$(".bucket").forEach(sec => { if (sec.getBoundingClientRect().top <= mastH + 12) cur = sec; });
+
+  const chip = $("#nowChip"), stamp = $("#stamp"), dot = $("#nowChip i");
+  const b = cur ? BY_KEY[cur.dataset.bk] : null;
+  const flat = b ? "var(--" + (b.acc || b.band) + ")" : "var(--green)";
+
+  if (flat !== lastFlat) {
+    lastFlat = flat;
+    bar.style.background = flat;
+    if (dot) dot.style.background = flat;
+  }
+  if (b) {
+    $("#nowChipLabel").textContent = b.n + " / " + b.short;
+    chip.classList.add("on"); stamp.classList.add("off");
+  } else {
+    chip.classList.remove("on"); stamp.classList.remove("off");
+  }
+}
+
+function queueScroll() {
+  if (rafQ) return;
+  rafQ = true;
+  requestAnimationFrame(() => { rafQ = false; onScroll(); });
+}
+
+/* ══════════════════════════ reveal on scroll ═════════════════════
+   Deliberately NOT IntersectionObserver and NOT rAF. Both are
+   throttled or paused while the page is backgrounded, and these
+   classes gate whether CONTENT IS VISIBLE, not just how it animates.
+   A plain geometry check on the scroll event always runs.          */
+let revealT;
+function sweepReveals() {
+  const h = window.innerHeight || 800;
+  $$(".reveal").forEach(e => {
+    if (!e.classList.contains("seen") && e.getBoundingClientRect().top < h * 0.92) {
+      e.classList.add("seen");
+    }
+  });
+}
+
+/* belt and braces: whatever happens with events, nothing in or above
+   the viewport stays hidden past this point */
+function armRevealFailsafe() {
+  clearTimeout(revealT);
+  revealT = setTimeout(sweepReveals, 700);
+}
+
+/* ══════════════════════════ wiring ═══════════════════════════════ */
+
+function wire() {
+  // delegated clicks
+  document.addEventListener("click", e => {
+    const t = e.target;
+
+    const copyBtn = t.closest(".js-copy");
+    if (copyBtn) { e.preventDefault(); copyItem(copyBtn.closest(".row").dataset.id); flashCopied(copyBtn); return; }
+
+    const starBtn = t.closest(".js-star");
+    if (starBtn) { e.preventDefault(); toggleStar(starBtn.closest(".row").dataset.id); return; }
+
+    const main = t.closest(".row-main");
+    if (main) { e.preventDefault(); toggleOpen(main.closest(".row").dataset.id); return; }
+
+    const sec = t.closest(".js-copy-sec");
+    if (sec) { e.preventDefault(); copySection(sec.dataset.bk); return; }
+
+    const chip = t.closest(".chip");
+    if (chip) {
+      e.preventDefault();
+      const bk = chip.dataset.bk;
+      S.sub[bk] = chip.dataset.sub || null;
+      renderBuckets();
+      const sec2 = $("#b-" + BY_KEY[bk].slug);
+      if (sec2) sec2.scrollIntoView({ behavior:"smooth", block:"start" });
       return;
     }
-    const dur = 460;
-    const t0 = performance.now();
-    const step = (now) => {
-      const p = Math.min(1, (now - t0) / dur);
-      const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = String(Math.round(target * eased));
-      if (p < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  });
-}
 
-/* ---------- progress + filters ---------- */
+    const seg = t.closest(".seg");
+    if (seg) { $$(".seg").forEach(s => s.classList.remove("is-on")); seg.classList.add("is-on");
+      S.filter = seg.dataset.filter; S.open = null; S.cursor = -1; renderBuckets(); return; }
 
-let wasComplete = false;
+    const wk = t.closest(".wk");
+    if (wk) { setWeek(Number(wk.dataset.wi)); return; }
 
-function updateChrome() {
-  const items = bucketItems(activeBucket);
-  const ids = items.map((i) => itemId(i, activeBucket));
-  const read = ids.filter((id) => readSet.has(id)).length;
-  const starred = ids.filter((id) => starSet.has(id)).length;
-  const unread = ids.length - read;
+    const pal = t.closest(".pal");
+    if (pal) { palSel = Number(pal.dataset.i); palRun(); return; }
 
-  document.getElementById("cntUnread").textContent = unread ? ` ${unread}` : "";
-  document.getElementById("cntStarred").textContent = starred ? ` ${starred}` : "";
+    const tile = t.closest(".tile");
+    if (tile) { e.preventDefault(); jump(tile.dataset.slug); return; }
 
-  const pct = ids.length ? Math.round((read / ids.length) * 100) : 0;
-  document.getElementById("progressFill").style.width = pct + "%";
-  document.getElementById("progressLabel").textContent = `${read} / ${ids.length} read`;
-
-  const wrap = document.getElementById("progressWrap");
-  const complete = ids.length > 0 && read === ids.length;
-  wrap.classList.toggle("is-complete", complete);
-  // celebrate only on the transition into "done", never on every re-render
-  if (complete && !wasComplete) celebrate(wrap);
-  wasComplete = complete;
-
-  document.querySelectorAll(".chip").forEach((c) => c.classList.toggle("active", c.dataset.filter === activeFilter));
-  document.querySelectorAll(".tile").forEach((t) => t.classList.toggle("active", t.dataset.bucket === activeBucket));
-}
-
-/* ---------- particle burst ---------- */
-
-function burst(x, y, count) {
-  if (reduceMotion.matches) return;
-  for (let i = 0; i < count; i++) {
-    const p = document.createElement("span");
-    p.className = "burst";
-    const angle = (Math.PI * 2 * i) / count + Math.random() * 0.5;
-    const dist = 26 + Math.random() * 30;
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    p.style.setProperty("--bx", (Math.cos(angle) * dist).toFixed(1) + "px");
-    p.style.setProperty("--by", (Math.sin(angle) * dist).toFixed(1) + "px");
-    p.style.animationDelay = (i * 12) + "ms";
-    document.body.appendChild(p);
-    setTimeout(() => p.remove(), 900 + i * 12);
-  }
-}
-
-function burstFrom(el, count) {
-  const r = el.getBoundingClientRect();
-  burst(r.left + r.width / 2, r.top + r.height / 2, count || 8);
-}
-
-function celebrate(wrap) {
-  wrap.classList.add("just-completed");
-  setTimeout(() => wrap.classList.remove("just-completed"), 950);
-  const track = wrap.querySelector(".progress-track");
-  if (track) {
-    const r = track.getBoundingClientRect();
-    burst(r.right - 4, r.top + r.height / 2, 14);
-  }
-}
-
-/* ---------- main render ---------- */
-
-function renderBucket(bucket) {
-  const content = document.getElementById("content");
-  const week = currentWeek();
-  const fresh = isFresh(week);
-  const all = bucketItems(bucket);
-  const items = all.filter((i) => passesFilter(i, bucket));
-
-  const emptyMsg = all.length === 0
-    ? "Nothing filed for this week yet."
-    : activeFilter === "unread" ? "All caught up — nothing unread here."
-    : activeFilter === "starred" ? "No starred items in this bucket."
-    : "Nothing here.";
-
-  if (bucket === "bucket2") {
-    // Only a region of exactly "India" is India-focused. Values like
-    // "Global (India / Italy)" are cross-border deals and belong under Global —
-    // a substring match on "india" would misfile them.
-    const isIndia = (i) => (i.region || "").trim().toLowerCase() === "india";
-    const india = items.filter(isIndia);
-    const global = items.filter((i) => !isIndia(i));
-    content.innerHTML = `
-      <div class="section-title">India</div>
-      <div class="grid">${india.map((i) => renderCard(i, bucket, fresh)).join("") || `<div class="empty-state">No India deals${activeFilter === "all" ? " this week" : " match this filter"}.</div>`}</div>
-      <div class="section-title">Global</div>
-      <div class="grid">${global.map((i) => renderCard(i, bucket, fresh)).join("") || `<div class="empty-state">No global deals${activeFilter === "all" ? " this week" : " match this filter"}.</div>`}</div>
-      ${renderFlagged(week.flagged && week.flagged.bucket2, "Unresolved names")}`;
-  } else if (bucket === "bucket4") {
-    content.innerHTML = `
-      <div class="grid">${items.map((i) => renderPeopleCard(i, fresh)).join("") || `<div class="empty-state">${emptyMsg}</div>`}</div>
-      ${renderFlagged(week.flagged && week.flagged.bucket4, "Unresolved names")}`;
-  } else if (GROUP_FIELD[bucket]) {
-    content.innerHTML = renderGrouped(bucket, all, items, fresh, emptyMsg, week);
-  } else if (bucket === "bucket5") {
-    content.innerHTML = `
-      <div class="grid">${items.map(renderStrategicCard).join("") || `<div class="empty-state">${emptyMsg}</div>`}</div>`;
-  } else {
-    content.innerHTML = `
-      <div class="grid">${items.map((i) => renderCard(i, bucket, fresh)).join("") || `<div class="empty-state">${emptyMsg}</div>`}</div>
-      ${renderFlagged(week.flagged && week.flagged[bucket], "Unresolved names")}`;
-  }
-
-  // on phones the chip row scrolls sideways; keep the picked chip on screen after a re-render
-  const bar = content.querySelector(".groupbar");
-  const on = bar && bar.querySelector(".gchip.active");
-  if (on && (on.offsetLeft + on.offsetWidth > bar.scrollLeft + bar.clientWidth || on.offsetLeft < bar.scrollLeft)) {
-    bar.scrollLeft = Math.max(0, on.offsetLeft - bar.offsetLeft - 14);
-  }
-
-  // stagger the entrance so the grid assembles rather than snapping in
-  const cards = content.querySelectorAll(".card");
-  cards.forEach((c, i) => { c.style.animationDelay = Math.min(i * 22, 340) + "ms"; });
-}
-
-// cardIn is `animation-fill-mode: both`, so its final keyframe (`transform: none`)
-// keeps winning over the inline transform the tilt sets. Drop the animation once
-// it has finished and the cursor tilt takes over cleanly.
-document.getElementById("content").addEventListener("animationend", (e) => {
-  if (e.animationName === "cardIn" && e.target.classList.contains("card")) {
-    e.target.style.animation = "none";
-  }
-});
-
-/* ---------- search ---------- */
-
-function matchText(item, q) {
-  return [
-    item.headline, item.description, item.why_important, item.person, item.new_company,
-    item.previous_role, item.new_role_title, item.insight, item.ref_item, item.product_fit,
-    item.industry, item.category,
-    ...(item.companies || []).map((c) => c.name),
-    ...(item.people || []).map((p) => p.name),
-  ].filter(Boolean).join(" ␟").toLowerCase().includes(q);
-}
-
-function renderSearch(query) {
-  const content = document.getElementById("content");
-  const q = query.trim().toLowerCase();
-  const results = [];
-
-  WEEKS.forEach((week) => {
-    BUCKETS.forEach((b) => {
-      (week[b] || []).forEach((item) => {
-        if (matchText(item, q)) results.push({ item, bucket: b, week });
-      });
-    });
-  });
-
-  if (!results.length) {
-    content.innerHTML = `<div class="empty-state">No results for “${esc(query)}”</div>`;
-    return;
-  }
-
-  const cards = results.map(({ item, bucket, week }) => {
-    const card =
-      bucket === "bucket4" ? renderPeopleCard(item, false)
-      : bucket === "bucket5" ? renderStrategicCard(item)
-      : renderCard(item, bucket, false, true);
-    return `<div class="search-result">
-      <div class="search-meta">${esc(BUCKET_LABELS[bucket])} · week of ${fmtDate(week.week_start)}</div>
-      ${card}
-    </div>`;
-  }).join("");
-
-  content.innerHTML =
-    `<div class="section-title">${results.length} result${results.length === 1 ? "" : "s"} for “${esc(query)}”</div>
-     <div class="grid">${cards}</div>`;
-}
-
-function render() {
-  cursor = -1;
-  if (searchQuery.trim()) {
-    renderSearch(searchQuery);
-  } else {
-    renderBucket(activeBucket);
-  }
-  updateChrome();
-
-  const content = document.getElementById("content");
-  content.classList.remove("content-in");
-  void content.offsetWidth;
-  content.classList.add("content-in");
-}
-
-/* ---------- interactions ---------- */
-
-function markRead(id, el) {
-  if (readSet.has(id)) return;
-  readSet.add(id);
-  persistRead();
-  if (el) el.classList.add("is-read");
-  updateChrome();
-}
-
-document.getElementById("pulse").addEventListener("click", (e) => {
-  const tile = e.target.closest(".tile");
-  if (!tile) return;
-  activeBucket = tile.dataset.bucket;
-  if (searchQuery) { searchQuery = ""; document.getElementById("searchInput").value = ""; document.getElementById("searchClear").hidden = true; }
-  render();
-});
-
-document.querySelector(".filterbar").addEventListener("click", (e) => {
-  const chip = e.target.closest(".chip");
-  if (!chip) return;
-  activeFilter = chip.dataset.filter;
-  render();
-});
-
-document.getElementById("content").addEventListener("click", (e) => {
-  const gchip = e.target.closest(".gchip");
-  if (gchip) {
-    activeGroup[activeBucket] = gchip.dataset.group;
-    render();
-    return;
-  }
-
-  const card = e.target.closest(".card");
-
-  const starEl = e.target.closest("[data-star]");
-  if (starEl) {
-    e.preventDefault();
-    const id = starEl.dataset.star;
-    if (starSet.has(id)) { starSet.delete(id); starEl.classList.remove("on"); starEl.textContent = "☆"; }
-    else { starSet.add(id); starEl.classList.add("on"); starEl.textContent = "★"; burstFrom(starEl, 8); }
-    persistStar();
-    updateChrome();
-    return;
-  }
-
-  // opening the source article counts as reading it
-  if (e.target.closest("a")) {
-    if (card) markRead(card.dataset.id, card);
-    return;
-  }
-
-  if (!card) return;
-
-  // a card with a "why" toggles its drawer; either way, engaging with a card
-  // marks it read so the colour state reflects what you've actually looked at
-  if (card.classList.contains("has-why")) {
-    card.classList.toggle("is-open");
-    if (card.classList.contains("is-open")) markRead(card.dataset.id, card);
-  } else {
-    markRead(card.dataset.id, card);
-  }
-});
-
-const searchInput = document.getElementById("searchInput");
-const searchClear = document.getElementById("searchClear");
-
-searchInput.addEventListener("input", (e) => {
-  searchQuery = e.target.value;
-  searchClear.hidden = !searchQuery;
-  document.getElementById("searchSlash").style.display = searchQuery ? "none" : "";
-  render();
-});
-
-searchClear.addEventListener("click", () => {
-  searchQuery = "";
-  searchInput.value = "";
-  searchClear.hidden = true;
-  document.getElementById("searchSlash").style.display = "";
-  render();
-});
-
-/* ============================================================
-   WEEK COMBOBOX
-   A native <select> renders its popup with OS chrome that ignores
-   our dark palette — grey-on-white and unreadable. This is the same
-   control built from real elements so it obeys the theme, and it can
-   carry per-week volume that a <select> never could.
-   ============================================================ */
-
-const combo = document.getElementById("weekCombo");
-const comboBtn = document.getElementById("weekBtn");
-const comboLabel = document.getElementById("weekBtnLabel");
-const comboPanel = document.getElementById("weekPanel");
-let comboCursor = 0;
-
-function renderWeekPanel() {
-  const max = Math.max(1, ...WEEKS.map(weekTotal));
-  comboPanel.innerHTML = WEEKS.map((w, i) => {
-    const n = weekTotal(w);
-    const width = Math.max(4, Math.round((n / max) * 46));
-    return `<button class="combo-opt" role="option" data-week="${i}" aria-selected="${i === activeWeekIndex}" tabindex="-1">
-      <span>${esc(weekRange(w))}</span>
-      <span class="combo-right">
-        ${i === 0 ? `<span class="combo-now">NOW</span>` : ""}
-        <span class="combo-vol" style="width:${width}px"></span>
-        <span class="combo-count">${n}</span>
-      </span>
-    </button>`;
-  }).join("");
-  comboLabel.textContent = WEEKS[activeWeekIndex] ? weekLabel(WEEKS[activeWeekIndex], activeWeekIndex) : "—";
-}
-
-function moveComboCursor(delta) {
-  const opts = [...comboPanel.querySelectorAll(".combo-opt")];
-  if (!opts.length) return;
-  opts.forEach((o) => o.classList.remove("cursor"));
-  comboCursor = Math.max(0, Math.min(opts.length - 1, comboCursor + delta));
-  opts[comboCursor].classList.add("cursor");
-  opts[comboCursor].scrollIntoView({ block: "nearest" });
-}
-
-function openCombo() {
-  comboPanel.hidden = false;
-  combo.classList.add("open");
-  comboBtn.setAttribute("aria-expanded", "true");
-  comboCursor = activeWeekIndex;
-  moveComboCursor(0);
-}
-
-function closeCombo() {
-  comboPanel.hidden = true;
-  combo.classList.remove("open");
-  comboBtn.setAttribute("aria-expanded", "false");
-}
-
-function selectWeek(index) {
-  activeWeekIndex = index;
-  renderWeekPanel();
-  renderPulse();
-  wasComplete = false; // a different week is a different reading target
-  render();
-}
-
-comboBtn.addEventListener("click", () => {
-  if (comboPanel.hidden) openCombo(); else closeCombo();
-});
-
-comboPanel.addEventListener("click", (e) => {
-  const opt = e.target.closest(".combo-opt");
-  if (!opt) return;
-  selectWeek(Number(opt.dataset.week));
-  closeCombo();
-  comboBtn.focus();
-});
-
-combo.addEventListener("keydown", (e) => {
-  if (comboPanel.hidden) {
-    if (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") { e.preventDefault(); openCombo(); }
-    return;
-  }
-  if (e.key === "ArrowDown") { e.preventDefault(); moveComboCursor(1); }
-  else if (e.key === "ArrowUp") { e.preventDefault(); moveComboCursor(-1); }
-  else if (e.key === "Home") { e.preventDefault(); comboCursor = 0; moveComboCursor(0); }
-  else if (e.key === "End") { e.preventDefault(); comboCursor = WEEKS.length - 1; moveComboCursor(0); }
-  else if (e.key === "Enter" || e.key === " ") { e.preventDefault(); selectWeek(comboCursor); closeCombo(); }
-  else if (e.key === "Escape") { e.preventDefault(); closeCombo(); comboBtn.focus(); }
-});
-
-document.addEventListener("click", (e) => {
-  if (!comboPanel.hidden && !combo.contains(e.target)) closeCombo();
-});
-
-/* ============================================================
-   COMMAND PALETTE (⌘K / Ctrl-K)
-   Buckets, weeks and every headline in the archive in one index.
-   ============================================================ */
-
-const palette = document.getElementById("palette");
-const paletteInput = document.getElementById("paletteInput");
-const paletteResults = document.getElementById("paletteResults");
-let paletteIndex = [];
-let paletteHits = [];
-let paletteCursor = 0;
-
-function itemTitle(item, bucket) {
-  if (bucket === "bucket4") return `${item.person} → ${item.new_company}`;
-  return item.headline || item.ref_item || "";
-}
-
-function buildPaletteIndex() {
-  paletteIndex = [];
-  BUCKETS.forEach((b, i) => {
-    paletteIndex.push({ kind: "tab", text: BUCKET_LONG[b], sub: `press ${i + 1}`, bucket: b });
-  });
-  WEEKS.forEach((w, i) => {
-    paletteIndex.push({ kind: "week", text: weekRange(w), sub: `${weekTotal(w)} items`, weekIndex: i });
-  });
-  WEEKS.forEach((w, wi) => {
-    BUCKETS.forEach((b) => {
-      (w[b] || []).forEach((item) => {
-        paletteIndex.push({
-          kind: BUCKET_LABELS[b],
-          text: itemTitle(item, b),
-          sub: shortDate(item.date) || weekRange(w).split(" – ")[0],
-          weekIndex: wi,
-          bucket: b,
-          id: itemId(item, b),
-        });
-      });
-    });
-  });
-}
-
-function renderPalette(q) {
-  const query = q.trim().toLowerCase();
-  paletteHits = query
-    ? paletteIndex.filter((o) => (o.text + " " + o.kind).toLowerCase().includes(query)).slice(0, 40)
-    : paletteIndex.filter((o) => o.kind === "tab" || o.kind === "week").slice(0, 14);
-  paletteCursor = 0;
-
-  paletteResults.innerHTML = paletteHits.length
-    ? paletteHits.map((o, i) => `
-        <button class="palette-opt ${i === 0 ? "cursor" : ""}" data-i="${i}">
-          <span class="palette-kind">${esc(o.kind === "tab" ? "go" : o.kind === "week" ? "week" : o.kind)}</span>
-          <span class="palette-txt">${esc(o.text)}</span>
-          <span class="palette-sub">${esc(o.sub || "")}</span>
-        </button>`).join("")
-    : `<div class="palette-empty">Nothing matches “${esc(q)}”</div>`;
-}
-
-function movePaletteCursor(delta) {
-  const opts = [...paletteResults.querySelectorAll(".palette-opt")];
-  if (!opts.length) return;
-  opts.forEach((o) => o.classList.remove("cursor"));
-  paletteCursor = (paletteCursor + delta + opts.length) % opts.length;
-  opts[paletteCursor].classList.add("cursor");
-  opts[paletteCursor].scrollIntoView({ block: "nearest" });
-}
-
-function runPalette(hit) {
-  if (!hit) return;
-  closePalette();
-  if (searchQuery) { searchQuery = ""; searchInput.value = ""; searchClear.hidden = true; document.getElementById("searchSlash").style.display = ""; }
-
-  if (hit.kind === "tab") { activeBucket = hit.bucket; render(); return; }
-  if (hit.kind === "week") { selectWeek(hit.weekIndex); return; }
-
-  // a picked headline may live in another week, another bucket, or behind a
-  // filter — clear all three so the card is guaranteed to be on screen
-  activeBucket = hit.bucket;
-  activeFilter = "all";
-  activeWeekIndex = hit.weekIndex;
-  wasComplete = false;
-  renderWeekPanel();
-  renderPulse();
-  render();
-
-  // land the eye on the exact card that was picked
-  const el = [...document.querySelectorAll("#content .card")].find((c) => c.dataset.id === hit.id);
-  if (el) {
-    el.scrollIntoView({ block: "center", behavior: reduceMotion.matches ? "auto" : "smooth" });
-    el.classList.add("is-cursor");
-    cursor = [...document.querySelectorAll("#content .card")].indexOf(el);
-  }
-}
-
-function openPalette() {
-  palette.hidden = false;
-  paletteInput.value = "";
-  renderPalette("");
-  paletteInput.focus();
-}
-
-function closePalette() { palette.hidden = true; }
-
-document.getElementById("paletteBtn").addEventListener("click", openPalette);
-paletteInput.addEventListener("input", (e) => renderPalette(e.target.value));
-paletteResults.addEventListener("click", (e) => {
-  const opt = e.target.closest(".palette-opt");
-  if (opt) runPalette(paletteHits[Number(opt.dataset.i)]);
-});
-palette.addEventListener("click", (e) => { if (e.target === palette) closePalette(); });
-
-paletteInput.addEventListener("keydown", (e) => {
-  if (e.key === "ArrowDown") { e.preventDefault(); movePaletteCursor(1); }
-  else if (e.key === "ArrowUp") { e.preventDefault(); movePaletteCursor(-1); }
-  else if (e.key === "Enter") { e.preventDefault(); runPalette(paletteHits[paletteCursor]); }
-  else if (e.key === "Escape") { e.preventDefault(); closePalette(); }
-});
-
-/* ---------- keyboard ---------- */
-
-const overlay = document.getElementById("shortcutsOverlay");
-document.getElementById("shortcutsBtn").addEventListener("click", () => { overlay.hidden = !overlay.hidden; });
-overlay.addEventListener("click", () => { overlay.hidden = true; });
-document.getElementById("themeToggle").addEventListener("click", toggleTheme);
-
-/* ---------- cursor glow + 3D tilt ---------- */
-// One rAF-throttled listener for the whole page. Cards tilt toward the cursor,
-// a specular highlight tracks it, and a soft accent glow follows the pointer —
-// which together is what sells the depth.
-
-const glow = document.getElementById("cursorGlow");
-let tiltFrame = null;
-let tiltTarget = null;
-let tiltEvent = null;
-
-function applyTilt() {
-  tiltFrame = null;
-  if (!tiltEvent) return;
-
-  if (glow) {
-    glow.style.transform = `translate3d(${tiltEvent.clientX}px, ${tiltEvent.clientY}px, 0)`;
-    glow.classList.add("on");
-  }
-
-  if (!tiltTarget) return;
-  const r = tiltTarget.getBoundingClientRect();
-  const px = (tiltEvent.clientX - r.left) / r.width;
-  const py = (tiltEvent.clientY - r.top) / r.height;
-  const max = 5;
-  tiltTarget.style.setProperty("--mx", (px * 100).toFixed(1) + "%");
-  tiltTarget.style.setProperty("--my", (py * 100).toFixed(1) + "%");
-  tiltTarget.style.transform =
-    `perspective(1100px) rotateX(${((0.5 - py) * max).toFixed(2)}deg) rotateY(${((px - 0.5) * max).toFixed(2)}deg) translateY(-3px)`;
-}
-
-function clearTilt(el) {
-  if (!el) return;
-  el.style.transform = "";
-  el.style.removeProperty("--mx");
-  el.style.removeProperty("--my");
-}
-
-document.addEventListener("mousemove", (e) => {
-  if (reduceMotion.matches) return;
-  const card = e.target.closest("#content .card, .tile");
-  if (card !== tiltTarget) { clearTilt(tiltTarget); tiltTarget = card; }
-  tiltEvent = e;
-  if (!tiltFrame) tiltFrame = requestAnimationFrame(applyTilt);
-}, { passive: true });
-
-document.addEventListener("mouseleave", () => {
-  clearTilt(tiltTarget);
-  tiltTarget = null;
-  if (glow) glow.classList.remove("on");
-}, true);
-
-/* ---------- scroll parallax on the ambient field ---------- */
-
-const aurora = document.querySelector(".aurora");
-let parFrame = null;
-window.addEventListener("scroll", () => {
-  if (reduceMotion.matches || parFrame) return;
-  parFrame = requestAnimationFrame(() => {
-    parFrame = null;
-    aurora.style.setProperty("--par", (-window.scrollY * 0.14).toFixed(1) + "px");
-  });
-}, { passive: true });
-
-function cards() { return [...document.querySelectorAll("#content .card")]; }
-
-function moveCursor(delta) {
-  const list = cards();
-  if (!list.length) return;
-  list.forEach((c) => c.classList.remove("is-cursor"));
-  cursor = Math.max(0, Math.min(list.length - 1, cursor + delta));
-  const el = list[cursor];
-  el.classList.add("is-cursor");
-  el.scrollIntoView({ block: "nearest", behavior: "smooth" });
-}
-
-function cursorCard() { return cards()[cursor] || null; }
-
-document.addEventListener("keydown", (e) => {
-  // ⌘K / Ctrl-K works from anywhere, including inside the search field
-  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-    e.preventDefault();
-    if (palette.hidden) openPalette(); else closePalette();
-    return;
-  }
-  if (e.metaKey || e.ctrlKey || e.altKey) return;
-  if (!palette.hidden) return; // the palette owns its own keys
-
-  const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
-
-  if (e.key === "Escape") {
-    if (!overlay.hidden) { overlay.hidden = true; return; }
-    if (!comboPanel.hidden) { closeCombo(); return; }
-    if (typing) { document.activeElement.blur(); return; }
-    if (searchQuery) { searchClear.click(); return; }
-    cards().forEach((c) => c.classList.remove("is-cursor"));
-    cursor = -1;
-    return;
-  }
-
-  if (typing || !comboPanel.hidden) return;
-
-  if (e.key === "/") { e.preventDefault(); searchInput.focus(); return; }
-  if (e.key === "?") { overlay.hidden = !overlay.hidden; return; }
-  if (e.key === "t") { toggleTheme(); return; }
-  if (e.key === "w") { e.preventDefault(); openCombo(); comboBtn.focus(); return; }
-
-  if (e.key >= "1" && e.key <= String(BUCKETS.length)) {
-    activeBucket = BUCKETS[Number(e.key) - 1];
-    if (searchQuery) searchClear.click(); else render();
-    return;
-  }
-
-  if (e.key === "j") { e.preventDefault(); moveCursor(1); return; }
-  if (e.key === "k") { e.preventDefault(); moveCursor(-1); return; }
-
-  const el = cursorCard();
-  if (!el) return;
-
-  if (e.key === "e") {
-    e.preventDefault();
-    const btn = el.querySelector("[data-expand]");
-    if (btn) { el.classList.toggle("is-open"); if (el.classList.contains("is-open")) markRead(el.dataset.id, el); }
-    return;
-  }
-  if (e.key === "o" || e.key === "Enter") {
-    e.preventDefault();
-    if (el.dataset.url) { window.open(el.dataset.url, "_blank", "noopener"); markRead(el.dataset.id, el); }
-    return;
-  }
-  if (e.key === "s") {
-    e.preventDefault();
-    const btn = el.querySelector("[data-star]");
-    if (btn) btn.click();
-  }
-});
-
-/* ============================================================
-   BOOT
-   The curtain tracks the real fetch. The only added time is a short
-   floor so the sequence doesn't flash out of existence on a warm cache.
-   ============================================================ */
-
-const boot = document.getElementById("boot");
-const bootBar = document.getElementById("bootBar");
-const bootStatus = document.getElementById("bootStatus");
-const BOOT_FLOOR = 1080;
-const bootStart = performance.now();
-
-const BOOT_STEPS = [
-  [0, "establishing signal", 14],
-  [300, "pulling the week", 44],
-  [620, "resolving entities", 72],
-  [880, "ranking the pulse", 90],
-];
-const bootTimers = BOOT_STEPS.map(([at, msg, pct]) =>
-  setTimeout(() => { bootStatus.textContent = msg; bootBar.style.width = pct + "%"; }, at)
-);
-
-function finishBoot(status) {
-  // the staged copy is allowed to play out to the floor; past it, the curtain
-  // lifts the moment the data is in hand
-  const wait = Math.max(0, BOOT_FLOOR - (performance.now() - bootStart));
-  setTimeout(() => {
-    bootTimers.forEach(clearTimeout);
-    bootStatus.textContent = status || "live";
-    bootBar.style.width = "100%";
-    setTimeout(() => boot.classList.add("done"), 300);
-  }, wait);
-}
-
-function showSkeletons(n) {
-  document.getElementById("content").innerHTML =
-    `<div class="grid">${Array.from({ length: n }, () => `
-      <div class="skeleton">
-        <div class="sk-line w80"></div>
-        <div class="sk-line w60"></div>
-        <div class="sk-line w40"></div>
-      </div>`).join("")}</div>`;
-}
-
-applyTheme(store.get("wldd:theme", "dark"));
-showSkeletons(6);
-
-fetch("/data.json")
-  .then((r) => r.json())
-  .then((data) => {
-    WEEKS = data.weeks || [];
-
-    // land on the most recently *updated* week, tie-broken by volume, so a
-    // single stray item in a brand-new week can't hijack the landing view
-    let best = -1, bestStamp = "", bestCount = -1;
-    WEEKS.forEach((w, i) => {
-      const c = weekTotal(w);
-      if (!c) return;
-      const stamp = w.updated_at || "";
-      if (best === -1 || stamp > bestStamp || (stamp === bestStamp && c > bestCount)) {
-        best = i; bestStamp = stamp; bestCount = c;
-      }
-    });
-    if (best >= 0) activeWeekIndex = best;
-
-    if (data.updated_at) {
-      const d = new Date(data.updated_at);
-      document.getElementById("lastUpdated").textContent =
-        "Updated " + d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+    // close the week panel on an outside click
+    if (!t.closest("#weekPanel") && !t.closest("#weekBtn")) {
+      $("#weekPanel").hidden = true;
+      $("#weekBtn").setAttribute("aria-expanded", "false");
     }
-
-    renderWeekPanel();
-    buildPaletteIndex();
-    renderPulse();
-    render();
-    finishBoot();
-  })
-  .catch(() => {
-    document.getElementById("content").innerHTML = `<div class="empty-state">Could not load data.json</div>`;
-    finishBoot("signal lost");
   });
+
+  $("#weekBtn").addEventListener("click", e => {
+    e.stopPropagation();
+    const p = $("#weekPanel");
+    p.hidden = !p.hidden;
+    $("#weekBtn").setAttribute("aria-expanded", String(!p.hidden));
+  });
+
+  $("#themeToggle").addEventListener("click", flipTheme);
+  $("#keysBtn").addEventListener("click", () => openSheet("#keysSheet"));
+  $("#keysClose").addEventListener("click", closeSheets);
+  $("#flagClose").addEventListener("click", closeSheets);
+  $("#scrim").addEventListener("click", closeSheets);
+  $("#paletteBtn").addEventListener("click", () => openSheet("#palette"));
+  $("#trayCopy").addEventListener("click", copyStarred);
+  $("#copyWeek").addEventListener("click", copyWeek);
+  $("#trayClear").addEventListener("click", () => {
+    S.star.clear(); LS.set("wldd:star", []); renderBuckets(); toast("Starred list cleared");
+  });
+
+  $("#flaggedBtn").addEventListener("click", () => {
+    const f = (S.data.weeks[S.wi] || {}).flagged || {};
+    const rows2 = [];
+    Object.keys(f).forEach(k => (f[k] || []).forEach(s => rows2.push({ b:BY_KEY[k] ? BY_KEY[k].short : k, s:s })));
+    $("#flagList").innerHTML = rows2.length
+      ? rows2.map(r => "<p><strong>" + esc(r.b) + "</strong> — " + esc(r.s) + "</p>").join("")
+      : '<p>Everything resolved this week.</p>';
+    openSheet("#flagSheet");
+  });
+
+  $("#clearAll").addEventListener("click", () => {
+    S.q = ""; S.filter = "all"; S.sub = {};
+    $("#searchInput").value = ""; $("#searchClear").hidden = true;
+    $$(".seg").forEach(s => s.classList.toggle("is-on", s.dataset.filter === "all"));
+    renderBuckets();
+  });
+
+  // search
+  let sT;
+  $("#searchInput").addEventListener("input", e => {
+    const v = e.target.value;
+    $("#searchClear").hidden = !v;
+    clearTimeout(sT);
+    sT = setTimeout(() => { S.q = v; S.open = null; S.cursor = -1; renderBuckets(); }, 170);
+  });
+  $("#searchClear").addEventListener("click", () => {
+    $("#searchInput").value = ""; $("#searchClear").hidden = true;
+    S.q = ""; renderBuckets(); $("#searchInput").focus();
+  });
+
+  // palette input
+  $("#palInput").addEventListener("input", e => buildPalette(e.target.value));
+  $("#palInput").addEventListener("keydown", e => {
+    if (e.key === "ArrowDown") { e.preventDefault(); palMove(1); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); palMove(-1); }
+    else if (e.key === "Enter") { e.preventDefault(); palRun(); }
+  });
+
+  // global keys
+  document.addEventListener("keydown", e => {
+    const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+
+    if (e.key === "Escape") {
+      if (!$("#scrim").hidden) { closeSheets(); return; }
+      if (!$("#weekPanel").hidden) { $("#weekPanel").hidden = true; return; }
+      if (S.open) { toggleOpen(S.open); return; }
+      if (typing) { e.target.blur(); return; }
+      return;
+    }
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); openSheet("#palette"); return; }
+    if (typing) return;
+
+    if (e.key === "/") { e.preventDefault(); $("#searchInput").focus(); return; }
+    if (e.key === "ArrowDown" || e.key === "j") { e.preventDefault(); moveCursor(1); return; }
+    if (e.key === "ArrowUp"   || e.key === "k") { e.preventDefault(); moveCursor(-1); return; }
+    if (e.key === "Enter") { const id = cursorId(); if (id) { e.preventDefault(); toggleOpen(id); } return; }
+    if (e.key.toLowerCase() === "c") { const id = cursorId(); if (id) { e.preventDefault(); copyItem(id); flashCopied($("#r-" + id + " .js-copy")); } return; }
+    if (e.key.toLowerCase() === "s") { const id = cursorId(); if (id) { e.preventDefault(); toggleStar(id); } return; }
+    if (e.key === "?") { openSheet("#keysSheet"); return; }
+    if (/^[1-6]$/.test(e.key)) { jump(BUCKETS[Number(e.key) - 1].slug); return; }
+  });
+
+  // sweepReveals runs straight off the event; only the rail is rAF-throttled
+  window.addEventListener("scroll", () => { sweepReveals(); queueScroll(); }, { passive: true });
+  window.addEventListener("resize", () => { sweepReveals(); queueScroll(); }, { passive: true });
+
+  // track the cursor when the user clicks around
+  document.addEventListener("focusin", e => {
+    const r = e.target.closest && e.target.closest(".row");
+    if (r) S.cursor = rows().indexOf(r);
+  });
+}
+
+/* ══════════════════════════ boot ═════════════════════════════════ */
+
+function boot() {
+  const bar = $("#bootBar"), st = $("#bootStatus");
+  const steps = ["establishing signal", "pulling the week", "sorting six buckets", "ready"];
+  let p = 0, i = 0;
+  const tick = setInterval(() => {
+    p = Math.min(96, p + 11 + Math.random() * 14);
+    bar.style.width = p + "%";
+    if (p > (i + 1) * 24 && i < steps.length - 1) st.textContent = steps[++i];
+  }, 130);
+
+  fetch("data.json", { cache:"no-store" })
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => {
+      S.data = d;
+      S.read = new Set(LS.get("wldd:read", []));
+      S.star = new Set(LS.get("wldd:star", []));
+      $("#themeLabel").textContent =
+        document.documentElement.getAttribute("data-theme") === "ink" ? "Light" : "Dark";
+      render();
+      wire();
+      clearInterval(tick);
+      bar.style.width = "100%"; st.textContent = "ready";
+      setTimeout(() => $("#boot").classList.add("gone"), 220);
+    })
+    .catch(err => {
+      clearInterval(tick);
+      st.textContent = "could not reach the feed";
+      bar.style.background = "#ef4674";
+      console.error(err);
+    });
+}
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+else boot();
+
+})();
