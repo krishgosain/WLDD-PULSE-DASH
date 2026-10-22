@@ -323,11 +323,17 @@ html[data-theme="ink"] .tile-5 .tile-bar i{background:var(--ink)}
 .list{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
   gap:var(--s2);padding-bottom:var(--s9);align-items:stretch}
 
+/* every card carries its bucket's flat at full saturation — the colour
+   IS the system, and an outlined box reads as a wireframe of it */
 .row{position:relative;display:flex;flex-direction:column;min-width:0;
-  border:1px solid var(--rule);border-left:3px solid var(--acc);
-  border-radius:var(--r-md);transition:background .2s,color .2s,border-color .2s}
-/* read items drop the accent edge — unread is the thing worth seeing */
-.row.is-read{border-left-color:var(--rule)}
+  background:var(--acc);color:var(--ink);
+  border:1px solid var(--rule-flat);border-radius:var(--r-md);
+  transition:background .2s,color .2s,border-color .2s,transform .2s,box-shadow .2s}
+
+/* read items drain back to the ground, so a bucket visibly empties of
+   colour as you work through it */
+.row.is-read{background:transparent;color:inherit;border-color:var(--rule)}
+
 /* an opened card takes the whole row, so the body is never squeezed */
 .row.is-open{grid-column:1/-1}
 
@@ -346,7 +352,7 @@ html[data-theme="ink"] .tile-5 .tile-bar i{background:var(--ink)}
 .row-date{font-variant-numeric:tabular-nums}
 
 .row-acts{display:flex;align-items:center;gap:6px;flex:none}
-.act{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule);
+.act{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule-flat);
   display:grid;place-items:center;flex:none;transition:background .2s,color .2s,border-color .2s,transform .2s}
 .act svg{pointer-events:none}
 .act:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);transform:scale(1.06)}
@@ -360,18 +366,26 @@ html[data-theme="ink"] .tile-5 .tile-bar i{background:var(--ink)}
 .bucket.seen .row{opacity:1;transform:none;
   transition:opacity .4s var(--d,0s),transform .4s var(--d,0s),background .2s,color .2s}
 
-/* the accent edge on the card carries unread now — a dot floating
-   outside a card has nowhere to sit */
+/* the fill carries unread now — a dot floating outside a card has
+   nowhere to sit */
 .row-dot{display:none}
 .row.is-read .row-h{opacity:.58;font-weight:700}
+.row.is-read .act{border-color:var(--rule)}
 
-/* hover + open fill the row with the bucket's flat — full saturation */
-.row:hover:not(.is-open),.row:focus-within:not(.is-open){background:var(--acc);color:var(--ink)}
+/* The card is already the flat, so hover cannot say it again. It lifts
+   onto a hard zero-blur shadow instead — the same move the tiles make —
+   and brings a read card's colour back while you are on it. */
+.row:hover,.row:focus-within{background:var(--acc);color:var(--ink);
+  border-color:var(--rule-flat);box-shadow:6px 6px 0 var(--figure)}
 .row:hover .row-meta,.row:focus-within .row-meta{opacity:.78}
+.row:hover .row-h,.row:focus-within .row-h{opacity:1}
 .row:hover .act,.row:focus-within .act{border-color:var(--rule-flat)}
-.row:hover .row-h{opacity:1}
+/* outranks the reveal rule's transform:none, which is set on .bucket.seen .row */
+.bucket.seen .row:hover:not(.is-open),
+.bucket.seen .row:focus-within:not(.is-open){transform:translate(-3px,-3px)}
 
-.row.is-open{background:var(--acc);color:var(--ink)}
+.row.is-open{background:var(--acc);color:var(--ink);border-color:var(--rule-flat);
+  box-shadow:var(--sh-slab)}
 .row.is-open .row-h{opacity:1;font-weight:800}
 .row.is-open .act{border-color:var(--rule-flat)}
 
@@ -396,9 +410,14 @@ a.ent:hover{background:var(--ink);color:var(--white)}
 
 /* strategic insights live on the ink band */
 .list-ink{color:var(--paper)}
-.list-ink .row{border-color:var(--rule-dark);border-left-color:var(--acc)}
-.list-ink .row.is-read{border-left-color:var(--rule-dark)}
-.list-ink .act{border-color:var(--rule-dark)}
+/* on the ink ground the cards take their accent flat; a read one drains
+   to the ink itself and its hairline has to go light rather than dark */
+.list-ink .row{border-color:var(--rule-flat)}
+.list-ink .row.is-read{border-color:var(--rule-dark)}
+.list-ink .row.is-read .act{border-color:var(--rule-dark)}
+.list-ink .row:hover,.list-ink .row:focus-within,.list-ink .row.is-open{border-color:var(--rule-flat)}
+.list-ink .row:hover .act,.list-ink .row:focus-within .act,
+.list-ink .row.is-open .act{border-color:var(--rule-flat)}
 /* the empty-state line is a grid child like any other */
 .list-empty{grid-column:1/-1;padding:var(--s6) 0;opacity:.55}
 /* align-self, or the flex column stretches it to the full card width */
