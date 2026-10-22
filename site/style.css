@@ -45,6 +45,7 @@
 
   --mast-h:74px;
   --ctrl-h:66px;
+  --rail-h:46px;
 }
 
 html[data-theme="ink"]{
@@ -57,7 +58,9 @@ html[data-theme="ink"]{
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--mast-h) + var(--ctrl-h) + 8px);-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--mast-h) + var(--rail-h) + var(--ctrl-h) + 8px);
+  -webkit-text-size-adjust:100%}
 
 body{
   margin:0;
@@ -178,8 +181,11 @@ kbd{font:inherit;font-size:14px;font-weight:800;border:1px solid currentColor;bo
 /* ══════════════════════════ hero ══════════════════════════════════ */
 .hero{padding-top:var(--s8);padding-bottom:var(--s9)}
 .hero-meta{text-align:right}
-.hero-h{font-size:clamp(60px,10.5vw,158px);line-height:.79;letter-spacing:-.055em;
-  font-weight:800;margin:var(--s4) 0 0;text-align:center;--dot:var(--pink)}
+/* .86 not .79 — Darker Grotesque's digits sit tall, and a tighter line box
+   shaves the tops off numerals at the display sizes. */
+.hero-h{font-size:clamp(60px,10.5vw,158px);line-height:.86;letter-spacing:-.055em;
+  font-weight:800;margin:var(--s4) 0 0;text-align:center;--dot:var(--pink);
+  padding-bottom:.06em}
 .hero-foot{margin-top:var(--s9);display:grid;grid-template-columns:1fr auto 1fr;
   align-items:center;gap:7%}
 .hero-foot .copy{max-width:34ch}
@@ -196,7 +202,7 @@ kbd{font:inherit;font-size:14px;font-weight:800;border:1px solid currentColor;bo
   color:var(--ink);display:flex;flex-direction:column;gap:2px;min-height:146px;
   transition:transform .2s,box-shadow .2s}
 .tile:hover,.tile:focus-visible{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--figure)}
-.tile-n{font-size:clamp(40px,3.6vw,62px);font-weight:900;letter-spacing:-.045em;line-height:.9;
+.tile-n{font-size:clamp(40px,3.6vw,62px);font-weight:900;letter-spacing:-.045em;line-height:1.02;
   font-variant-numeric:tabular-nums}
 .tile-row{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
 .tile-d{font-size:15px;font-weight:800;letter-spacing:.3px;opacity:.72;white-space:nowrap;
@@ -208,11 +214,36 @@ kbd{font:inherit;font-size:14px;font-weight:800;border:1px solid currentColor;bo
 .tile-3{background:var(--blue)}   .tile-4{background:var(--green)}
 .tile-6{background:var(--pink)}   .tile-5{background:var(--ink);color:var(--paper)}
 .tile-5 .tile-bar{background:var(--rule-dark)} .tile-5 .tile-bar i{background:var(--paper)}
+/* in dark the ink tile would be ink on ink — invert it so it still reads as a card */
+html[data-theme="ink"] .tile-5{background:var(--paper);color:var(--ink)}
+html[data-theme="ink"] .tile-5 .tile-bar{background:var(--rule-flat)}
+html[data-theme="ink"] .tile-5 .tile-bar i{background:var(--ink)}
 
 /* ══════════════════════════ controls ══════════════════════════════ */
 .controls{position:sticky;top:var(--mast-h);z-index:80;background:var(--ground);
   border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .controls-in{height:var(--ctrl-h);display:flex;align-items:center;gap:var(--s4)}
+
+/* ── the bucket rail ──────────────────────────────────────────────
+   Six buckets, always one tap away, however deep you have scrolled.
+   It carries each bucket's own flat, and lights up the one you are
+   standing in — so it answers "where am I" and "take me there" with
+   the same control. */
+.brail-wrap{border-bottom:1px solid var(--rule)}
+.brail{height:var(--rail-h);display:flex;align-items:center;gap:6px;
+  overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.brail::-webkit-scrollbar{display:none}
+.bnav{flex:none;display:inline-flex;align-items:baseline;gap:7px;
+  border:1px solid var(--rule);border-radius:var(--r-pill);padding:5px 14px 6px;
+  font-size:14px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;
+  line-height:1.3;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.bnav-n{font-variant-numeric:tabular-nums;opacity:.6}
+.bnav:hover,.bnav.is-here{background:var(--bc);border-color:var(--bc);color:var(--ink)}
+.bnav:hover .bnav-n,.bnav.is-here .bnav-n{opacity:.75}
+/* the ink bucket inverts rather than taking a flat */
+.bnav-5:hover,.bnav-5.is-here{color:var(--ground)}
+.bnav-1{--bc:var(--yellow)} .bnav-2{--bc:var(--purple)} .bnav-3{--bc:var(--blue)}
+.bnav-4{--bc:var(--green)}  .bnav-6{--bc:var(--pink)}   .bnav-5{--bc:var(--figure)}
 
 .searchbox{position:relative;flex:1;min-width:140px;display:flex;align-items:center}
 .s-ico{position:absolute;left:16px;opacity:.55;pointer-events:none}
@@ -240,12 +271,15 @@ kbd{font:inherit;font-size:14px;font-weight:800;border:1px solid currentColor;bo
 .prog-rule i{display:block;height:100%;width:0;background:var(--green);transition:width .4s}
 
 /* ══════════════════════════ bucket bands ══════════════════════════ */
-.bucket{scroll-margin-top:calc(var(--mast-h) + var(--ctrl-h))}
-.band-head{padding:var(--s9) 0 var(--s8);position:relative;overflow:hidden}
+/* the offset lives on html's scroll-padding-top alone — setting it here too
+   stacks with it and drops the jump a header-height too far down */
+.bucket{scroll-margin-top:0}
+.band-head{padding:var(--s8) 0 var(--s7);position:relative;overflow:hidden}
 .band-head>.wrap{position:relative;z-index:1}
-/* the bucket's number, drawn as an outline and cropped by the band edge */
-.ghost{position:absolute;right:-1.5%;top:50%;transform:translateY(-50%);
-  font-size:clamp(190px,23vw,330px);font-weight:900;letter-spacing:-.07em;line-height:.72;
+/* The bucket's number, drawn as an outline. It sits fully inside the band —
+   cropping it at the edge read as a rendering fault rather than as a crop. */
+.ghost{position:absolute;right:4%;top:50%;transform:translateY(-50%);
+  font-size:clamp(130px,14vw,230px);font-weight:900;letter-spacing:-.05em;line-height:1;
   color:transparent;-webkit-text-stroke:2px var(--ink);pointer-events:none;
   -webkit-user-select:none;user-select:none;z-index:0}
 .band-ink .ghost{-webkit-text-stroke-color:var(--paper)}
@@ -275,33 +309,44 @@ kbd{font:inherit;font-size:14px;font-weight:800;border:1px solid currentColor;bo
 .chip-n{opacity:.6;margin-left:4px;font-variant-numeric:tabular-nums}
 
 /* group rules inside a bucket (India / Global, categories) */
-.grp{display:flex;align-items:baseline;gap:var(--s3);padding:var(--s7) 0 var(--s3);
-  border-top:3px solid var(--acc);margin-top:var(--s6)}
+.grp{grid-column:1/-1;display:flex;align-items:baseline;gap:var(--s3);padding:var(--s6) 0 var(--s2);
+  border-top:3px solid var(--acc);margin-top:var(--s5)}
 .grp:first-child{margin-top:0}
 .grp h3{font-size:30px;font-weight:800;letter-spacing:-.02em}
 .grp .eyebrow{opacity:.6}
 
-/* ══════════════════════════ item rows ════════════════════════════ */
-.list{padding-bottom:var(--s9)}
+/* ══════════════════════════ item cards ═══════════════════════════
+   Two to three headlines across rather than one per line. A bucket of
+   eighty items is a third of the scroll it was, which is the whole
+   point: the further down you are, the less willing you are to go on.
+   Opening a card gives it the full width of the row it sits in.      */
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+  gap:var(--s2);padding-bottom:var(--s9);align-items:stretch}
 
-.row{position:relative;display:block;width:100%;border-top:1px solid var(--rule);
-  transition:background .2s,color .2s}
-.row:last-child{border-bottom:1px solid var(--rule)}
+.row{position:relative;display:flex;flex-direction:column;min-width:0;
+  border:1px solid var(--rule);border-left:3px solid var(--acc);
+  border-radius:var(--r-md);transition:background .2s,color .2s,border-color .2s}
+/* read items drop the accent edge — unread is the thing worth seeing */
+.row.is-read{border-left-color:var(--rule)}
+/* an opened card takes the whole row, so the body is never squeezed */
+.row.is-open{grid-column:1/-1}
 
-.row-head{display:grid;grid-template-columns:1fr auto;gap:var(--s4);align-items:start;
-  width:100%;padding:var(--s4) var(--s4) var(--s4) 0;cursor:pointer}
-.row-main{min-width:0}
+.row-head{display:grid;grid-template-columns:1fr auto;gap:var(--s3);align-items:start;
+  width:100%;flex:1;padding:var(--s3);cursor:pointer}
+.row-main{min-width:0;display:flex;flex-direction:column;height:100%}
 
 /* THE HEADLINE — the only thing shown at rest */
-.row-h{font-size:clamp(25px,2.1vw,33px);line-height:1.08;font-weight:800;letter-spacing:-.022em;
-  margin:0;transition:color .2s}
-.row-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:11px;
-  font-size:14px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;opacity:.62}
+.row-h{font-size:clamp(23px,1.55vw,28px);line-height:1.12;font-weight:800;letter-spacing:-.022em;
+  margin:0;transition:color .2s;overflow-wrap:anywhere}
+.row.is-open .row-h{font-size:clamp(26px,2.1vw,33px)}
+/* meta sits on the floor of the card so a row of cards lines up */
+.row-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:auto;padding-top:14px;
+  font-size:13px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;opacity:.62}
 .row-meta .sep{opacity:.5}
 .row-date{font-variant-numeric:tabular-nums}
 
-.row-acts{display:flex;align-items:center;gap:7px;flex:none;padding-top:3px}
-.act{width:38px;height:38px;border-radius:50%;border:1px solid var(--rule);
+.row-acts{display:flex;align-items:center;gap:6px;flex:none}
+.act{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule);
   display:grid;place-items:center;flex:none;transition:background .2s,color .2s,border-color .2s,transform .2s}
 .act svg{pointer-events:none}
 .act:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);transform:scale(1.06)}
@@ -315,9 +360,9 @@ kbd{font:inherit;font-size:14px;font-weight:800;border:1px solid currentColor;bo
 .bucket.seen .row{opacity:1;transform:none;
   transition:opacity .4s var(--d,0s),transform .4s var(--d,0s),background .2s,color .2s}
 
-.row-dot{position:absolute;left:-18px;top:calc(var(--s4) + 11px);width:8px;height:8px;
-  border-radius:50%;background:var(--acc)}
-.row.is-read .row-dot{display:none}
+/* the accent edge on the card carries unread now — a dot floating
+   outside a card has nowhere to sit */
+.row-dot{display:none}
 .row.is-read .row-h{opacity:.58;font-weight:700}
 
 /* hover + open fill the row with the bucket's flat — full saturation */
@@ -331,7 +376,7 @@ kbd{font:inherit;font-size:14px;font-weight:800;border:1px solid currentColor;bo
 .row.is-open .act{border-color:var(--rule-flat)}
 
 /* ── expanded body ───────────────────────────────────────────────── */
-.row-body{display:none;padding:0 var(--s4) var(--s7) 0;max-width:72ch}
+.row-body{display:none;padding:0 var(--s3) var(--s6);max-width:72ch}
 .row.is-open .row-body{display:block}
 .row-body .desc{font-size:24px;line-height:1.3;margin-bottom:var(--s5)}
 .why{border-top:2px solid var(--ink);padding-top:var(--s3)}
@@ -351,12 +396,15 @@ a.ent:hover{background:var(--ink);color:var(--white)}
 
 /* strategic insights live on the ink band */
 .list-ink{color:var(--paper)}
-.list-ink .row{border-color:var(--rule-dark)}
-.list-ink .row:last-child{border-bottom-color:var(--rule-dark)}
+.list-ink .row{border-color:var(--rule-dark);border-left-color:var(--acc)}
+.list-ink .row.is-read{border-left-color:var(--rule-dark)}
 .list-ink .act{border-color:var(--rule-dark)}
-.fit{display:inline-block;background:var(--paper);color:var(--ink);border-radius:var(--r-sm);
-  padding:7px 12px 8px;font-size:14px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;
-  line-height:1;margin-bottom:12px}
+/* the empty-state line is a grid child like any other */
+.list-empty{grid-column:1/-1;padding:var(--s6) 0;opacity:.55}
+/* align-self, or the flex column stretches it to the full card width */
+.fit{display:inline-block;align-self:flex-start;background:var(--paper);color:var(--ink);
+  border-radius:var(--r-sm);padding:7px 12px 8px;font-size:13px;font-weight:800;letter-spacing:1.1px;
+  text-transform:uppercase;line-height:1;margin-bottom:12px}
 .row.is-open .fit,.row:hover .fit{background:var(--ink);color:var(--paper)}
 .ref{font-size:15px;font-weight:800;opacity:.7;margin-top:var(--s4);letter-spacing:.3px}
 
@@ -485,11 +533,12 @@ a.ent:hover{background:var(--ink);color:var(--white)}
   #paletteBtn,#keysBtn{display:none}
   .ghost{display:none}
   .band-head{padding:var(--s7) 0 var(--s6)}
-  .row-head{padding:var(--s3) 0}
-  .row-h{font-size:24px}
-  .row-acts{flex-direction:column}
-  .row-dot{left:-13px}
-  .row-body{padding-right:0}
+  /* one card per row below this — two would be unreadable */
+  .list{grid-template-columns:1fr}
+  .row-head{padding:var(--s3)}
+  .row-h{font-size:23px}
+  .row.is-open .row-h{font-size:25px}
+  .bnav{font-size:13px;padding:5px 12px 6px}
   .copy,.row-body .desc,.why p{font-size:21px}
   .tray{left:var(--s3);right:var(--s3);bottom:var(--s3);justify-content:space-between}
   .toast{left:var(--s3);right:var(--s3);bottom:var(--s3);transform:rotate(2deg);text-align:center;font-size:22px}

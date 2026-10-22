@@ -189,6 +189,13 @@ function renderChrome() {
       '<span class="tile-row"><span class="tile-n" data-n="' + list.length + '">' + list.length + "</span>" + delta + "</span>" +
       '<span class="tile-bar"><i style="width:' + pct + '%"></i></span></a>';
   }).join("");
+
+  // the sticky bucket rail — same six, reachable from any scroll depth
+  $("#brail").innerHTML = BUCKETS.map(b =>
+    '<a class="bnav bnav-' + b.key.replace("bucket", "") + '" href="#b-' + b.slug +
+    '" data-slug="' + b.slug + '"><span>' + esc(b.short) + "</span>" +
+    '<span class="bnav-n">' + counts[b.key] + "</span></a>").join("");
+
   countUp();
 }
 
@@ -339,7 +346,7 @@ function renderBuckets() {
       listHTML = list.map(rowHTML).join("");
     }
 
-    if (!list.length) listHTML = '<p class="row-meta" style="padding:30px 0;opacity:.55">Nothing here under the current filters.</p>';
+    if (!list.length) listHTML = '<p class="row-meta list-empty">Nothing here under the current filters.</p>';
 
     return '<section class="bucket reveal" id="b-' + b.slug + '" data-bk="' + b.key + '" style="--acc:var(--' + (b.acc || b.band) + ');--dot:var(--' + b.dot + ')">' +
       '<div class="band band-' + b.band + ' band-head">' +
@@ -518,6 +525,8 @@ function toggleOpen(id) {
     el.classList.add("is-open");
     const b = $(".row-main", el); if (b) b.setAttribute("aria-expanded", "true");
     markRead(id, true);
+    // opening makes the card span the row, which moves it — follow it
+    requestAnimationFrame(() => el.scrollIntoView({ block:"nearest", behavior:"smooth" }));
   }
 }
 
@@ -624,9 +633,13 @@ function onScroll() {
   const max = doc.scrollHeight - doc.clientHeight;
   bar.style.width = (max > 0 ? Math.min(1, doc.scrollTop / max) * 100 : 0) + "%";
 
+  // measure the whole sticky stack, not just the masthead — the rail sits under it
   const mastH = parseInt(getComputedStyle(doc).getPropertyValue("--mast-h"), 10) || 74;
+  const ctrl  = $("#controls");
+  const stuck = mastH + (ctrl ? ctrl.offsetHeight : 0) + 12;
+
   let cur = null;
-  $$(".bucket").forEach(sec => { if (sec.getBoundingClientRect().top <= mastH + 12) cur = sec; });
+  $$(".bucket").forEach(sec => { if (sec.getBoundingClientRect().top <= stuck) cur = sec; });
 
   const chip = $("#nowChip"), stamp = $("#stamp"), dot = $("#nowChip i");
   const b = cur ? BY_KEY[cur.dataset.bk] : null;
@@ -643,6 +656,14 @@ function onScroll() {
   } else {
     chip.classList.remove("on"); stamp.classList.remove("off");
   }
+
+  // light the rail on the bucket you are standing in
+  const here = b ? b.slug : null;
+  $$(".bnav").forEach(el => {
+    const on = el.dataset.slug === here;
+    el.classList.toggle("is-here", on);
+    if (on) el.setAttribute("aria-current", "true"); else el.removeAttribute("aria-current");
+  });
 }
 
 function queueScroll() {
@@ -715,6 +736,9 @@ function wire() {
 
     const tile = t.closest(".tile");
     if (tile) { e.preventDefault(); jump(tile.dataset.slug); return; }
+
+    const bnav = t.closest(".bnav");
+    if (bnav) { e.preventDefault(); jump(bnav.dataset.slug); return; }
 
     // close the week panel on an outside click
     if (!t.closest("#weekPanel") && !t.closest("#weekBtn")) {
