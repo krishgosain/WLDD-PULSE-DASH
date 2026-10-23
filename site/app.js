@@ -359,7 +359,7 @@ function renderBuckets() {
           '<button class="tlink js-copy-sec" data-bk="' + b.key + '">Copy this section <span aria-hidden="true">⧉</span></button>' +
         "</div>" +
       "</div></div>" +
-      '<div class="wrap">' + chips +
+      '<div class="wrap bucket-body">' + chips +
         '<div class="list' + (b.band === "ink" ? " list-ink" : "") + '">' + listHTML + "</div>" +
       "</div>" +
       (b.band === "ink" ? "" : "") +
@@ -598,9 +598,69 @@ function palRun() {
   if (x) { closeSheets(); x.go(); }
 }
 
+/* ── travelling between buckets ───────────────────────────────────
+   A smooth scroll across five sections is a long slam the eye has to
+   sit through. The curtain covers the travel instead: it sweeps up in
+   the destination's flat, the page jumps behind it, and it lifts off
+   the top while that bucket's cards deal themselves in.             */
+let warping = false;
+
+/* Layout position, walked up the offsetParent chain — NOT a bounding rect.
+   An unrevealed section still carries .reveal's translateY(25px), so a rect
+   would land the jump 25px low and then leave it there once it settles. */
+function restAt(el) {
+  const pad = parseInt(getComputedStyle(document.documentElement).scrollPaddingTop, 10) || 190;
+  let y = 0;
+  for (let n = el; n; n = n.offsetParent) y += n.offsetTop;
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  return Math.max(0, Math.min(max, Math.round(y - pad)));
+}
+
 function jump(slug) {
   const el = $("#b-" + slug);
-  if (el) el.scrollIntoView({ behavior:"smooth", block:"start" });
+  if (!el) return;
+  const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const to = restAt(el);
+
+  // already there, or asked not to be animated at — just go
+  if (reduce || Math.abs(to - window.scrollY) < 140) {
+    window.scrollTo({ top:to, behavior: reduce ? "auto" : "smooth" });
+    return;
+  }
+  warpTo(slug, to);
+}
+
+function warpTo(slug, to) {
+  if (warping) return;
+  const b = BUCKETS.find(x => x.slug === slug);
+  const w = $("#warp");
+  if (!b || !w) { window.scrollTo({ top:to, behavior:"smooth" }); return; }
+
+  warping = true;
+  w.style.setProperty("--warp", "var(--" + (b.acc || b.band) + ")");
+  $("#warpN").textContent = b.n;
+  $("#warpT").innerHTML = b.title + "<i>.</i>";
+  w.hidden = false;
+  w.classList.remove("cover", "clear");
+  void w.offsetWidth;                       // commit the start state
+  w.classList.add("cover");
+
+  setTimeout(() => {
+    // "instant", not "auto" — auto defers to html{scroll-behavior:smooth},
+    // which would carry on scrolling in full view after the curtain lifts
+    window.scrollTo({ top:to, behavior:"instant" });
+    // replay the card stagger so the bucket deals itself in behind the curtain
+    const sec = $("#b-" + slug);
+    if (sec) { sec.classList.remove("seen"); void sec.offsetWidth; sec.classList.add("seen"); }
+    sweepReveals();
+    onScroll();
+    w.classList.add("clear");
+    setTimeout(() => {
+      w.hidden = true;
+      w.classList.remove("cover", "clear");
+      warping = false;
+    }, 520);
+  }, 430);
 }
 
 function setWeek(i) {
