@@ -3,6 +3,3100 @@
     {
       "bucket1": [
         {
+          "industry": "Media, Entertainment & Sports",
+          "headline": "Spotify walks into the Mishra family's Diwali prep",
+          "description": "Spotify releases a Diwali film made with Fever Films, set inside one family's festival preparations.",
+          "why_important": "Audio platforms have to buy fame through video in India. Spotify spending on a narrative festive film rather than playlist marketing is an admission that the category is won on television terms.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23122/spotify-enters-mishra-familys-diwali-prep-in-new-film-by-fever-films",
+          "date": "2026-10-31",
+          "companies": [
+            {
+              "name": "Spotify",
+              "url": "https://www.spotify.com"
+            },
+            {
+              "name": "Fever Films",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Media, Entertainment & Sports",
+          "headline": "ZEE Q2 revenue rises 13% as ZEE5 reaches profitability on sport",
+          "description": "ZEE Entertainment reports 13% Q2 FY27 revenue growth with ZEE5 hitting profitability on the back of a sports surge.",
+          "why_important": "An Indian streamer reaching profitability at all is rare, and doing it through sport rather than drama confirms where the subscription willingness actually sits.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23121/zee-entertainment-q2-fy27-revenue-rises-13-as-zee5-hits-profitability-on-sports-surge",
+          "date": "2026-10-31",
+          "companies": [
+            {
+              "name": "Zee Entertainment Enterprises",
+              "url": "https://www.zee.com"
+            },
+            {
+              "name": "ZEE5",
+              "url": "https://www.zee5.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Media, Entertainment & Sports",
+          "headline": "KRAFTON puts a PUBG live-action series into development at Netflix",
+          "description": "KRAFTON announces a PUBG live-action series in development at Netflix.",
+          "why_important": "Game IP moving into premium streaming drama is how a title extends beyond its player base. For BGMI's Indian audience it turns a game into a cultural property.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23128/krafton-announces-pubg-live-action-series-in-development-at-netflix",
+          "date": "2026-10-31",
+          "companies": [
+            {
+              "name": "KRAFTON",
+              "url": "https://www.krafton.com"
+            },
+            {
+              "name": "Netflix",
+              "url": "https://www.netflix.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Beauty & Personal Care",
+          "headline": "Himalaya BabyCare builds a campaign on a baby's first winter",
+          "description": "Himalaya BabyCare launches 'pehle winter ka pehla layer', centred on an infant's first cold season.",
+          "why_important": "Baby care is bought on anxiety and seasonality at once. Owning the first-winter moment gives Himalaya an annual, repeatable occasion rather than a one-off burst.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23114/himalaya-babycare-highlights-babys-first-winter-with-pehle-winter-ka-pehla-layer",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Himalaya Wellness",
+              "url": "https://himalayawellness.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Beauty & Personal Care",
+          "headline": "Deconstruct takes on skincare orthodoxy with 'Oily Skin Tested'",
+          "description": "Deconstruct launches 'Oily Skin Tested', challenging standard skincare claims for oily skin types.",
+          "why_important": "Ingredient-led D2C skincare is competing on testing protocol rather than formulation claims. That is a credibility play legacy brands find hard to answer quickly.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23108/deconstruct-challenges-skincare-norms-with-oily-skin-tested-campaign",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Deconstruct",
+              "url": "https://deconstructskincare.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Auto & Mobility",
+          "headline": "Hyundai turns a newspaper ad into four pages of audio",
+          "description": "Hyundai's BAYON runs a four-page print innovation carrying an audio execution.",
+          "why_important": "Print innovation at this scale is rare and expensive, and it works because it is unmissable. For a launch model fighting for share of voice in a crowded festive window, that is the point.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23106/hyundai-bayon-reimagines-newspaper-ads-with-four-page-audio-innovation",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Hyundai Motor India",
+              "url": "https://www.hyundai.com/in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "E-commerce & Quick Commerce",
+          "headline": "Zomato casts Saif Ali Khan for 'Have a WOW Diwali'",
+          "description": "Zomato launches its 'Have a WOW Diwali' festive campaign starring Saif Ali Khan.",
+          "why_important": "Food delivery's festive quarter is its highest-order-value window of the year. Celebrity-led brand work rather than discount messaging says Zomato is defending margin, not buying volume.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23105/zomato-unveils-have-a-wow-diwali-campaign-starring-saif-ali-khan",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Zomato",
+              "url": "https://www.zomato.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Saif Ali Khan",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Rajnigandha builds its Diwali on rediscovered traditions",
+          "description": "Rajnigandha runs a Diwali campaign about returning to festive rituals.",
+          "why_important": "A category with severe advertising restrictions leaning entirely on cultural nostalgia — it is surrogate positioning done through occasion rather than product.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23096/rajnigandha-celebrates-rediscovering-festive-traditions-this-diwali",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Rajnigandha",
+              "url": "https://www.dspgroup.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "TV ad volumes fall 6% over January to September",
+          "description": "Television advertising volumes decline 6% across January-September 2026, with the rate of contraction moderating.",
+          "why_important": "Three quarters of decline with no recovery in the festive run-up. Every broadcaster's 2027 rate card conversation starts from this number.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23095/tv-advertising-volumes-decline-6-in-jan-sep-2026-as-market-contraction-moderates",
+          "date": "2026-10-30",
+          "companies": [],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "MillD takes the protein affordability argument outdoors",
+          "description": "MillD runs an out-of-home campaign on the cost of protein.",
+          "why_important": "Protein has become a mass-market Indian conversation rather than a gym one, and price is the battleground. OOH is where that fight gets public.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23080/milld-takes-protein-affordability-debate-to-the-streets-with-new-ooh-campaign",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "MillD",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Healthcare & Pharma",
+          "headline": "Dulcoflex Liquid signs Pankaj Tripathi for #1SmartSolution",
+          "description": "New Dulcoflex Liquid launches its #1SmartSolution campaign featuring Pankaj Tripathi.",
+          "why_important": "OTC digestive health is a low-involvement category where a trusted everyman face does more than any claim. Tripathi is the most reliable version of that in Indian advertising right now.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23061/new-dulcoflex-liquid-rolls-out-1smartsolution-campaign-with-pankaj-tripathi",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Dulcoflex",
+              "url": "https://www.sanofi.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Pankaj Tripathi",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Tech, Telecom & Electronics",
+          "headline": "Lenovo turns everyday moments into a stage",
+          "description": "Lenovo launches a campaign framing ordinary moments as opportunities.",
+          "why_important": "Lenovo's second India campaign inside a fortnight. Sustained pressure in the festive laptop window is how PC brands defend against a market that only buys on discount.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23113/lenovo-turns-everyday-moments-into-a-stage-for-opportunity-in-its-latest-campaign",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Lenovo",
+              "url": "https://www.lenovo.com/in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Energy & Industrial",
+          "headline": "Gulf Oil marks 125 years with MS Dhoni and 'Born to be Behad'",
+          "description": "Gulf Oil celebrates its 125th anniversary with a Dhoni-led 'Born to be Behad' campaign, with Smriti Mandhana fronting a 'Gen Behad' push.",
+          "why_important": "Lubricants are bought by mechanics, not drivers, so consumer advertising here is about building pull at the garage counter. Pairing Dhoni with Mandhana widens that to a second generation.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23099/gulf-oil-celebrates-125-years-with-ms-dhoni-led-born-to-be-behad-campaign",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Gulf Oil",
+              "url": "https://www.gulfoilindia.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "MS Dhoni",
+              "linkedin_url": null
+            },
+            {
+              "name": "Smriti Mandhana",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Beauty & Personal Care",
+          "headline": "Dabur Almond Hair Oil roots its Diwali film in Maharashtra",
+          "description": "Dabur Almond Hair Oil releases a Diwali film grounded in Maharashtrian tradition.",
+          "why_important": "Region-specific festive creative from a national brand is a media efficiency play — it buys far higher salience in one state than a generic national film would.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23084/dabur-almond-hair-oil-celebrates-new-beginnings-with-diwali-film-rooted-in-maharashtras-tradition",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Dabur",
+              "url": "https://www.dabur.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Sorry Sugar makes a zero-added-sugar Diwali film",
+          "description": "Sorry Sugar releases a Diwali film for its zero-added-sugar range.",
+          "why_important": "Attacking mithai at the moment of maximum consumption is aggressive positioning. Sugar-free festive is a genuinely new sub-category and whoever defines it now owns it.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23074/sorry-sugar-reimagines-festive-indulgence-with-zero-added-sugar-diwali-film",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Sorry Sugar",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "Cannes Lions 2027 will spill out of the Palais into the city",
+          "description": "Cannes Lions announces a city-wide creative showcase and a new festival passport for 2027.",
+          "why_important": "The festival expanding its footprint is a response to falling delegate numbers and rising costs. For Indian agencies it changes the maths on who can justify attending.",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/cannes-lions-2027-to-expand-beyond-palais-with-city-wide-creative-showcase-new-festival-passport/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Cannes Lions",
+              "url": "https://www.canneslions.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "Leo India's Aryaman Singh takes the India title at the One Show AI challenge",
+          "description": "Aryaman Singh of Leo India wins the India title at The One Show x Google AI Creative Challenge.",
+          "why_important": "AI craft competitions are becoming a recruitment signal. The people winning these now are the ones agencies will be bidding for in eighteen months.",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/leo-indias-aryaman-singh-bags-india-title-at-the-one-show-x-google-ai-creative-challenge/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Leo",
+              "url": "https://www.leo.com"
+            },
+            {
+              "name": "Google",
+              "url": "https://www.google.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Aryaman Singh",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Media, Entertainment & Sports",
+          "headline": "Network18 grows Q2 revenue 9.4% against a weak ad market",
+          "description": "Network18 posts 9.4% Q2 revenue growth despite broader advertising weakness.",
+          "why_important": "Outgrowing a contracting TV ad market means share gain, not recovery. It tells you the decline is concentrated in the smaller networks.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23091/network18-beats-the-ad-market-blues-with-94-q2-revenue-growth",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Network18",
+              "url": "https://www.network18online.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "WPP India returns to growth at 2.9% while APAC declines",
+          "description": "WPP India posts 2.9% growth in Q3 2026, outpacing a broader APAC decline, as group revenue rises just 0.5%.",
+          "why_important": "India growing while the group barely moves is the clearest argument Indian WPP leadership has for investment. It also makes Indian talent more expensive to keep.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23050/wpp-india-returns-to-29-growth-in-q3-2026-outpacing-broader-apac-decline",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "WPP",
+              "url": "https://www.wpp.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Real Estate & Building Materials",
+          "headline": "Shalimar Paints publishes a 'Colors of India' book",
+          "description": "Shalimar Paints launches a book on colour drawn from Indian heritage.",
+          "why_important": "Branded publishing is slow, expensive content that buys cultural authority a shade card cannot. Paint brands are competing on heritage because the product has reached parity.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23035/shalimar-paints-launches-colors-of-india-book-inspired-by-the-nations-heritage",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Shalimar Paints",
+              "url": "https://www.shalimarpaints.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "AAAI launches an INDIE Council for independent agencies",
+          "description": "The AAAI sets up an INDIE Council for independent agencies, with Tanya Goyal named to lead it.",
+          "why_important": "Independents have grown fast but had no collective voice on pitch conduct or payment terms. A formal council changes who they can negotiate against.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23026/aaai-launches-indie-council-for-independent-agencies",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "AAAI",
+              "url": "https://www.aaaindia.org"
+            }
+          ],
+          "people": [
+            {
+              "name": "Tanya Goyal",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "BFSI & Fintech",
+          "headline": "Shriram Life builds on a promise that holds when it matters",
+          "description": "Shriram Life Insurance launches 'A Promise That Stands When It Matters Most'.",
+          "why_important": "Life insurance is still sold on fear in India. Reliability framing is a slower build but reaches the first-time buyer who tunes mortality messaging out.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23024/shriram-life-insurance-unveils-campaign-a-promise-that-stands-when-it-matters-most",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Shriram Life Insurance",
+              "url": "https://www.shriramlife.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Beauty & Personal Care",
+          "headline": "ETUDE launches a foundation line into wedding season with Palak Tiwari",
+          "description": "ETUDE unveils a foundation range timed to the wedding season, fronted by Palak Tiwari.",
+          "why_important": "Wedding season is the single largest colour cosmetics window in India, and complexion is its biggest sub-category. Timing a launch to it is worth more than the celebrity.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23010/etude-taps-wedding-season-with-palak-tiwari-to-unveil-foundation-line",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "ETUDE",
+              "url": "https://www.etude.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Palak Tiwari",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Haldiram's builds its festive campaign on giving",
+          "description": "Haldiram's launches a festive campaign on the joy of giving.",
+          "why_important": "Haldiram's owns the organised sweets and namkeen gifting shelf. Its festive spend sets the floor every regional sweets brand has to clear to stay visible.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23072/haldirams-celebrates-the-joy-of-giving-with-new-festive-campaign",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Haldiram's",
+              "url": "https://www.haldirams.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Auto & Mobility",
+          "headline": "Amazon and Tata Motors will put 3,000 electric trucks on Indian roads",
+          "description": "Amazon partners Tata Motors to deploy 3,000 electric trucks across its India logistics network.",
+          "why_important": "The largest commercial EV commitment by an Indian logistics buyer so far. It gives Tata a reference fleet and Amazon a sustainability claim it can actually evidence.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23073/amazon-partners-with-tata-motors-to-deploy-3000-electric-trucks-in-india",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Amazon",
+              "url": "https://www.amazon.in"
+            },
+            {
+              "name": "Tata Motors",
+              "url": "https://www.tatamotors.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "Zouk builds a 3D channi billboard for the festive season",
+          "description": "Zouk runs a three-dimensional channi-shaped billboard as a festive outdoor execution.",
+          "why_important": "Anamorphic and sculptural OOH is the format brands use when they want social sharing rather than reach. A small D2C bag brand can buy a week of feed presence from one board.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23066/zouk-brings-a-playful-festive-twist-to-outdoor-advertising-with-a-3d-channi-billboard",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Zouk",
+              "url": "https://zouk.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "WPP-Kantar finds Gen Z and women driving rural digital shopping",
+          "description": "A WPP-Kantar report finds Gen Z and women are driving a digital shopping surge in rural India.",
+          "why_important": "Rural e-commerce growth coming from women and young buyers changes both the creative and the media plan. Most brands still plan rural as a male, mass-media audience.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23060/gen-z-and-women-drive-digital-shopping-surge-in-rural-india-wpp-kantar-report",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "WPP",
+              "url": "https://www.wpp.com"
+            },
+            {
+              "name": "Kantar",
+              "url": "https://www.kantar.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "BFSI & Fintech",
+          "headline": "Lxme puts Indian Women's League footballers in 'Built to Shine'",
+          "description": "Lxme launches 'Built to Shine' featuring footballers from the Indian Women's League it titles.",
+          "why_important": "Converting a title sponsorship into brand creative is the step most sponsors skip. Lxme using its own players as the campaign is what makes the rights fee work.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23029/lxme-indian-womens-league-footballers-show-strength-and-style-in-built-to-shine-campaign",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Lxme",
+              "url": "https://lxme.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Diageo India lifts Q2 ad spend 57% to Rs 378 crore",
+          "description": "Diageo India increases Q2 FY27 advertising spend by 57% to Rs 378 crore ahead of the festive season.",
+          "why_important": "A 57% increase from a spirits major that cannot advertise its products directly means a surge in surrogate and experiential spend. That money has to land somewhere other than media.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23022/diageo-india-boosts-q2-fy27-ad-spends-by-57-to-inr378-crore-ahead-of-festive-season",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Diageo India",
+              "url": "https://www.diageoindia.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Auto & Mobility",
+          "headline": "Hyundai India Q2 revenue crosses Rs 20,000 crore",
+          "description": "Hyundai Motor India reports Q2 revenue above Rs 20,000 crore with a 9.5% EBITDA margin.",
+          "why_important": "Margin holding at this level during a heavy launch and discount season gives Hyundai room to keep spending through Diwali while rivals pull back.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23021/hyundai-motor-india-q2-revenue-crosses-rs-20000-crore-ebitda-margin-at-95",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Hyundai Motor India",
+              "url": "https://www.hyundai.com/in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "YouTube ad revenue rises 9% to $11.2 billion on living-room viewing",
+          "description": "YouTube reports Q3 2026 advertising revenue up 9% to $11.2 billion, driven by living-room streaming.",
+          "why_important": "YouTube's growth is now coming from the television set, which puts it in direct competition with broadcasters for the same budget and the same room.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23020/youtube-ad-revenue-rises-9-to-112b-in-q3-2026-amid-living-room-streaming-momentum",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "YouTube",
+              "url": "https://www.youtube.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "Google Search revenue rises 12% to $63.3 billion despite AI monetisation lag",
+          "description": "Google reports Q3 2026 Search revenue up 12% to $63.3 billion even as AI Mode monetisation lags.",
+          "why_important": "Search is still growing while its AI replacement earns less per query. That gap is the window brands have before answer engines reset search marketing economics.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23019/google-search-revenue-rises-12-to-633b-in-q3-2026-despite-ai-mode-monetization-lag",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Google",
+              "url": "https://www.google.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Media, Entertainment & Sports",
+          "headline": "PVR INOX records its highest-ever quarterly revenue and profit",
+          "description": "PVR INOX posts record quarterly revenue and profit in Q2 FY27.",
+          "why_important": "Exhibition at a record high while individual films underperform means the recovery is driven by volume of releases and pricing, not hits. That is a more fragile base than it looks.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23063/pvr-inox-records-highest-ever-quarterly-revenue-and-profit-in-q2-fy27",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "PVR INOX",
+              "url": "https://www.pvrinox.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Popeyes India builds a Halloween menu on a viral black sauce",
+          "description": "Popeyes India launches a limited-edition Halloween menu featuring its black 'haunted' sauce.",
+          "why_important": "QSR is manufacturing Halloween as an Indian occasion through menu rather than advertising. Limited editions are the cheapest way to buy a news cycle in food.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23001/popeyesr-india-unveils-limited-edition-halloween-menu-featuring-its-viral-black-haunted-sauce",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Popeyes India",
+              "url": "https://www.popeyes.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Real Estate & Building Materials",
+          "headline": "Nexus Select Malls makes a film about the Diwali before Diwali",
+          "description": "Nexus Select Malls releases a festive film built on the shopping run-up rather than the day itself.",
+          "why_important": "Mall operators advertise the occasion, not the tenants, because footfall is their product. Owning the preparation window captures spend before it reaches e-commerce.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23000/nexus-select-malls-celebrates-the-diwali-before-diwali-in-its-new-festive-film",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Nexus Select Malls",
+              "url": "https://www.nexusselecttrust.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "SNITCH enters innerwear with 'The Trick is in the Comfort'",
+          "description": "SNITCH extends from outerwear into innerwear with a new campaign.",
+          "why_important": "Innerwear has the highest repeat rate in apparel, which is exactly what a fast-fashion D2C brand needs to fix its acquisition economics. Expect every D2C clothing brand to follow.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22998/snitch-enters-the-innerwear-category-with-the-trick-is-in-the-comfort-campaign",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "SNITCH",
+              "url": "https://www.snitch.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Zed Black and MS Dhoni mark ten years together",
+          "description": "Zed Black Agarbatti releases a festive TVC marking a decade of association with MS Dhoni.",
+          "why_important": "Ten years with one ambassador is almost unheard of in Indian FMCG. The compounding recall is worth more than any fresh signing, and it is why Dhoni still commands his fee.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22993/zed-black-agarbatti-and-ms-dhoni-mark-a-decade-of-association-with-new-festive-tvc",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Zed Black",
+              "url": "https://www.zedblack.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "MS Dhoni",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Candyman turns 'Darr' into a Halloween get-together",
+          "description": "ITC's Candyman reworks the horror film reference 'Darr' into a Halloween social occasion.",
+          "why_important": "Confectionery needs occasions to drive impulse volume, and Halloween is the only new one on the Indian calendar. Borrowing a nineties film reference makes it legible to parents too.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22983/this-halloween-candyman-reimagines-darr-into-a-reason-to-get-people-together",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Candyman",
+              "url": "https://www.itcportal.com"
+            },
+            {
+              "name": "ITC",
+              "url": "https://www.itcportal.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Home & Durables",
+          "headline": "Orient Electric sells lighting on 'The Right Light'",
+          "description": "Orient Electric launches 'The Right Light' highlighting its three-in-one lighting range.",
+          "why_important": "Lighting has been commoditised by cheap LED imports. Selling choice and appropriateness rather than brightness is the only route back to a price premium.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22982/orient-electrics-the-right-light-campaign-showcases-smarter-lighting-choices",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Orient Electric",
+              "url": "https://www.orientelectric.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "BFSI & Fintech",
+          "headline": "Home Credit runs 'Ghar Wahan, Gharwale Jahan' for Diwali",
+          "description": "Home Credit India launches a Diwali campaign about home being where family is.",
+          "why_important": "Consumer lending advertises hardest in the festive window because that is when durable purchases get financed. Emotional framing softens a category consumers still distrust.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22978/home-credit-india-unveils-ghar-wahan-gharwale-jahan-for-diwali",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Home Credit India",
+              "url": "https://www.homecredit.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Auto & Mobility",
+          "headline": "Škoda and BBH launch 'Says It All.' for the new Slavia",
+          "description": "Škoda Auto India rolls out 'Says It All.' with BBH for the refreshed Slavia.",
+          "why_important": "Sedans are a shrinking segment defended by brand rather than volume. Škoda's second major campaign in a fortnight says it is spending to hold position rather than chase SUV share.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22976/koda-auto-india-bbh-roll-out-says-it-all-campaign-for-new-slavia",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Skoda Auto India",
+              "url": "https://www.skoda-auto.co.in"
+            },
+            {
+              "name": "BBH",
+              "url": "https://www.bartleboglehegarty.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "BFSI & Fintech",
+          "headline": "airpay money builds a film on 'Safalta Ka Sukoon'",
+          "description": "airpay money releases 'Safalta Ka Sukoon', a film about financial health.",
+          "why_important": "Fintech is shifting from transaction convenience to financial wellbeing as a positioning, because convenience has become table stakes across every app.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22973/airpay-money-spotlights-financial-health-with-safalta-ka-sukoon-film",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "airpay",
+              "url": "https://www.airpay.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "Titan's 'Chosen Family' widens who a festive ad is for",
+          "description": "Titan launches 'Chosen Family', celebrating bonds outside traditional family structures.",
+          "why_important": "India's biggest watch and jewellery brand broadening the definition of family in its festive work is a real cultural marker, and it opens gifting occasions the category has never addressed.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22969/titans-chosen-family-campaign-celebrates-bonds-beyond-traditional-family-ties",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Titan Company",
+              "url": "https://www.titancompany.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "ASCI finds all 60 nutraceutical ads it tested fail substantiation",
+          "description": "ASCI's 'A Pill for Thought' report finds 60 of 60 nutraceutical advertisements assessed fail claim substantiation checks.",
+          "why_important": "A 100% failure rate is not a compliance gap, it is a category-wide practice. Regulation follows findings like this, and nutraceutical marketing budgets should be planned for it.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22964/ascis-a-pill-for-thought-report-flags-gaps-in-evidence",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "ASCI",
+              "url": "https://www.ascionline.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Healthcare & Pharma",
+          "headline": "Bayer runs a 'Diabetes Grab-A-Thon' on kidney health",
+          "description": "Bayer releases a film raising awareness of the kidney health risks of diabetes.",
+          "why_important": "Pharma cannot advertise prescription products to consumers in India, so disease awareness is the only route to the patient. Done well it shapes which questions get asked in the consulting room.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22953/bayer-rolls-out-diabetes-grab-a-thon-film-to-raise-kidney-health-awareness",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Bayer",
+              "url": "https://www.bayer.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "Gargi by PNGS runs #GETNOTICED with Mithila Palkar",
+          "description": "Gargi by PNGS launches a Diwali campaign with Mithila Palkar.",
+          "why_important": "Silver and demi-fine jewellery is where first-time buyers enter the category. A relatable rather than aspirational face is the right casting for that entry price point.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22951/gargi-by-pngs-launches-getnoticed-diwali-campaign-with-mithila-palkar",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Gargi by PNGS",
+              "url": "https://www.gargifashion.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Mithila Palkar",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Tech, Telecom & Electronics",
+          "headline": "Redmi makes 'Crimes Against Phones' with Anup Soni",
+          "description": "Redmi teams with Anup Soni and Idiotic Media on a 'Crimes Against Phones' series.",
+          "why_important": "Casting a crime-show host to dramatise phone durability is format-borrowing rather than celebrity-buying — cheaper, funnier and far more native to the platforms it runs on.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22950/redmi-teams-up-with-anup-soni-idiotic-media-for-crimes-against-phones",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Redmi",
+              "url": "https://www.mi.com/in"
+            },
+            {
+              "name": "Idiotic Media",
+              "url": null
+            }
+          ],
+          "people": [
+            {
+              "name": "Anup Soni",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Home & Durables",
+          "headline": "TTK Prestige builds a kinetic OOH installation for Shubhutsav",
+          "description": "TTK Prestige brings its Shubhutsav 2026 festive push alive with a kinetic out-of-home installation.",
+          "why_important": "Mechanical OOH cuts through where digital screens have become wallpaper. For a cookware brand it also demonstrates the product in a way a static board cannot.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22945/ttk-prestige-brings-shubhutsav-2026-alive-with-kinetic-ooh-installation",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "TTK Prestige",
+              "url": "https://www.ttkprestige.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "BFSI & Fintech",
+          "headline": "Festive financing crosses Rs 20,000 crore as MSMEs take formal credit",
+          "description": "Festive-season financing passes Rs 20,000 crore in 2026, with MSMEs increasingly using formal credit.",
+          "why_important": "The size of the festive credit pool explains why every lender is advertising at once. It also means demand is being pulled forward on borrowed money, which matters for Q4 forecasts.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23004/festive-financing-crosses-rs-20000-cr-in-2026-as-msmes-tap-formal-credit",
+          "date": "2026-10-28",
+          "companies": [],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "Bonkers Corner signs Anushka Sen",
+          "description": "Anushka Sen joins Bonkers Corner as brand ambassador.",
+          "why_important": "Streetwear D2C brands are signing social-first talent rather than film stars because their buyer discovers clothes on a feed, not a screen.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22999/anushka-sen-joins-bonkers-corner-as-brand-ambassador",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Bonkers Corner",
+              "url": "https://bonkerscorner.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Anushka Sen",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "GAP India works with artist Yash Pradhan on Fall 2026",
+          "description": "GAP India collaborates with artist Yash Pradhan for its Fall 2026 collection.",
+          "why_important": "Global apparel brands are using local artists rather than local celebrities to earn Indian relevance. It is cheaper and reads as respect rather than endorsement.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22967/gap-india-teams-up-with-artist-yash-pradhan-for-fall-2026-collection",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "GAP",
+              "url": "https://www.gap.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Yash Pradhan",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "HUL posts its best sales growth in 14 quarters on Rs 3,138 crore of marketing",
+          "description": "Hindustan Unilever reports its highest quarterly sales growth in 14 quarters, with Q2 marketing spend of Rs 3,138 crore.",
+          "why_important": "India's largest advertiser spending at this level and getting growth back validates the whole category's festive push. It also resets the benchmark every FMCG CFO is measured against.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22959/hul-posts-highest-quarterly-sales-growth-in-14-quarters-as-q2-marketing-spend-hits-inr3138-crore",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "HUL",
+              "url": "https://www.hul.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "LT Foods Q2 revenue rises 17% to Rs 3,253 crore",
+          "description": "LT Foods reports Q2 revenue up 17% to Rs 3,253 crore with net profit of Rs 180 crore.",
+          "why_important": "Branded rice growing at this rate shows packaged staples are still converting loose-commodity buyers — the single largest volume opportunity left in Indian FMCG.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22958/lt-foods-q2-revenue-rises-17-to-inr3253-crore-as-net-profit-reaches-inr180-crore",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "LT Foods",
+              "url": "https://www.ltgroup.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Beauty & Personal Care",
+          "headline": "Gillette names Abhay Verma at P&G Loop",
+          "description": "Gillette announces Abhay Verma as brand ambassador at the P&G Loop event.",
+          "why_important": "Grooming is being contested hard by D2C entrants, and Gillette is responding with younger casting rather than price. Announcing at an owned event keeps the news cycle on its own terms.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22956/gillette-names-abhay-verma-brand-ambassador-at-pg-loop",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Gillette",
+              "url": "https://www.gillette.co.in"
+            },
+            {
+              "name": "P&G",
+              "url": "https://in.pg.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Abhay Verma",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Kinder runs its first licensed campaign with Marvel",
+          "description": "Kinder Schoko-Bons Crispy launches its first licensed campaign in partnership with Marvel.",
+          "why_important": "Character licensing in Indian confectionery has been underused relative to global markets. A Ferrero-Marvel tie-up at this scale will pull the whole category into licensing deals.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22952/kinder-schoko-bons-crispy-rolls-out-first-licensed-campaign-with-marvel",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Kinder",
+              "url": "https://www.ferrero.com"
+            },
+            {
+              "name": "Marvel",
+              "url": "https://www.marvel.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "RBI invites bids for a Rs 12 crore social media mandate",
+          "description": "The Reserve Bank of India opens bidding for a Rs 12 crore social media management contract.",
+          "why_important": "The central bank running a competitive social pitch at this size is a marker of how seriously public institutions now take owned channels. It is also a prestige credential worth underbidding for.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22961/rbi-invites-bids-for-inr12-crore-social-media-management-contract",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "RBI",
+              "url": "https://www.rbi.org.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Mangalmai becomes Ramayana's official diya oil partner",
+          "description": "Mangalmai signs on as the official diya oil partner for Ramayana.",
+          "why_important": "Film partnerships are reaching categories that have never bought them. A devotional-adjacent commodity attaching to the biggest Indian release of the cycle is a template others will copy.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22928/mangalmai-partners-with-ramayana-as-the-official-diya-oil-partner",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Mangalmai",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Two Brothers India Farms asks how the festival changed",
+          "description": "Two Brothers India Farms explores how India's biggest festival has shifted over time.",
+          "why_important": "A small organic farming brand buying cultural commentary rather than product advertising. It is the cheapest way for a premium niche to punch above its media weight.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22924/two-brothers-india-farms-explores-how-indias-favourite-festival-changed",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Two Brothers India Farms",
+              "url": "https://twobrothersindiashop.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Auto & Mobility",
+          "headline": "Spinny's Banaras vlogger film crosses 16 million views",
+          "description": "A Spinny film following a vlogger's journey from Banaras to owning their own car passes 16 million views.",
+          "why_important": "Used-car platforms are winning on documentary-style creator content rather than inventory advertising. The view count is the proof that the format beats the category's usual listings pitch.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22912/manki-vloggers-journey-from-banaras-to-their-own-spinny-car-crosses-16-million-views",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Spinny",
+              "url": "https://www.spinny.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Mentos Fresh Action launches a new TVC",
+          "description": "Mentos Fresh Action releases 'Kya Saans Khuli, Kya Hawa Chali'.",
+          "why_important": "Mint and confectionery live entirely on recall, and Mentos has been one of the few consistent builders of mnemonic advertising in India. Consistency is the asset here, not novelty.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22909/kya-saans-khuli-kya-hawa-chali-mentos-fresh-action-unveils-a-refreshing-new-tvc",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Mentos",
+              "url": "https://www.perfettivanmelle.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Beauty & Personal Care",
+          "headline": "Macros tells men not to wait for Diwali",
+          "description": "Macros launches 'Don't Wait for Diwali', a festive men's skincare campaign.",
+          "why_important": "Men's skincare in India still sells on occasion rather than routine. A campaign arguing against occasion-led use is trying to build the habit the category needs to grow.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22903/macros-rolls-out-dont-wait-for-diwali-festive-mens-skincare-campaign",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Macros",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "GIVA runs 'Pataka for Every Pataka' with Shweta Tripathi",
+          "description": "GIVA launches a Diwali campaign with Shweta Tripathi.",
+          "why_important": "GIVA's second festive campaign inside a fortnight. Running multiple concurrent platforms is how D2C jewellery buys share of voice against Tanishq's single large spend.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22861/giva-teams-up-with-shweta-tripathi-for-pataka-for-every-pataka-campaign",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "GIVA",
+              "url": "https://www.giva.co"
+            }
+          ],
+          "people": [
+            {
+              "name": "Shweta Tripathi",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Beauty & Personal Care",
+          "headline": "Parachute Advansed Gold builds a film on girlhood",
+          "description": "Marico's Parachute Advansed Gold releases a campaign film celebrating girlhood.",
+          "why_important": "Hair oil is a mass category defended through emotional equity because the product cannot differentiate. Marico has been the most disciplined spender on that equity for a decade.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22858/parachute-advansed-gold-celebrates-girlhood-in-new-campaign-film",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Parachute Advansed",
+              "url": "https://marico.com"
+            },
+            {
+              "name": "Marico",
+              "url": "https://marico.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Tech, Telecom & Electronics",
+          "headline": "vivo runs #JoyOfHomecoming for Diwali",
+          "description": "vivo launches a Diwali campaign built on returning home for the festival.",
+          "why_important": "Homecoming is the most-used festive trope in Indian handset advertising, which means execution and media weight decide the winner, not the idea.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22840/vivo-celebrates-the-joyofhomecoming-this-diwali-with-friends-and-family",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "vivo",
+              "url": "https://www.vivo.com/in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Parsi Dairy Farm turns 110 with rapper Mohak",
+          "description": "Parsi Dairy Farm marks its 110th year with a Diwali campaign featuring rapper Mohak.",
+          "why_important": "A 110-year-old heritage dairy brand casting a rapper is a deliberate generational reset. Legacy food brands either do this or age out with their buyers.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22839/parsi-dairy-farm-turns-110-teams-up-with-rapper-mohak-for-diwali-campaign",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Parsi Dairy Farm",
+              "url": null
+            }
+          ],
+          "people": [
+            {
+              "name": "Mohak",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Tech, Telecom & Electronics",
+          "headline": "CP PLUS signs Ranveer Singh",
+          "description": "CP PLUS names Ranveer Singh as its new brand ambassador.",
+          "why_important": "Security cameras are an unbranded, dealer-pushed category. Buying India's most expensive endorsement tier is an attempt to make consumers ask for a brand by name.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22894/cp-plus-names-ranveer-singh-as-its-new-brand-ambassador",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "CP PLUS",
+              "url": "https://www.cpplusworld.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Ranveer Singh",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "DAAWAT Rozana launches with Ranveer Brar",
+          "description": "DAAWAT Rozana launches a new campaign with celebrity chef Ranveer Brar.",
+          "why_important": "Chef endorsement works harder than film celebrity in staples because it carries implied product judgement. It is also a fraction of the fee.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22854/daawatr-rozana-launches-new-campaign-with-celebrity-chef-ranveer-brar",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "DAAWAT",
+              "url": "https://www.daawat.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Ranveer Brar",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "BFSI & Fintech",
+          "headline": "Gozoop Creative wins Jainam's social mandate",
+          "description": "Gozoop Creative wins the social media mandate for Jainam.",
+          "why_important": "Broking and wealth firms are moving social to independents because compliance-heavy categories need speed more than scale. It is a growing mandate pool for mid-sized shops.",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/gozoop-creative-wins-social-media-mandate-for-jainam/",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Gozoop Creative",
+              "url": "https://www.gozoop.com"
+            },
+            {
+              "name": "Jainam",
+              "url": "https://www.jainam.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "Maitri takes Agency of the Year at the first Love of Advertising Awards",
+          "description": "Maitri Advertising Works wins Agency of the Year at the inaugural Love of Advertising Awards.",
+          "why_important": "A new awards show crowning an independent in its first year is a signal about where the industry wants to see itself — and new shows are how independents build pitch credentials cheaply.",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/maitri-advertising-works-wins-agency-of-the-year-at-inaugural-love-of-advertising-awards/",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Maitri Advertising Works",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "Bombay High Court dismisses Meta's jurisdiction challenge in the Blink Digital case",
+          "description": "The Bombay High Court dismisses Meta's challenge to its jurisdiction in Blink Digital's Rs 1,158-crore suit.",
+          "why_important": "An Indian court accepting jurisdiction over a platform's account actions is the outcome the whole agency industry was watching for. Platform terms of service are now contestable in India.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22908/bombay-high-court-dismisses-metas-jurisdiction-challenge-in-blink-digital-case",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Blink Digital",
+              "url": null
+            },
+            {
+              "name": "Meta",
+              "url": "https://about.meta.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Media, Entertainment & Sports",
+          "headline": "Nazara's marketing spend jumps 258% to Rs 417 crore",
+          "description": "Nazara Technologies' Q2 FY27 marketing spend rises 258% to Rs 417 crore on record revenue of Rs 803 crore.",
+          "why_important": "A marketing line that nearly quadruples in a quarter is a land-grab, not a campaign. Gaming user acquisition costs across India just went up for everyone else.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22886/nazara-technologies-marketing-spend-spikes-258-to-inr417-crore-in-q2-fy27",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Nazara Technologies",
+              "url": "https://www.nazara.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Media, Entertainment & Sports",
+          "headline": "NDTV approves an Rs 800-crore debenture issue after a Q2 loss",
+          "description": "NDTV's board approves an Rs 800-crore perpetual debenture issue following a Q2 FY27 net loss of Rs 63.5 crore.",
+          "why_important": "Raising perpetual debt against losses is an expensive way to fund a news network. It constrains what NDTV can spend on content and distribution for several quarters.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22885/ndtv-board-approves-inr800-crore-perpetual-debenture-issue-following-q2-fy27-net-loss-of-inr635-crore",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "NDTV",
+              "url": "https://www.ndtv.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "E-commerce & Quick Commerce",
+          "headline": "Kavita Kaushik investigates Amazon India's deals in a three-film campaign",
+          "description": "Amazon India runs a three-film campaign with Kavita Kaushik, created by RVCJ Media.",
+          "why_important": "A marketplace hiring a meme publisher to make its festive films rather than a network agency tells you where it thinks attention and cost efficiency now sit.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22941/kavita-kaushik-investigates-amazon-indias-deals-in-three-film-campaign-by-rvcj-media",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Amazon",
+              "url": "https://www.amazon.in"
+            },
+            {
+              "name": "RVCJ Media",
+              "url": null
+            }
+          ],
+          "people": [
+            {
+              "name": "Kavita Kaushik",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Real Estate & Building Materials",
+          "headline": "Kansai Nerolac rebuilds its jingle with Yashraj Mukhate",
+          "description": "Kansai Nerolac reworks its long-running jingle with creator Yashraj Mukhate for the festive season.",
+          "why_important": "Handing a heritage sonic asset to a remix creator is low-cost, high-reach modernisation. It keeps the mnemonic and buys a new audience without rebuilding either.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22860/kansai-nerolac-reimagines-its-iconic-jingle-with-yashraj-mukhate-this-festive-season",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Kansai Nerolac",
+              "url": "https://www.nerolac.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Yashraj Mukhate",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Real Estate & Building Materials",
+          "headline": "Greenply Doors launches 'Doors of India'",
+          "description": "Greenply Doors runs a campaign built on the stories behind Indian doorways.",
+          "why_important": "Building materials advertising to consumers at all is the shift worth noting — these are trade-sold categories trying to build pull so they can hold price against the contractor.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22853/greenply-doors-launches-doors-of-india-campaign-celebrating-stories-and-emotions",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Greenply",
+              "url": "https://www.greenply.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Home & Durables",
+          "headline": "Kenstar signs Rajkummar Rao and Patralekha for water heaters",
+          "description": "Kenstar launches a water heater campaign starring Rajkummar Rao and Patralekha.",
+          "why_important": "Water heaters are a short, sharp seasonal category where the whole year's volume turns on a six-week window. Real-couple casting buys instant relatability at the moment of purchase.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22841/kenstar-launches-new-water-heater-campaign-starring-rajkummar-rao-and-patralekha",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Kenstar",
+              "url": "https://www.kenstar.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Rajkummar Rao",
+              "linkedin_url": null
+            },
+            {
+              "name": "Patralekha",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "Bonjour casts Harshaali Malhotra for its festive film",
+          "description": "Bonjour launches a festive campaign featuring Harshaali Malhotra around an 'Onto the Next' philosophy.",
+          "why_important": "Socks and innerwear are impulse categories that rarely advertise at this level. Festive gifting is the one window where the spend pays back.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22791/bonjour-marks-new-beginnings-with-festive-campaign-featuring-harshaali-malhotra",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Bonjour",
+              "url": "https://www.bonjourgroup.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Harshaali Malhotra",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "ROYCE' Chocolate runs 'Not quite ordinary' for Diwali",
+          "description": "ROYCE' Chocolate launches its Diwali campaign, 'Not quite ordinary'.",
+          "why_important": "Imported premium chocolate is fighting mithai for the corporate gifting budget. Diwali is effectively the category's entire advertising year.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22773/royce-chocolate-unveils-not-quite-ordinary-festive-campaign-for-diwali",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "ROYCE Chocolate",
+              "url": "https://www.roycechocolate.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Lotte launches PEPERO in India on friendship",
+          "description": "Lotte India launches PEPERO with a 'We Are All PEPEROs' friendship campaign.",
+          "why_important": "Korean confectionery entering India on the back of K-culture affinity rather than taste claims. If it works, the whole Korean FMCG shelf follows.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22760/lotte-india-launches-peperos-we-are-all-peperos-friendship-campaign",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Lotte India",
+              "url": "https://www.lotteindia.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Home & Durables",
+          "headline": "Bosch and Ting launch 'Kitchen Up' with Vikrant Massey",
+          "description": "Bosch Home Appliances works with Ting on 'Kitchen Up' featuring Vikrant Massey.",
+          "why_important": "A premium German appliance brand using a creator agency rather than a network shop signals where the category thinks its buyers actually are.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22726/bosch-home-appliances-and-ting-launch-kitchen-up-with-vikrant-massey",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Bosch Home Appliances",
+              "url": "https://www.bosch-home.in"
+            },
+            {
+              "name": "Ting",
+              "url": null
+            }
+          ],
+          "people": [
+            {
+              "name": "Vikrant Massey",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "Fortune Besan casts Neena Gupta for 'Desi Chana Se Bana'",
+          "description": "Adani Wilmar's Fortune Besan launches 'Desi Chana Se Bana' with Neena Gupta.",
+          "why_important": "Branding a staple that most Indians still buy loose is the hardest job in FMCG. Provenance claims plus a trusted older face is the standard route, and Fortune executes it at scale.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22758/fortune-besan-taps-neena-gupta-for-desi-chana-se-bana-campaign",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Fortune",
+              "url": "https://www.fortunefoods.com"
+            },
+            {
+              "name": "Adani Wilmar",
+              "url": "https://www.adaniwilmar.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Neena Gupta",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "Jockey makes women's innerwear personal with 'Feels Like Me'",
+          "description": "Jockey launches 'Feels Like Me' for its women's innerwear range.",
+          "why_important": "Women's innerwear in India is moving from a functional purchase to an identity one, and the incumbent is repositioning before the D2C challengers define the language for it.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22836/jockey-makes-it-personal-with-its-new-womens-innerwear-campaign-feels-like-me",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Jockey",
+              "url": "https://www.jockey.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Food, Beverage & FMCG",
+          "headline": "McDonald's brings G-Dragon collaboration burgers to India",
+          "description": "McDonald's launches its G-Dragon collaboration burgers in the Indian market.",
+          "why_important": "Global K-pop menu collaborations landing in India unchanged shows how far Korean cultural pull now reaches. It also delivers a launch that needs almost no local media support.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22822/mcdonalds-launches-g-dragon-collaboration-burgers-in-india",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "McDonald's India",
+              "url": "https://www.mcdonaldsindia.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "BFSI & Fintech",
+          "headline": "CoinSwitch launches SafeSwitch against cyber fraud",
+          "description": "CoinSwitch launches SafeSwitch, a public awareness push on cyber fraud.",
+          "why_important": "Crypto platforms need to be seen policing fraud before regulators do it for them. Awareness marketing here is as much regulatory positioning as it is brand building.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22819/coinswitch-launches-safeswitch-to-strengthen-public-awareness-of-cyber-fraud",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "CoinSwitch",
+              "url": "https://coinswitch.co"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "Libas builds 'Lal Ishq' around a bride's first Karwa Chauth",
+          "description": "Libas launches 'Lal Ishq', a campaign on a bride's first Karwa Chauth.",
+          "why_important": "Libas's second major festive push in a fortnight, after commissioning thirty films. Ethnic fashion is running campaign volume at a cadence the category has never seen.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22815/libas-unveils-lal-ishq-a-campaign-celebrating-a-brides-first-karwa-chauth",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Libas",
+              "url": "https://www.libas.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "SNITCH reunites with Sufi singer Bismil for 'Bismil 2.0'",
+          "description": "SNITCH brings back Sufi singer Bismil for a second campaign.",
+          "why_important": "Repeating a musician collaboration rather than rotating celebrities builds an ownable sonic identity. Very few Indian fashion brands have the patience for it.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22807/snitch-reunites-with-sufi-singer-bismil-for-bismil-20-campaign",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "SNITCH",
+              "url": "https://www.snitch.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Bismil",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "CCPA fines Britannia over '100% Whole Wheat Bread' claims",
+          "description": "The CCPA imposes a Rs 1 lakh penalty on Britannia for misleading '100% Whole Wheat Bread' claims.",
+          "why_important": "The penalty is trivial but the precedent is not. Between CCPA, FSSAI and ASCI, three bodies are now actively policing food claims, and the reputational cost far exceeds the fine.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22802/ccpa-slaps-inr1-lakh-penalty-on-britannia-for-misleading-100-whole-wheat-bread-claims",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "CCPA",
+              "url": "https://consumeraffairs.nic.in"
+            },
+            {
+              "name": "Britannia Industries",
+              "url": "https://www.britannia.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Beauty & Personal Care",
+          "headline": "L'Oréal credits its India turnaround to local content and quick commerce",
+          "description": "L'Oréal attributes an India turnaround to local content and a quick-commerce push, with SAPMENA up 20% in Q3.",
+          "why_important": "A global beauty major naming local content and quick commerce as the two levers is the clearest possible brief for what works in Indian beauty right now.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22800/loral-sees-india-turnaround-on-local-content-quick-commerce-push-and-sapmenas-20-q3-surge",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "L'Oreal",
+              "url": "https://www.loreal.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Tech, Telecom & Electronics",
+          "headline": "Hinge builds a campaign on the smallest gestures",
+          "description": "Hinge releases work arguing that small gestures make the biggest love stories.",
+          "why_important": "Dating apps are advertising intent and sincerity rather than reach, because the category's growth problem in India is trust, not awareness.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22793/hinge-shows-that-the-smallest-gestures-make-for-the-biggest-love-stories",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Hinge",
+              "url": "https://hinge.co"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Fashion & Jewellery",
+          "headline": "De Beers explores four takes on the solitaire",
+          "description": "De Beers' 'Love, from hubby' collection presents four interpretations of the solitaire ring.",
+          "why_important": "Natural diamond marketing is being forced to differentiate on design and meaning now that lab-grown stones have taken the price argument away entirely.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22762/de-beers-love-from-hubby-collection-explores-four-takes-on-the-solitaire-ring",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "De Beers",
+              "url": "https://www.debeers.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "India mandates SIM-binding for messaging apps by December 31",
+          "description": "India requires messaging apps to implement SIM-binding by 31 December to curb cross-border cyber fraud.",
+          "why_important": "SIM-binding changes how messaging accounts are created and verified, which affects every brand running WhatsApp commerce or support at scale in India.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22850/india-mandates-sim-binding-for-messaging-apps-by-dec-31-to-curb-cross-border-cyber-fraud",
+          "date": "2026-10-26",
+          "companies": [],
+          "people": []
+        },
+        {
+          "industry": "Adtech, Agencies & Regulation",
+          "headline": "TRAI proposes a licensing framework for FAST apps",
+          "description": "TRAI proposes licensing rules for free ad-supported streaming television applications.",
+          "why_important": "FAST channels have been the cheapest route to ad-supported reach in India. Licensing adds cost and compliance to a format whose entire appeal was that it had neither.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22845/trai-proposes-licensing-framework-for-fast-apps",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "TRAI",
+              "url": "https://www.trai.gov.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "industry": "Media, Entertainment & Sports",
+          "headline": "Rest of World will stop independent publishing in January 2027",
+          "description": "Rest of World announces it will end independent publishing in January 2027 after severe traffic declines.",
+          "why_important": "A well-funded, well-regarded global technology publication closing on traffic collapse is the clearest evidence yet of what AI answer engines are doing to referral-dependent media.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22856/rest-of-world-to-end-independent-publishing-in-jan-2027-following-severe-traffic-declines",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Rest of World",
+              "url": "https://restofworld.org"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket2": [
+        {
+          "headline": "DoorDash agrees to buy Instacart in a $17 billion grocery delivery deal",
+          "description": "DoorDash will acquire Instacart in a transaction valued at about $17 billion, combining two of the largest US delivery platforms.",
+          "why_important": "The biggest delivery consolidation yet, and it creates a retail media network at Amazon's scale. Indian quick-commerce investors will reprice off this multiple.",
+          "region": "Global",
+          "deal_value": "$17 billion",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23086/doordash-to-acquire-instacart-in-landmark-17-billion-grocery-delivery-deal",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "DoorDash",
+              "url": "https://www.doordash.com"
+            },
+            {
+              "name": "Instacart",
+              "url": "https://www.instacart.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Virat Kohli's Agilitas stake rises to 6.4% after the one8 merger",
+          "description": "Following the one8 merger, Virat Kohli's shareholding in Agilitas increases to 6.4%.",
+          "why_important": "Athlete equity replacing athlete endorsement, with the merger converting a brand licence into ownership. It is the clearest Indian example of the shift yet.",
+          "region": "India",
+          "deal_value": "Stake rises to 6.4%",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/post-one8-merger-virat-kohlis-stake-in-agilitas-increases-to-6-4/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "one8",
+              "url": "https://one8.com"
+            },
+            {
+              "name": "Agilitas Sports",
+              "url": "https://www.agilitas.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Virat Kohli",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Easol raises $30 million and launches an AI platform for festival promoters",
+          "description": "Easol raises $30 million and launches 'Teammates', an agentic AI platform aimed at festival and experience promoters.",
+          "why_important": "Capital flowing into experience-commerce infrastructure rather than into the events themselves. Whoever owns promoters' booking stack owns the data brands want for sponsorship targeting.",
+          "region": "Global",
+          "deal_value": "$30 million",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/30/easol-raises-30-million-launches-agentic-ai-platform-teammates-for-festival-promoters/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Easol",
+              "url": "https://easol.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Liqvd Digital buys the remaining 23.2% of AdLift for Rs 9 crore",
+          "description": "Liqvd Digital will acquire the outstanding 23.2% stake in AdLift for Rs 9 crore, taking full ownership.",
+          "why_important": "Small, but it completes a performance-marketing roll-up. Indian digital agencies are consolidating into full-stack groups to pitch against the networks.",
+          "region": "India",
+          "deal_value": "Rs 9 crore for 23.2%",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22881/liqvd-digital-to-acquire-remaining-232-stake-in-adlift-for-inr9-crore",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Liqvd Digital",
+              "url": null
+            },
+            {
+              "name": "AdLift",
+              "url": "https://www.adlift.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Universal Music opens preliminary privatisation talks with private equity",
+          "description": "Universal Music Group holds early talks with private equity firms about going private amid a declining share price.",
+          "why_important": "The largest music rights owner considering private ownership would change licensing and sync pricing for every brand. India is one of its fastest-growing streaming markets.",
+          "region": "Global",
+          "deal_value": "Not disclosed",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22942/universal-music-group-holds-preliminary-privatization-talks-with-private-equity-firms-amid-stock-decline",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Universal Music Group",
+              "url": "https://www.universalmusic.com"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket3": [
+        {
+          "headline": "ZEE5 adds 'Hostel Hadsa' and 'Blind Game' to its free originals slate",
+          "description": "ZEE5 adds Hostel Hadsa and Arjun Rampal's Blind Game to its free originals line-up.",
+          "why_important": "Free, ad-supported originals are how Indian streamers grow reach for advertisers while subscription growth stalls. The slate is effectively an inventory plan.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23130/hostel-hadsa-bhoot-ya-bhram-and-arjun-rampals-suspense-thriller-blind-game",
+          "date": "2026-10-31",
+          "companies": [
+            {
+              "name": "ZEE5",
+              "url": "https://www.zee5.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Arjun Rampal",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "headline": "Nike launches Vegam Run, its first running shoe made for India",
+          "description": "Nike launches the Vegam Run, its first running shoe designed specifically for the Indian market.",
+          "why_important": "A global sportswear major designing for Indian feet and Indian road conditions rather than importing a global line. It is a real commitment signal, not a marketing one.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/nike-launches-vegam-run-its-1st-made-for-india-running-shoe/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Nike",
+              "url": "https://www.nike.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Instagram brings back Rings for 2026",
+          "description": "Instagram returns with Rings 2026 to recognise creative creators.",
+          "why_important": "Platform-run creator awards shape which formats get made next. For brands it is a cheap read on what Instagram itself wants to reward and therefore distribute.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23104/instagram-returns-with-rings-2026-to-celebrate-creative-creators",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Instagram",
+              "url": "https://www.instagram.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Noise and Gaana launch co-branded Buds R1 with a year of Gaana Plus",
+          "description": "Noise and Gaana launch the co-branded Buds R1, bundled with a year of Gaana Plus.",
+          "why_important": "Hardware bundled with content subscription is how audio brands defend price in a collapsing margin category. The subscription costs Gaana little and gives Noise a reason not to discount.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23078/noise-and-gaana-launch-co-branded-buds-r1-with-one-year-of-gaana-plus",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Noise",
+              "url": "https://www.gonoise.com"
+            },
+            {
+              "name": "Gaana",
+              "url": "https://gaana.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Reddit splits its feed into 'For You' and 'Following'",
+          "description": "Reddit launches a dual-feed interface separating algorithmic and followed content.",
+          "why_important": "Reddit has become a primary source for AI answer engines, so how it ranks content now shapes what those engines repeat about brands.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23018/reddit-unveils-dual-feed-interface-with-for-you-and-following-tabs",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Reddit",
+              "url": "https://www.reddit.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Meta pilots Waddle World, an AI virtual pet app",
+          "description": "Meta tests Waddle World, a 16-bit AI pet journalling app.",
+          "why_important": "Meta testing standalone AI companion apps outside its main family is where the next attention surfaces get built. Worth watching before it becomes an ad placement.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23017/meta-tests-waddle-world-a-16-bit-ai-pet-journal-app",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Meta",
+              "url": "https://about.meta.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Kurkure launches a snack built on South India's ribbon pakoda",
+          "description": "Kurkure introduces a new snack inspired by the South Indian ribbon pakoda.",
+          "why_important": "National snack brands are mining regional formats rather than inventing flavours. It is lower-risk innovation with built-in familiarity in the markets that matter most for volume.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22930/kurkure-launches-snack-inspired-by-south-indias-ribbon-pakoda",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Kurkure",
+              "url": "https://www.pepsicoindia.co.in"
+            },
+            {
+              "name": "PepsiCo India",
+              "url": "https://www.pepsicoindia.co.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "PhonePe turns Indus Appstore into a unified digital goods marketplace",
+          "description": "PhonePe rebrands Indus Appstore as a unified marketplace for digital goods.",
+          "why_important": "A domestic app store broadening into digital goods is a direct challenge to Google Play's billing economics in its largest market by downloads.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22968/phonepe-rebrands-indus-appstore-into-unified-digital-goods-marketplace",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "PhonePe",
+              "url": "https://www.phonepe.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "TagMango and ClickFunnels launch Backstage Pass",
+          "description": "TagMango and ClickFunnels launch Backstage Pass, a live-streaming platform for creators.",
+          "why_important": "Creator monetisation is moving from platform ad share to owned paid events. That shifts where brand sponsorship money has to go to reach the same audience.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22927/tagmango-clickfunnels-launch-live-streaming-platform-backstage-pass",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "TagMango",
+              "url": "https://tagmango.com"
+            },
+            {
+              "name": "ClickFunnels",
+              "url": "https://www.clickfunnels.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Motorola launches Motorollers, its own community app",
+          "description": "Motorola unveils Motorollers as its official community application.",
+          "why_important": "Handset brands building owned communities is an attempt to escape platform dependence for product feedback and launch amplification. Few succeed, but the ones that do cut launch costs sharply.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22904/motorola-unveils-motorollers-its-official-community-app",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Motorola",
+              "url": "https://www.motorola.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Truecaller ships a 10MB Lite version for India",
+          "description": "Truecaller launches Truecaller Lite, a 10MB build offering caller ID and spam blocking in India.",
+          "why_important": "Lite apps are how platforms reach the next hundred million Indian users on constrained devices and data. It is a distribution strategy disguised as a product release.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22919/truecaller-lite-brings-powerful-caller-id-and-spam-blocking-to-india-in-just-10-mb",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Truecaller",
+              "url": "https://www.truecaller.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Venky's enters pickles with a chicken range",
+          "description": "Venky's launches a new range of chicken pickles.",
+          "why_important": "Protein brands extending into shelf-stable formats solves the cold-chain constraint that limits meat distribution in India. It is the category's main route to small-town retail.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22900/venkys-adds-a-flavourful-twist-to-everyday-meals-with-its-new-chicken-pickles-range",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Venky's",
+              "url": "https://www.venkys.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Sony takes VIZHA to Malaysia's Astro",
+          "description": "Sony Pictures Networks debuts its Tamil channel Sony VIZHA on Malaysia's Astro platform.",
+          "why_important": "Indian regional channels exporting to diaspora markets within weeks of launch. Tamil content has a paying international audience most Hindi properties do not.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22877/sony-pictures-networks-debuts-sony-vizha-on-malaysias-astro",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Sony Pictures Networks India",
+              "url": "https://www.sonypicturesnetworks.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "JioHotstar launches StreamToCart in-stream shopping ads",
+          "description": "JioHotstar introduces StreamToCart Ads, enabling purchases from within the stream.",
+          "why_important": "Shoppable streaming closes the gap between a brand's video and its checkout. If it converts, it reprices video inventory from awareness rates to performance rates.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22905/jiohotstar-launches-streamtocart-ads-for-in-stream-shopping",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "JioHotstar",
+              "url": "https://www.hotstar.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Instagram tests 90-minute long-form video",
+          "description": "Instagram trials a 'Features' format supporting videos up to 90 minutes.",
+          "why_important": "Instagram moving to feature length puts it against YouTube for long-form watch time. For brands it opens a format their Reels-trained teams have no playbook for.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22878/instagram-tests-90-minute-videos-with-new-features-long-form-format",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Instagram",
+              "url": "https://www.instagram.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Netflix rebuilds its mobile experience for foldables",
+          "description": "Netflix rolls out a redesigned mobile interface for foldable devices.",
+          "why_important": "Foldables are a small but high-value Indian segment, and platform-specific design is how streamers justify premium tiers to the buyers who own them.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22884/netflix-rolls-out-reimagined-mobile-experience-for-foldable-devices",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Netflix",
+              "url": "https://www.netflix.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Free Fire India goes live again",
+          "description": "Free Fire India relaunches on 28 October.",
+          "why_important": "A major battle royale returning to India restarts competition for the same young audience BGMI has had to itself. Expect user-acquisition spend across mobile gaming to rise sharply.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22893/free-fire-india-goes-live-on-28-october",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Free Fire India",
+              "url": "https://ff.garena.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Philosophy Brand Solutions opens in Mumbai",
+          "description": "Tanurupa and Shayon launch Philosophy Brand Solutions in Mumbai.",
+          "why_important": "Another senior-led independent opening in Mumbai. The steady flow of network leavers starting shops is the clearest sign of where the talent and the margin are moving.",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/tanurupa-and-shayon-launch-philosophy-brand-solutions-in-mumbai/",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Philosophy Brand Solutions",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "headline": "Hoopr launches Smash Plus for macro-sync licensing",
+          "description": "Music-tech startup Hoopr unveils Smash Plus, a macro-sync music licensing tool.",
+          "why_important": "Sync licensing has been the slowest, most manual part of Indian content production. Tooling that clears music at volume removes a real bottleneck for brands making content at scale.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22857/music-tech-startup-hoopr-unveils-macro-sync-licensing-tool-smash-plus",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Hoopr",
+              "url": "https://hoopr.ai"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "bucket4": [
+        {
+          "person": "Sumit Zaveri",
+          "org": "Restaurant Brands Asia",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Chief Executive Officer, Burger King India",
+          "new_company": "Restaurant Brands Asia",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/restaurant-brands-asia-names-sumit-zaveri-as-ceo-of-burger-king-india/",
+          "date": "2026-10-31",
+          "linkedin_url": null,
+          "company_url": "https://www.rbasia.in"
+        },
+        {
+          "person": "Gopa Kumar",
+          "org": "Reliance Jewels",
+          "previous_role": "Seven years at Bhima Jewels",
+          "new_role_title": "Head",
+          "new_company": "Reliance Jewels",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/gopa-kumar-joins-reliance-jewels-as-head-after-seven-year-stint-at-bhima-jewels/",
+          "date": "2026-10-31",
+          "linkedin_url": null,
+          "company_url": "https://www.reliancejewels.com"
+        },
+        {
+          "person": "Sangeeta Shetty",
+          "org": "Zee Entertainment Enterprises",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Chief Compliance Officer and Company Secretary",
+          "new_company": "Zee Entertainment Enterprises",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/z-names-sangeeta-shetty-as-chief-compliance-officer-and-company-secretary/",
+          "date": "2026-10-30",
+          "linkedin_url": null,
+          "company_url": "https://www.zee.com"
+        },
+        {
+          "person": "Ami Palan",
+          "org": "Dognosis",
+          "previous_role": "Frido",
+          "new_role_title": "Lead – Brand",
+          "new_company": "Dognosis",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/ami-palan-moves-from-frido-to-dognosis-as-lead-brand/",
+          "date": "2026-10-30",
+          "linkedin_url": null,
+          "company_url": null
+        },
+        {
+          "person": "Aditi Kumari",
+          "org": "Britannia Industries",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Group Brand Manager",
+          "new_company": "Britannia Industries",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/britannia-industries-appoints-aditi-kumari-as-group-brand-manager/",
+          "date": "2026-10-30",
+          "linkedin_url": null,
+          "company_url": "https://www.britannia.co.in"
+        },
+        {
+          "person": "Sahej Grover",
+          "org": "Tata Technologies",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Director – Brand, Digital & Communications",
+          "new_company": "Tata Technologies",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/sahej-grover-joins-tata-technologies-as-director-brand-digital-communications/",
+          "date": "2026-10-30",
+          "linkedin_url": null,
+          "company_url": "https://www.tatatechnologies.com"
+        },
+        {
+          "person": "Vijay Sankar",
+          "org": "FICCI",
+          "previous_role": "Not disclosed",
+          "new_role_title": "President-Elect for 2026-27",
+          "new_company": "FICCI",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/30/ficci-names-vijay-sankar-as-president-elect-for-2026-27/",
+          "date": "2026-10-30",
+          "linkedin_url": null,
+          "company_url": "https://ficci.in"
+        },
+        {
+          "person": "Tanya Goyal",
+          "org": "AAAI",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Lead, INDIE Council for Independent Agencies",
+          "new_company": "AAAI",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/aaai-launches-indie-council-for-independent-agencies-names-tanya-goyal-to-lead/",
+          "date": "2026-10-29",
+          "linkedin_url": null,
+          "company_url": "https://www.aaaindia.org"
+        },
+        {
+          "person": "Pankaj Madaan",
+          "org": "WOI India",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Head – Marketing & Partnerships",
+          "new_company": "WOI India",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/29/woi-india-appoints-pankaj-madaan-as-head-marketing-partnerships/",
+          "date": "2026-10-29",
+          "linkedin_url": null,
+          "company_url": null
+        },
+        {
+          "person": "Azam Pasha",
+          "org": "Jio World Convention Centre",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Assistant Vice President – JWCC Operations",
+          "new_company": "Jio World Convention Centre",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/29/azam-pasha-appointed-assistant-vice-president-jwcc-operations-at-jio-world-convention-centre/",
+          "date": "2026-10-29",
+          "linkedin_url": null,
+          "company_url": "https://www.jioworldconventioncentre.com"
+        },
+        {
+          "person": "Apoorva Chauhan",
+          "org": "Andaz Delhi",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Director of Event Sales",
+          "new_company": "Andaz Delhi",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/29/andaz-delhi-appoints-apoorva-chauhan-as-director-of-event-sales/",
+          "date": "2026-10-29",
+          "linkedin_url": null,
+          "company_url": "https://www.hyatt.com"
+        },
+        {
+          "person": "Kiran Ramamurthy",
+          "org": "VML",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Chief Executive Officer, VML India",
+          "new_company": "VML",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/vml-india-appoints-kiran-ramamurthy-as-ceo-babita-baruah-takes-on-regional-ford-role/",
+          "date": "2026-10-28",
+          "linkedin_url": null,
+          "company_url": "https://www.vml.com"
+        },
+        {
+          "person": "Babita Baruah",
+          "org": "VML",
+          "previous_role": "Chief Executive Officer, VML India",
+          "new_role_title": "Regional Ford role",
+          "new_company": "VML",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/vml-india-appoints-kiran-ramamurthy-as-ceo-babita-baruah-takes-on-regional-ford-role/",
+          "date": "2026-10-28",
+          "linkedin_url": null,
+          "company_url": "https://www.vml.com"
+        },
+        {
+          "person": "Rajat Vij",
+          "org": "Havas Media Network India",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Associate Director – Growth & New Business",
+          "new_company": "Havas Media Network India",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/rajat-vij-joins-havas-media-network-india-as-associate-director-growth-new-business/",
+          "date": "2026-10-28",
+          "linkedin_url": null,
+          "company_url": "https://in.havas.com"
+        },
+        {
+          "person": "Gauri Makkar",
+          "org": "ZIEL Network",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Co-Founder",
+          "new_company": "ZIEL Network",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/ziel-network-names-gauri-makkar-and-olivia-michael-as-co-founders/",
+          "date": "2026-10-28",
+          "linkedin_url": null,
+          "company_url": "https://ziel.network"
+        },
+        {
+          "person": "Olivia Michael",
+          "org": "ZIEL Network",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Co-Founder",
+          "new_company": "ZIEL Network",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/ziel-network-names-gauri-makkar-and-olivia-michael-as-co-founders/",
+          "date": "2026-10-28",
+          "linkedin_url": null,
+          "company_url": "https://ziel.network"
+        },
+        {
+          "person": "Geetika Chadha",
+          "org": "Cheil India",
+          "previous_role": "Not disclosed",
+          "new_role_title": "Lead, Social and Influencer Marketing for Samsung",
+          "new_company": "Cheil India",
+          "source_name": "MediaNews4U",
+          "source_url": "https://www.medianews4u.com/cheil-india-names-geetika-chadha-to-lead-social-and-influencer-marketing-for-samsung/",
+          "date": "2026-10-27",
+          "linkedin_url": null,
+          "company_url": "https://www.cheil.com"
+        }
+      ],
+      "bucket5": [
+        {
+          "headline": "HUL spent Rs 3,138 crore and got its best growth in 14 quarters — the festive budget is proven",
+          "product_fit": "Memed + ScoopWhoop",
+          "insight": "India's largest advertiser just demonstrated that heavy festive spend converts, and Diageo lifted its own ad budget 57% in the same week. Every FMCG competitor now has to match or visibly lose share of voice, and most are sitting on finished festive films with no distribution weight behind them. Memed to cut each into fifteen native pieces, ScoopWhoop to carry them. This is a two-week window — the conversation has to happen before Diwali, not after.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "HUL posts its best sales growth in 14 quarters on Rs 3,138 crore of marketing",
+          "source_url": "https://www.adgully.com/post/22959/hul-posts-highest-quarterly-sales-growth-in-14-quarters-as-q2-marketing-spend-hits-inr3138-crore"
+        },
+        {
+          "headline": "Diageo lifted ad spend 57% but cannot advertise its products — that money needs somewhere to go",
+          "product_fit": "Crunchy + Memed",
+          "insight": "Rs 378 crore in a quarter from a spirits major operating under a total advertising ban means the spend has to land in surrogate, experiential and content. Black Dog's Manish Malhotra campaign this week is exactly that. Crunchy to produce the on-ground and branded-content moments the ban forces them into, Memed to multiply the footage so a single event earns months of reach. Every spirits marketer in India has this problem and an unusually full budget right now.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "Diageo India lifts Q2 ad spend 57% to Rs 378 crore",
+          "source_url": "https://www.adgully.com/post/23022/diageo-india-boosts-q2-fy27-ad-spends-by-57-to-inr378-crore-ahead-of-festive-season"
+        },
+        {
+          "headline": "Television volumes fell 6% over three quarters while YouTube grew into the living room",
+          "product_fit": "Memed + ScoopWhoop",
+          "insight": "TV ad volumes are down 6% across nine months and YouTube's growth is now explicitly coming from the television set. The money is not disappearing, it is moving rooms. Brands still buying TV-shaped assets need them reshaped for a feed that happens to be on a big screen — Memed for the reformatting, ScoopWhoop for the reach that no longer comes bundled with a spot buy. Lead with the two numbers side by side; they make the argument without a deck.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "TV ad volumes fall 6% over January to September",
+          "source_url": "https://www.adgully.com/post/23095/tv-advertising-volumes-decline-6-in-jan-sep-2026-as-market-contraction-moderates"
+        },
+        {
+          "headline": "ASCI found all 60 nutraceutical ads it tested fail substantiation — the category needs new work",
+          "product_fit": "Imagined + Crunchy",
+          "insight": "Sixty out of sixty is not a compliance gap, it is how the category advertises. With CCPA fining Britannia and FSSAI active in the same window, three regulators are now policing claims at once. The rebuild is structural: Imagined to fix claims architecture across pack, site and PDP so one approved source feeds all three, Crunchy to produce evidence-led content that turns compliance into a trust position. Go at the nutraceutical and supplement brands directly — they have the problem and no plan.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "ASCI finds all 60 nutraceutical ads it tested fail substantiation",
+          "source_url": "https://www.adgully.com/post/22964/ascis-a-pill-for-thought-report-flags-gaps-in-evidence"
+        },
+        {
+          "headline": "Amazon India hired a meme publisher to make its festive films — the agency default is breaking",
+          "product_fit": "Crunchy + Memed",
+          "insight": "RVCJ Media producing three films for Amazon India, and Bosch choosing Ting over a network shop in the same week, are the same signal: brands now believe internet-native shops make better-performing work than traditional agencies for feed-first briefs. That is precisely the ground Crunchy occupies, with Memed multiplying the output. Use these two as named proof points — the objection 'we use our agency for this' has just been answered by Amazon and Bosch.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "Kavita Kaushik investigates Amazon India's deals in a three-film campaign",
+          "source_url": "https://www.adgully.com/post/22941/kavita-kaushik-investigates-amazon-indias-deals-in-three-film-campaign-by-rvcj-media"
+        },
+        {
+          "headline": "Blink Digital beat Meta on jurisdiction — platform dependence is now a board-level risk",
+          "product_fit": "ScoopWhoop",
+          "insight": "The Bombay High Court refusing Meta's jurisdiction challenge means an Indian agency's Rs 1,158-crore claim over disabled ad accounts goes forward. The practical lesson for brands is unchanged but now has legal weight behind it: reach concentrated on one platform is a single point of failure that can be switched off without appeal. Owned distribution through ScoopWhoop is a continuity argument, not a creative one — and it is the rare pitch a risk committee will actively ask for.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "Bombay High Court dismisses Meta's jurisdiction challenge in the Blink Digital case",
+          "source_url": "https://www.adgully.com/post/22908/bombay-high-court-dismisses-metas-jurisdiction-challenge-in-blink-digital-case"
+        },
+        {
+          "headline": "Rest of World is closing on traffic collapse — referral-dependent reach is ending",
+          "product_fit": "ScoopWhoop + Memed",
+          "insight": "A well-funded global technology publication shutting because AI answer engines took its traffic is the clearest evidence yet that search-referred audience cannot be relied on. Brands whose content strategy assumes discovery through search are on the same curve. The hedge is distribution that does not depend on a referrer — owned network reach via ScoopWhoop, and enough native content volume via Memed to live where audiences already are. Raise it with anyone reporting organic traffic as a headline KPI.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "Rest of World will stop independent publishing in January 2027",
+          "source_url": "https://www.adgully.com/post/22856/rest-of-world-to-end-independent-publishing-in-jan-2027-following-severe-traffic-declines"
+        },
+        {
+          "headline": "Nazara quadrupled marketing to Rs 417 crore and Free Fire relaunched — gaming CAC is about to spike",
+          "product_fit": "Solo + Crunchy",
+          "insight": "A 258% jump in one quarter plus a major battle royale returning to India means user-acquisition costs across mobile gaming rise for everyone. Paid will get expensive fast, which pushes the efficient players toward creator-led acquisition. Solo for scouting and running gaming creators at volume, Crunchy for the ad creative that performance spend burns through weekly. Go at the second-tier gaming and fantasy apps — they feel the CAC squeeze first and hardest.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "Nazara's marketing spend jumps 258% to Rs 417 crore",
+          "source_url": "https://www.adgully.com/post/22886/nazara-technologies-marketing-spend-spikes-258-to-inr417-crore-in-q2-fy27"
+        },
+        {
+          "headline": "L'Oréal named local content and quick commerce as the two things that fixed India",
+          "product_fit": "Crunchy + Solo",
+          "insight": "A global beauty major publicly crediting its India turnaround to exactly two levers is the most useful brief of the week, because it is a competitor's own diagnosis. Local content at volume is Crunchy; the creator layer that makes quick-commerce listings convert is Solo. Take the quote itself into every beauty and personal-care conversation — it is far more persuasive coming from L'Oréal's earnings call than from a pitch deck.",
+          "ref_bucket_label": "Bucket 1 — Mandates & Campaigns",
+          "ref_item": "L'Oréal credits its India turnaround to local content and quick commerce",
+          "source_url": "https://www.adgully.com/post/22800/loral-sees-india-turnaround-on-local-content-quick-commerce-push-and-sapmenas-20-q3-surge"
+        },
+        {
+          "headline": "DoorDash buying Instacart creates another retail media giant — and reprices Indian quick commerce",
+          "product_fit": "Crunchy + Imagined",
+          "insight": "A $17 billion delivery merger is really a retail media consolidation, and Indian quick-commerce platforms will be valued off it. For brands the consequence is nearer: platform-native content becomes a bigger line item as these networks sell more inventory. Crunchy makes the short, product-forward, format-specific assets those placements need; Imagined where a campaign needs a destination behind the tile. Flag it to any FMCG or D2C client planning a 2027 retail media budget.",
+          "ref_bucket_label": "Bucket 2 — M&A",
+          "ref_item": "DoorDash agrees to buy Instacart in a $17 billion grocery delivery deal",
+          "source_url": "https://www.adgully.com/post/23086/doordash-to-acquire-instacart-in-landmark-17-billion-grocery-delivery-deal"
+        },
+        {
+          "headline": "Kohli's Agilitas stake rose to 6.4% — athlete equity is replacing athlete endorsement",
+          "product_fit": "The Lit School + Solo",
+          "insight": "The one8 merger converting a brand licence into a 6.4% shareholding, and Neeraj Chopra's VEL Sports signing other athletes the same week, are the same structural move: talent is keeping the margin instead of renting its name. For brands it changes the negotiation from fee to equity and makes the athlete a partner with opinions. Solo for running athlete-adjacent creator programmes, The Lit School as the talent-pipeline angle. Useful context for any sponsorship conversation this quarter.",
+          "ref_bucket_label": "Bucket 2 — M&A",
+          "ref_item": "Virat Kohli's Agilitas stake rises to 6.4% after the one8 merger",
+          "source_url": "https://sportzpower.com/post-one8-merger-virat-kohlis-stake-in-agilitas-increases-to-6-4/"
+        },
+        {
+          "headline": "Instagram is testing 90-minute video — nobody's team has a playbook for it",
+          "product_fit": "Crunchy + Memed",
+          "insight": "A platform trained the entire Indian market on sub-60-second Reels and is now testing feature length. Brands have teams optimised for one format and nothing for the other. Crunchy can produce long-form that justifies the runtime rather than padding it; Memed cuts it back down into the Reels the same brand still needs. Pitch it as one shoot serving both ends of the platform, which is the only way the economics work for a mid-sized advertiser.",
+          "ref_bucket_label": "Bucket 3 — New Products",
+          "ref_item": "Instagram tests 90-minute long-form video",
+          "source_url": "https://www.adgully.com/post/22878/instagram-tests-90-minute-videos-with-new-features-long-form-format"
+        },
+        {
+          "headline": "JioHotstar launched shoppable streaming — video inventory is about to be judged on conversion",
+          "product_fit": "Crunchy + Imagined",
+          "insight": "StreamToCart puts a checkout inside the stream, which means streaming video stops being measured on reach and starts being measured like performance media. Creative built for awareness will underperform badly against it. Crunchy for product-forward video designed to convert rather than charm, Imagined for the landing experience behind the click. Raise it with any brand that has committed streaming budget for Q4 on awareness assumptions.",
+          "ref_bucket_label": "Bucket 3 — New Products",
+          "ref_item": "JioHotstar launches StreamToCart in-stream shopping ads",
+          "source_url": "https://www.adgully.com/post/22905/jiohotstar-launches-streamtocart-ads-for-in-stream-shopping"
+        },
+        {
+          "headline": "McDonald's walked away from FIFA after 32 years to build its own IP",
+          "product_fit": "Crunchy + ScoopWhoop",
+          "insight": "The longest-running sponsorship in global sport ending in favour of owned properties is the clearest statement a brand can make that renting an audience no longer beats building one. Owned IP needs production and distribution that rights fees used to bundle in — Crunchy to make the property, ScoopWhoop to give it reach. Take this to any brand currently weighing a renewal: the biggest advertiser in the world just did the maths and chose to build.",
+          "ref_bucket_label": "Experiential Economy",
+          "ref_item": "McDonald's ends a 32-year FIFA sponsorship to back its own IP",
+          "source_url": "https://www.adgully.com/post/22852/mcdonalds-ends-32-year-fifa-world-cup-sponsorship-to-focus-on-owned-brand-ip"
+        },
+        {
+          "headline": "Arijit and Karan Aujla are anchoring a brand-new Goa festival — sponsorship sells before tickets do",
+          "product_fit": "Crunchy + Memed",
+          "insight": "India's two biggest live draws headlining a first-edition festival means title and associate packages will be priced at a premium immediately, and first-year sponsors will overpay for logo placement they cannot fill. The fix is content: Crunchy for sponsor-owned on-ground moments, Memed to clip every night into weeks of feed. Pitch the sponsor, never the artist — and get in before the packages are written, which is now.",
+          "ref_bucket_label": "Experiential Economy",
+          "ref_item": "Arijit Singh and Karan Aujla will headline a new Goa festival, HOME",
+          "source_url": "https://in.eventfaqs.com/2026/10/29/arijit-singh-and-karan-aujla-to-headline-new-music-festival-home-in-goa/"
+        },
+        {
+          "headline": "HELL ENERGY has titled HORRORCON three years running — Halloween is now a real Indian occasion",
+          "product_fit": "Crunchy + ScoopWhoop",
+          "insight": "Three consecutive years of the same title sponsor, plus Popeyes, Candyman and Flipkart Minutes all building Halloween work this week, means a manufactured occasion has become a repeatable one. Manufacturing occasions is a repeatable play for any brand with a thin calendar — Crunchy to produce the property, ScoopWhoop to make it feel culturally real rather than corporate. The window to plan 2027's version opens the moment this one ends.",
+          "ref_bucket_label": "Experiential Economy",
+          "ref_item": "HELL ENERGY titles HORRORCON for a third year",
+          "source_url": "https://www.adgully.com/post/22946/hell-energy-drink-returns-as-title-sponsor-of-horrorcon-2026-for-third-consecutive-year"
+        },
+        {
+          "headline": "Eight films opened and none cleared Rs 1 crore — stop pricing co-promotion on footfall",
+          "product_fit": "Memed",
+          "insight": "A completely empty pre-Diwali release slate, with the best performer at Rs 0.86 crore across a weekend, as distributors clear the decks before Ramayana. Any co-promotion bought against those eight slots returned nothing. Third week running this pattern has held, so it is now standing advice: buy content volume around a release rather than association with its result. Memed clipping trailer, music and press material delivers whether the film works or not.",
+          "ref_bucket_label": "Experiential Economy",
+          "ref_item": "Eight films opened on 30 October and none cleared Rs 1 crore on day one",
+          "source_url": "https://www.bollywoodhungama.com/movie/pyre/box-office/"
+        }
+      ],
+      "bucket6": [
+        {
+          "category": "Film & Entertainment Launches",
+          "region": "India",
+          "headline": "Eight films opened on 30 October and none cleared Rs 1 crore on day one",
+          "description": "Eight releases arrived on 30 October led by Pyre at Rs 0.86 crore across its opening weekend; Nakhrewaalii took Rs 0.39 crore and the rest less.",
+          "why_important": "A completely empty pre-Diwali week at the box office, with distributors clearing the decks before Ramayana. Co-promotion bought on these slots returned nothing.",
+          "source_name": "Bollywood Hungama",
+          "source_url": "https://www.bollywoodhungama.com/movie/pyre/box-office/",
+          "date": "2026-11-01",
+          "companies": [],
+          "people": []
+        },
+        {
+          "category": "Concerts & Live Shows",
+          "region": "India",
+          "headline": "Bismil Ki Mehfil announces a seven-city tour presented by Zee Live's Supermoon",
+          "description": "Bismil Ki Mehfil announces a seven-city India tour presented by Zee Live's Supermoon property.",
+          "why_important": "A broadcaster's live arm presenting a Sufi tour shows how media companies are using owned live IP to sell sponsorship their airtime cannot.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/30/bismil-ki-mehfil-announces-seven-city-india-tour-presented-by-zee-lives-supermoon/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Zee Live",
+              "url": "https://www.zeelive.in"
+            },
+            {
+              "name": "Supermoon",
+              "url": "https://www.zeelive.in"
+            }
+          ],
+          "people": [
+            {
+              "name": "Bismil",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "category": "Concerts & Live Shows",
+          "region": "India",
+          "headline": "CULTR SHIFT debuts at The Leela Kovalam",
+          "description": "CULTR SHIFT launches at The Leela Kovalam with a curated electronic music line-up.",
+          "why_important": "Luxury hotels are staging their own music properties to fill off-season occupancy. It turns a resort into a destination event with its own sponsorship inventory.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23102/cultr-shift-debuts-at-the-leela-kovalam-with-curated-electronic-music-lineup",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "CULTR SHIFT",
+              "url": null
+            },
+            {
+              "name": "The Leela",
+              "url": "https://www.theleela.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Brand Experiences & IPs",
+          "region": "India",
+          "headline": "Imagicaa builds a Diwali programme at its parks",
+          "description": "Imagicaa runs a festive Diwali entertainment programme across its parks.",
+          "why_important": "Theme parks depend on festive footfall for their annual numbers. Diwali programming is where the year's co-branding and F&B partnerships get sold.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/30/imagicaa-brings-festive-cheer-and-entertainment-this-diwali/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Imagicaa",
+              "url": "https://www.imagicaaworld.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Brand Experiences & IPs",
+          "region": "India",
+          "headline": "Chopard marks 50 years of Happy Diamonds in Chennai",
+          "description": "Infinity Timeless and Chopard celebrate 50 years of the Happy Diamonds line in Chennai.",
+          "why_important": "Global luxury staging anniversary events in Chennai rather than Mumbai or Delhi is a real read on where Indian high-net-worth jewellery spend now sits.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/30/infinity-timeless-and-chopard-celebrate-50-years-of-happy-diamonds-in-chennai/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Chopard",
+              "url": "https://www.chopard.com"
+            },
+            {
+              "name": "Infinity Timeless",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "Global",
+          "headline": "JSW Sports signs marquee brand partners for the Hong Kong Sixes",
+          "description": "JSW Sports announces a set of marquee brand partners for the Hong Kong Sixes tournament.",
+          "why_important": "Indian sports agencies selling sponsorship into overseas cricket properties is a new export. It gives Indian brands a cheap route to international cricket visibility.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23098/jsw-sports-signs-marquee-brand-partners-for-hong-kong-sixes-tournament",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "JSW Sports",
+              "url": "https://www.jswsports.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "BCCI will discuss expanding the WPL beyond five teams",
+          "description": "BCCI secretary Saikia says the board will discuss expanding the Women's Premier League beyond its current five teams from next year.",
+          "why_important": "WPL expansion creates new franchises, new title sponsorships and a second wave of women's cricket inventory. The last expansion cycle in the IPL made fortunes for early sponsors.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/bcci-to-discuss-expanding-wpl-beyond-5-teams-from-next-year-saikia/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "BCCI",
+              "url": "https://www.bcci.tv"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "Global",
+          "headline": "World Athletics sets up a Running and Mass Participation arm",
+          "description": "World Athletics establishes a dedicated Running & Mass Participation department.",
+          "why_important": "The global federation formalising mass participation signals where athletics thinks its commercial growth is. India's marathon and endurance circuit sits directly downstream of that.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/world-athletics-establishes-new-running-mass-participation-department/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "World Athletics",
+              "url": "https://worldathletics.org"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Ticketing, Venues & Policy",
+          "region": "Global",
+          "headline": "Vietnam plans the world's largest stadium to enter the concert touring circuit",
+          "description": "Vietnam moves to join the global concert touring circuit with plans for the world's largest stadium.",
+          "why_important": "Southeast Asia building stadium capacity changes where global tours route. India competes for the same dates and has far less purpose-built capacity.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/30/vietnam-looks-to-enter-global-concert-touring-circuit-with-worlds-largest-planned-stadium/",
+          "date": "2026-10-30",
+          "companies": [],
+          "people": []
+        },
+        {
+          "category": "Concerts & Live Shows",
+          "region": "Global",
+          "headline": "Femme Music signs a global distribution deal for South Asian women artists",
+          "description": "Femme Music signs a global distribution deal with Community Music to widen the reach of South Asian female artists.",
+          "why_important": "Distribution infrastructure built specifically for South Asian women artists creates a roster brands can partner with. The supply side of that market has been the constraint.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/30/femme-music-signs-global-distribution-deal-with-community-music-to-expand-reach-of-south-asian-female-artists/",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "Femme Music",
+              "url": null
+            },
+            {
+              "name": "Community Music",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Brand Experiences & IPs",
+          "region": "India",
+          "headline": "Times of India brings back Clock It for a third edition",
+          "description": "Clock It returns for its third edition, deepening The Times of India's connection with Gen Z.",
+          "why_important": "Legacy print groups building youth event IP is how they reach an audience that will never buy the newspaper. Three editions in, it is a durable sponsorship asset.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23097/clock-it-returns-with-its-third-edition-strengthening-the-times-of-indias-connection-with-gen-z",
+          "date": "2026-10-30",
+          "companies": [
+            {
+              "name": "The Times of India",
+              "url": "https://timesofindia.indiatimes.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Festivals & Culture",
+          "region": "India",
+          "headline": "Arijit Singh and Karan Aujla will headline a new Goa festival, HOME",
+          "description": "A new music festival, HOME, launches in Goa headlined by Arijit Singh and Karan Aujla.",
+          "why_important": "The two biggest live draws in India anchoring a brand-new festival means title and associate sponsorship will be priced at a premium before a single ticket is sold.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/29/arijit-singh-and-karan-aujla-to-headline-new-music-festival-home-in-goa/",
+          "date": "2026-10-29",
+          "companies": [],
+          "people": [
+            {
+              "name": "Arijit Singh",
+              "linkedin_url": null
+            },
+            {
+              "name": "Karan Aujla",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "category": "Concerts & Live Shows",
+          "region": "India",
+          "headline": "Jonita Gandhi, A.R. Ameen and Raghav join A.R. Rahman's Mumbai show",
+          "description": "Jonita Gandhi, A.R. Ameen and Raghav will join A.R. Rahman for the Mumbai leg of The Wonderment Tour.",
+          "why_important": "Stacking guest artists is how a touring property keeps selling a second and third city. Each addition is also a fresh sponsor-activation moment.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/29/jonita-gandhi-a-r-ameen-and-raghav-to-join-a-r-rahman-at-mumbai-leg-of-the-wonderment-tour/",
+          "date": "2026-10-29",
+          "companies": [],
+          "people": [
+            {
+              "name": "A.R. Rahman",
+              "linkedin_url": null
+            },
+            {
+              "name": "Jonita Gandhi",
+              "linkedin_url": null
+            },
+            {
+              "name": "A.R. Ameen",
+              "linkedin_url": null
+            },
+            {
+              "name": "Raghav",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "category": "Concerts & Live Shows",
+          "region": "India",
+          "headline": "Mayfair Spring Valley backs Sunidhi Chauhan's Guwahati concert",
+          "description": "Mayfair Spring Valley Resort partners Sunidhi Chauhan's 'I Am Home' concert in Guwahati.",
+          "why_important": "Hospitality brands sponsoring Northeast concerts is a tourism play as much as a music one. Guwahati is becoming a genuine stop on the national touring circuit.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/29/mayfair-spring-valley-resort-partners-with-sunidhi-chauhans-i-am-home-concert-in-guwahati/",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "Mayfair Spring Valley Resort",
+              "url": "https://www.mayfairhotels.com"
+            }
+          ],
+          "people": [
+            {
+              "name": "Sunidhi Chauhan",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "Cabinet clears a Rs 1,857 crore scheme for domestic sports goods manufacturing",
+          "description": "The Union Cabinet approves a Rs 1,857 crore scheme to promote sports goods manufacturing in India.",
+          "why_important": "State money behind domestic sports manufacturing will create a new tier of Indian equipment brands — and those brands will need to advertise.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/cabinet-clears-%e2%82%b91857cr-scheme-to-promote-domestic-sports-goods-manufacturing/",
+          "date": "2026-10-29",
+          "companies": [],
+          "people": []
+        },
+        {
+          "category": "Brand Experiences & IPs",
+          "region": "India",
+          "headline": "Madhya Pradesh Travel Mart generates Rs 3,729 crore in tourism proposals",
+          "description": "Madhya Pradesh Travel Mart 2026 produces tourism investment proposals worth Rs 3,729 crore.",
+          "why_important": "State travel marts are becoming real investment channels, not just showcases. New hotel and attraction capacity is where the next decade of Indian experiential inventory comes from.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/29/madhya-pradesh-travel-mart-2026-generates-tourism-investment-proposals-worth-%e2%82%b93729-crore/",
+          "date": "2026-10-29",
+          "companies": [],
+          "people": []
+        },
+        {
+          "category": "Brand Experiences & IPs",
+          "region": "India",
+          "headline": "NDTV Profit stages an Ignite Diwali edition for market leaders",
+          "description": "NDTV Profit Ignite: Diwali Edition brings India's market leaders together to set out their outlook for the new Samvat.",
+          "why_important": "Muhurat-season business summits sell the highest-value sponsorship in Indian business media, because the audience is precisely the decision-maker BFSI brands pay to reach.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/23077/indias-market-leaders-share-their-outlook-for-the-new-samvat-at-ndtv-profit-ignite-diwali-edition",
+          "date": "2026-10-29",
+          "companies": [
+            {
+              "name": "NDTV",
+              "url": "https://www.ndtv.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Festivals & Culture",
+          "region": "India",
+          "headline": "HELL ENERGY titles HORRORCON for a third year",
+          "description": "HELL ENERGY DRINK returns as title sponsor of HORRORCON 2026 for the third consecutive year.",
+          "why_important": "Three years of the same title sponsor on a genre convention means the economics work for both sides. It is the clearest proof yet that Halloween is becoming a sponsorable Indian occasion.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22946/hell-energy-drink-returns-as-title-sponsor-of-horrorcon-2026-for-third-consecutive-year",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "HELL ENERGY DRINK",
+              "url": "https://www.hellenergy.com"
+            },
+            {
+              "name": "HorrorCon India",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "Neeraj Chopra's VEL Sports will represent Asian Games medallist Pooja",
+          "description": "VEL Sports, founded by Neeraj Chopra, signs Asian Games medallist Pooja for representation.",
+          "why_important": "An athlete building a management agency and signing other athletes is a structural shift. It keeps endorsement margin inside the sport rather than with external agencies.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/neeraj-chopras-vel-sports-to-represent-asian-games-medallist-pooja/",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "VEL Sports",
+              "url": null
+            }
+          ],
+          "people": [
+            {
+              "name": "Neeraj Chopra",
+              "linkedin_url": null
+            },
+            {
+              "name": "Pooja",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "Global",
+          "headline": "An Italian T10 league launches with James Anderson as franchise co-owner",
+          "description": "A new Italian T10 league is set to debut, with James Anderson joining as a franchise co-owner.",
+          "why_important": "Short-format cricket leagues spreading into non-traditional markets widens the global calendar Indian broadcasters and sponsors can buy into cheaply.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/italian-t10-league-set-to-debut-onboards-james-anderson-as-franchise-co-owner/",
+          "date": "2026-10-28",
+          "companies": [],
+          "people": [
+            {
+              "name": "James Anderson",
+              "linkedin_url": null
+            }
+          ]
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "Racing returns to the Buddh circuit after 13 years",
+          "description": "The Indian Racing Festival brings two championships back to the Buddh International Circuit after a 13-year gap.",
+          "why_important": "Reviving India's only Formula-grade circuit reopens motorsport sponsorship, a category that has been effectively closed to Indian brands since 2013.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/racing-returns-to-buddh-indian-racing-festival-brings-2-cships-to-circuit/",
+          "date": "2026-10-28",
+          "companies": [],
+          "people": []
+        },
+        {
+          "category": "Brand Experiences & IPs",
+          "region": "India",
+          "headline": "Sony MAX and UFC Gym build an 'Alpha MAX Challenge'",
+          "description": "Sony MAX partners UFC Gym India on an 'Alpha MAX Challenge' ahead of a world television premiere.",
+          "why_important": "Broadcasters are using gym-floor activations to promote films, reaching an audience that no longer watches promos on television.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22992/sony-max-partners-with-ufc-gym-india-for-alpha-max-challenge",
+          "date": "2026-10-28",
+          "companies": [
+            {
+              "name": "Sony MAX",
+              "url": "https://www.sonypicturesnetworks.com"
+            },
+            {
+              "name": "UFC Gym India",
+              "url": "https://www.ufcgym.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Brand Experiences & IPs",
+          "region": "India",
+          "headline": "GROHE SPA puts a live water installation into Delhi airport",
+          "description": "GROHE SPA builds an experiential live water display at Delhi International Airport.",
+          "why_important": "Airport experiential is the most expensive media in India and only works if the product demonstrates itself. A water brand is one of the few that genuinely can.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22895/grohe-spa-brings-live-water-display-to-delhi-international-airport",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "GROHE",
+              "url": "https://www.grohe.in"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "Business Today takes BT Golf to eight cities for a 27th season",
+          "description": "Business Today partners DP World PGTI for the 27th edition of BT Golf across eight cities.",
+          "why_important": "Twenty-seven years makes this one of India's longest-running branded sports properties. Golf delivers a small audience with the highest income profile of any Indian sport.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22948/business-today-and-dp-world-pgti-announce-27th-season-of-bt-golf",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "Business Today",
+              "url": "https://www.businesstoday.in"
+            },
+            {
+              "name": "DP World PGTI",
+              "url": "https://pgtiindia.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "India and New Zealand esports federations draft a cooperation MoU",
+          "description": "The Indian and New Zealand esports federations draft a memorandum to strengthen bilateral cooperation.",
+          "why_important": "Government-recognised federations signing bilateral agreements is what moves esports from tournament organiser territory into official sport, which unlocks a different class of sponsor.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/india-nz-esports-federations-draft-mou-to-strengthen-bilateral-cooperation/",
+          "date": "2026-10-27",
+          "companies": [],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "SportVot takes live production rights for Sevens Football 2026",
+          "description": "SportVot wins live production and streaming rights for Sevens Football 2026.",
+          "why_important": "SportVot's second grassroots rights win in a fortnight. Cheap streaming production is quietly making India's long-tail sport sponsorable for the first time.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22920/sportvot-bags-live-production-streaming-rights-for-sevens-football-2026",
+          "date": "2026-10-27",
+          "companies": [
+            {
+              "name": "SportVot",
+              "url": "https://www.sportvot.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Festivals & Culture",
+          "region": "India",
+          "headline": "Jodhpur RIFF opens with a free city concert",
+          "description": "Jodhpur RIFF 2026 opens with a free concert celebrating Rajasthan's musical and performing arts traditions.",
+          "why_important": "Free opening nights build the local audience that makes a heritage festival viable. For sponsors it is the widest-reach moment of the whole event.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/26/jodhpur-riff-2026-opens-with-free-city-concert-celebrates-rajasthans-musical-and-performing-arts-traditions/",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Jodhpur RIFF",
+              "url": "https://jodhpurriff.org"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Festivals & Culture",
+          "region": "India",
+          "headline": "Godrej Literature Live! closes its Mumbai edition",
+          "description": "Godrej Literature Live! The Mumbai LitFest concludes with literary awards and full sessions.",
+          "why_important": "Long-running title sponsorship of a literature festival buys a corporate group cultural standing that no campaign can. Godrej has held this one for years.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/26/godrej-literature-live-the-mumbai-litfest-concludes-with-literary-awards-and-packed-sessions/",
+          "date": "2026-10-26",
+          "companies": [],
+          "people": []
+        },
+        {
+          "category": "Festivals & Culture",
+          "region": "India",
+          "headline": "Vibgyor's Natya Kumbh returns with 16 plays across three cities",
+          "description": "Vibgyor's Natya Kumbh returns with 16 original plays staged across three cities.",
+          "why_important": "Theatre at this scale is rare in India and attracts a premium, hard-to-reach audience. It is one of the few live formats still underpriced for sponsors.",
+          "source_name": "EVENTFAQS",
+          "source_url": "https://in.eventfaqs.com/2026/10/26/vibgyors-natya-kumbh-returns-bigger-better-bolder-with-16-original-plays-across-three-cities/",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Vibgyor",
+              "url": null
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "JioStar takes Abu Dhabi T10 rights for the subcontinent",
+          "description": "JioStar acquires broadcast rights to the Abu Dhabi T10 in the Indian subcontinent.",
+          "why_important": "JioStar continuing to hoover up second-tier cricket rights means the cheap cricket inventory mid-sized sponsors rely on is consolidating under one seller.",
+          "source_name": "SportzPower",
+          "source_url": "https://sportzpower.com/jiostar-acquires-bcast-rights-for-abu-dhabi-t10-in-the-indian-subcontinent/",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "JioStar",
+              "url": "https://www.jiostar.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "Global",
+          "headline": "McDonald's ends a 32-year FIFA sponsorship to back its own IP",
+          "description": "McDonald's ends its 32-year FIFA World Cup sponsorship to focus on owned brand properties.",
+          "why_important": "One of the longest-running sponsorships in sport ending in favour of owned IP is the strongest signal yet that brands would rather build properties than rent them.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22852/mcdonalds-ends-32-year-fifa-world-cup-sponsorship-to-focus-on-owned-brand-ip",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "McDonald's India",
+              "url": "https://www.mcdonaldsindia.com"
+            },
+            {
+              "name": "FIFA",
+              "url": "https://www.fifa.com"
+            }
+          ],
+          "people": []
+        },
+        {
+          "category": "Sports & Endurance",
+          "region": "India",
+          "headline": "Delta Exchange co-sponsors the India-New Zealand series",
+          "description": "Delta Exchange signs as co-sponsor for the India versus New Zealand bilateral series.",
+          "why_important": "Crypto platforms buying bilateral cricket is a reach play into exactly the young male audience regulators are watching. Expect scrutiny of these deals to rise.",
+          "source_name": "Adgully",
+          "source_url": "https://www.adgully.com/post/22825/delta-exchange-partners-as-co-sponsor-for-india-vs-new-zealand-bilateral-series",
+          "date": "2026-10-26",
+          "companies": [
+            {
+              "name": "Delta Exchange",
+              "url": "https://www.delta.exchange"
+            }
+          ],
+          "people": []
+        }
+      ],
+      "flagged": {
+        "bucket1": [
+          "Company (unresolved): Fever Films — in \"Spotify walks into the Mishra family's Diwali prep\"",
+          "Person (unresolved): Saif Ali Khan — in \"Zomato casts Saif Ali Khan for 'Have a WOW Diwali'\"",
+          "Company (unresolved): MillD — in \"MillD takes the protein affordability argument outdoors\"",
+          "Person (unresolved): Pankaj Tripathi — in \"Dulcoflex Liquid signs Pankaj Tripathi for #1SmartSolution\"",
+          "Person (unresolved): MS Dhoni — in \"Gulf Oil marks 125 years with MS Dhoni and 'Born to be Behad'\"",
+          "Person (unresolved): Smriti Mandhana — in \"Gulf Oil marks 125 years with MS Dhoni and 'Born to be Behad'\"",
+          "Company (unresolved): Sorry Sugar — in \"Sorry Sugar makes a zero-added-sugar Diwali film\"",
+          "Person (unresolved): Aryaman Singh — in \"Leo India's Aryaman Singh takes the India title at the One Show AI challenge\"",
+          "Person (unresolved): Tanya Goyal — in \"AAAI launches an INDIE Council for independent agencies\"",
+          "Person (unresolved): Palak Tiwari — in \"ETUDE launches a foundation line into wedding season with Palak Tiwari\"",
+          "Person (unresolved): MS Dhoni — in \"Zed Black and MS Dhoni mark ten years together\"",
+          "Person (unresolved): Mithila Palkar — in \"Gargi by PNGS runs #GETNOTICED with Mithila Palkar\"",
+          "Company (unresolved): Idiotic Media — in \"Redmi makes 'Crimes Against Phones' with Anup Soni\"",
+          "Person (unresolved): Anup Soni — in \"Redmi makes 'Crimes Against Phones' with Anup Soni\"",
+          "Person (unresolved): Anushka Sen — in \"Bonkers Corner signs Anushka Sen\"",
+          "Person (unresolved): Yash Pradhan — in \"GAP India works with artist Yash Pradhan on Fall 2026\"",
+          "Person (unresolved): Abhay Verma — in \"Gillette names Abhay Verma at P&G Loop\"",
+          "Company (unresolved): Mangalmai — in \"Mangalmai becomes Ramayana's official diya oil partner\"",
+          "Company (unresolved): Macros — in \"Macros tells men not to wait for Diwali\"",
+          "Person (unresolved): Shweta Tripathi — in \"GIVA runs 'Pataka for Every Pataka' with Shweta Tripathi\"",
+          "Company (unresolved): Parsi Dairy Farm — in \"Parsi Dairy Farm turns 110 with rapper Mohak\"",
+          "Person (unresolved): Mohak — in \"Parsi Dairy Farm turns 110 with rapper Mohak\"",
+          "Person (unresolved): Ranveer Singh — in \"CP PLUS signs Ranveer Singh\"",
+          "Person (unresolved): Ranveer Brar — in \"DAAWAT Rozana launches with Ranveer Brar\"",
+          "Company (unresolved): Maitri Advertising Works — in \"Maitri takes Agency of the Year at the first Love of Advertising Awards\"",
+          "Company (unresolved): Blink Digital — in \"Bombay High Court dismisses Meta's jurisdiction challenge in the Blink Digital case\"",
+          "Company (unresolved): RVCJ Media — in \"Kavita Kaushik investigates Amazon India's deals in a three-film campaign\"",
+          "Person (unresolved): Kavita Kaushik — in \"Kavita Kaushik investigates Amazon India's deals in a three-film campaign\"",
+          "Person (unresolved): Yashraj Mukhate — in \"Kansai Nerolac rebuilds its jingle with Yashraj Mukhate\"",
+          "Person (unresolved): Rajkummar Rao — in \"Kenstar signs Rajkummar Rao and Patralekha for water heaters\"",
+          "Person (unresolved): Patralekha — in \"Kenstar signs Rajkummar Rao and Patralekha for water heaters\"",
+          "Person (unresolved): Harshaali Malhotra — in \"Bonjour casts Harshaali Malhotra for its festive film\"",
+          "Company (unresolved): Ting — in \"Bosch and Ting launch 'Kitchen Up' with Vikrant Massey\"",
+          "Person (unresolved): Vikrant Massey — in \"Bosch and Ting launch 'Kitchen Up' with Vikrant Massey\"",
+          "Person (unresolved): Neena Gupta — in \"Fortune Besan casts Neena Gupta for 'Desi Chana Se Bana'\"",
+          "Person (unresolved): Bismil — in \"SNITCH reunites with Sufi singer Bismil for 'Bismil 2.0'\""
+        ],
+        "bucket2": [
+          "Person (unresolved): Virat Kohli — in \"Virat Kohli's Agilitas stake rises to 6.4% after the one8 merger\"",
+          "Company (unresolved): Liqvd Digital — in \"Liqvd Digital buys the remaining 23.2% of AdLift for Rs 9 crore\""
+        ],
+        "bucket3": [
+          "Person (unresolved): Arjun Rampal — in \"ZEE5 adds 'Hostel Hadsa' and 'Blind Game' to its free originals slate\"",
+          "Company (unresolved): Philosophy Brand Solutions — in \"Philosophy Brand Solutions opens in Mumbai\""
+        ],
+        "bucket4": [
+          "Person (unresolved): Sumit Zaveri — Chief Executive Officer, Burger King India at Restaurant Brands Asia",
+          "Person (unresolved): Gopa Kumar — Head at Reliance Jewels",
+          "Person (unresolved): Sangeeta Shetty — Chief Compliance Officer and Company Secretary at Zee Entertainment Enterprises",
+          "Person (unresolved): Ami Palan — Lead – Brand at Dognosis",
+          "Company (unresolved): Dognosis — re: Ami Palan",
+          "Person (unresolved): Aditi Kumari — Group Brand Manager at Britannia Industries",
+          "Person (unresolved): Sahej Grover — Director – Brand, Digital & Communications at Tata Technologies",
+          "Person (unresolved): Vijay Sankar — President-Elect for 2026-27 at FICCI",
+          "Person (unresolved): Tanya Goyal — Lead, INDIE Council for Independent Agencies at AAAI",
+          "Person (unresolved): Pankaj Madaan — Head – Marketing & Partnerships at WOI India",
+          "Company (unresolved): WOI India — re: Pankaj Madaan",
+          "Person (unresolved): Azam Pasha — Assistant Vice President – JWCC Operations at Jio World Convention Centre",
+          "Person (unresolved): Apoorva Chauhan — Director of Event Sales at Andaz Delhi",
+          "Person (unresolved): Kiran Ramamurthy — Chief Executive Officer, VML India at VML",
+          "Person (unresolved): Babita Baruah — Regional Ford role at VML",
+          "Person (unresolved): Rajat Vij — Associate Director – Growth & New Business at Havas Media Network India",
+          "Person (unresolved): Gauri Makkar — Co-Founder at ZIEL Network",
+          "Person (unresolved): Olivia Michael — Co-Founder at ZIEL Network",
+          "Person (unresolved): Geetika Chadha — Lead, Social and Influencer Marketing for Samsung at Cheil India"
+        ],
+        "bucket6": [
+          "Person (unresolved): Bismil — in \"Bismil Ki Mehfil announces a seven-city tour presented by Zee Live's Supermoon\"",
+          "Company (unresolved): CULTR SHIFT — in \"CULTR SHIFT debuts at The Leela Kovalam\"",
+          "Company (unresolved): Infinity Timeless — in \"Chopard marks 50 years of Happy Diamonds in Chennai\"",
+          "Company (unresolved): Femme Music — in \"Femme Music signs a global distribution deal for South Asian women artists\"",
+          "Company (unresolved): Community Music — in \"Femme Music signs a global distribution deal for South Asian women artists\"",
+          "Person (unresolved): Arijit Singh — in \"Arijit Singh and Karan Aujla will headline a new Goa festival, HOME\"",
+          "Person (unresolved): Karan Aujla — in \"Arijit Singh and Karan Aujla will headline a new Goa festival, HOME\"",
+          "Person (unresolved): A.R. Rahman — in \"Jonita Gandhi, A.R. Ameen and Raghav join A.R. Rahman's Mumbai show\"",
+          "Person (unresolved): Jonita Gandhi — in \"Jonita Gandhi, A.R. Ameen and Raghav join A.R. Rahman's Mumbai show\"",
+          "Person (unresolved): A.R. Ameen — in \"Jonita Gandhi, A.R. Ameen and Raghav join A.R. Rahman's Mumbai show\"",
+          "Person (unresolved): Raghav — in \"Jonita Gandhi, A.R. Ameen and Raghav join A.R. Rahman's Mumbai show\"",
+          "Person (unresolved): Sunidhi Chauhan — in \"Mayfair Spring Valley backs Sunidhi Chauhan's Guwahati concert\"",
+          "Company (unresolved): HorrorCon India — in \"HELL ENERGY titles HORRORCON for a third year\"",
+          "Company (unresolved): VEL Sports — in \"Neeraj Chopra's VEL Sports will represent Asian Games medallist Pooja\"",
+          "Person (unresolved): Neeraj Chopra — in \"Neeraj Chopra's VEL Sports will represent Asian Games medallist Pooja\"",
+          "Person (unresolved): Pooja — in \"Neeraj Chopra's VEL Sports will represent Asian Games medallist Pooja\"",
+          "Person (unresolved): James Anderson — in \"An Italian T10 league launches with James Anderson as franchise co-owner\"",
+          "Company (unresolved): Vibgyor — in \"Vibgyor's Natya Kumbh returns with 16 plays across three cities\""
+        ]
+      },
+      "week_start": "2026-10-26",
+      "week_end": "2026-11-02",
+      "updated_at": "2026-11-02T04:54:18.656733+00:00"
+    },
+    {
+      "bucket1": [
+        {
           "industry": "E-commerce & Quick Commerce",
           "headline": "Flipkart Minutes makes a Halloween miniseries with the Ramsay Brothers",
           "description": "Flipkart Minutes teams with the Ramsay Brothers, India's best-known horror film family, on a Halloween miniseries.",
@@ -19124,5 +22218,5 @@
       "bucket6": []
     }
   ],
-  "updated_at": "2026-10-26T07:26:20.675793+00:00"
+  "updated_at": "2026-11-02T04:54:18.659951+00:00"
 }
