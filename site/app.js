@@ -482,8 +482,8 @@ function shareSelection() {
   if (!list.length) return toast("Nothing selected");
   openShare({
     sub: list.length + " hand-picked items · " + weekLabel(S.data.weeks[S.wi], true),
-    subject: "WLDD Pulse — " + list.length + " things worth your attention",
-    text: "WLDD PULSE — worth your attention\n" + weekLabel(S.data.weeks[S.wi], true) +
+    subject: "WLDD Pulse — " + list.length + " item" + (list.length === 1 ? "" : "s") + " from this week",
+    text: "WLDD PULSE — PICKED\n" + weekLabel(S.data.weeks[S.wi], true) +
           "\n\n" + list.map((it, i) => fmtItem(it, i + 1)).join("\n\n"),
     link: "",
   });
@@ -500,7 +500,7 @@ function shareWeek() {
   openShare({
     sub: "The whole week · " + n + " items",
     subject: "WLDD Pulse — " + weekLabel(S.data.weeks[S.wi], true),
-    text: "WLDD PULSE · " + weekLabel(S.data.weeks[S.wi], true) + "\n" + n + " things worth knowing\n\n" +
+    text: "WLDD PULSE · " + weekLabel(S.data.weeks[S.wi], true) + "\n" + n + " item" + (n === 1 ? "" : "s") + "\n\n" +
           parts.join("\n\n\n"),
     link: "",
   });
